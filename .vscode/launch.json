@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Generate Course",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/tools/content/generateCourse.js",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Next.js: Server",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            "console": "integratedTerminal",
+            "serverReadyAction": {
+                "pattern": "Local:.+(https?://[^\\s]+)",
+                "uriFormat": "%s",
+                "action": "debugWithChrome"
+            }
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Next.js: Chrome",
+            "url": "http://localhost:6969",
+            "webRoot": "${workspaceFolder}",
+            "sourceMapPathOverrides": {
+                "webpack://_N_E/*": "${webRoot}/*"
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Full Stack: Server + Chrome",
+            "configurations": [
+                "Next.js: Server",
+                "Next.js: Chrome"
+            ],
+            "stopAll": true,
+            "preLaunchTask": null
+        }
+    ]
+}

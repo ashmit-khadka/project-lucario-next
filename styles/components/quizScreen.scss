@@ -1,0 +1,105 @@
+.quiz-screen {
+    margin: 0 auto;
+    background-color: $colour-background;
+    border-radius: 8px;
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: $color-font-primary;
+    }
+
+    .quiz-progress {
+        height: 10px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+
+        .quiz-progress-bar {
+            height: 100%;
+            background-color: $color-font-primary;
+            transition: width 0.3s ease;
+        }
+    }
+
+    .quiz-step-counter {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: $color-font-primary-light;
+    }
+
+    .quiz-question {
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: $color-font-primary;
+        }
+    }
+
+    .quiz-options {
+        list-style: none;
+        padding: 0;
+
+        .quiz-option {
+            background-color: $color-font-primary-light;
+            color: $color-font-primary-darker;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $color-font-primary;
+                color: white;
+            }
+        }
+    }
+
+    .quiz-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        .quiz-button {
+            background-color: $color-font-primary-light;
+            color: $color-font-primary-darker;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $color-font-primary;
+                color: white;
+            }
+        }
+    }
+
+    .quiz-input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .quiz-results {
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: $color-font-primary;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: $color-font-primary-light;
+        }
+    }
+}

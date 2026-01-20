@@ -1,0 +1,282 @@
+$size-screen: 1000px;
+$screen-padding-mobile: 1rem 1.5rem;
+
+@import './base/mixins.scss';
+
+@import './base/fonts.scss';
+@import './base/colours.scss';
+@import './base/animations.scss';
+@import './base/image.scss';
+
+@import './components/navigation_bar';
+@import './components/landingScreen.scss';
+@import './components/resumeScreen.scss';
+@import './components/learningScreen.scss';
+@import './components/quizScreen.scss';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    //scroll-behavior: smooth;
+
+    @include screen-sm {
+        font-size: 12px; // Base font size for mobile
+    }
+}
+
+body {
+    padding-top: 8rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $colour-background;
+
+    @include screen-sm {
+        padding-top: 6rem;
+    }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+button {
+    overflow-wrap: break-word;
+    @extend .dm-sans-regular;
+    font-size: $font-size-md;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+@media print {
+    body {
+        background-color: white !important;
+        color: black !important;
+        font-family: 'Times New Roman', Times, serif !important;
+    }
+}
+
+.button {
+    background-color: $color-font-primary;
+    color: $color-font-primary-lighter;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+
+    @extend .dm-mono-regular;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:active {
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+
+.footer {
+    margin-top: 8rem;
+    background-color: $color-font-primary-dark;
+    color: $color-font-primary-lighter;
+    height: 80vh;
+
+    @include screen-sm {
+        padding: 2.5rem;
+    }
+
+    & a {
+        color: $color-font-primary-lighter;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $color-font-primary-dark;
+            text-decoration: underline;
+        }
+    }
+
+    & p {
+        color: $color-font-primary-lighter;
+        @extend .dm-mono-regular;
+
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 15rem 0;
+
+        @include screen-sm {
+            padding: 5rem 0;
+        }
+    }
+}
+
+@media print {
+    .footer {
+        display: none !important;
+    }
+}
+
+
+@media print {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    button {
+        //color: black !important;
+    }
+
+    svg {
+        fill: black !important;
+    }
+
+}
+
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .navigation,
+    .footer,
+    .landing-intro-shortcuts {
+        display: none !important;
+    }
+
+    .screen {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: none !important;
+    }
+}
+
+.screen {
+    max-width: $size-screen;
+    margin: 0 auto;
+
+    @include screen-sm {
+        padding: 0 1.5rem;
+    }
+
+    .screen-intro {
+        margin-bottom: 4rem;
+
+        h1 {
+            font-size: $font-size-xl;
+            color: $color-font-primary;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            //@extend .dm-mono-regular;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            //@extend .dm-sans-regular;
+        }   
+        
+    }  
+}
+
+.screen-empty {
+    min-height: 100vh;
+}
+
+.error-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background-color: $colour-background;
+
+    h1 {
+        font-size: 3rem;
+        color: $color-font-primary;
+        margin-bottom: 1rem;
+        @extend .dm-mono-regular;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: $color-font-primary-light;
+        @extend .dm-sans-regular;
+    }
+
+    a {
+        margin-top: 1rem;
+        @extend .button;
+    }
+
+    img {
+        margin-top: 5rem;
+    }
+}

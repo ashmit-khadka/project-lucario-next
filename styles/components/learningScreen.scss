@@ -1,0 +1,112 @@
+.learning-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.learning-section {
+
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & li {
+        // bullet points
+        list-style: disc;
+        margin-left: 1.5rem;
+    }
+
+    .learning-section-header {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .learning-section-code-block {
+        background-color: rgba($color-font-primary, 0.1);
+        padding: 1rem;
+        border-radius: 4px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+        overflow-x: auto;
+    }
+}
+
+
+.inline-code {
+    background-color: rgba($color-font-primary, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
+
+
+
+
+
+.learn-skill-screen {
+
+    .lesson-tiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 2rem;
+
+        @include screen-sm {
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+    }
+
+    .lesson-tile {
+        background-color: $color-font-primary-dark;
+        //border: 1px solid $color-font-primary-light;
+        //border-radius: 8px;
+        padding: 1.5rem;
+        //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+
+        h2 {
+            font-size: $font-size-lg;
+            //margin-bottom: 1rem;
+            color: $color-font-primary-lighter;
+            font-weight: bold;
+        }
+        p {
+            color: $color-font-primary-lighter;
+            margin-bottom: 0.3rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                color: $color-font-primary-lighter;
+                margin-bottom: 0.3rem;
+            }
+        }
+
+        img {
+            width: 2rem;
+            height: 2rem; 
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .lesson-tile-header {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+    }
+}

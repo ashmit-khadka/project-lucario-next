@@ -1,0 +1,368 @@
+@keyframes slideIn {
+    from {
+        right: -250px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -250px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navigation {
+    display: flex;
+    padding: 2rem 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: $colour-background;
+    transition: all 0.3s ease;
+    justify-content: center;
+
+    @include screen-sm {
+        padding: $screen-padding-mobile;
+    }
+
+    .navigation-logo {
+        display: flex;
+        align-items: center;
+        @extend .dm-mono-regular;
+        color: $color-font-primary;
+        font-size: $font-size-lg;
+        background-color: $color-underline;
+        padding-left: 1rem;
+
+        .navigation-logo-cursor {
+            height: 1.6rem;
+            width: 2px;
+            background-color: $color-font-primary;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
+            animation: cursor-blink 1.5s infinite;
+
+        }
+    }
+
+    &-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: $size-screen;
+    }
+
+    &-menu {
+        cursor: pointer;
+
+        & svg {
+            @extend .image--md;
+        }
+
+        @include screen-lg {
+            display: none;
+        }
+    }
+
+    &-links {
+        display: flex;
+        gap: 1rem;
+        //align-items: center;
+        //justify-content: center;
+        //width: 100%;
+
+        @include screen-sm {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 70%;
+            height: 100vh;
+            background-color: $colour-background;
+            flex-direction: column;
+            padding: 5rem 2rem;
+            z-index: 1001;
+            animation: slideOut 0.3s ease-in-out;
+
+            &.open {
+                display: flex;
+                animation: slideIn 0.3s ease-in-out forwards;
+            }
+        }
+    }
+
+    &-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-font-primary-darker, 0.5);
+        backdrop-filter: blur(2px);
+        z-index: 100;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+
+    &-link {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: $color-font-primary;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            color: $color-font-primary;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &.active {
+            color: $color-font-primary;
+            font-weight: bold;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        @include screen-sm {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 1px solid rgba($color-font-primary, 0.1);
+
+            &::after {
+                display: none;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &.active {
+                background-color: rgba($color-font-primary, 0.1);
+            }
+        }
+    }
+
+    &-dummy {
+        display: none;
+        @extend .image--md;
+    }
+
+
+    @include screen-lg {
+
+        &.scrolled {
+            background-color: rgba($color-font-primary-darker, 0.95);
+            padding: 1.5rem 3rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+            .navigation-logo {
+                color: $color-font-primary-lighter;
+                background-color: #913a6e;
+            }
+
+            .navigation-logo-cursor {
+                background-color: $color-font-primary-lighter;
+            }
+
+            .navigation-link {
+
+                color: $color-font-primary-lighter;
+
+                &::after {
+                    background-color: $color-font-primary-lighter;
+                }
+
+                &:hover,
+                &.active {
+                    color: white;
+                }
+            }
+
+            .hamburger-line {
+                background-color: $color-font-primary-lighter;
+            }
+        }
+    }
+}
+
+
+.hamburger-menu {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    z-index: 1002;
+
+    @include screen-sm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hamburger-line {
+        width: 100%;
+        height: 2px;
+        background-color: $color-font-primary;
+        transition: all 0.3s ease;
+        transform-origin: left;
+    }
+
+    &.active {
+        .hamburger-line {
+            &:first-child {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media print {
+    .navigation {
+        display: none !important;
+    }
+
+    .navigation-backdrop {
+        display: none !important;
+    }
+}
+
+
+.floating-nav {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 1000;
+    max-width: 300px;
+    max-height: 80%;
+    overflow-y: auto; // Changed from 'scroll' to 'auto'
+    scrollbar-width: thin; // Optional: Thinner scrollbar in Firefox
+
+    @include screen-sm {
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .floating-nav-item {
+            margin-bottom: 1rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            &.active {
+                background-color: $color-font-primary;
+                color: white;
+                //font-weight: bold;
+            }
+        }
+
+        & li {
+            @extend .dm-mono-regular;
+            //font-size: 1rem;
+        }
+    }
+}
+
+.breadcrumb {
+    padding-bottom: 2rem;
+
+    .breadcrumb-list {
+        gap: 1rem;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        & li {
+            @extend .dm-mono-regular;
+            display: flex;
+            gap: 1rem;
+
+            & a {
+                text-decoration: none;
+                color: inherit;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $color-font-primary-darker;
+                }
+            }
+
+        }
+    }
+}
+
+
+// Add this keyframe animation
+@keyframes cursor-blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}

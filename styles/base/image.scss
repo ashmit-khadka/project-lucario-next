@@ -1,0 +1,38 @@
+.image {
+
+    &--xs {
+        width: 1.5rem;
+        height: 1.5rem;
+        min-width: 1.5rem;
+        min-height: 1.5rem;
+        fill: $color-font-primary;
+    }
+
+    &--sm {
+        width: 2rem;
+        height: 2rem;
+        min-width: 2rem;
+        min-height: 2rem;
+        fill: $color-font-primary;
+    }
+
+    &--md {
+        width: 4rem;
+        height: 4rem;
+        min-width: 4rem;
+        min-height: 4rem;
+        fill: $color-font-primary;
+    }
+}
+
+.icon-button {
+    // animate zoom on hover and srink on click
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+    }
+    &:active {
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+    }
+}
