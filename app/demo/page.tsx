@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import DemoLesson from '@/data/learning/demo_lesson';
+import DemoLesson from '@/data/learning/demo_lesson.json';
 import formatText from '@/utils/formatText';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { synthwave84 } from 'react-syntax-highlighter/dist/esm/styles/prism';

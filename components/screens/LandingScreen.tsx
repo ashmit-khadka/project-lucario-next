@@ -311,7 +311,7 @@ const ExperienceItem = (props) => {
 
     const awardItem = (image, text) => (
         <li className="landing-experience-tile-award">
-            <img src={image} alt="Award" />
+            <img src={image.src} alt="Award" />
             <p>{parseText(text)}</p>
         </li>
     );
@@ -335,7 +335,7 @@ const ExperienceItem = (props) => {
                 viewport={{ once: true }}
             >
                 <div>
-                    <img src={logo} alt="Experience Logo" className="experience-logo" />
+                    <img src={logo.src} alt="Experience Logo" className="experience-logo" />
                 </div>
                 <div className="landing-experience-tile--text">
                     <h2>{title}</h2>
@@ -529,7 +529,7 @@ const AboutSectionBio = (
                 <IconFigma />
             </motion.div>
             <motion.img
-                src={SelfImage2}
+                src={SelfImage2.src}
                 alt="Profile"
                 className="landing-intro-profile"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -575,7 +575,7 @@ const Skill = (props) => {
             }}
         >
             <motion.img
-                src={icon}
+                src={icon.src}
                 alt={`${name} Icon`}
                 className="skill-icon"
                 whileHover={{
@@ -713,7 +713,7 @@ const PortfolioSection = (props) => {
                 transition={{ duration: 0.8, delay: 0.2 }}
             >
                 <motion.img
-                    src={image}
+                    src={image.src}
                     alt="Portfolio Icon"
                     className="portfolio-icon"
                     whileHover={{
@@ -759,7 +759,7 @@ const EducationTile = (props) => {
                 transition={{ delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                <img src={logo} alt="Education Logo" className="education-logo" />
+                <img src={logo.src} alt="Education Logo" className="education-logo" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -805,7 +805,7 @@ const CertificationTile = (props) => {
                 transition={{ delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                <img src={logo} alt="Certification Logo" className="certification-logo" />
+                <img src={logo.src} alt="Certification Logo" className="certification-logo" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

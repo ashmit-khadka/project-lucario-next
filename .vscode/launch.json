@@ -4,7 +4,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Generate Course",
+            "name": "Generate Course (Old)",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -12,6 +12,29 @@
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Generate Course (AI)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "program": "${workspaceFolder}/tools/generators/generateCourse.ts",
+            "args": [
+                "example.json"
+            ],
+            "cwd": "${workspaceFolder}/tools/generators",
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "env": {
+                "NODE_ENV": "development"
+            }
         },
         {
             "type": "node",

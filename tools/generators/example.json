@@ -1,0 +1,3566 @@
+{
+  "course": {
+    "name": "production-ready-full-stack-theory",
+    "title": "Production-Ready Full-Stack Development (Theory)",
+    "description": "Architecture-first, production ownership-oriented full-stack theory: runtime semantics, networking/HTTP, caching correctness, backend API engineering, frontend delivery/performance, accessibility, toolchains, reliability, testing, data & distributed systems, and optional AI—ending with a complete senior architecture packet and incident simulation.",
+    "difficulty": "advanced",
+    "icon": "/assets/icons/FullStack.svg",
+    "author": "Anonymous",
+    "version": "1.0.0"
+  },
+  "content": [
+    {
+      "type": "chapter",
+      "name": "principles",
+      "title": "Principles",
+      "description": "Core operating principles for senior full-stack engineering.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "senior-web-engineering-as-a-system",
+          "title": "Senior Web Engineering as a System",
+          "description": "A unifying mental model and durable architecture artifacts.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "the-unifying-model",
+              "title": "The Unifying Model",
+              "description": "The course spine: latency + correctness under partial failure across trust boundaries.",
+              "topics": [
+                "Latency/correctness/trust boundaries",
+                "Truth placement",
+                "Budgets: latency/retry/staleness/error"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "invariants-contracts-and-evidence",
+              "title": "Invariants, Contracts, and Evidence",
+              "description": "Separate invariants from validation and prove correctness with evidence.",
+              "topics": [
+                "Invariants vs constraints",
+                "Contracts (API/data/UI/ops)",
+                "Evidence (tests/telemetry/postmortems)"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "failure-as-the-default",
+              "title": "Failure as the Default",
+              "description": "Model partial failure and choose degrade/retry/fail-fast.",
+              "topics": [
+                "Failure taxonomy",
+                "Cascades/containment",
+                "Degrade vs retry vs fail-fast"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "architecture-outputs-toolkit",
+              "title": "Architecture Outputs Toolkit",
+              "description": "Standard artifacts for decisions and operations.",
+              "topics": [
+                "ADR",
+                "Threat model",
+                "Runbook/postmortem/SLO"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "principles-architecture-output",
+              "title": "Architecture Output",
+              "description": "Produce baseline artifacts used throughout the course.",
+              "topics": [
+                "Operating Principles 1-pager",
+                "Failure taxonomy cheat sheet",
+                "Artifact templates inventory"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "foundations",
+      "title": "Foundations",
+      "description": "Runtime fundamentals and TypeScript discipline for production systems.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "javascript-runtime-fundamentals",
+          "title": "JavaScript Runtime Fundamentals",
+          "description": "Scheduling, async semantics, cancellation, backpressure.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "event-loop-and-scheduling",
+              "title": "Event Loop & Scheduling",
+              "description": "Tasks vs microtasks and why UI jank happens.",
+              "topics": [
+                "Tasks vs microtasks",
+                "Long tasks & starvation",
+                "Scheduling as a responsiveness budget"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "async-programming-model",
+              "title": "Async Programming Model",
+              "description": "Promises and async/await semantics with error propagation.",
+              "topics": [
+                "Promises & unhandled rejections",
+                "async/await footguns",
+                "Concurrency vs parallelism (Node)"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "cancellation-and-backpressure",
+              "title": "Cancellation & Backpressure",
+              "description": "Abort patterns and buffering limits across layers.",
+              "topics": [
+                "Abort signals",
+                "Streams/backpressure intuition",
+                "Cleanup on abort; propagation UI→API→DB"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "typescript-for-production-systems",
+          "title": "TypeScript for Production Systems",
+          "description": "Model boundaries and errors; validate at runtime.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "types-vs-runtime-truth",
+              "title": "Types vs Runtime Truth",
+              "description": "Types don’t replace runtime validation at boundaries.",
+              "topics": [
+                "Runtime validation at edges",
+                "Narrowing patterns",
+                "Schema-first boundaries"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "modeling-and-boundaries",
+              "title": "Modeling & Boundaries",
+              "description": "DTO vs domain vs persistence; frameworks at the edges.",
+              "topics": [
+                "DTO/domain/persistence separation",
+                "Mapping discipline",
+                "Avoid framework types everywhere"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "error-and-result-modeling",
+              "title": "Error & Result Modeling",
+              "description": "Errors as stable interfaces; safe mapping strategies.",
+              "topics": [
+                "Domain vs operational vs programmer errors",
+                "Result unions vs exceptions",
+                "Error codes as interface"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "reuse-and-maintainability",
+              "title": "Reuse & Maintainability",
+              "description": "Generics and strictness tradeoffs for maintainable systems.",
+              "topics": [
+                "Generics for common shapes",
+                "Strictness tradeoffs",
+                "Boundary enforcement"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "typescript-architecture-output",
+              "title": "Architecture Output",
+              "description": "Define boundary conventions + error model spec.",
+              "topics": [
+                "Boundary/mapping conventions",
+                "Error model spec",
+                "Validation policy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "web-platform-and-networking",
+      "title": "Web Platform & Networking",
+      "description": "Naming, transport, TLS, HTTP semantics, intermediaries, caching correctness.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "the-web-as-a-platform",
+          "title": "The Web as a Platform",
+          "description": "Product shape, state placement, trust boundaries.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "what-youre-building",
+              "title": "What You’re Building",
+              "description": "Define product type and constraints.",
+              "topics": [
+                "Web app vs service vs API product",
+                "Platform constraints",
+                "Ownership boundaries"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "statelessness-and-state-placement",
+              "title": "Statelessness & State Placement",
+              "description": "Place state deliberately using a truth table.",
+              "topics": [
+                "Client/server/cache/DB state",
+                "Truth placement",
+                "Tradeoffs"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "trust-boundaries",
+              "title": "Trust Boundaries",
+              "description": "Model origins/sites and adversarial inputs.",
+              "topics": [
+                "Origins vs sites",
+                "Progressive enhancement",
+                "Adversarial input mindset"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "web-platform-architecture-output",
+              "title": "Architecture Output",
+              "description": "Create context diagram + state truth table.",
+              "topics": [
+                "C4-lite context diagram",
+                "State placement truth table"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "urls-navigation-and-request-modes",
+          "title": "URLs, Navigation, and Request Modes",
+          "description": "Canonicalization, redirects, navigation vs fetch.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "url-anatomy-and-canonicalization",
+              "title": "URL Anatomy & Canonicalization",
+              "description": "Prevent duplication and subtle security issues.",
+              "topics": [
+                "URL parts",
+                "Canonical URL rules",
+                "Relative vs absolute"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "redirects-and-integrity",
+              "title": "Redirects & Integrity",
+              "description": "Use redirects safely and avoid open redirects.",
+              "topics": [
+                "Why redirects",
+                "Link integrity",
+                "Open redirect failure modes"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "browser-navigation-model",
+              "title": "Browser Navigation Model",
+              "description": "Understand navigation lifecycles and aborts.",
+              "topics": [
+                "History/reload types",
+                "Navigation vs subresource vs fetch",
+                "Abort/cleanup on navigation"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "urls-architecture-output",
+              "title": "Architecture Output",
+              "description": "Define routing ownership + canonicalization policy.",
+              "topics": [
+                "Routing ownership map",
+                "Canonicalization policy"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "dns-and-naming",
+          "title": "DNS & Naming",
+          "description": "Resolution flow, TTLs, record types, operational failure patterns.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "resolution-flow",
+              "title": "Resolution Flow",
+              "description": "Recursive vs authoritative and caching layers.",
+              "topics": [
+                "Recursive vs authoritative",
+                "TTL caching layers",
+                "Negative caching"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "record-types",
+              "title": "Record Types (Conceptual)",
+              "description": "Purpose of common record types.",
+              "topics": [
+                "A/AAAA/CNAME/TXT/MX/SRV",
+                "Verification via TXT"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "dns-failure-patterns",
+              "title": "Failure Patterns",
+              "description": "Propagation delays, split-horizon, stale caches.",
+              "topics": [
+                "Propagation delays",
+                "Split-horizon",
+                "Stale records/NXDOMAIN"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "dns-operational-practice",
+              "title": "Operational Practice",
+              "description": "Safe cutovers and rollbacks.",
+              "topics": [
+                "Cutover plan",
+                "Gradual shifts",
+                "Rollback"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "dns-architecture-output",
+              "title": "Architecture Output",
+              "description": "DNS cutover + rollback playbook.",
+              "topics": [
+                "DNS change playbook"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "transport-and-network-reliability",
+          "title": "Transport & Network Reliability",
+          "description": "TCP/UDP intuition, timeouts/retries, proxies/LBs.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "tcp-fundamentals",
+              "title": "TCP Fundamentals",
+              "description": "Handshake/ordering/congestion control intuition.",
+              "topics": [
+                "Ordering & retransmits",
+                "Congestion control intuition",
+                "HOL blocking intuition"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "udp-tradeoffs",
+              "title": "UDP Tradeoffs",
+              "description": "Latency vs reliability and app-layer compensation.",
+              "topics": [
+                "Where UDP fits",
+                "Reliability tradeoffs",
+                "App-layer patterns"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "timeouts-and-retries",
+              "title": "Timeouts & Retries",
+              "description": "Placement, budgets, backoff+jitter, amplification risks.",
+              "topics": [
+                "Timeout placement",
+                "Backoff+jitter",
+                "Retry amplification & budgets"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "reverse-proxies-and-load-balancers",
+              "title": "Reverse Proxies & Load Balancers",
+              "description": "Roles, health checks, draining, keep-alive implications.",
+              "topics": [
+                "Health checks",
+                "Connection draining",
+                "Keep-alive & pooling"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "transport-architecture-output",
+              "title": "Architecture Output",
+              "description": "Timeout/retry budget per dependency.",
+              "topics": [
+                "Dependency timeout/retry table",
+                "Amplification risks"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "tls-and-secure-transport",
+          "title": "TLS & Secure Transport",
+          "description": "Threat model, cert chains, termination placement, hardening.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "tls-threat-model",
+              "title": "Threat Model",
+              "description": "MITM/downgrade/spoofing and trust boundaries.",
+              "topics": [
+                "MITM/downgrade",
+                "Trust boundaries",
+                "Risk framing"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "certs-and-trust-chain",
+              "title": "Certs & Trust Chain",
+              "description": "Chains and termination placement tradeoffs.",
+              "topics": [
+                "Cert chain concept",
+                "Termination placement",
+                "Rotation impact"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "tls-hardening-and-ops",
+              "title": "Hardening & Operations",
+              "description": "HSTS, mixed content, rotation, session resumption.",
+              "topics": [
+                "HSTS/mixed content",
+                "Rotation implications",
+                "Session resumption intuition"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "tls-architecture-output",
+              "title": "Architecture Output",
+              "description": "TLS termination + rotation ADR.",
+              "topics": [
+                "Termination ADR",
+                "Rotation plan",
+                "Hardening checklist"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "http-semantics-deep",
+          "title": "HTTP Semantics (Deep)",
+          "description": "Methods, status codes, headers, intermediaries, streaming limits.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "methods-and-intent",
+              "title": "Methods & Intent",
+              "description": "Safe/idempotent/cacheable semantics and implications.",
+              "topics": [
+                "Safe/idempotent semantics",
+                "Cacheability",
+                "Retry interactions"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "status-codes",
+              "title": "Status Codes",
+              "description": "Edge codes that affect behavior and correctness.",
+              "topics": [
+                "304/412/409/202 semantics",
+                "Client behavior implications",
+                "Error classification"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "headers-as-control-plane",
+              "title": "Headers as Control Plane",
+              "description": "Negotiation/caching/auth/security; Vary correctness.",
+              "topics": [
+                "Negotiation",
+                "Caching controls",
+                "Vary correctness"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "intermediaries",
+              "title": "Intermediaries",
+              "description": "Where semantics drift across proxies/CDNs.",
+              "topics": [
+                "CDN/proxy behaviors",
+                "Mutation risks",
+                "Debugging implications"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "streaming-and-limits",
+              "title": "Streaming & Limits",
+              "description": "Streaming, size limits, and timeout surfaces.",
+              "topics": [
+                "Streaming concepts",
+                "Size limits",
+                "Timeout surfaces"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "http-architecture-output",
+              "title": "Architecture Output",
+              "description": "Request lifecycle table across the chain.",
+              "topics": [
+                "Request lifecycle table"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "caching-mastery",
+          "title": "Caching Mastery",
+          "description": "Validation, keys/Vary, shared vs private, SWR/stampedes, purging.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "freshness-vs-validation",
+              "title": "Freshness vs Validation",
+              "description": "Cache-Control vs ETag and correctness-first caching.",
+              "topics": [
+                "Freshness directives",
+                "ETag validation",
+                "Correctness-first caching"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "shared-vs-private",
+              "title": "Shared vs Private",
+              "description": "Personalization leakage failure modes.",
+              "topics": [
+                "Shared/private caches",
+                "Cookie interactions",
+                "Leakage patterns"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "cache-keys-and-vary",
+              "title": "Cache Keys & Vary",
+              "description": "Design correct keys without explosions.",
+              "topics": [
+                "Key normalization",
+                "Vary discipline",
+                "Explosion tradeoffs"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "advanced-behaviors",
+              "title": "Advanced Behaviors",
+              "description": "SWR, stampedes, negative caching, purging/versioning concepts.",
+              "topics": [
+                "SWR/stampede",
+                "Negative caching",
+                "Purge/versioning/surrogate keys"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "caching-architecture-output",
+              "title": "Architecture Output",
+              "description": "Caching strategy doc + key/Vary spec.",
+              "topics": [
+                "Caching strategy doc",
+                "Cache key/Vary spec",
+                "Leakage checklist"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "backend-api-engineering",
+      "title": "Backend API Engineering (Express + TypeScript)",
+      "description": "Pipelines, middleware, validation, REST design, contracts, auth, security, data access.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "request-lifecycle-and-pipeline-architecture",
+          "title": "Request Lifecycle & Pipeline Architecture",
+          "description": "Express pipeline ordering, context propagation, response shaping.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "express-pipeline",
+              "title": "Express Pipeline",
+              "description": "Router → middleware → handler → error middleware and ordering consequences.",
+              "topics": [
+                "Pipeline stages",
+                "Ordering rules",
+                "Error middleware"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "request-context",
+              "title": "Request Context",
+              "description": "Correlation IDs, identity, tenant, locale as contracts.",
+              "topics": [
+                "Correlation IDs",
+                "Tenant/identity propagation",
+                "Locale/context"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "response-shaping",
+              "title": "Response Shaping",
+              "description": "Envelopes, pagination conventions, consistent responses.",
+              "topics": [
+                "Response envelopes",
+                "Pagination conventions",
+                "Consistency as product feature"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "pipeline-architecture-output",
+              "title": "Architecture Output",
+              "description": "Pipeline contract + context propagation spec.",
+              "topics": [
+                "Pipeline contract",
+                "Context propagation spec"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "middleware-architecture-patterns",
+          "title": "Middleware Architecture Patterns",
+          "description": "Auth/policy, validation, observability, rate limiting.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "middleware-types",
+              "title": "Middleware Types",
+              "description": "Global/router/route-scoped; pre vs post middleware.",
+              "topics": [
+                "Scopes",
+                "Pre vs post",
+                "Ordering implications"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "auth-and-policy-middleware",
+              "title": "Auth & Policy Middleware",
+              "description": "Identity attachment vs authorization enforcement; default-deny.",
+              "topics": [
+                "Identity vs authorization",
+                "Default-deny",
+                "Placement strategies"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "validation-middleware",
+              "title": "Validation Middleware",
+              "description": "Schema validation + narrowing; unknown field rejection.",
+              "topics": [
+                "Schema validation",
+                "Type narrowing",
+                "Unknown field rejection"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "observability-middleware",
+              "title": "Observability Middleware",
+              "description": "Logging/timing/correlation; PII discipline.",
+              "topics": [
+                "Structured logs",
+                "Timing",
+                "PII discipline"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "rate-limiting-and-abuse-prevention",
+              "title": "Rate Limiting & Abuse Prevention",
+              "description": "Per-identity vs per-IP; adversarial traffic model.",
+              "topics": [
+                "Placement strategies",
+                "Per-identity/per-IP",
+                "Exceptions"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "middleware-architecture-output",
+              "title": "Architecture Output",
+              "description": "Cross-cutting concerns map + ordering rules.",
+              "topics": [
+                "Concerns map per route group",
+                "Ordering rules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "input-safety",
+          "title": "Input Safety",
+          "description": "Validation/sanitization/encoding/parameterization; canonicalization pitfalls; injection; uploads.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "input-safety-mental-model",
+              "title": "Mental Model",
+              "description": "Choose validation vs sanitization vs encoding vs parameterization.",
+              "topics": [
+                "Validation vs encoding",
+                "Parameterization",
+                "Canonicalize-then-validate caveats"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "canonicalization-pitfalls",
+              "title": "Canonicalization Pitfalls",
+              "description": "Unicode quirks, path traversal, open redirects.",
+              "topics": [
+                "Unicode quirks",
+                "Traversal",
+                "Open redirects"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "injection-surfaces",
+              "title": "Injection Surfaces",
+              "description": "SQL/NoSQL operator, command, template, header/log injection concepts.",
+              "topics": [
+                "SQL/NoSQL operator injection",
+                "Command/template injection",
+                "Header/log injection"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "file-upload-safety",
+              "title": "File Upload Safety",
+              "description": "Type/size limits, filename rules, storage isolation.",
+              "topics": [
+                "Limits",
+                "Filename rules",
+                "Storage isolation"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "input-safety-architecture-output",
+              "title": "Architecture Output",
+              "description": "Input contract + canonicalization rules + safe error policy.",
+              "topics": [
+                "Input contract",
+                "Canonicalization rules",
+                "Safe error policy"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "restful-api-design-applied",
+          "title": "RESTful API Design (Applied)",
+          "description": "Resource modeling, semantics, pagination, jobs, versioning.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "resource-modeling",
+              "title": "Resource Modeling",
+              "description": "Nouns, subresources, relationships, boundaries.",
+              "topics": [
+                "Resources & boundaries",
+                "Relationships",
+                "Subresources"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "http-semantics-applied",
+              "title": "HTTP Semantics Applied",
+              "description": "PUT/PATCH/POST, idempotency expectations, conditional requests.",
+              "topics": [
+                "PUT vs PATCH vs POST",
+                "Idempotency",
+                "ETag/If-Match concurrency"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "pagination-filtering-sorting",
+              "title": "Pagination/Filtering/Sorting",
+              "description": "Cursor vs offset guarantees and stable ordering.",
+              "topics": [
+                "Cursor vs offset",
+                "Stable ordering",
+                "Pagination correctness"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "long-running-operations",
+              "title": "Long-Running Operations",
+              "description": "202 + job resources and polling patterns.",
+              "topics": [
+                "202 + job resource",
+                "Polling patterns",
+                "Client UX implications"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "versioning-and-deprecation",
+              "title": "Versioning & Deprecation",
+              "description": "Compatibility rules and sunset strategy under mixed versions.",
+              "topics": [
+                "Compatibility rules",
+                "Deprecation/sunset",
+                "Mixed-version reality"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "rest-architecture-output",
+              "title": "Architecture Output",
+              "description": "API style guide + resource map + compatibility policy.",
+              "topics": [
+                "API style guide",
+                "Resource map",
+                "Compatibility/deprecation policy"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "contract-engineering",
+          "title": "Contract Engineering",
+          "description": "Schema as interface: OpenAPI contracts, compatibility, CDC concepts, governance.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "schema-as-interface",
+              "title": "Schema as Interface",
+              "description": "OpenAPI as enforceable contract; drift prevention concepts.",
+              "topics": [
+                "OpenAPI as contract",
+                "Generated clients (conceptual)",
+                "Drift prevention"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "compatibility-rules",
+              "title": "Compatibility Rules",
+              "description": "Additive vs breaking changes; optionality/enums/defaulting rules.",
+              "topics": [
+                "Additive vs breaking",
+                "Enums evolution",
+                "Defaulting/optionality"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "consumer-provider-constraints",
+              "title": "Consumer/Provider Constraints",
+              "description": "CDC mental model and not-surprising clients.",
+              "topics": [
+                "CDC mental model",
+                "Client expectations",
+                "Change risk"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "contract-architecture-output",
+              "title": "Architecture Output",
+              "description": "Contract governance: ownership, gates, compatibility matrix.",
+              "topics": [
+                "Ownership",
+                "Review gates",
+                "Compatibility matrix"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "error-handling-strategy",
+          "title": "Error Handling Strategy",
+          "description": "Taxonomy, central mapper, timeout/cancellation mapping, retryability rules.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "error-taxonomy",
+              "title": "Error Taxonomy",
+              "description": "Domain vs operational vs programmer errors; safe client surfaces.",
+              "topics": [
+                "Taxonomy",
+                "Safe details",
+                "Client surfaces"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "central-error-mapper",
+              "title": "Central Error Mapper",
+              "description": "Consistent envelopes, correlation IDs, safe mapping.",
+              "topics": [
+                "Error envelopes",
+                "Correlation IDs",
+                "Safe mapping"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "timeout-cancellation-mapping",
+              "title": "Timeout/Cancellation Mapping",
+              "description": "How failures surface; retryable vs not.",
+              "topics": [
+                "Failure surfacing",
+                "Retryability classification",
+                "Client guidance"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "errors-architecture-output",
+              "title": "Architecture Output",
+              "description": "Error mapping table + retryability rules.",
+              "topics": [
+                "Error mapping table",
+                "Retryability rules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "authentication-and-session-architecture",
+          "title": "Authentication & Session Architecture",
+          "description": "Cookies, sessions vs tokens, CSRF, recovery.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "cookie-semantics",
+              "title": "Cookie Semantics",
+              "description": "Secure/HttpOnly/SameSite scoping and lifecycle risks.",
+              "topics": [
+                "Secure/HttpOnly/SameSite",
+                "Scoping",
+                "Lifecycle/rotation risks"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "sessions-vs-tokens-vs-hybrid",
+              "title": "Sessions vs Tokens vs Hybrid",
+              "description": "Tradeoffs, rotation, revocation.",
+              "topics": [
+                "Tradeoffs",
+                "Rotation",
+                "Revocation"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "csrf-defense",
+              "title": "CSRF Defense",
+              "description": "Threat conditions and layered mitigations.",
+              "topics": [
+                "Threat conditions",
+                "Layered mitigations",
+                "SameSite limits"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "account-recovery",
+              "title": "Account Recovery",
+              "description": "Weakest-link thinking; safe flows and anti-abuse.",
+              "topics": [
+                "Weakest link",
+                "Safe flows",
+                "Rate limiting/step-up auth (conceptual)"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "auth-architecture-output",
+              "title": "Architecture Output",
+              "description": "Auth ADR + session lifecycle diagram + recovery risk review.",
+              "topics": [
+                "Auth ADR",
+                "Session lifecycle diagram",
+                "Recovery risk review"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "authorization-and-multi-tenancy",
+          "title": "Authorization & Multi-Tenancy",
+          "description": "RBAC/ABAC, enforcement points, tenant isolation.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "permission-models",
+              "title": "Permission Models",
+              "description": "RBAC vs ABAC; scopes and ownership.",
+              "topics": [
+                "RBAC/ABAC concepts",
+                "Scopes",
+                "Ownership"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "enforcement-points",
+              "title": "Enforcement Points",
+              "description": "Middleware vs service vs data layer; defense in depth.",
+              "topics": [
+                "Enforcement layers",
+                "Defense in depth",
+                "Auditability"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "tenant-isolation",
+              "title": "Tenant Isolation",
+              "description": "Propagation, default-deny, leakage detection.",
+              "topics": [
+                "Propagation rules",
+                "Default-deny",
+                "Leakage detection"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "authz-architecture-output",
+              "title": "Architecture Output",
+              "description": "Policy map + enforcement diagram + isolation checklist.",
+              "topics": [
+                "Policy map",
+                "Enforcement diagram",
+                "Isolation checklist"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "backend-architecture-and-solid",
+          "title": "Backend Architecture & SOLID (Pragmatic)",
+          "description": "Layering patterns, SOLID heuristics, dependency management.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "layering-patterns",
+              "title": "Layering Patterns",
+              "description": "Handler/service/repo boundaries; ports/adapters in Express.",
+              "topics": [
+                "Boundaries",
+                "Ports/adapters",
+                "Edge adapters"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "solid-as-practical-heuristics",
+              "title": "SOLID as Practical Heuristics",
+              "description": "SRP/DIP for testability without overengineering.",
+              "topics": [
+                "SRP in handlers",
+                "DIP for testability",
+                "Avoid overengineering"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "dependency-management",
+              "title": "Dependency Management",
+              "description": "Composition roots and adapter discipline.",
+              "topics": [
+                "Composition root",
+                "Adapters",
+                "Integration boundaries"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "backend-architecture-output",
+              "title": "Architecture Output",
+              "description": "Component diagram + dependency rules + composition root conventions.",
+              "topics": [
+                "Component diagram",
+                "Dependency direction rules",
+                "Composition root conventions"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "data-access-and-transactions",
+          "title": "Data Access & Transactions",
+          "description": "Unit of work, transactions, invariants placement.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "unit-of-work",
+              "title": "Unit of Work",
+              "description": "One request, one unit-of-work concept.",
+              "topics": [
+                "Unit of work concept",
+                "Atomicity boundary"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "transactions",
+              "title": "Transactions",
+              "description": "Begin/commit/rollback rules; scope tradeoffs.",
+              "topics": [
+                "Begin/commit/rollback",
+                "Scope tradeoffs",
+                "Performance vs correctness"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "invariants",
+              "title": "Invariants",
+              "description": "Validation vs invariants vs DB constraints; where truth lives.",
+              "topics": [
+                "Validation vs invariants",
+                "DB constraints",
+                "Enforcement placement"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "transactions-architecture-output",
+              "title": "Architecture Output",
+              "description": "Transaction boundary spec + invariants list.",
+              "topics": [
+                "Transaction boundary spec",
+                "Invariants list"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "idempotency-and-concurrency-control",
+          "title": "Idempotency & Concurrency Control",
+          "description": "Retries, idempotency keys, optimistic concurrency, dedupe reality.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "why-retries-happen",
+              "title": "Why Retries Happen",
+              "description": "Network/timeouts/client behavior create retries.",
+              "topics": [
+                "Why retries occur",
+                "Intermediary retries",
+                "Correctness impacts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "idempotency-keys",
+              "title": "Idempotency Keys",
+              "description": "Storage patterns, TTL, replay behavior.",
+              "topics": [
+                "Key storage patterns",
+                "TTL",
+                "Replay behavior"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "optimistic-concurrency",
+              "title": "Optimistic Concurrency",
+              "description": "Version columns and ETag/If-Match mapping.",
+              "topics": [
+                "Version columns",
+                "ETag/If-Match",
+                "Conflict handling"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "dedupe-and-exactly-once-reality",
+              "title": "Dedupe & Exactly-Once Reality",
+              "description": "At-least-once handling and replay strategy as product decision.",
+              "topics": [
+                "Dedup tables",
+                "At-least-once reality",
+                "Replay strategy"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "idempotency-architecture-output",
+              "title": "Architecture Output",
+              "description": "Safe write endpoint design + replay/idempotency spec.",
+              "topics": [
+                "Safe write endpoint design",
+                "Replay/idempotency spec"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "files-streaming-and-large-payloads",
+          "title": "Files, Streaming, and Large Payloads",
+          "description": "Multipart limits, streaming, aborts, range requests.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "multipart-and-limits",
+              "title": "Multipart & Limits",
+              "description": "Memory pressure and timeouts in uploads.",
+              "topics": [
+                "Parsing limits",
+                "Memory pressure",
+                "Timeouts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "streaming-and-backpressure",
+              "title": "Streaming & Backpressure",
+              "description": "Chunked responses, abort handling, buffering risks.",
+              "topics": [
+                "Chunked responses",
+                "Client abort handling",
+                "Buffering risks"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "downloads",
+              "title": "Downloads",
+              "description": "Range requests and resumability concepts.",
+              "topics": [
+                "Range requests",
+                "Resumability (conceptual)"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "files-architecture-output",
+              "title": "Architecture Output",
+              "description": "Upload/download threat model + size/timeout/backpressure policy.",
+              "topics": [
+                "Threat model",
+                "Size limits",
+                "Timeout/backpressure policy"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "backend-security-fundamentals",
+          "title": "Backend Security Fundamentals",
+          "description": "SSRF, request smuggling concepts, secrets/supply-chain baseline.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "ssrf",
+              "title": "SSRF",
+              "description": "Why it happens and mitigation principles.",
+              "topics": [
+                "SSRF causes",
+                "Mitigation principles"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "request-smuggling",
+              "title": "Request Smuggling (Conceptual)",
+              "description": "Proxy mismatch risks and hardening concepts.",
+              "topics": [
+                "Proxy mismatches",
+                "Hardening concepts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "supply-chain-and-secrets",
+              "title": "Supply Chain & Secrets Discipline",
+              "description": "Dependency trust, lockfiles, minimal permissions, rotation mindset.",
+              "topics": [
+                "Dependency trust & lockfiles",
+                "Least privilege",
+                "Secrets rotation/CI hygiene"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "backend-security-architecture-output",
+              "title": "Architecture Output",
+              "description": "Threat model per route group + secrets/supply-chain baseline.",
+              "topics": [
+                "Threat model per route group",
+                "Secrets baseline",
+                "Supply-chain baseline"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "frontend-architecture-and-modern-delivery",
+      "title": "Frontend Architecture & Modern Delivery",
+      "description": "Browser scheduling, rendering performance, delivery strategies, state/resilience UX, design systems, frontend security.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "browser-runtime-and-scheduling",
+          "title": "Browser Runtime & Scheduling (Practical)",
+          "description": "Applied scheduling, responsiveness, and cancellation.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "tasks-vs-microtasks-applied",
+              "title": "Tasks vs Microtasks (Applied)",
+              "description": "Apply scheduling knowledge to responsiveness.",
+              "topics": [
+                "Scheduling implications",
+                "Microtask starvation scenarios"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "responsiveness",
+              "title": "Responsiveness",
+              "description": "Long tasks and yielding patterns (conceptual).",
+              "topics": [
+                "Long tasks",
+                "Yielding patterns (conceptual)",
+                "Responsiveness budget"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "cancellation",
+              "title": "Cancellation",
+              "description": "Abort fetches and cleanup on navigation.",
+              "topics": [
+                "Abort fetches",
+                "Cleanup on navigation",
+                "Race conditions (conceptual)"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "frontend-scheduling-architecture-output",
+              "title": "Architecture Output",
+              "description": "Responsiveness budget + cancellation policy.",
+              "topics": [
+                "Responsiveness budget",
+                "Cancellation policy"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "rendering-pipeline-and-performance",
+          "title": "Rendering Pipeline & Performance Constraints",
+          "description": "Render phases, CLS, CRP, measurement.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "render-pipeline",
+              "title": "Render Pipeline",
+              "description": "Style/layout/paint/composite triggers.",
+              "topics": [
+                "Pipeline phases",
+                "Trigger intuition"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "visual-stability",
+              "title": "Visual Stability",
+              "description": "CLS causes and mitigation.",
+              "topics": [
+                "CLS causes",
+                "Mitigation"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "critical-rendering-path",
+              "title": "Critical Rendering Path",
+              "description": "What blocks what; priority intuition.",
+              "topics": [
+                "Blocking resources",
+                "Priority intuition"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "measurement",
+              "title": "Measurement",
+              "description": "Lab vs field metrics; metrics as contracts.",
+              "topics": [
+                "Lab vs field metrics",
+                "Metrics as contracts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "performance-architecture-output",
+              "title": "Architecture Output",
+              "description": "Performance budget + measurement plan.",
+              "topics": [
+                "Performance budget",
+                "Measurement plan"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "modern-delivery-architectures",
+          "title": "Modern Delivery Architectures",
+          "description": "SSR/CSR/SSG/ISR, hydration/islands, streaming HTML, BFF, personalization vs caching.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "ssr-csr-ssg-isr",
+              "title": "SSR/CSR/SSG/ISR",
+              "description": "Tradeoff matrix: perf, cacheability, complexity.",
+              "topics": [
+                "Tradeoff matrix",
+                "When each fits"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "hydration-and-islands",
+              "title": "Hydration & Islands (Conceptual)",
+              "description": "Why hydration exists and can hurt; islands mental model.",
+              "topics": [
+                "Hydration tradeoffs",
+                "Islands/partial hydration mental model"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "streaming-html",
+              "title": "Streaming HTML (Conceptual)",
+              "description": "Progressive rendering and perceived performance.",
+              "topics": [
+                "Progressive rendering",
+                "Perceived performance"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "bff-pattern",
+              "title": "BFF Pattern",
+              "description": "Ownership boundaries and why it exists.",
+              "topics": [
+                "Why BFF exists",
+                "Ownership boundaries"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "personalization-vs-caching",
+              "title": "Personalization vs Caching",
+              "description": "Avoid leaks via cache keys and Vary discipline.",
+              "topics": [
+                "Leakage prevention",
+                "Cache keys/Vary discipline"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "delivery-architecture-output",
+              "title": "Architecture Output",
+              "description": "Delivery ADR + boundary diagram + caching/personalization rules.",
+              "topics": [
+                "Delivery ADR",
+                "Boundary diagram",
+                "Caching/personalization rules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "frontend-architecture-boundaries",
+          "title": "Frontend Architecture Boundaries",
+          "description": "Modularization, layering, API client boundary, shared code governance.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "modularization",
+              "title": "Modularization",
+              "description": "Feature modules and dependency direction rules.",
+              "topics": [
+                "Feature modules",
+                "Dependency direction rules"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "layering",
+              "title": "Layering",
+              "description": "UI vs domain vs data-access boundaries.",
+              "topics": [
+                "UI/domain/data boundaries"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "api-client-boundary",
+              "title": "API Client Boundary",
+              "description": "Ports pattern and DTO mapping.",
+              "topics": [
+                "Ports pattern",
+                "DTO mapping"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "shared-code-discipline",
+              "title": "Shared Code Discipline",
+              "description": "Avoid utils soup with ownership models.",
+              "topics": [
+                "Ownership models",
+                "Shared code discipline"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "frontend-boundaries-architecture-output",
+              "title": "Architecture Output",
+              "description": "Module boundary map + conventions.",
+              "topics": [
+                "Module boundary map",
+                "Conventions",
+                "Dependency rules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "state-management",
+          "title": "State Management (Modern)",
+          "description": "State taxonomy, cache-as-state, optimistic updates, UX consistency.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "state-taxonomy",
+              "title": "State Taxonomy",
+              "description": "UI vs server vs derived state.",
+              "topics": [
+                "UI state",
+                "Server state",
+                "Derived state"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "cache-as-state",
+              "title": "Cache-as-State",
+              "description": "Invalidation, staleness, refetch strategies.",
+              "topics": [
+                "Invalidation",
+                "Staleness",
+                "Refetch strategies"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "optimistic-updates",
+              "title": "Optimistic Updates",
+              "description": "Conflicts, reconciliation, retries UX.",
+              "topics": [
+                "Conflicts",
+                "Reconciliation",
+                "Retries UX"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "consistency-in-ux-terms",
+              "title": "Consistency in UX Terms",
+              "description": "Read-your-writes expectations.",
+              "topics": [
+                "Read-your-writes expectations"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "state-architecture-output",
+              "title": "Architecture Output",
+              "description": "State inventory + consistency guarantees.",
+              "topics": [
+                "State inventory",
+                "Consistency guarantees"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "client-data-fetching-and-resilience-ux",
+          "title": "Client Data Fetching & Resilience UX",
+          "description": "Avoiding waterfalls, pagination UX, error/empty/loading, offline patterns.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "avoiding-waterfalls",
+              "title": "Avoiding Waterfalls",
+              "description": "Parallelization and batching patterns.",
+              "topics": [
+                "Parallelization",
+                "Batching patterns"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "pagination-ux",
+              "title": "Pagination UX",
+              "description": "Cursor behaviors and prefetching.",
+              "topics": [
+                "Cursor behaviors",
+                "Prefetching"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "error-empty-loading-states",
+              "title": "Error/Empty/Loading States",
+              "description": "State handling as product correctness.",
+              "topics": [
+                "Error states",
+                "Empty states",
+                "Loading states"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "offline-patterns",
+              "title": "Offline Patterns",
+              "description": "What to cache and how reconciliation works conceptually.",
+              "topics": [
+                "Caching choices",
+                "Reconciliation"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "resilience-ux-architecture-output",
+              "title": "Architecture Output",
+              "description": "Data-flow diagrams + resilience UX rules.",
+              "topics": [
+                "Data-flow diagrams",
+                "Resilience UX rules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "design-systems-and-ui-quality-engineering",
+          "title": "Design Systems & UI Quality Engineering",
+          "description": "Component API design, tokens/theming, a11y defaults, visual regression concepts.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "component-api-design",
+              "title": "Component API Design",
+              "description": "Stable and predictable component behaviors.",
+              "topics": [
+                "Stability",
+                "Extensibility",
+                "Predictable behaviors"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "tokens-and-theming",
+              "title": "Tokens/Theming",
+              "description": "Typography/spacing/color tokens; dark mode concepts.",
+              "topics": [
+                "Design tokens",
+                "Theming",
+                "Dark mode concepts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "accessibility-by-default",
+              "title": "Accessibility by Default",
+              "description": "A11y contracts in primitives.",
+              "topics": [
+                "A11y contracts",
+                "Accessible defaults"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "visual-regression-concepts",
+              "title": "Visual Regression Concepts",
+              "description": "Prevent UI breakage missed by functional tests.",
+              "topics": [
+                "Visual regression concepts",
+                "Placement in portfolio"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "design-system-architecture-output",
+              "title": "Architecture Output",
+              "description": "Design system governance + component contract template.",
+              "topics": [
+                "Governance doc",
+                "Component contract template"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "frontend-security-model",
+          "title": "Frontend Security Model",
+          "description": "Same-origin, CORS, CSP, clickjacking; rollout plans.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "same-origin-policy",
+              "title": "Same-Origin Policy",
+              "description": "What the browser enforces and why.",
+              "topics": [
+                "Browser enforcement",
+                "Threat boundaries"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "cors",
+              "title": "CORS (Practical)",
+              "description": "Preflight, credentials, and common misconfigs.",
+              "topics": [
+                "Preflight",
+                "Credentials",
+                "Misconfig patterns"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "csp",
+              "title": "CSP (Practical)",
+              "description": "Nonces/hashes and report-only rollout.",
+              "topics": [
+                "Nonces/hashes (conceptual)",
+                "Report-only rollout",
+                "Enforce phase"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "clickjacking-defense",
+              "title": "Clickjacking Defense",
+              "description": "frame-ancestors concepts.",
+              "topics": [
+                "frame-ancestors"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "frontend-security-architecture-output",
+              "title": "Architecture Output",
+              "description": "Security header baseline + rollout plan.",
+              "topics": [
+                "Header baseline",
+                "Report-only → enforce rollout"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "accessibility-core-quality-pillar",
+      "title": "Accessibility (Core Quality Pillar)",
+      "description": "Standards, assistive tech mental models, and architecture contracts.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "accessibility-context-and-standards",
+          "title": "Accessibility Context & Standards",
+          "description": "Scope, WCAG structure, product/legal risk.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "what-accessibility-covers",
+              "title": "What Accessibility Covers",
+              "description": "Permanent/temporary/situational impairments.",
+              "topics": [
+                "Impairment types",
+                "Design implications"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "wcag-structure",
+              "title": "WCAG Structure (Context)",
+              "description": "POUR principles and A/AA/AAA levels.",
+              "topics": [
+                "POUR",
+                "A/AA/AAA"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "product-legal-risk",
+              "title": "Product/Legal Risk",
+              "description": "Accessibility as must-ship quality.",
+              "topics": [
+                "Compliance risk",
+                "Product risk"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "a11y-acceptance-criteria-output",
+              "title": "Architecture Output",
+              "description": "A11y acceptance criteria + risk register.",
+              "topics": [
+                "Acceptance criteria per journey",
+                "Risk register"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "assistive-tech-mental-models",
+          "title": "Assistive Tech Mental Models",
+          "description": "Screen reader model, keyboard nav, widget patterns.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "screen-reader-model",
+              "title": "Screen Reader Model",
+              "description": "Role/name/state/value mental model.",
+              "topics": [
+                "Role/name/state/value"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "keyboard-navigation",
+              "title": "Keyboard Navigation",
+              "description": "Focus order, skip links, traps, restore focus.",
+              "topics": [
+                "Focus order",
+                "Skip links",
+                "Traps",
+                "Restore focus"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "widget-patterns",
+              "title": "Patterns for Widgets",
+              "description": "Dialogs, menus, combobox concepts.",
+              "topics": [
+                "Dialogs",
+                "Menus",
+                "Combobox"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "assistive-tech-output",
+              "title": "Architecture Output",
+              "description": "Focus plan + widget semantics checklist.",
+              "topics": [
+                "Focus plan",
+                "Widget semantics checklist"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "accessibility-as-architecture",
+          "title": "Accessibility as Architecture",
+          "description": "Semantics first, ARIA last mile, testing strategy, design system contracts.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "semantics-first",
+              "title": "Semantics First",
+              "description": "Correct HTML over ARIA.",
+              "topics": [
+                "Semantic HTML"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "aria-last-mile",
+              "title": "ARIA Last-Mile",
+              "description": "Use roles/states properly when needed.",
+              "topics": [
+                "Roles/states usage"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "a11y-testing-strategy",
+              "title": "Testing Strategy",
+              "description": "Manual smoke + automated regression checks.",
+              "topics": [
+                "Manual smoke",
+                "Automated checks"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "design-system-contracts",
+              "title": "Design System Contracts",
+              "description": "Accessible primitives as default.",
+              "topics": [
+                "Accessible primitives",
+                "Contract enforcement"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "a11y-contracts-output",
+              "title": "Architecture Output",
+              "description": "A11y component contracts + regression checklist.",
+              "topics": [
+                "Component contracts",
+                "Regression checklist"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "toolchain-and-ecosystem",
+      "title": "Toolchain & Ecosystem (Must-Know)",
+      "description": "Tool roles, bundling, sourcemaps, tree shaking, and tool survey with debug playbooks.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "toolchain-mental-model",
+          "title": "Toolchain Mental Model",
+          "description": "Dev/build/test tool roles and core build concepts.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "roles",
+              "title": "Roles",
+              "description": "Dev server vs bundler vs transpiler vs test runner vs linter.",
+              "topics": [
+                "Role separation",
+                "Where failures happen"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "bundling-concepts",
+              "title": "Bundling Concepts",
+              "description": "Dependency graphs, chunking, splitting, hashing.",
+              "topics": [
+                "Dependency graphs",
+                "Chunking",
+                "Hashing"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "source-maps",
+              "title": "Source Maps",
+              "description": "Debug production and common sourcemap failures.",
+              "topics": [
+                "Prod debugging",
+                "Sourcemap failure modes"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "tree-shaking",
+              "title": "Tree Shaking",
+              "description": "Side effects and why DCE fails.",
+              "topics": [
+                "Side effects",
+                "DCE failure modes"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "toolchain-output",
+              "title": "Architecture Output",
+              "description": "Toolchain decision checklist + prod debug workflow.",
+              "topics": [
+                "Decision checklist",
+                "Prod debug workflow"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "must-know-tools",
+          "title": "Must-Know Tools (What/Why)",
+          "description": "Survey of build, repo, linting, and testing tools.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "build-dev-bundling",
+              "title": "Build/Dev/Bundling",
+              "description": "Vite/Webpack/Rollup/esbuild/SWC/Rspack/Rolldown overview.",
+              "topics": [
+                "Tool roles and tradeoffs",
+                "Selection factors"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "transpilation",
+              "title": "Transpilation",
+              "description": "TypeScript emit vs Babel roles.",
+              "topics": [
+                "tsc emit concept",
+                "Babel role"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "package-managers",
+              "title": "Package Managers",
+              "description": "npm/pnpm/Yarn concepts and tradeoffs.",
+              "topics": [
+                "npm",
+                "pnpm",
+                "Yarn"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "monorepo",
+              "title": "Monorepo/Task Orchestration",
+              "description": "Turborepo/Nx concepts.",
+              "topics": [
+                "Turborepo",
+                "Nx"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "lint-format",
+              "title": "Lint/Format",
+              "description": "ESLint/Prettier/Biome governance.",
+              "topics": [
+                "ESLint",
+                "Prettier",
+                "Biome"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "testing-tools",
+              "title": "Testing",
+              "description": "Jest/Vitest/Testing Library/Playwright/Cypress/Selenium/Storybook survey.",
+              "topics": [
+                "Unit tools",
+                "E2E tools",
+                "Component tools"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "debug-playbook-output",
+              "title": "Architecture Output",
+              "description": "Debug playbook for HMR loops, env mismatch, sourcemaps, chunk explosions.",
+              "topics": [
+                "HMR loops",
+                "Env mismatch",
+                "Sourcemaps",
+                "Chunk explosions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "delivery-reliability-and-production-ownership",
+      "title": "Delivery, Reliability, and Production Ownership",
+      "description": "Config, deployments, migrations, flags, observability, SLOs, resilience.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "configuration-and-environments",
+          "title": "Configuration & Environments",
+          "description": "Build vs runtime config, secrets, parity.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "build-vs-runtime-config",
+              "title": "Build vs Runtime Config",
+              "description": "Avoid bundling secrets/config unintentionally.",
+              "topics": [
+                "Build vs runtime separation",
+                "Common pitfalls"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "secrets",
+              "title": "Secrets",
+              "description": "Injection patterns; rotation-friendly design.",
+              "topics": [
+                "Injection patterns",
+                "Rotation-friendly design"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "environment-parity",
+              "title": "Environment Parity",
+              "description": "Drift pitfalls and mitigations.",
+              "topics": [
+                "Drift pitfalls",
+                "Mitigations"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "config-output",
+              "title": "Architecture Output",
+              "description": "Config matrix + safe defaults + secrets baseline.",
+              "topics": [
+                "Config matrix",
+                "Safe defaults policy",
+                "Secrets baseline"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "deployment-strategies",
+          "title": "Deployment Strategies",
+          "description": "Rollouts, rollback vs roll-forward, mixed-version rules.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "rollout-patterns",
+              "title": "Rollout Patterns",
+              "description": "Rolling/blue-green/canary concepts.",
+              "topics": [
+                "Rolling",
+                "Blue/green",
+                "Canary"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "rollback-vs-roll-forward",
+              "title": "Rollback vs Roll-Forward",
+              "description": "When rollback is unsafe.",
+              "topics": [
+                "Rollback risks",
+                "Roll-forward strategy"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "mixed-version-reality",
+              "title": "Mixed-Version Reality",
+              "description": "Compatibility requirements across versions.",
+              "topics": [
+                "Compatibility constraints",
+                "Client/server mismatch"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "deploy-output",
+              "title": "Architecture Output",
+              "description": "Rollout playbook + rollback criteria + mixed-version rules.",
+              "topics": [
+                "Rollout playbook",
+                "Rollback criteria",
+                "Mixed-version rules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "schema-migrations-safe-evolution",
+          "title": "Schema Migrations (Safe Evolution)",
+          "description": "Expand/contract, backfills, coordination.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "expand-contract",
+              "title": "Expand/Contract",
+              "description": "Dual reads/writes concepts.",
+              "topics": [
+                "Dual reads/writes",
+                "No-downtime evolution"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "backfills",
+              "title": "Backfills",
+              "description": "Long-running migrations and risks.",
+              "topics": [
+                "Operational risks",
+                "Safety strategies"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "coordination",
+              "title": "Coordination",
+              "description": "Release + migration sequencing.",
+              "topics": [
+                "Sequencing",
+                "Compatibility"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "migrations-output",
+              "title": "Architecture Output",
+              "description": "Migration ADR + checklist + backfill plan.",
+              "topics": [
+                "Migration ADR",
+                "Checklist",
+                "Backfill plan"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "feature-flags-and-progressive-delivery",
+          "title": "Feature Flags & Progressive Delivery",
+          "description": "Flag types, lifecycle, consistency pitfalls.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "flag-types",
+              "title": "Flag Types",
+              "description": "Kill switches, rollout flags, experiments.",
+              "topics": [
+                "Kill switches",
+                "Rollouts",
+                "Experiments"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "flag-lifecycle",
+              "title": "Flag Lifecycle",
+              "description": "Avoid flag debt; governance rules.",
+              "topics": [
+                "Lifecycle",
+                "Governance",
+                "Debt prevention"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "flag-consistency-pitfalls",
+              "title": "Consistency Pitfalls",
+              "description": "Caching and client/server divergence.",
+              "topics": [
+                "Caching pitfalls",
+                "Divergence issues"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "flags-output",
+              "title": "Architecture Output",
+              "description": "Flag governance policy + flag debt checklist.",
+              "topics": [
+                "Governance policy",
+                "Debt checklist"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "observability-fundamentals",
+          "title": "Observability Fundamentals",
+          "description": "Logging, metrics, tracing, alert philosophy.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "logging",
+              "title": "Logging",
+              "description": "Structured logs, correlation IDs, PII discipline.",
+              "topics": [
+                "Structured logs",
+                "Correlation IDs",
+                "PII discipline"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "metrics",
+              "title": "Metrics",
+              "description": "Counters/gauges/histograms; percentiles; golden signals.",
+              "topics": [
+                "Metric types",
+                "Percentiles",
+                "Golden signals"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "tracing",
+              "title": "Tracing",
+              "description": "Propagation, sampling bias, actionable attributes.",
+              "topics": [
+                "Propagation",
+                "Sampling bias",
+                "Actionable attributes"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "alerting-philosophy",
+              "title": "Alerting Philosophy",
+              "description": "Symptom-based, low-noise alerts.",
+              "topics": [
+                "Symptom-based alerts",
+                "Low-noise design"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "observability-output",
+              "title": "Architecture Output",
+              "description": "Observability plan + PII logging policy.",
+              "topics": [
+                "Signals/dashboards/alerts plan",
+                "PII logging policy"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "reliability-engineering",
+          "title": "Reliability Engineering",
+          "description": "SLIs/SLOs/SLAs, error budgets, capacity, incidents.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "slis-slos-slas",
+              "title": "SLIs/SLOs/SLAs",
+              "description": "Choosing meaningful measures.",
+              "topics": [
+                "Meaningful SLIs",
+                "SLO targets"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "error-budgets",
+              "title": "Error Budgets",
+              "description": "Release policy and risk management.",
+              "topics": [
+                "Release policy",
+                "Risk management"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "capacity-planning",
+              "title": "Capacity Planning",
+              "description": "Headroom, bottlenecks, saturation signals.",
+              "topics": [
+                "Headroom",
+                "Bottlenecks",
+                "Saturation"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "incidents",
+              "title": "Incidents",
+              "description": "On-call basics and postmortems.",
+              "topics": [
+                "On-call basics",
+                "Postmortems"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "reliability-output",
+              "title": "Architecture Output",
+              "description": "SLO proposal + alert rules + incident runbook template.",
+              "topics": [
+                "SLO proposal",
+                "Alert rules",
+                "Runbook template"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "resilience-patterns",
+          "title": "Resilience Patterns",
+          "description": "Retry storms, circuit breakers, bulkheads, load shedding, backpressure end-to-end.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "retry-storms",
+              "title": "Retry Storms",
+              "description": "Budgets and circuit breakers.",
+              "topics": [
+                "Retry budgets",
+                "Circuit breakers",
+                "Amplification control"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "bulkheads-and-load-shedding",
+              "title": "Bulkheads & Load Shedding",
+              "description": "Contain failures and prevent cascades.",
+              "topics": [
+                "Bulkheads",
+                "Load shedding",
+                "Containment"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "backpressure-end-to-end",
+              "title": "Backpressure End-to-End",
+              "description": "Consistent limits across UI/API/DB.",
+              "topics": [
+                "End-to-end limits",
+                "Queue/buffer budgets",
+                "Correctness constraints"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "resilience-output",
+              "title": "Architecture Output",
+              "description": "Resilience policy per dependency + budget stack table.",
+              "topics": [
+                "Dependency resilience policy",
+                "Budget stack table"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "testing-and-quality-engineering",
+      "title": "Testing & Quality Engineering (Deep)",
+      "description": "Test portfolios, determinism, integration slices, E2E discipline, non-functional gates.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "test-strategy-and-portfolio",
+          "title": "Test Strategy & Portfolio",
+          "description": "Test shapes, risk-based planning, CI vs nightly, contract concepts.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "test-shapes",
+              "title": "Test Shapes",
+              "description": "Pyramid vs trophy; critical journeys.",
+              "topics": [
+                "Pyramid vs trophy",
+                "Critical journeys"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "risk-based-planning",
+              "title": "Risk-Based Planning",
+              "description": "What to test where and why.",
+              "topics": [
+                "Test placement",
+                "Risk mapping"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "ci-vs-nightly",
+              "title": "CI vs Nightly",
+              "description": "Fast feedback vs deep coverage.",
+              "topics": [
+                "Fast feedback",
+                "Nightly depth"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "contracts",
+              "title": "Contracts",
+              "description": "Provider/consumer contract testing concepts.",
+              "topics": [
+                "Contract testing concepts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "test-strategy-output",
+              "title": "Architecture Output",
+              "description": "Test strategy doc + gates + contract test plan.",
+              "topics": [
+                "Strategy doc",
+                "Gating rules",
+                "Contract plan"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "unit-testing-deterministic",
+          "title": "Unit Testing (Deterministic)",
+          "description": "Boundaries, determinism, PBT concepts.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "unit-boundaries",
+              "title": "Boundaries",
+              "description": "Define a unit; avoid mocking internals.",
+              "topics": [
+                "Unit definition",
+                "Avoid mocking internals"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "determinism",
+              "title": "Determinism",
+              "description": "Control time/random; stable tests.",
+              "topics": [
+                "Control time/random",
+                "Stability"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "property-based-testing",
+              "title": "Property-Based Testing (Conceptual)",
+              "description": "When PBT helps validators/parsers.",
+              "topics": [
+                "PBT use cases"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "unit-output",
+              "title": "Architecture Output",
+              "description": "Unit boundary map + determinism checklist.",
+              "topics": [
+                "Boundary map",
+                "Determinism checklist"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "integration-testing-backend-slices",
+          "title": "Integration Testing (Backend Slices)",
+          "description": "Route+middleware+DB slices and isolation.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "route-middleware-db",
+              "title": "Route + Middleware + DB",
+              "description": "Slice tests and harness design.",
+              "topics": [
+                "Slice tests",
+                "Harness design"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "db-isolation",
+              "title": "DB Isolation",
+              "description": "Transactions per test vs ephemeral DB.",
+              "topics": [
+                "Transactions per test",
+                "Ephemeral DB"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "migrations-in-ci",
+              "title": "Migrations in CI",
+              "description": "Ensure schema and code match.",
+              "topics": [
+                "Migration gates",
+                "Schema/code alignment"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "integration-output",
+              "title": "Architecture Output",
+              "description": "Integration harness spec + CI migration gates.",
+              "topics": [
+                "Harness spec",
+                "CI gates"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "test-data-engineering",
+          "title": "Test Data Engineering",
+          "description": "Factories/builders, fixtures/seeds, cleanup, parallel safety.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "factories-and-builders",
+              "title": "Factories & Builders",
+              "description": "Defaults + customization patterns.",
+              "topics": [
+                "Defaults",
+                "Customization patterns"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "fixtures-and-seeds",
+              "title": "Fixtures & Seeds",
+              "description": "When to use; avoid rot.",
+              "topics": [
+                "When to use",
+                "Avoid rot"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "cleanup-and-parallel-safety",
+              "title": "Cleanup & Parallel Safety",
+              "description": "Deterministic teardown.",
+              "topics": [
+                "Deterministic teardown",
+                "Parallel safety"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "test-data-output",
+              "title": "Architecture Output",
+              "description": "Test data library layout + parallel safety rules.",
+              "topics": [
+                "Library layout",
+                "Parallel rules"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "end-to-end-testing",
+          "title": "End-to-End Testing",
+          "description": "Why E2E, scope discipline, flake control, environments.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "why-e2e-exists",
+              "title": "Why E2E Exists",
+              "description": "Browser reality + integration correctness.",
+              "topics": [
+                "Browser reality",
+                "Integration correctness"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "scope",
+              "title": "Scope",
+              "description": "Critical journeys only.",
+              "topics": [
+                "Critical journeys only"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "flake-control",
+              "title": "Flake Control",
+              "description": "Stable selectors and proper waits.",
+              "topics": [
+                "Stable selectors",
+                "Wait strategies",
+                "Avoid sleeps"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "environments",
+              "title": "Environments",
+              "description": "Hermetic setups and external dependency strategy.",
+              "topics": [
+                "Hermetic setups",
+                "External dependency strategy"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "e2e-output",
+              "title": "Architecture Output",
+              "description": "E2E scope policy + gating plan + triage flow.",
+              "topics": [
+                "Scope policy",
+                "Gating plan",
+                "Triage flow"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "e2e-tools",
+          "title": "E2E Tools (Must-Know)",
+          "description": "Tool tradeoffs and CI triage.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "tool-tradeoffs",
+              "title": "Tool Tradeoffs",
+              "description": "Playwright vs Cypress vs Selenium.",
+              "topics": [
+                "Playwright",
+                "Cypress",
+                "Selenium"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "ci-triage",
+              "title": "CI Triage",
+              "description": "Artifacts and debugging patterns.",
+              "topics": [
+                "Artifacts",
+                "Debug patterns"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "e2e-tools-output",
+              "title": "Architecture Output",
+              "description": "E2E triage playbook + artifact checklist.",
+              "topics": [
+                "Triage playbook",
+                "Artifact checklist"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "non-functional-regression-testing",
+          "title": "Non-Functional Regression Testing",
+          "description": "Perf/a11y/security regression gates.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "performance",
+              "title": "Performance",
+              "description": "Lab vs field regression guards.",
+              "topics": [
+                "Lab guards",
+                "Field guards"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "accessibility",
+              "title": "Accessibility",
+              "description": "Automated checks + manual smoke.",
+              "topics": [
+                "Automated checks",
+                "Manual smoke"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "security",
+              "title": "Security",
+              "description": "Dependency hygiene and scanning concepts.",
+              "topics": [
+                "Dependency hygiene",
+                "Scanning concepts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "non-functional-output",
+              "title": "Architecture Output",
+              "description": "Quality gates checklist + release criteria.",
+              "topics": [
+                "Quality gates",
+                "Release criteria"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "data-and-distributed-systems",
+      "title": "Data & Distributed Systems",
+      "description": "Data modeling, DB fundamentals (Postgres lens), partial failure, message semantics, event-driven architecture.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "data-modeling-for-web-products",
+          "title": "Data Modeling for Web Products",
+          "description": "Invariants, normalization, auditing, multi-tenancy, lifecycle.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "invariants",
+              "title": "Invariants",
+              "description": "Entities, constraints, uniqueness.",
+              "topics": [
+                "Entities",
+                "Constraints",
+                "Uniqueness"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "normalization-tradeoffs",
+              "title": "Normalization Tradeoffs",
+              "description": "When/why denormalize.",
+              "topics": [
+                "When to denormalize",
+                "Why"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "auditing-history",
+              "title": "Auditing/History",
+              "description": "Temporal models and accountability.",
+              "topics": [
+                "Temporal models",
+                "Who changed what"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "multi-tenancy",
+              "title": "Multi-Tenancy",
+              "description": "Isolation and leakage prevention.",
+              "topics": [
+                "Isolation approaches",
+                "Leakage prevention"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "lifecycle",
+              "title": "Lifecycle",
+              "description": "Retention/deletion/archival.",
+              "topics": [
+                "Retention",
+                "Deletion",
+                "Archival"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "data-model-output",
+              "title": "Architecture Output",
+              "description": "Data model doc + invariants list + retention outline.",
+              "topics": [
+                "Data model doc",
+                "Invariants list",
+                "Retention outline"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "database-fundamentals",
+          "title": "Database Fundamentals (Engine-Agnostic, with Postgres Lens)",
+          "description": "Transactions/isolation, locks, indexing, replication, DR.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "transactions-and-isolation",
+              "title": "Transactions & Isolation",
+              "description": "ACID anomalies and MVCC intuition.",
+              "topics": [
+                "ACID anomalies",
+                "MVCC intuition"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "locks-and-deadlocks",
+              "title": "Locks & Deadlocks",
+              "description": "Deadlock patterns and avoidance heuristics.",
+              "topics": [
+                "Lock modes (conceptual)",
+                "Deadlock patterns",
+                "Avoidance heuristics"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "indexing",
+              "title": "Indexing",
+              "description": "Query plan intuition and cost tradeoffs.",
+              "topics": [
+                "Index tradeoffs",
+                "Query plan intuition"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "replication-partitioning",
+              "title": "Replication & Partitioning",
+              "description": "Read replicas and sharding concepts.",
+              "topics": [
+                "Read replicas",
+                "Sharding concepts"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "dr",
+              "title": "DR",
+              "description": "Backup/restore and RPO/RTO concepts.",
+              "topics": [
+                "Backups",
+                "RPO/RTO"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "db-output",
+              "title": "Architecture Output",
+              "description": "Data correctness spec + DR outline.",
+              "topics": [
+                "Data correctness spec",
+                "DR outline"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "distributed-systems-for-web-engineers",
+          "title": "Distributed Systems for Web Engineers",
+          "description": "Partial failure, message semantics, event-driven architectures, consistency tradeoffs.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "partial-failure",
+              "title": "Partial Failure",
+              "description": "Timeouts dominate design.",
+              "topics": [
+                "Timeouts dominate design",
+                "Containment"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "message-semantics",
+              "title": "Message Semantics",
+              "description": "Exactly-once myths, at-least-once handling, ordering, replay.",
+              "topics": [
+                "Exactly-once reality",
+                "At-least-once handling",
+                "Ordering & replay"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "event-driven-architectures",
+              "title": "Event-Driven Architectures",
+              "description": "Schema evolution and outbox/inbox concepts.",
+              "topics": [
+                "Schema evolution",
+                "Outbox/inbox (conceptual)"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "consistency-tradeoffs",
+              "title": "Consistency Tradeoffs",
+              "description": "CAP as a lens.",
+              "topics": [
+                "CAP lens"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "distributed-output",
+              "title": "Architecture Output",
+              "description": "ADR: event-driven vs request-driven + replay/idempotent consumer spec.",
+              "topics": [
+                "ADR decision",
+                "Replay/idempotent consumer spec"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "ai-trends-for-web-engineers",
+      "title": "AI Trends for Web Engineers",
+      "description": "AI in workflows, agentic repo readiness, optional AI feature architecture.",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "ai-in-engineering-workflows",
+          "title": "AI in Engineering Workflows",
+          "description": "Usage patterns, review discipline, policy boundaries.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "usage-patterns",
+              "title": "Usage Patterns",
+              "description": "AI as pair programmer vs AI producing PRs.",
+              "topics": [
+                "Pair programming",
+                "PR generation"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "review-discipline",
+              "title": "Review Discipline",
+              "description": "Stricter reviews: tests, threat models, perf checks.",
+              "topics": [
+                "Tests",
+                "Threat models",
+                "Perf checks"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "policies",
+              "title": "Policies",
+              "description": "Secrets/data/IP boundaries.",
+              "topics": [
+                "Secrets",
+                "Data",
+                "IP boundaries"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "ai-workflows-output",
+              "title": "Architecture Output",
+              "description": "Team AI usage policy + review checklist.",
+              "topics": [
+                "Usage policy",
+                "Review checklist"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "agentic-development-and-ai-ready-repos",
+          "title": "Agentic Development & AI-Ready Repos",
+          "description": "Boundaries, determinism, evaluation as CI.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "why-boundaries-matter",
+              "title": "Why Boundaries Matter",
+              "description": "Agents succeed with modularity and runnable tests.",
+              "topics": [
+                "Modularity",
+                "Runnable tests"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "determinism",
+              "title": "Determinism",
+              "description": "Stable interfaces, idempotency, consistent errors.",
+              "topics": [
+                "Stable interfaces",
+                "Idempotency",
+                "Consistent errors"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "evaluation-as-ci",
+              "title": "Evaluation as CI (Conceptual)",
+              "description": "Regression checks for behaviors.",
+              "topics": [
+                "Golden sets (concept)",
+                "Behavior regression"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "ai-repo-output",
+              "title": "Architecture Output",
+              "description": "Repo readiness checklist + eval-in-CI concept doc.",
+              "topics": [
+                "Repo readiness checklist",
+                "Eval-in-CI doc"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "building-ai-features",
+          "title": "Building AI Features into Web Products (Optional Core)",
+          "description": "Inference placement, streaming UX, caching/privacy, threat models, evaluation.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "inference-placement",
+              "title": "Inference Placement",
+              "description": "Client/server/edge tradeoffs.",
+              "topics": [
+                "Client/server/edge tradeoffs"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "streaming-ux",
+              "title": "Streaming UX",
+              "description": "Perceived performance patterns.",
+              "topics": [
+                "Perceived performance patterns"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "caching-and-privacy",
+              "title": "Caching & Privacy",
+              "description": "Safe caching of outputs.",
+              "topics": [
+                "Safe caching of outputs"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "threats",
+              "title": "Threats",
+              "description": "Prompt injection and tool exfiltration.",
+              "topics": [
+                "Prompt injection",
+                "Tool exfiltration"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "evaluation",
+              "title": "Evaluation",
+              "description": "Golden sets and version tracking.",
+              "topics": [
+                "Golden sets",
+                "Version tracking"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "ai-features-output",
+              "title": "Architecture Output",
+              "description": "AI feature ADR + threat model + eval plan.",
+              "topics": [
+                "AI feature ADR",
+                "Threat model",
+                "Eval plan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "name": "capstone-architecture-first-senior-packet",
+      "title": "Capstone (Architecture-First Senior Packet)",
+      "description": "Produce a complete senior architecture packet and run an incident simulation (theory-only).",
+      "content": [
+        {
+          "type": "chapter",
+          "name": "milestone-1-system-decomposition",
+          "title": "Milestone 1 — System Decomposition",
+          "description": "Define system, delivery, API contracts.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "c4-context-container",
+              "title": "C4 context + container diagrams",
+              "description": "Create high-signal system diagrams.",
+              "topics": [
+                "Context diagram",
+                "Container diagram"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "operating-principles-applied",
+              "title": "Operating principles + failure taxonomy applied",
+              "description": "Apply the course spine to the system.",
+              "topics": [
+                "Operating principles applied",
+                "Failure taxonomy applied"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "delivery-adr",
+              "title": "Delivery ADR (SSR/CSR/SSG/ISR)",
+              "description": "Choose delivery approach and justify tradeoffs.",
+              "topics": [
+                "Delivery ADR",
+                "Tradeoffs"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "api-resource-map-style-guide-contract-policy",
+              "title": "API resource map + style guide + contract policy",
+              "description": "Define stable interface and governance.",
+              "topics": [
+                "Resource map",
+                "Style guide",
+                "Contract governance"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "milestone-2-auth-policy",
+          "title": "Milestone 2 — Auth + Policy",
+          "description": "Sessions, CSRF, authorization, tenancy.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "session-cookie-strategy",
+              "title": "Session/cookie strategy + CSRF defense",
+              "description": "Define session lifecycle and CSRF mitigations.",
+              "topics": [
+                "Session strategy",
+                "CSRF defense"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "authorization-enforcement-map",
+              "title": "Authorization enforcement map + tenant isolation checklist",
+              "description": "Define enforcement points and isolation.",
+              "topics": [
+                "Enforcement map",
+                "Tenant isolation checklist"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "recovery-and-abuse-model",
+              "title": "Recovery + abuse model",
+              "description": "Weakest-link thinking for recovery and abuse prevention.",
+              "topics": [
+                "Recovery flow",
+                "Abuse prevention model"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "milestone-3-observability-errors",
+          "title": "Milestone 3 — Observability + Errors",
+          "description": "Logs/metrics/traces, error mapping, SLO draft.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "structured-logs-request-ids-pii",
+              "title": "Structured logs + request IDs + PII discipline",
+              "description": "Define correlation and safe logging.",
+              "topics": [
+                "Structured logs",
+                "Request IDs",
+                "PII discipline"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "error-taxonomy-mapping-retryability",
+              "title": "Error taxonomy + mapping + retryability rules",
+              "description": "Define safe error surfaces.",
+              "topics": [
+                "Taxonomy",
+                "Mapping",
+                "Retryability"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "metrics-alerts-slo-draft",
+              "title": "Basic metrics + alert philosophy + SLO draft",
+              "description": "Define SLIs/SLOs and alerting approach.",
+              "topics": [
+                "Metrics baseline",
+                "Alert philosophy",
+                "SLO draft"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "milestone-4-performance-caching-correctness",
+          "title": "Milestone 4 — Performance + Caching Correctness",
+          "description": "ETag/Vary, perf budgets, leak prevention.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "etag-vary-cache-key-spec",
+              "title": "ETag/Vary strategy + cache key spec",
+              "description": "Define caching correctness mechanisms.",
+              "topics": [
+                "ETag/Vary",
+                "Cache keys"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "perf-budget-crp-plan",
+              "title": "Perf budget + critical rendering path plan",
+              "description": "Define performance targets and plan.",
+              "topics": [
+                "Perf budget",
+                "CRP plan"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "personalization-leakage-review",
+              "title": "Personalization leakage threat review",
+              "description": "Review cache boundaries for leakage risks.",
+              "topics": [
+                "Leakage risks",
+                "Mitigations"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "milestone-5-testing-portfolio",
+          "title": "Milestone 5 — Testing Portfolio",
+          "description": "Strategy, integration harness, E2E scope, a11y regression.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "test-strategy-gates",
+              "title": "Test strategy + gates",
+              "description": "Define evidence and release gates.",
+              "topics": [
+                "Test strategy",
+                "Gates"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "integration-harness",
+              "title": "Integration slice harness spec",
+              "description": "Define slice harness and isolation.",
+              "topics": [
+                "Harness spec",
+                "Isolation strategy"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "e2e-critical-journeys-a11y",
+              "title": "E2E critical journeys + a11y regression checks",
+              "description": "Define minimal E2E and a11y regression.",
+              "topics": [
+                "Critical journeys",
+                "A11y regression"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "milestone-6-safe-delivery",
+          "title": "Milestone 6 — Safe Delivery",
+          "description": "Flags, rollouts, migrations, resilience budgets.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "flags-rollout-mixed-version",
+              "title": "Feature flags + rollout strategy + mixed-version rules",
+              "description": "Define progressive delivery and compatibility.",
+              "topics": [
+                "Flags",
+                "Rollout strategy",
+                "Mixed-version rules"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "expand-contract-migration-backfill",
+              "title": "Expand/contract migration example + backfill plan",
+              "description": "Define evolution plan.",
+              "topics": [
+                "Expand/contract",
+                "Backfill plan"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "resilience-budgets",
+              "title": "Resilience budgets per dependency",
+              "description": "Define timeouts/retries/concurrency/buffers per dependency.",
+              "topics": [
+                "Timeouts",
+                "Retries",
+                "Concurrency limits",
+                "Buffer budgets"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chapter",
+          "name": "milestone-7-incident-simulation",
+          "title": "Milestone 7 — Incident Simulation",
+          "description": "Inject failure, run runbooks, postmortem, update ADRs.",
+          "content": [
+            {
+              "type": "lesson",
+              "name": "inject-failure",
+              "title": "Inject failure scenarios",
+              "description": "Simulate latency spike, cache leak, DB contention, retry storm.",
+              "topics": [
+                "Latency spike",
+                "Cache leak",
+                "DB contention",
+                "Retry storm"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "runbook-postmortem-fix-forward",
+              "title": "Runbook + postmortem + fix-forward plan",
+              "description": "Produce incident artifacts and prioritize fixes.",
+              "topics": [
+                "Runbook",
+                "Postmortem",
+                "Fix-forward plan"
+              ]
+            },
+            {
+              "type": "lesson",
+              "name": "updated-adrs",
+              "title": "Updated ADRs based on learnings",
+              "description": "Update decisions and policies after incident learning.",
+              "topics": [
+                "Update ADRs",
+                "Update policies"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

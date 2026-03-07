@@ -1,0 +1,205 @@
+{
+  "id": "the-unifying-model",
+  "slug": "the-unifying-model",
+  "version": "1.0.0",
+  "title": "The Unifying Model",
+  "description": "The course spine: latency + correctness under partial failure across trust boundaries.",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 30,
+    "prerequisites": [],
+    "tags": [
+      "Latency/correctness/trust boundaries",
+      "Truth placement",
+      "Budgets: latency/retry/staleness/error"
+    ],
+    "author": "AI Generated",
+    "lastUpdated": "2026-02-06"
+  },
+  "content": [
+    {
+      "id": "section-1",
+      "type": "section",
+      "title": "1. The Unifying Model: What Senior Web Engineering Optimizes"
+    },
+    {
+      "id": "text-1",
+      "type": "text",
+      "text": "Senior web engineering can be unified under one practical model: **optimize for latency and correctness under partial failure across trust boundaries**.\n\n- **Latency**: how fast users see outcomes (and how predictable that speed is).\n- **Correctness**: the system’s outputs match the intended rules (including data integrity and security properties).\n- **Partial failure**: some components fail while others continue (timeouts, packet loss, thundering herds, degraded dependencies).\n- **Trust boundaries**: places where assumptions change (browser ↔ API, service ↔ service, your org ↔ third-party, prod ↔ internal tooling).\n\nNearly every “hard” production decision is a trade-off in this space: where to put truth, how much to retry, what to cache, what to validate, and how to degrade safely."
+    },
+    {
+      "id": "image-1",
+      "type": "image",
+      "src": "/images/lessons/unifying-model/system-latency-correctness-trust-boundaries.png",
+      "alt": "Diagram showing user request crossing trust boundaries with latency and correctness constraints",
+      "caption": "A request traverses multiple components; each hop adds latency, partial failure risk, and a trust boundary that changes what must be verified."
+    },
+    {
+      "id": "section-2",
+      "type": "section",
+      "title": "2. Latency, Correctness, and Trust Boundaries"
+    },
+    {
+      "id": "table-1",
+      "type": "table",
+      "caption": "How system concerns change across the request path",
+      "headers": [
+        "Boundary / Hop",
+        "Typical latency risks",
+        "Correctness risks",
+        "Required posture"
+      ],
+      "rows": [
+        [
+          "Browser → API",
+          "Network jitter, slow DNS/TLS, mobile constraints",
+          "Client spoofing, missing/invalid fields, replay",
+          "Treat client as untrusted; validate, authenticate, authorize"
+        ],
+        [
+          "API → Database",
+          "Connection pool saturation, locks, slow queries",
+          "Lost updates, inconsistent reads, schema drift",
+          "Use transactions where needed; constrain invariants in DB"
+        ],
+        [
+          "Service → Service (internal)",
+          "Timeouts, retries amplify load, cascading failure",
+          "Version skew, contract mismatch, duplicated side effects",
+          "Explicit timeouts, idempotency, contracts, backpressure"
+        ],
+        [
+          "Your system → Third-party",
+          "Unpredictable tail latency, rate limiting, outages",
+          "Different semantics, partial success, data quality",
+          "Circuit breakers, fallbacks, reconcile async, isolate blast radius"
+        ]
+      ]
+    },
+    {
+      "id": "callout-1",
+      "type": "callout",
+      "text": "A **trust boundary** is where you must assume inputs can be wrong, delayed, duplicated, or malicious. Correctness starts with treating boundary-crossing data as adversarial unless proven otherwise.",
+      "variant": "warning"
+    },
+    {
+      "id": "section-3",
+      "type": "section",
+      "title": "3. Truth Placement: Where Does the System Decide What’s Real?"
+    },
+    {
+      "id": "text-2",
+      "type": "text",
+      "text": "**Truth placement** is deciding which component is authoritative for each fact and invariant (e.g., “user has paid”, “inventory is reserved”, “email verified”).\n\nKey principle: place truth where it can be enforced with the strongest guarantees at the lowest operational complexity—usually the database for data invariants, and the server for security decisions.\n\nCommon truth placements:\n- **Client truth** (fast, good UX) but weak correctness and security.\n- **API/service truth** (good for policy/authorization and workflows).\n- **Database truth** (best for invariants, uniqueness, transactional consistency).\n- **Event log truth** (best for auditability and reconstructing state; often paired with projections/caches)."
+    },
+    {
+      "id": "heading-1",
+      "type": "heading",
+      "variant": "do",
+      "text": "Do: Encode invariants as close to the authoritative store as possible"
+    },
+    {
+      "id": "list-1",
+      "type": "list",
+      "items": [
+        "Use database constraints for uniqueness and referential integrity (e.g., unique email, foreign keys) when feasible.",
+        "Make services authoritative for authorization and policy (never rely on the client for roles/permissions).",
+        "Prefer immutable, append-only facts for audit-critical flows (payments, access grants), and derive views from them.",
+        "Design idempotent write APIs so retries don’t create duplicated side effects."
+      ]
+    },
+    {
+      "id": "heading-2",
+      "type": "heading",
+      "variant": "dont",
+      "text": "Don’t: Treat caches, UI state, or downstream replicas as the source of truth"
+    },
+    {
+      "id": "list-2",
+      "type": "list",
+      "items": [
+        "Don’t enforce business invariants only in the frontend (users can bypass it).",
+        "Don’t assume read replicas are fresh enough for correctness-critical reads (authorization, balance checks).",
+        "Don’t use caches as the sole record of entitlement; always have an authoritative backing store.",
+        "Don’t depend on “exactly once” delivery across networks—assume duplicates and reordering."
+      ]
+    },
+    {
+      "id": "code-1",
+      "type": "code",
+      "language": "sql",
+      "code": "-- Truth placement example: enforce uniqueness and prevent duplicates at the DB\nCREATE TABLE users (\n  id BIGSERIAL PRIMARY KEY,\n  email TEXT NOT NULL,\n  created_at TIMESTAMPTZ NOT NULL DEFAULT now()\n);\n\n-- Database-level invariant: no two users can share an email\nCREATE UNIQUE INDEX users_email_unique ON users (lower(email));\n\n-- If multiple API servers race to create the same email, the DB is authoritative.\n-- The application handles the constraint violation and returns a safe error."
+    },
+    {
+      "id": "section-4",
+      "type": "section",
+      "title": "4. Budgets: Latency, Retry, Staleness, and Error"
+    },
+    {
+      "id": "text-3",
+      "type": "text",
+      "text": "Budgets turn reliability and performance into explicit engineering constraints. You allocate budgets across hops and components so the whole system stays within SLOs.\n\nFour budgets to coordinate:\n- **Latency budget**: total time allowed (often defined by UX and SLOs). Allocate per dependency with headroom.\n- **Retry budget**: how many retries (and under what conditions) before you stop. Prevent retry storms.\n- **Staleness budget**: how out-of-date data may be (cache TTL, replication lag tolerance).\n- **Error budget**: how much failure is acceptable (e.g., 99.9% availability implies ~43 minutes/month downtime). Used to balance shipping velocity vs. reliability work."
+    },
+    {
+      "id": "table-2",
+      "type": "table",
+      "caption": "Example budgets for a 300ms p95 endpoint (illustrative)",
+      "headers": [
+        "Budget type",
+        "Target / rule of thumb",
+        "What to implement"
+      ],
+      "rows": [
+        [
+          "Latency",
+          "p95 ≤ 300ms end-to-end",
+          "Per-hop deadlines, request cancellation, fast-fail fallbacks"
+        ],
+        [
+          "Retry",
+          "≤ 5% of requests may retry; only on safe/idempotent operations",
+          "Retry policies with jitter, bounded attempts, idempotency keys"
+        ],
+        [
+          "Staleness",
+          "UI can tolerate 30–60s stale for non-critical views",
+          "Cache TTLs, stale-while-revalidate, explicit \"last updated\""
+        ],
+        [
+          "Error",
+          "99.9% monthly availability",
+          "SLOs + burn-rate alerts, feature flags, progressive rollouts"
+        ]
+      ]
+    },
+    {
+      "id": "code-2",
+      "type": "code",
+      "language": "javascript",
+      "code": "// Node/Fetch example: deadline + bounded retries with jitter + idempotency\n// Goal: control latency and retry budget while staying correct under partial failure.\n\nfunction sleep(ms) {\n  return new Promise((r) => setTimeout(r, ms));\n}\n\nfunction jitter(ms) {\n  return Math.floor(ms * (0.5 + Math.random()));\n}\n\nasync function fetchWithBudget(url, {\n  method = 'GET',\n  headers = {},\n  body,\n  timeoutMs = 200,        // per-hop latency budget\n  maxAttempts = 2,        // retry budget: 1 retry\n  idempotencyKey          // required for POST/PUT retries\n} = {}) {\n  for (let attempt = 1; attempt <= maxAttempts; attempt++) {\n    const controller = new AbortController();\n    const t = setTimeout(() => controller.abort(), timeoutMs);\n\n    try {\n      const res = await fetch(url, {\n        method,\n        headers: {\n          ...headers,\n          ...(idempotencyKey ? { 'Idempotency-Key': idempotencyKey } : {})\n        },\n        body,\n        signal: controller.signal\n      });\n\n      // Retry only on transient failures\n      if (res.status >= 500 && res.status <= 599 && attempt < maxAttempts) {\n        await sleep(jitter(30 * attempt));\n        continue;\n      }\n\n      return res;\n    } catch (err) {\n      // Network errors/timeouts may be transient; still bounded by attempts\n      if (attempt < maxAttempts) {\n        await sleep(jitter(30 * attempt));\n        continue;\n      }\n      throw err;\n    } finally {\n      clearTimeout(t);\n    }\n  }\n}\n\n// Notes:\n// - Don't retry non-idempotent writes without an idempotency key.\n// - Propagate request deadlines across service boundaries where possible."
+    },
+    {
+      "id": "callout-2",
+      "type": "callout",
+      "text": "Retries trade correctness for latency and load. Without idempotency, retries can create duplicate side effects (double-charges, double-reservations). Without bounds and jitter, retries can turn a small outage into a full incident.",
+      "variant": "danger"
+    },
+    {
+      "id": "section-5",
+      "type": "section",
+      "title": "5. Putting It Together: A Practical Decision Checklist"
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "items": [
+        "Identify trust boundaries: where does data enter from an untrusted or differently-governed domain?",
+        "Define correctness invariants: what must never be violated (security, money movement, uniqueness, ordering)?",
+        "Place truth: which component is authoritative for each invariant, and how is it enforced (constraints, transactions, policies)?",
+        "Assign budgets: end-to-end latency target, per-hop deadlines, retry policy, staleness tolerance, and error budget/SLOs.",
+        "Design for partial failure: timeouts, cancellation, circuit breakers, fallbacks, and graceful degradation paths.",
+        "Observe and validate: measure p95/p99 latency, retry rates, cache hit rate/staleness, and error budget burn."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Ignore all generated course files
+*
+
+# But keep the directory structure
+!.gitignore
+!README.md

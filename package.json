@@ -6,7 +6,10 @@
     "dev": "next dev --turbo -p 6969",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "tools:generate": "tsx tools/generators/generateCourse.ts",
+    "tools:validate": "tsx tools/scripts/validateContent.ts",
+    "tools:migrate": "tsx tools/scripts/migrateOldLessons.ts"
   },
   "dependencies": {
     "axios": "^1.9.0",
@@ -20,13 +23,14 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@types/node": "^20",
+    "@types/node": "^20.19.30",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-syntax-highlighter": "^15",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "sass": "^1.87.0",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
