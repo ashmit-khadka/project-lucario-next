@@ -39,6 +39,29 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Generate Lesson (AI)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "program": "${workspaceFolder}/tools/generator-lesson/generateLesson.ts",
+            "args": [
+                "SSRF, open redirects, request smuggling (concepts)"
+            ],
+            "cwd": "${workspaceFolder}/tools/generator-lesson",
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Next.js: Server",
             "runtimeExecutable": "npm",
             "runtimeArgs": [

@@ -7,6 +7,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { synthwave84 } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import NavigationHover from '@/components/NavigationHover';
 import Breadcrumb from '@/components/Breadcrumb';
+import QuestionBlock from '@/components/QuestionBlock';
 
 const SectionCode = ({ code, language = 'javascript' }: { code: string; language?: string }) => (
     <SyntaxHighlighter language={language} style={synthwave84}>
@@ -111,6 +112,8 @@ const ContentRenderer = ({ item }: { item: any }) => {
             return <SectionImage src={item.src} alt={item.alt} caption={item.caption} />;
         case 'table':
             return <SectionTable headers={item.headers} rows={item.rows} />;
+        case 'question':
+            return <QuestionBlock data={item} />;
         default:
             return null;
     }

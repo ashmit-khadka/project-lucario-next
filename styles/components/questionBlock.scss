@@ -1,0 +1,170 @@
+// ── Question block (shared) ──
+.question-block {
+    border: 2px solid rgba($color-font-primary, 0.15);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: rgba($color-font-primary, 0.03);
+
+    .question-block-header {
+        margin-bottom: 1rem;
+
+        .question-block-badge {
+            @extend .dm-mono-regular;
+            font-size: $font-size-sm;
+            background-color: $color-font-primary;
+            color: $color-font-primary-lighter;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+        }
+    }
+
+    .question-block-prompt {
+        font-size: $font-size-md;
+        margin-bottom: 1rem;
+        color: $color-font-primary;
+    }
+
+    // ── Button ──
+    .question-block-btn {
+        @extend .dm-mono-regular;
+        font-size: $font-size-sm;
+        background-color: $color-font-primary;
+        color: $color-font-primary-lighter;
+        border: none;
+        padding: 0.5rem 1.25rem;
+        cursor: pointer;
+        transition: transform 0.15s ease, opacity 0.15s ease;
+
+        &:hover:not(:disabled) {
+            transform: scale(1.03);
+        }
+
+        &:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        &--ghost {
+            background: transparent;
+            color: $color-font-primary;
+            border: 1px solid $color-font-primary;
+            margin-top: 0.75rem;
+        }
+    }
+
+    // ── Feedback ──
+    .question-block-feedback {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &.correct {
+            background-color: rgba(#27ae60, 0.1);
+            border-left: 4px solid #27ae60;
+        }
+
+        &.incorrect {
+            background-color: rgba(#e74c3c, 0.1);
+            border-left: 4px solid #e74c3c;
+        }
+    }
+
+    .question-block-explanation {
+        opacity: 0.85;
+        font-size: $font-size-sm;
+    }
+}
+
+// ── Multiple-choice options ──
+.question-block--mc {
+    .question-block-options {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .question-block-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.65rem 1rem;
+            border: 1px solid rgba($color-font-primary, 0.2);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+
+            &:hover {
+                background-color: rgba($color-font-primary, 0.06);
+            }
+
+            &.selected {
+                border-color: $color-font-primary;
+                background-color: rgba($color-font-primary, 0.08);
+            }
+
+            &.correct {
+                border-color: #27ae60;
+                background-color: rgba(#27ae60, 0.1);
+            }
+
+            &.incorrect {
+                border-color: #e74c3c;
+                background-color: rgba(#e74c3c, 0.1);
+            }
+
+            .question-block-option-marker {
+                @extend .dm-mono-regular;
+                font-size: $font-size-sm;
+                width: 1.6rem;
+                height: 1.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                background-color: rgba($color-font-primary, 0.1);
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+
+// ── Fill-blank input ──
+.question-block--fill {
+    .question-block-input-row {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        @include screen-sm {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    .question-block-input {
+        @extend .dm-mono-regular;
+        font-size: $font-size-sm;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid rgba($color-font-primary, 0.3);
+        border-radius: 4px;
+        background-color: white;
+        color: $color-font-primary;
+        flex: 1;
+        outline: none;
+        transition: border-color 0.15s ease;
+
+        &:focus {
+            border-color: $color-font-primary;
+        }
+
+        &:disabled {
+            opacity: 0.6;
+        }
+    }
+}

@@ -10,6 +10,7 @@ import { synthwave84 } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import QuizScreen from './QuizScreen';
 import NavigationHover from '../NavigationHover';
 import Breadcrumb from '../Breadcrumb';
+import QuestionBlock from '../QuestionBlock';
 
 const Section = ({ title, id, children }: { title: string; id: string; children: React.ReactNode }) => (
     <section id={id} className="learning-section section">
@@ -187,6 +188,8 @@ const LessonScreen = () => {
                                     return <SectionImage key={itemIndex} src={item.src} alt={item.alt} caption={item.caption} />;
                                 case 'table':
                                     return <SectionTable key={itemIndex} headers={item.headers} rows={item.rows} />;
+                                case 'question':
+                                    return <QuestionBlock key={itemIndex} data={item} />;
                                 default:
                                     return null;
                             }

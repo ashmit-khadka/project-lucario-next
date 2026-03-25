@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 interface Section {
     id: string;
@@ -15,7 +15,12 @@ interface NavigationHoverProps {
 const NavigationHover = ({ sections, showAfterSection = null }: NavigationHoverProps) => {
     const [activeSection, setActiveSection] = useState<string | null>(null);
     const [isVisible, setIsVisible] = useState(!showAfterSection);
+    const [scrollProgress, setScrollProgress] = useState(0);
+    const [isExpanded, setIsExpanded] = useState(false);
     const navbarHeight = 130;
+
+    // Calculate which section index is active (for the discrete progress indicator)
+    const activeSectionIndex = sections.findIndex(s => s.id === activeSection);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -56,15 +61,29 @@ const NavigationHover = ({ sections, showAfterSection = null }: NavigationHoverP
             }
 
             setActiveSection(newActiveSection);
+
+            // Calculate overall scroll progress (0–100)
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? Math.min(100, Math.max(0, (window.scrollY / docHeight) * 100)) : 0;
+            setScrollProgress(progress);
         };
 
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll, { passive: true });
         handleScroll();
         
         return () => window.removeEventListener("scroll", handleScroll);
     }, [showAfterSection, navbarHeight]);
 
-    const scrollToSection = (sectionId: string) => {
+    // Collapse on scroll (mobile)
+    useEffect(() => {
+        if (!isExpanded) return;
+
+        const collapseOnScroll = () => setIsExpanded(false);
+        window.addEventListener("scroll", collapseOnScroll, { once: true, passive: true });
+        return () => window.removeEventListener("scroll", collapseOnScroll);
+    }, [isExpanded]);
+
+    const scrollToSection = useCallback((sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
             const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
@@ -75,28 +94,82 @@ const NavigationHover = ({ sections, showAfterSection = null }: NavigationHoverP
                 behavior: "smooth"
             });
         }
-    };
+        setIsExpanded(false);
+    }, [navbarHeight]);
 
     if (!isVisible) {
         return null;
     }
 
     return (
-        <nav className="floating-nav">
-            <ul>
-                {sections.map(({ id, label }) => (
-                    <li
-                        key={id}
-                        className={`floating-nav-item ${
-                            activeSection === id ? "active" : ""
-                        }`}
-                        onClick={() => scrollToSection(id)}
-                    >
-                        {label}
-                    </li>
-                ))}
-            </ul>
-        </nav>
+        <>
+            {/* ── Desktop: fixed left-side nav (unchanged layout) ── */}
+            <nav className="floating-nav floating-nav--desktop">
+                {/* Progress bar */}
+                <div className="floating-nav-progress">
+                    <div
+                        className="floating-nav-progress-fill"
+                        style={{ height: `${scrollProgress}%` }}
+                    />
+                </div>
+
+                <ul>
+                    {sections.map(({ id, label }) => (
+                        <li
+                            key={id}
+                            className={`floating-nav-item ${activeSection === id ? "active" : ""}`}
+                            onClick={() => scrollToSection(id)}
+                        >
+                            {label}
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+
+            {/* ── Mobile: sticky top bar with collapse/expand ── */}
+            <nav className={`floating-nav floating-nav--mobile ${isExpanded ? "floating-nav--expanded" : ""}`}>
+                {/* Collapsed bar: progress + tap to expand */}
+                <button
+                    className="floating-nav-mobile-header"
+                    onClick={() => setIsExpanded(prev => !prev)}
+                    aria-expanded={isExpanded}
+                    aria-label="Toggle section navigation"
+                >
+                    <span className="floating-nav-mobile-label">
+                        {activeSectionIndex >= 0
+                            ? sections[activeSectionIndex].label
+                            : 'Sections'}
+                    </span>
+
+                    <span className={`floating-nav-mobile-chevron ${isExpanded ? "open" : ""}`}>
+                        ▾
+                    </span>
+                </button>
+
+                {/* Horizontal progress bar */}
+                <div className="floating-nav-progress-h">
+                    <div
+                        className="floating-nav-progress-h-fill"
+                        style={{ width: `${scrollProgress}%` }}
+                    />
+                </div>
+
+                {/* Expandable section list */}
+                {isExpanded && (
+                    <ul className="floating-nav-mobile-list">
+                        {sections.map(({ id, label }) => (
+                            <li
+                                key={id}
+                                className={`floating-nav-item ${activeSection === id ? "active" : ""}`}
+                                onClick={() => scrollToSection(id)}
+                            >
+                                {label}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </nav>
+        </>
     );
 };
 

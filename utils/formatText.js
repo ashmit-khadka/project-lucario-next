@@ -1,10 +1,11 @@
 import React from 'react';
 
 /**
- * Formats text with code, bold, and italic styling using the following syntax:
+ * Formats text with code, bold, italic, and highlight styling using the following syntax:
  * `code` for inline code
  * **bold** for bold text
  * _italic_ for italic text
+ * ==highlight== for highlighted text
  * 
  * @param {string} text - The text to format
  * @returns {Array} Array of React elements and strings
@@ -16,7 +17,8 @@ const formatText = (text) => {
     const patterns = [
         { regex: /`([^`]+)`/g, type: 'code' },
         { regex: /\*\*([^*]+)\*\*/g, type: 'bold' },
-        { regex: /\_([^_]+)\_/g, type: 'italic' }
+        { regex: /\_([^_]+)\_/g, type: 'italic' },
+        { regex: /==([^=]+)==/g, type: 'highlight' }
     ];
 
     // Find all matches and their positions
@@ -68,6 +70,13 @@ const formatText = (text) => {
                     <em key={`italic-${index}`}>
                         {match.content}
                     </em>
+                );
+                break;
+            case 'highlight':
+                result.push(
+                    <mark key={`highlight-${index}`} className="inline-highlight">
+                        {match.content}
+                    </mark>
                 );
                 break;
             default:

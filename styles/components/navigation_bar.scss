@@ -276,7 +276,8 @@
 }
 
 
-.floating-nav {
+// ── Desktop floating nav (left-side, unchanged position) ──
+.floating-nav--desktop {
     position: fixed;
     top: 50%;
     left: 50px;
@@ -288,11 +289,28 @@
     z-index: 1000;
     max-width: 300px;
     max-height: 80%;
-    overflow-y: auto; // Changed from 'scroll' to 'auto'
-    scrollbar-width: thin; // Optional: Thinner scrollbar in Firefox
+    overflow-y: auto;
+    scrollbar-width: thin;
+    display: flex;
+    gap: 0.75rem;
 
     @include screen-sm {
         display: none;
+    }
+
+    // Vertical progress bar on the left edge
+    .floating-nav-progress {
+        width: 4px;
+        border-radius: 999px;
+        background-color: rgba($color-font-primary, 0.12);
+        flex-shrink: 0;
+
+        .floating-nav-progress-fill {
+            width: 100%;
+            border-radius: 999px;
+            background-color: $color-font-primary;
+            transition: height 0.15s ease-out;
+        }
     }
 
     ul {
@@ -314,13 +332,95 @@
             &.active {
                 background-color: $color-font-primary;
                 color: white;
-                //font-weight: bold;
             }
         }
 
         & li {
             @extend .dm-mono-regular;
-            //font-size: 1rem;
+        }
+    }
+}
+
+// ── Mobile floating nav (sticky top) ──
+.floating-nav--mobile {
+    display: none; // hidden on desktop
+
+    @include screen-sm {
+        display: block;
+        position: fixed;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        z-index: 1100;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    // Header row (collapsed state)
+    .floating-nav-mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.6rem 1.25rem;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        @extend .dm-mono-regular;
+        font-size: $font-size-sm;
+        color: $color-font-primary;
+
+        .floating-nav-mobile-label {
+            opacity: 0.75;
+        }
+
+        .floating-nav-mobile-chevron {
+            font-size: 1rem;
+            transition: transform 0.25s ease;
+
+            &.open {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    // Horizontal progress bar
+    .floating-nav-progress-h {
+        height: 3px;
+        background-color: rgba($color-font-primary, 0.12);
+
+        .floating-nav-progress-h-fill {
+            height: 100%;
+            background-color: $color-font-primary;
+            transition: width 0.15s ease-out;
+        }
+    }
+
+    // Expanded section list
+    .floating-nav-mobile-list {
+        list-style: none;
+        padding: 0.5rem 0;
+        margin: 0;
+        max-height: 50vh;
+        overflow-y: auto;
+
+        .floating-nav-item {
+            cursor: pointer;
+            padding: 0.6rem 1.25rem;
+            transition: background-color 0.2s ease;
+            @extend .dm-mono-regular;
+            font-size: $font-size-sm;
+            color: $color-font-primary;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+            &.active {
+                background-color: $color-font-primary;
+                color: white;
+            }
         }
     }
 }
