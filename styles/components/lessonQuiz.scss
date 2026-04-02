@@ -1,0 +1,178 @@
+// ── Lesson Quiz (end-of-lesson MCQ quiz) ──
+
+.lesson-quiz {
+    border: 2px solid rgba($color-font-primary, 0.15);
+    border-radius: 12px;
+    padding: 2rem;
+    background-color: rgba($color-font-primary, 0.02);
+    font-family: "DM Sans", sans-serif;
+
+    .lesson-quiz-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+    }
+
+    .lesson-quiz-badge {
+        @extend .dm-mono-regular;
+        font-size: $font-size-sm;
+        background-color: $color-font-primary;
+        color: $color-font-primary-lighter;
+        padding: 0.25rem 0.75rem;
+        border-radius: 4px;
+    }
+
+    .lesson-quiz-counter {
+        @extend .dm-mono-regular;
+        font-size: $font-size-sm;
+        color: $color-font-primary-light;
+    }
+
+    .lesson-quiz-progress {
+        height: 6px;
+        background-color: rgba($color-font-primary, 0.1);
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+
+        .lesson-quiz-progress-bar {
+            height: 100%;
+            background-color: $color-font-primary;
+            transition: width 0.35s ease;
+            border-radius: 3px;
+        }
+    }
+
+    .lesson-quiz-question {
+        font-size: $font-size-md;
+        color: $color-font-primary;
+        margin-bottom: 1.25rem;
+        line-height: 1.55;
+    }
+
+    // ── Options ──
+    .lesson-quiz-options {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.25rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .lesson-quiz-option {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.7rem 1rem;
+        border: 1px solid rgba($color-font-primary, 0.2);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.15s ease, border-color 0.15s ease;
+        font-size: 0.98rem;
+
+        &:hover {
+            background-color: rgba($color-font-primary, 0.06);
+        }
+
+        &.selected {
+            border-color: $color-font-primary;
+            background-color: rgba($color-font-primary, 0.08);
+        }
+
+        &.correct {
+            border-color: #27ae60;
+            background-color: rgba(#27ae60, 0.1);
+        }
+
+        &.incorrect {
+            border-color: #e74c3c;
+            background-color: rgba(#e74c3c, 0.1);
+        }
+    }
+
+    .lesson-quiz-option-marker {
+        @extend .dm-mono-regular;
+        font-size: $font-size-sm;
+        width: 1.6rem;
+        height: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background-color: rgba($color-font-primary, 0.1);
+        flex-shrink: 0;
+    }
+
+    // ── Button ──
+    .lesson-quiz-btn {
+        @extend .dm-mono-regular;
+        font-size: $font-size-sm;
+        background-color: $color-font-primary;
+        color: $color-font-primary-lighter;
+        border: none;
+        padding: 0.55rem 1.25rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.15s ease, opacity 0.15s ease;
+
+        &:hover:not(:disabled) {
+            transform: scale(1.03);
+        }
+
+        &:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+    }
+
+    // ── Feedback ──
+    .lesson-quiz-feedback {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &.correct {
+            background-color: rgba(#27ae60, 0.1);
+            border-left: 4px solid #27ae60;
+        }
+
+        &.incorrect {
+            background-color: rgba(#e74c3c, 0.1);
+            border-left: 4px solid #e74c3c;
+        }
+    }
+
+    .lesson-quiz-explanation {
+        opacity: 0.85;
+        font-size: $font-size-sm;
+    }
+
+    // ── Results screen ──
+    .lesson-quiz-results {
+        text-align: center;
+        padding: 1rem 0;
+
+        h3 {
+            font-size: 1.8rem;
+            color: $color-font-primary;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    .lesson-quiz-score {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $color-font-primary;
+        margin-bottom: 0.5rem;
+    }
+
+    .lesson-quiz-message {
+        color: $color-font-primary-light;
+        margin-bottom: 1.25rem;
+    }
+}

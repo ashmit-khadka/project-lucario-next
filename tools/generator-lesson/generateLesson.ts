@@ -2,6 +2,8 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 import OpenAI from 'openai';
 import * as dotenv from 'dotenv';
+import https from 'https';
+import http from 'http';
 
 // ── Load environment variables from project root ──
 dotenv.config({ path: join(__dirname, '../../.env') });
@@ -9,6 +11,107 @@ dotenv.config({ path: join(__dirname, '../../.env') });
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const OUTPUT_DIR = join(__dirname, 'output');
+const PUBLIC_IMAGES_DIR = join(__dirname, '../../public/images/lessons');
+
+// ── Image style prompt prepended to every image generation request ──
+const IMAGE_STYLE_PROMPT = `Create a horizontal hand-drawn illustration in a soft sketchbook style with a transparent background. The artwork should feel like a lightly painted pencil-and-ink concept sketch: loose hand-drawn outlines, slightly imperfect strokes, soft textured shading, and muted storybook colours. Do not use a monochrome palette. Use several different colours, but keep them all desaturated, earthy, and understated, such as dusty mustard, sage green, muted teal, faded terracotta, warm beige, soft brown, and smoky blue. Avoid bright or neon colours.
+
+The illustration should be a rich, engaging scene or metaphorical visual that captures the core idea of the concept being taught. Think editorially: like a beautiful illustration you would find in a premium textbook, a New Yorker article, or a thoughtful blog post. Use visual metaphors, allegories, and storytelling rather than diagrams, flowcharts, or infographics. For example, if the concept is about fragile systems, show a delicate house of cards on a wobbly table; if it is about trust, show hands reaching across a gap. The image should make a reader pause and think.
+
+The composition should be horizontal, balanced, and visually interesting with a clear focal point. Use depth, layering, and small narrative details to reward closer inspection. Include environmental context when it helps the metaphor — a workshop, a landscape, a room, objects on a desk — but keep the background transparent so the illustration floats cleanly on any page.
+
+Visual style requirements: transparent background only, hand-drawn sketch style, pencil and ink outlines, soft watercolor or gouache-like fills, muted multicolour palette, slightly whimsical storybook feeling, subtle texture, light shading, rich detail and texture in the subjects themselves, no glossy rendering, no photorealism, no 3D, no corporate vector look, no sharp digital gradients, no poster design, no dark vignette, no box panels or UI cards, no heavy shadows, no polished template look.
+
+Do NOT create infographics, flowcharts, diagrams, process arrows, labeled icon sequences, or any chart-like layout. This must be a scene-based illustration, not an information graphic.
+
+Text treatment: no title, no subtitle, no paragraph text, no labels, no captions baked into the image. The illustration must stand entirely on its own visually.
+
+Subject matter for this specific image: `;
+
+// ── Download a URL to a local file ──
+function downloadFile(url: string, dest: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const file = require('fs').createWriteStream(dest);
+    const get = url.startsWith('https') ? https.get : http.get;
+    get(url, (response) => {
+      // Follow redirects
+      if (response.statusCode && response.statusCode >= 300 && response.statusCode < 400 && response.headers.location) {
+        file.close();
+        downloadFile(response.headers.location, dest).then(resolve).catch(reject);
+        return;
+      }
+      response.pipe(file);
+      file.on('finish', () => { file.close(resolve); });
+    }).on('error', (err) => {
+      file.close();
+      reject(err);
+    });
+  });
+}
+
+// ── Generate images for all image content items in the lesson ──
+async function generateLessonImages(lesson: any, lessonSlug: string): Promise<void> {
+  const imageItems = lesson.content.filter((item: any) => item.type === 'image' && item.prompt);
+
+  if (imageItems.length === 0) {
+    console.log('   No image blocks found — skipping image generation.');
+    return;
+  }
+
+  console.log(`\n🎨 Generating ${imageItems.length} image(s) with GPT Image 1.5...`);
+
+  // Ensure the lesson image directory exists
+  const lessonImageDir = join(PUBLIC_IMAGES_DIR, lessonSlug);
+  if (!existsSync(lessonImageDir)) {
+    mkdirSync(lessonImageDir, { recursive: true });
+  }
+
+  for (const item of imageItems) {
+    const imageSlug = item.id; // e.g. "image-1"
+    const filename = `${slugify(item.alt || imageSlug)}.png`;
+    const localPath = join(lessonImageDir, filename);
+    const publicPath = `/images/lessons/${lessonSlug}/${filename}`;
+
+    console.log(`   🖼  Generating: ${item.id} → ${filename}`);
+
+    try {
+      const fullPrompt = IMAGE_STYLE_PROMPT + item.prompt;
+
+      const response = await openai.images.generate({
+        model: 'gpt-image-1.5',
+        prompt: fullPrompt,
+        n: 1,
+        size: '1536x1024',
+        quality: 'high',
+        background: 'transparent',
+        output_format: 'png',
+      });
+
+      const imageData = response.data?.[0];
+
+      if (imageData?.b64_json) {
+        // Save base64 image directly
+        const buffer = Buffer.from(imageData.b64_json, 'base64');
+        writeFileSync(localPath, buffer);
+        console.log(`   ✅ Saved: ${publicPath}`);
+      } else if (imageData?.url) {
+        // Download from URL
+        await downloadFile(imageData.url, localPath);
+        console.log(`   ✅ Saved: ${publicPath}`);
+      } else {
+        console.warn(`   ⚠ No image data returned for ${item.id}`);
+        continue;
+      }
+
+      // Update the src in the lesson JSON to point to the saved file
+      item.src = publicPath;
+
+    } catch (err: any) {
+      console.error(`   ❌ Failed to generate image for ${item.id}:`, err?.message || err);
+      // Keep the original src path so the JSON still references something
+    }
+  }
+}
 
 // ── Read the demo lesson as the canonical schema reference ──
 const DEMO_LESSON_PATH = join(__dirname, '../../data/learning/demo_lesson.json');
@@ -58,7 +161,7 @@ CONTENT ITEM TYPES (use all of them liberally):
 1. section  — top-level divider
    { "id": "section-N", "type": "section", "title": "N. Section Title" }
 
-2. text  — paragraph (supports **bold**, _italic_, \`code\`, ==highlight==)
+2. text  — paragraph (supports **bold**, _italic_, \`code\`, ==highlight==, {{term}})
    { "id": "text-N", "type": "text", "text": "..." }
 
 3. list  — bullet points
@@ -67,14 +170,14 @@ CONTENT ITEM TYPES (use all of them liberally):
 4. heading  — sub-heading with optional variant
    { "id": "heading-N", "type": "heading", "text": "...", "variant": "do" | "dont" }
 
-5. code  — code block
-   { "id": "code-N", "type": "code", "language": "javascript", "code": "..." }
+5. code  � code block with a required explanation
+   { "id": "code-N", "type": "code", "language": "javascript", "code": "...", "explanation": "One or two sentences describing what this code demonstrates and why it matters." }
 
 6. callout  — important note
    { "id": "callout-N", "type": "callout", "text": "...", "variant": "info" | "tip" | "warning" | "danger" | "note" }
 
-7. image  — diagram/illustration (use plausible placeholder paths)
-   { "id": "image-N", "type": "image", "src": "/images/lessons/...", "alt": "...", "caption": "..." }
+7. image  — conceptual illustration with an AI image generation prompt
+   { "id": "image-N", "type": "image", "src": "/images/lessons/<lesson-slug>/<image-slug>.png", "alt": "...", "caption": "...", "prompt": "<detailed AI image generation prompt describing a metaphorical or narrative scene that captures the concept — NOT a diagram, flowchart, or infographic>" }
 
 8. table  — comparison/reference table
    { "id": "table-N", "type": "table", "headers": [...], "rows": [[...], ...] }
@@ -115,7 +218,7 @@ CONTENT ITEM TYPES (use all of them liberally):
 1. section  — top-level divider
    { "id": "section-N", "type": "section", "title": "N. Section Title" }
 
-2. text  — paragraph (supports **bold**, _italic_, \`code\`, ==highlight==)
+2. text  — paragraph (supports **bold**, _italic_, \`code\`, ==highlight==, {{term}})
    { "id": "text-N", "type": "text", "text": "..." }
 
 3. list  — bullet points
@@ -124,14 +227,14 @@ CONTENT ITEM TYPES (use all of them liberally):
 4. heading  — sub-heading with optional variant
    { "id": "heading-N", "type": "heading", "text": "...", "variant": "do" | "dont" }
 
-5. code  — code block
-   { "id": "code-N", "type": "code", "language": "javascript", "code": "..." }
+5. code  — code block with a required explanation
+   { "id": "code-N", "type": "code", "language": "javascript", "code": "...", "explanation": "One or two sentences describing what this code demonstrates and why it matters." }
 
 6. callout  — important note
    { "id": "callout-N", "type": "callout", "text": "...", "variant": "info" | "tip" | "warning" | "danger" | "note" }
 
-7. image  — diagram/illustration (use plausible placeholder paths)
-   { "id": "image-N", "type": "image", "src": "/images/lessons/...", "alt": "...", "caption": "..." }
+7. image  — conceptual illustration with an AI image generation prompt
+   { "id": "image-N", "type": "image", "src": "/images/lessons/<lesson-slug>/<image-slug>.png", "alt": "...", "caption": "...", "prompt": "<detailed AI image generation prompt describing a metaphorical or narrative scene that captures the concept — NOT a diagram, flowchart, or infographic>" }
 
 8. table  — comparison/reference table
    { "id": "table-N", "type": "table", "headers": [...], "rows": [[...], ...] }
@@ -151,14 +254,15 @@ WRITING STYLE RULES:
 - Avoid decorative or unusual special characters in lesson copy, including arrows, smart quotes, em dashes, and other typography-heavy symbols.
 - Avoid unnecessary parentheses unless they are genuinely needed for clarity.
 - Prefer direct sentences over flashy phrasing.
-- Where it genuinely improves understanding, add brief historical context that explains how or why a concept emerged, what earlier limitations it addressed, or which prior patterns it replaced.
+- Add historical context, real-world case studies, or concrete examples ONLY when they are interesting, significant, and genuinely add value to understanding the point. Use them sparingly and strategically: cite a famous incident (e.g., a major outage, security breach, or industry shift) when it perfectly illustrates a failure mode or lesson learned. Mention how a concept emerged or what earlier limitations it addressed only if that history clarifies why the current approach matters. Do not force historical trivia into every section. When you do include it, make it concrete and memorable — name the company, the year, the consequence. A well-chosen case study is worth more than vague historical references.
 - Where it genuinely improves understanding, mention near-term future scope, likely evolution, or adjacent next-step concepts so the learner understands where the topic leads.
-- Use historical context and future scope selectively. They should support the main explanation, not distract from it or turn the lesson into speculation.
-- Use inline formatting tastefully and sparingly:
-  - Use **bold** for a few key terms or decisions.
-  - Use ==highlight== only for especially important takeaways.
-  - Use _italic_ only for light emphasis or first-use terminology.
-  - Do not over-format sentences. Most text should remain plain.
+- Use historical context, case studies, and future scope selectively. They should support the main explanation, not distract from it or turn the lesson into a history lecture or speculation exercise.
+- Use inline formatting with emphasis:
+  - Use **bold** for short important words and phrases — the cause, the constraint, the failure mode, the outcome, the rule. Bold operates at the word or short-phrase level. Aim for 3-5 bold phrases per "text" block.
+  - Use ==highlight== for the core point of a passage — the single idea that the surrounding text is building toward or explaining. This can be a full phrase, a clause, or even a sentence. Every 2-3 "text" blocks should have one ==highlight==. It marks the insight the reader must take away, not just an important word.
+  - Use {{term}} for every named technical term, technology, API, protocol, library, or domain-specific vocabulary word. Example: {{RAG}} or {{idempotency}}. Combine with bold when the term is also the key word in a sentence: **{{term}}**.
+  - Use _italic_ only for light first-use terminology or gentle emphasis.
+  - Do NOT leave "text" blocks entirely plain. Every block must have bold phrases and {{term}} wrapping, and a ==highlight== should appear at least every 2-3 blocks.
 
 FLOW AND STRUCTURE RULES:
 - Build the lesson as a sequence of small, readable blocks that feel natural in a learning UI.
@@ -167,11 +271,14 @@ FLOW AND STRUCTURE RULES:
 - Use "text" blocks for explanation, framing, transitions, and interpretation.
 - Use "list" blocks for grouped examples, patterns, rules, comparisons, symptoms, or takeaways.
 - When introducing a list, first use a short "text" block to explain what the learner is about to see.
-- After a list, often follow with a short "text" block that explains what the list means or why it matters.
+- After a list, always follow with a short "text" block that interprets what the list means, why it matters, or what the learner should take away from it.
 - Prefer multiple short content items over one dense content item.
 - Each content block should usually do one job only: explain, list, compare, warn, or test.
 - Avoid long walls of text. Split dense explanations into adjacent "text", "list", "callout", "table", or "question" blocks where appropriate.
-- The lesson should feel like a clean, cohesive reading flow, not a dump of formatted fragments.
+- PARAGRAPH LENGTH RULE: A single "text" block should contain 3-5 full sentences. Do not write 1-sentence blocks — they leave ideas underdeveloped. If an explanation needs more than 5 sentences, split it into two consecutive blocks.
+- DEPTH RULE: Each concept deserves 2-3 sequential "text" blocks that build on each other. The pattern: (1) introduce the idea, (2) explain the mechanism or how it works, (3) describe a consequence or why it matters in practice. Short 1-sentence blocks are a sign of shallow writing.
+- MINIMUM TEXT BLOCKS PER SECTION: Every section must contain at least 3 "text" blocks before any list or table. A section that jumps straight from a heading into a list is too shallow.
+- The lesson should feel like a knowledgeable colleague explaining something in depth, not a slide deck of headlines. Prose carries the depth; lists and tables carry the structure.
 - Use lists liberally when they improve scanability, especially for examples like:
   - named attack types
   - pros and cons
@@ -191,66 +298,113 @@ UI COMPOSITION RULE:
 - Do not place bullet-like examples inside "text". Any grouped examples, named items, or parallel points must be output as a separate "list" block so the lesson renders cleanly in the UI.
 
 CONTENT RULES:
-- Generate 4-6 sections with 20-40 total content items.
-- Use a variety of content types. Every lesson must include at least: section, text, list, code, callout, table, and at least 2 question blocks.
-- Use inline formatting (**bold**, _italic_, \`code\`, ==highlight==) only when it improves clarity or emphasis. Do not use it in every block.
-- Code examples should be realistic and production-quality.
+- Generate 4-6 sections with 25-40 total content items. A lesson with fewer than 25 items is too thin; more than 40 is too verbose.
+- COUNT CHECK: Before finalising the output, count the total content items. If the count is below 25, add more "text" blocks to the thinnest sections.
+- TEXT BLOCK RATIO: At least 50% of all content items must be "text" type.
+- Use a variety of content types. Every lesson must include at least: section, text, list, callout, table, and at least 2 question blocks.
+- CODE BLOCKS: Do NOT include code blocks unless the lesson is explicitly and specifically about writing code, implementing an API, or demonstrating a concrete code pattern. Conceptual lessons, architectural topics, system design lessons, and general engineering principles should have zero code blocks. Only include code when showing actual implementation is the primary purpose of the lesson. When code is included, it must be realistic and production-quality — never pseudocode or toy examples. Every code block must have an "explanation" field of 1-2 sentences that appears above the code (in the rendered UI) and tells the learner what the code demonstrates and why it matters.
+- IMAGES: Dynamically include 1-3 image blocks per lesson based on how much value visualization adds to understanding the concepts. Use your judgment: if a concept is highly abstract, counterintuitive, or benefits from visual metaphor, include more images (2-3). If the lesson is more straightforward or procedural, use fewer (1-2). Each image should be an engaging, metaphorical, or narrative illustration that captures the essence of a concept — like editorial art in a premium textbook or magazine. Do NOT describe diagrams, flowcharts, infographics, icon sequences, or labeled process arrows. Instead, use visual metaphors and storytelling scenes. For example: a house of cards on a wobbly table for fragile systems, a lighthouse in fog for observability, a tightrope walker for balancing tradeoffs, hands reaching across a chasm for trust. Prefer placing the first image early in the lesson to anchor the reader. For each image, write a detailed "prompt" field describing the scene, the mood, the objects, and the metaphor — as if directing an illustrator. The prompt should paint a picture, not describe a chart. Only include images where they genuinely enhance comprehension, not as decoration.
+- Use inline formatting (**bold**, _italic_, \`code\`, ==highlight==, {{term}}) actively. Every "text" block should have highlighted phrases. Do not leave text blocks bare.
 - When useful, connect practical guidance to the historical reasons behind best practices and to the future-facing tradeoffs a developer may encounter next.
 - Every id must be unique within the lesson.
 - Return ONLY the JSON object, no markdown fences or commentary.
 
 EMPHASIS RULES:
-- Use **bold** for named concepts, vulnerability names, APIs, protocols, and key technical terms.
-- Use ==highlight== liberally for essential words and short phrases that carry the meaning of the point.
+- Use **bold** for short key words and phrases within a sentence — the constraint, the outcome, the failure mode, the mechanism, the decision. Aim for 3-5 bold phrases per "text" block.
+- Use ==highlight== for the core point of a passage. This is a full phrase, clause, or sentence that captures the central idea the surrounding text is building toward. It is not a single bolded word — it is the takeaway. Use it every 2-3 "text" blocks. Do not overuse it on minor points.
+- Use {{term}} for every named technical term, technology, API, protocol, library, framework, design pattern, or domain-specific vocabulary word. Examples: {{rate limiting}}, {{circuit breaker}}, {{RAG}}, {{JWT}}, {{idempotency}}, {{p95 latency}}, {{backoff}}, {{structured output}}.
+- Bold and {{term}} can be combined: **{{term}}** when a named term is also the key word in its sentence.
+- ==highlight== and {{term}} can be combined: =={{circuit breaker}}== when a named term is the core point of the passage.
+- Do not skip {{term}} just because a word is already highlighted or bolded. If it names a technology or concept, wrap it in {{term}}.
+- Highlight any word or short phrase that represents: a mechanism, a risk, an outcome, a constraint, a decision point, or a key action.
 - Prefer several small highlights across a block rather than one large highlighted span.
 - Do not highlight whole sentences or long clauses.
 - Highlight the smallest useful unit: usually a key word, short action, consequence, mechanism, or assumption.
 - It is good to highlight multiple important words in the same sentence when each one adds meaning.
-- Prefer highlighting words that explain how something works, what changes, what is trusted, what fails, and why it matters.
 - In explanatory text, highlight the words that a learner should notice first when scanning.
-- In lists, keep the item label in **bold** and use ==highlight== for the most important actions, mechanisms, consequences, and decision points.
-- Do not overuse formatting on every sentence, but do use enough highlighting to make the core meaning easy to scan.
+- In lists, keep the item label in **bold**, wrap technical names in {{term}}, and use ==highlight== for the most important actions, mechanisms, consequences, and decision points.
 - Do not highlight and bold the same exact phrase unless it is exceptionally important.
-- Prefer highlighting words that are essential to the point being made, not words that are merely descriptive.
+- If you write a "text" block with no ==highlight== spans, that is a mistake. Go back and add them.
+- If you write a "text" block that mentions a named technology and has no {{term}} spans, that is a mistake. Go back and add them.
+
+QUIZ RULES:
+- In addition to the "content" array, the output JSON must include a top-level "quiz" array.
+- The quiz should contain 5-10 multiple-choice questions that test the key concepts taught in the lesson.
+- Each quiz item must use this exact shape:
+  { "id": "quiz-N", "question": "...", "options": ["A", "B", "C", "D"], "correctAnswer": "B", "explanation": "..." }
+- "options" must always have exactly 4 choices.
+- "correctAnswer" must be one of the strings in "options".
+- "explanation" should be a concise sentence explaining why the correct answer is right.
+- Questions should range from recall to applied understanding.
+- Do not repeat questions that already appear as inline question blocks in the content.
 
 ${schemaJson ? 'Here is a reference lesson for the exact structure:\n\n' + schemaJson : ''}`;
 }
 
-// ── Main ──
-async function generateLesson(topic: string): Promise<void> {
-  console.log(`\n🚀 Generating lesson for: "${topic}"\n`);
+interface LessonContext {
+  course: string;
+  module: string;
+  chapter: string;
+  lesson: string;
+  objectives: string[];
+}
 
-  const slug = slugify(topic);
+// ── Main ──
+async function generateLesson(ctx: LessonContext): Promise<void> {
+  const startTime = Date.now();
+  console.log(`\n🚀 Generating lesson`);
+  console.log(`   Started:    ${new Date().toLocaleString()}`);
+  console.log(`   Course:     ${ctx.course}`);
+  console.log(`   Module:     ${ctx.module}`);
+  console.log(`   Chapter:    ${ctx.chapter}`);
+  console.log(`   Lesson:     ${ctx.lesson}`);
+  console.log(`   Objectives: ${ctx.objectives.length}\n`);
+
+  const slug = slugify(ctx.lesson);
   const schemaRef = getSchemaReference();
   const developerPrompt = buildDeveloperPrompt(schemaRef);
 
-  const userPrompt = `Generate a comprehensive lesson on the following topic:
+  const userPrompt = `Generate a comprehensive, in-depth lesson with the following context:
 
-"${topic}"
+Course:  "${ctx.course}"
+Module:  "${ctx.module}"
+Chapter: "${ctx.chapter}"
+Lesson:  "${ctx.lesson}"
 
-The lesson should be suitable for an intermediate-to-advanced web developer audience. Cover concepts, practical examples with code, common mistakes, and include interactive question blocks to reinforce learning.
+Learning objectives for this lesson:
+${ctx.objectives.map((o, i) => `${i + 1}. ${o}`).join('\n')}
 
-Keep the writing clean and readable. Avoid typography-heavy characters such as arrows, curly quotes, em dashes, and other decorative symbols. Prefer plain punctuation and natural wording. Use **bold**, ==highlight==, and _italic_ only occasionally when they add real emphasis.
+Use the course, module, and chapter names to calibrate scope, assumed prior knowledge, and tone. The lesson sits inside the chapter listed above, so do not re-teach concepts from earlier chapters and do not preview topics that come after this one. Focus tightly on the lesson topic.
+
+Each learning objective above must be clearly addressed somewhere in the lesson content. Structure sections so that a learner who completes the lesson can demonstrate each objective. Do not list the objectives verbatim as bullets; teach them through explanations, examples, and questions.
+
+DEPTH REQUIREMENT: This lesson must be substantial. Every section must contain sequential "text" blocks that build on each other before any list or table appears. Aim for 25-40 content items total with text blocks making up at least half. Every "text" block must be 3-5 sentences. Write the way a senior engineer explaining something to a junior would: with full reasoning, not just the conclusion.
+
+The lesson should be suitable for an intermediate-to-advanced web developer audience. Cover concepts thoroughly, address common misconceptions, explain why things work the way they do, and include interactive question blocks to reinforce learning.
+
+Keep the writing clean and readable. Use **bold** on 3-5 short key phrases per text block. Use ==highlight== for the core point of a passage — a full phrase or sentence that captures the central idea, used every 2-3 text blocks. Use {{term}} on every named technical term. Do not conflate bold and highlight — bold marks important words, highlight marks the insight.
 
 Where interesting or beneficial, include brief historical context and future-facing scope inside explanations so the learner understands both how the topic developed and where it may lead next. Keep those additions grounded, concise, and relevant.
+
+Append a "quiz" array of 5-10 MCQ items to the root of the JSON (see the schema in the system prompt).
 
 Use slug "${slug}" for the id and slug fields.
 Set lastUpdated to "${new Date().toISOString().split('T')[0]}".`;
 
   console.log('📡 Calling GPT-5.2...');
 
-  const response = await openai.chat.completions.create({
+  const response = await openai.responses.create({
     model: 'gpt-5.2',
-    messages: [
+    input: [
       { role: 'developer', content: developerPrompt },
       { role: 'user', content: userPrompt }
     ],
-    max_completion_tokens: 16000,
-    reasoning_effort: 'high',
-    response_format: { type: 'json_object' }
+    max_output_tokens: 32000,
+    reasoning: { effort: 'high' },
+    text: { format: { type: 'json_object' } }
   });
 
-  const raw = response.choices[0].message.content;
+  const raw = response.output_text;
   if (!raw) {
     throw new Error('No content returned from the model.');
   }
@@ -261,6 +415,13 @@ Set lastUpdated to "${new Date().toISOString().split('T')[0]}".`;
   if (!lesson.id || !lesson.content || !Array.isArray(lesson.content)) {
     throw new Error('Generated JSON is missing required fields (id, content[]).');
   }
+
+  if (!lesson.quiz || !Array.isArray(lesson.quiz) || lesson.quiz.length === 0) {
+    console.warn('⚠ No quiz array found in generated JSON — the lesson will have no quiz.');
+  }
+
+  // Generate images for all image content items
+  // await generateLessonImages(lesson, slug);
 
   // Ensure output directory exists
   if (!existsSync(OUTPUT_DIR)) {
@@ -275,23 +436,59 @@ Set lastUpdated to "${new Date().toISOString().split('T')[0]}".`;
   writeFileSync(filepath, serializedLesson, 'utf-8');
   writeFileSync(demoLessonPath, serializedLesson, 'utf-8');
 
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`\n✅ Saved: ${filepath}`);
   console.log(`✅ Updated demo lesson: ${demoLessonPath}`);
-  console.log(`   Title:    ${lesson.title}`);
-  console.log(`   Sections: ${lesson.content.filter((c: any) => c.type === 'section').length}`);
-  console.log(`   Items:    ${lesson.content.length}`);
+  console.log(`   Title:     ${lesson.title}`);
+  console.log(`   Sections:  ${lesson.content.filter((c: any) => c.type === 'section').length}`);
+  console.log(`   Items:     ${lesson.content.length}`);
+  console.log(`   Images:    ${lesson.content.filter((c: any) => c.type === 'image').length}`);
   console.log(`   Questions: ${lesson.content.filter((c: any) => c.type === 'question').length}`);
+  console.log(`   Quiz MCQs: ${lesson.quiz ? lesson.quiz.length : 0}`);
+  console.log(`   Duration:  ${elapsed}s`);
 }
 
 // ── CLI entry point ──
-const topic = process.argv[2];
-if (!topic) {
-  console.error('Usage: generateLesson.ts "<lesson topic>"');
-  console.error('Example: generateLesson.ts "SSRF, open redirects, request smuggling (concepts)"');
+// Usage:
+//   generateLesson.ts --course "Web Security" --module "Server-Side Attacks" --chapter "Trust Boundary Attacks" --lesson "SSRF..." --objectives "obj 1" --objectives "obj 2"
+//
+// Short aliases also supported: -c / -m / -ch / -l / -o
+
+function parseArgs(argv: string[]): Partial<LessonContext> {
+  const args = argv.slice(2);
+  const result: Partial<LessonContext> & { objectives: string[] } = { objectives: [] };
+  const map: Record<string, keyof Omit<LessonContext, 'objectives'>> = {
+    '--course': 'course', '-c': 'course',
+    '--module': 'module', '-m': 'module',
+    '--chapter': 'chapter', '-ch': 'chapter',
+    '--lesson': 'lesson', '-l': 'lesson',
+  };
+  for (let i = 0; i < args.length; i++) {
+    if ((args[i] === '--objectives' || args[i] === '-o') && args[i + 1]) {
+      result.objectives.push(args[++i]);
+    } else {
+      const key = map[args[i]];
+      if (key && args[i + 1]) {
+        result[key] = args[++i];
+      }
+    }
+  }
+  return result;
+}
+
+const parsed = parseArgs(process.argv);
+const missing = (['course', 'module', 'chapter', 'lesson'] as (keyof LessonContext)[]).filter(k => !parsed[k]);
+
+if (missing.length > 0) {
+  console.error(`\n❌ Missing required arguments: ${missing.map(k => `--${k}`).join(', ')}`);
+  console.error('\nUsage:');
+  console.error('  generateLesson.ts --course "<name>" --module "<name>" --chapter "<name>" --lesson "<name>" [--objectives "obj 1" --objectives "obj 2" ...]');
+  console.error('\nExample:');
+  console.error('  generateLesson.ts --course "Production-Ready AI" --module "What Makes an AI System Production-Ready" --chapter "From Demo AI to Real AI Systems" --lesson "Why most AI demos fail in production" --objectives "Define the difference between a demo and a production AI system" --objectives "Explain why demo success is based on narrow scenarios"');
   process.exit(1);
 }
 
-generateLesson(topic).catch((err) => {
+generateLesson(parsed as LessonContext).catch((err) => {
   console.error('\n❌ Generation failed:', err);
   process.exit(1);
 });

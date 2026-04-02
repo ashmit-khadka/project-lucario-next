@@ -3,15 +3,15 @@
   "slug": "ssrf-open-redirects-request-smuggling-concepts",
   "version": "1.0.0",
   "title": "SSRF, Open Redirects, and Request Smuggling (Concepts, Examples, and Defenses)",
-  "description": "Understand how SSRF, open redirects, and request smuggling cross trust boundaries, how they appear in real systems, and how to mitigate them with layered controls.",
+  "description": "Understand how SSRF, open redirects, and request smuggling cross trust boundaries in multi-hop web stacks, how they appear in real systems, and how to mitigate them with layered controls.",
   "meta": {
     "difficulty": "intermediate",
     "duration": 95,
     "prerequisites": [
-      "Solid HTTP fundamentals (methods, status codes, headers, redirects, cookies)",
-      "Experience building server-side web applications (Express, Fastify, Next.js, Django, Rails, etc.)",
-      "Basic reverse proxy and load balancer concepts (CDN, WAF, edge caching)",
-      "Comfort reading logs and debugging production issues"
+      "Strong HTTP fundamentals (headers, redirects, caching, cookies, TLS basics)",
+      "Experience building server-side web apps and APIs (Node.js, Python, Java, etc.)",
+      "Basic understanding of reverse proxies, CDNs, load balancers, and internal networks",
+      "Comfort reading logs and reasoning about multi-service request flows"
     ],
     "tags": [
       "Web Security",
@@ -23,65 +23,65 @@
       "Secure Coding"
     ],
     "author": "AI Generated",
-    "lastUpdated": "2026-03-19"
+    "lastUpdated": "2026-03-27"
   },
   "content": [
     {
       "id": "section-1",
       "type": "section",
-      "title": "1. One Mental Model: Trust Boundaries and Inconsistent Interpretation"
+      "title": "1. One mental model: trust boundaries and inconsistent interpretation"
     },
     {
       "id": "text-1",
       "type": "text",
-      "text": "SSRF, open redirects, and request smuggling look different on the surface, but they often share the same root cause: ==untrusted input== influences **routing** or **message boundaries** across multiple components.\n\nModern deployments routinely include several hops (browser, CDN, WAF, reverse proxy, application, internal services). Problems emerge when one hop ==trusts== data that another hop validates differently, normalizes differently, or does not validate at all."
+      "text": "SSRF, open redirects, and request smuggling often look like unrelated bugs, but they frequently share a root cause: ==untrusted input== influences **routing** or **message boundaries** across components.\n\nModern deployments are multi-hop by default (browser, CDN, WAF, reverse proxy, app server, internal services). Risk appears when one hop ==trusts== something another hop validates differently, normalizes differently, or does not validate at all."
     },
     {
       "id": "list-1",
       "type": "list",
       "items": [
-        "**SSRF**: attacker influences ==where your server connects== (host, port, protocol, redirects).",
-        "**Open redirect**: attacker influences ==where your app sends a user== using `Location` or equivalent redirect APIs.",
-        "**Request smuggling**: attacker exploits ==HTTP parser disagreement== so two hops split the same byte stream into different requests."
+        "**SSRF**: attacker influences ==where the server connects== (host, port, protocol, DNS result, redirects).",
+        "**Open redirect**: attacker influences ==where the app sends a user== via `Location` or redirect helpers.",
+        "**Request smuggling**: attacker exploits ==HTTP parser disagreement== so two hops split the same bytes into different requests."
       ]
     },
     {
       "id": "image-1",
       "type": "image",
-      "src": "/images/lessons/ssrf-open-redirects-request-smuggling-concepts/trust-boundaries.png",
-      "alt": "Browser, edge proxy, application server, and internal services with labels showing where SSRF, open redirects, and request smuggling occur",
-      "caption": "Most impact comes from crossing boundaries between untrusted clients, edge infrastructure, application code, and internal networks."
+      "src": "/images/lessons/ssrf-open-redirects-request-smuggling-concepts/trust-boundaries-multihop.png",
+      "alt": "Diagram of a multi-hop web stack showing browser, CDN/WAF, reverse proxy, app server, and internal services",
+      "caption": "Most real-world impact comes from crossing boundaries between untrusted clients, edge infrastructure, application code, and internal networks."
     },
     {
       "id": "table-1",
       "type": "table",
       "headers": [
         "Issue class",
-        "Attacker controls",
-        "Common entry points",
+        "What attacker controls",
+        "Where it appears",
         "Typical impact",
-        "Mitigation theme"
+        "Core mitigation theme"
       ],
       "rows": [
         [
           "SSRF",
           "Outbound destination and redirect chain",
-          "Link previews, webhooks, import-from-URL, PDF/image rendering",
-          "Internal data access, metadata credential theft, network probing",
+          "Link previews, webhooks, import-from-URL, renderers",
+          "Internal data access, metadata credential theft, port scanning",
           "Strict allowlists plus egress controls"
         ],
         [
           "Open redirect",
-          "Redirect destination (often `next`, `returnTo`, `redirect`)",
+          "Redirect destination (`next`, `returnTo`, `redirect`) ",
           "Login/logout flows, email deep links, SSO handoffs",
-          "Phishing, brand abuse, token leakage via URLs",
+          "Phishing, brand abuse, token leakage in URLs",
           "Allow only safe destinations, usually same-origin paths"
         ],
         [
           "Request smuggling",
           "Ambiguous HTTP/1.1 framing bytes",
-          "Proxy chains, protocol translation (HTTP/2 to HTTP/1.1)",
-          "Cache poisoning, auth confusion, request routing anomalies",
+          "Proxy chains, protocol translation, keep-alive reuse",
+          "Auth confusion, cache poisoning, request routing anomalies",
           "Reject ambiguity and normalize at the edge"
         ]
       ]
@@ -89,41 +89,42 @@
     {
       "id": "callout-1",
       "type": "callout",
-      "text": "Treat any feature that affects **destination selection** or **request boundaries** as ==security-critical==. Prefer ==deny-by-default== policies and centralize validation so behavior stays consistent across services and teams.",
+      "text": "Treat features that affect **destination selection** or **request boundaries** as ==security-critical==. Prefer ==deny-by-default== policies and centralize validation so different services cannot drift into inconsistent behavior.",
       "variant": "warning"
     },
     {
       "id": "question-mc-1",
       "type": "question",
       "variant": "multiple-choice",
-      "question": "What best connects SSRF, open redirects, and request smuggling?",
+      "question": "What best explains why SSRF, open redirects, and request smuggling are often grouped together in security reviews?",
       "options": [
-        "They only matter when TLS is disabled",
-        "They require SQL injection to work",
-        "They involve attacker influence over routing or parsing across trust boundaries",
-        "They only happen when cookies are missing the Secure flag"
+        "They are all browser-side vulnerabilities",
+        "They all require SQL injection first",
+        "They all involve attacker influence over routing or parsing across trust boundaries",
+        "They are fixed primarily by adding CORS headers"
       ],
-      "correctAnswer": "They involve attacker influence over routing or parsing across trust boundaries",
-      "explanation": "Each class becomes dangerous when untrusted input crosses into a component with privileged network access, trusted user expectations, or a different HTTP parser or normalizer."
+      "correctAnswer": "They all involve attacker influence over routing or parsing across trust boundaries",
+      "explanation": "Each issue becomes dangerous when untrusted input crosses components with different privileges or different parsing and normalization behavior."
     },
     {
       "id": "section-2",
       "type": "section",
-      "title": "2. SSRF: When a Convenience Fetch Becomes a Network Capability"
+      "title": "2. SSRF: when a convenience fetch becomes a network capability"
     },
     {
       "id": "text-2",
       "type": "text",
-      "text": "**SSRF** (server-side request forgery) happens when your server makes an outbound request based on attacker-controlled input. Historically, SSRF became more common as apps added \"fetch this URL\" features and as deployments shifted from monoliths to networks of internal services where ==network location== was implicitly trusted.\n\nIn cloud environments, SSRF impact often escalates because workloads may reach ==metadata endpoints== that return ==temporary credentials==."
+      "text": "**SSRF** (server-side request forgery) happens when your server makes outbound requests based on attacker-controlled input. Historically, SSRF became much more common as apps added \"fetch this URL\" features and architectures shifted to internal APIs where ==network location== was implicitly trusted.\n\nIn cloud environments, SSRF often escalates because workloads can sometimes reach ==metadata endpoints== that return ==temporary credentials== or sensitive configuration."
     },
     {
       "id": "list-2",
       "type": "list",
       "items": [
-        "**Link previews and unfurling**: the server fetches a URL to extract title, images, or Open Graph metadata.",
-        "**Webhooks and callbacks**: the server POSTs to a destination provided by a user or partner.",
-        "**Import-from-URL**: the server downloads files and processes them (images, PDFs, CSV).",
-        "**Document rendering**: HTML to PDF or \"screenshot this page\" services that fetch arbitrary pages."
+        "**Link preview and unfurling**: fetch a user-provided URL to extract page metadata.",
+        "**Webhook delivery**: POST to a user-provided callback URL.",
+        "**Import-from-URL**: download and process a file (CSV, image, PDF).",
+        "**Headless rendering**: screenshot or HTML-to-PDF services fetch a URL during rendering.",
+        "**AI agent tools**: server-side \"browse\" actions that fetch external pages and summarize them."
       ]
     },
     {
@@ -136,66 +137,92 @@
       "id": "code-1",
       "type": "code",
       "language": "javascript",
-      "code": "import express from 'express';\n\nconst app = express();\n\n// Vulnerable pattern (do not use).\napp.get('/api/preview', async (req, res) => {\n  const raw = String(req.query.url || '');\n  if (!raw) return res.status(400).json({ error: 'Missing url' });\n\n  // Naive checks are bypassable via encoding tricks, alternate IP formats,\n  // DNS resolution, and redirects.\n  if (!raw.startsWith('https://')) {\n    return res.status(400).json({ error: 'https only' });\n  }\n  if (raw.includes('localhost') || raw.includes('127.0.0.1')) {\n    return res.status(400).json({ error: 'local blocked' });\n  }\n\n  // Many HTTP clients follow redirects automatically.\n  const r = await fetch(raw);\n  const body = await r.text();\n\n  // Returning response content can turn SSRF into direct data exfiltration.\n  res.json({ status: r.status, sample: body.slice(0, 2000) });\n});\n\napp.listen(3000);"
+      "code": "import express from 'express';\n\nconst app = express();\n\n// Vulnerable SSRF pattern (do not use).\napp.get('/api/preview', async (req, res) => {\n  const raw = String(req.query.url || '');\n  if (!raw) return res.status(400).json({ error: 'Missing url' });\n\n  // Naive checks are bypassable (encoding tricks, alternate IP formats,\n  // DNS changes, and redirects).\n  if (!raw.startsWith('https://')) {\n    return res.status(400).json({ error: 'https only' });\n  }\n  if (raw.includes('localhost') || raw.includes('127.0.0.1')) {\n    return res.status(400).json({ error: 'local blocked' });\n  }\n\n  // Many HTTP clients follow redirects by default.\n  const r = await fetch(raw);\n  const body = await r.text();\n\n  // Returning content can turn SSRF into direct data exfiltration.\n  res.json({ status: r.status, sample: body.slice(0, 2000) });\n});\n\napp.listen(3000);"
     },
     {
       "id": "text-3",
       "type": "text",
-      "text": "This tries to detect \"bad\" destinations instead of allowing only what the feature needs. It also ignores that ==DNS results== and ==redirect chains== can change the real destination after validation, which creates a time-of-check/time-of-use gap."
+      "text": "This code tries to detect \"bad\" destinations instead of defining what the feature needs. It also ignores that ==DNS results== and ==redirect chains== can change the real destination after validation, creating a time-of-check/time-of-use gap."
     },
     {
       "id": "heading-2",
       "type": "heading",
-      "text": "Safer approach: strict allowlist, validate resolution, disable redirects, add limits",
+      "text": "Safer approach: strict allowlist, resolve and verify, disable redirects, add limits",
       "variant": "do"
     },
     {
       "id": "code-2",
       "type": "code",
       "language": "javascript",
-      "code": "import dns from 'node:dns/promises';\nimport net from 'node:net';\n\nconst ALLOWED_HOSTS = new Set([\n  'static.example.com',\n  'images.examplecdn.com'\n]);\n\nfunction isPrivateOrLocalIp(ip) {\n  const v = net.isIP(ip);\n\n  if (v === 4) {\n    const [a, b] = ip.split('.').map((n) => Number.parseInt(n, 10));\n    if (!Number.isInteger(a) || !Number.isInteger(b)) return true;\n\n    if (a === 10) return true;\n    if (a === 127) return true;\n    if (a === 169 && b === 254) return true; // link-local\n    if (a === 172 && b >= 16 && b <= 31) return true;\n    if (a === 192 && b === 168) return true;\n    return false;\n  }\n\n  if (v === 6) {\n    const s = ip.toLowerCase();\n    if (s === '::1') return true;\n    if (s.startsWith('fe80:')) return true; // link-local\n    if (s.startsWith('fc') || s.startsWith('fd')) return true; // ULA\n    return false;\n  }\n\n  // Treat non-IP as unsafe.\n  return true;\n}\n\nasync function assertSafeOutboundUrl(rawUrl) {\n  let u;\n  try {\n    u = new URL(rawUrl);\n  } catch {\n    throw new Error('Invalid URL');\n  }\n\n  if (u.protocol !== 'https:') throw new Error('Only https is allowed');\n  if (u.username || u.password) throw new Error('Userinfo not allowed');\n  if (!ALLOWED_HOSTS.has(u.hostname)) throw new Error('Host not allowed');\n  if (u.port && u.port !== '443') throw new Error('Port not allowed');\n\n  // Resolve and block private or local ranges.\n  const addrs = await dns.lookup(u.hostname, { all: true, verbatim: true });\n  if (addrs.length === 0) throw new Error('No DNS results');\n\n  for (const a of addrs) {\n    if (isPrivateOrLocalIp(a.address)) {\n      throw new Error(`Unsafe DNS result: ${a.address}`);\n    }\n  }\n\n  return u;\n}\n\nexport async function safeFetchPreview(rawUrl, {\n  timeoutMs = 2000,\n  maxBytes = 128 * 1024\n} = {}) {\n  const u = await assertSafeOutboundUrl(rawUrl);\n\n  const r = await fetch(u.toString(), {\n    method: 'GET',\n    redirect: 'manual',\n    signal: AbortSignal.timeout(timeoutMs),\n    headers: {\n      'User-Agent': 'PreviewFetcher/1.0',\n      'Accept': 'text/html, text/plain;q=0.9, */*;q=0.1'\n    }\n  });\n\n  if (r.status >= 300 && r.status < 400) {\n    throw new Error('Redirects not allowed');\n  }\n\n  // Enforce a byte limit to reduce DoS and memory risk.\n  const reader = r.body?.getReader?.();\n  if (!reader) {\n    const t = await r.text();\n    return t.slice(0, maxBytes);\n  }\n\n  let total = 0;\n  const chunks = [];\n\n  while (true) {\n    const { value, done } = await reader.read();\n    if (done) break;\n\n    total += value.byteLength;\n    if (total > maxBytes) throw new Error('Response too large');\n    chunks.push(value);\n  }\n\n  const merged = new Uint8Array(total);\n  let off = 0;\n  for (const c of chunks) {\n    merged.set(c, off);\n    off += c.byteLength;\n  }\n\n  return new TextDecoder('utf-8', { fatal: false }).decode(merged);\n}"
+      "code": "import dns from 'node:dns/promises';\nimport net from 'node:net';\n\nconst ALLOWED_HOSTS = new Set([\n  'static.example.com',\n  'images.examplecdn.com'\n]);\n\nfunction isPrivateOrLocalIp(ip) {\n  const v = net.isIP(ip);\n  if (v === 4) {\n    const [a, b] = ip.split('.').map((n) => Number.parseInt(n, 10));\n    if (!Number.isInteger(a) || !Number.isInteger(b)) return true;\n\n    if (a === 10) return true;\n    if (a === 127) return true;\n    if (a === 169 && b === 254) return true; // link-local\n    if (a === 172 && b >= 16 && b <= 31) return true;\n    if (a === 192 && b === 168) return true;\n    return false;\n  }\n\n  if (v === 6) {\n    const s = ip.toLowerCase();\n    if (s === '::1') return true;\n    if (s.startsWith('fe80:')) return true; // link-local\n    if (s.startsWith('fc') || s.startsWith('fd')) return true; // ULA\n    return false;\n  }\n\n  // Treat non-IP as unsafe.\n  return true;\n}\n\nasync function assertSafeOutboundUrl(rawUrl) {\n  let u;\n  try {\n    u = new URL(rawUrl);\n  } catch {\n    throw new Error('Invalid URL');\n  }\n\n  if (u.protocol !== 'https:') throw new Error('Only https is allowed');\n  if (u.username || u.password) throw new Error('Userinfo not allowed');\n  if (!ALLOWED_HOSTS.has(u.hostname)) throw new Error('Host not allowed');\n  if (u.port && u.port !== '443') throw new Error('Port not allowed');\n\n  // Resolve and block private or local ranges.\n  const addrs = await dns.lookup(u.hostname, { all: true, verbatim: true });\n  if (addrs.length === 0) throw new Error('No DNS results');\n\n  for (const a of addrs) {\n    if (isPrivateOrLocalIp(a.address)) {\n      throw new Error(`Unsafe DNS result: ${a.address}`);\n    }\n  }\n\n  return u;\n}\n\nexport async function safeFetchPreview(rawUrl, {\n  timeoutMs = 2000,\n  maxBytes = 128 * 1024\n} = {}) {\n  const u = await assertSafeOutboundUrl(rawUrl);\n\n  const r = await fetch(u.toString(), {\n    method: 'GET',\n    redirect: 'manual',\n    signal: AbortSignal.timeout(timeoutMs),\n    headers: {\n      'User-Agent': 'PreviewFetcher/1.0',\n      'Accept': 'text/html, text/plain;q=0.9, */*;q=0.1'\n    }\n  });\n\n  if (r.status >= 300 && r.status < 400) {\n    throw new Error('Redirects not allowed');\n  }\n\n  // Stream with a strict size limit to reduce DoS and memory risk.\n  const reader = r.body?.getReader?.();\n  if (!reader) {\n    const t = await r.text();\n    return t.slice(0, maxBytes);\n  }\n\n  let total = 0;\n  const chunks = [];\n\n  while (true) {\n    const { value, done } = await reader.read();\n    if (done) break;\n\n    total += value.byteLength;\n    if (total > maxBytes) throw new Error('Response too large');\n    chunks.push(value);\n  }\n\n  const merged = new Uint8Array(total);\n  let off = 0;\n  for (const c of chunks) {\n    merged.set(c, off);\n    off += c.byteLength;\n  }\n\n  return new TextDecoder('utf-8', { fatal: false }).decode(merged);\n}"
     },
     {
       "id": "callout-2",
       "type": "callout",
-      "text": "App-level SSRF validation can still fail due to ==DNS rebinding==, shared caches, and time-of-check/time-of-use gaps. The strongest backstop is ==network-level egress control== (egress proxy or firewall rules) that blocks private and link-local ranges even if the app makes a bad request.",
+      "text": "Even strong app-level SSRF validation can fail due to ==DNS rebinding==, dependency changes (redirect defaults), or inconsistent adoption across services. The strongest backstop is ==network-level egress control== that blocks private and link-local ranges even if the application makes a bad request.",
       "variant": "danger"
+    },
+    {
+      "id": "table-2",
+      "type": "table",
+      "headers": [
+        "SSRF control",
+        "What it prevents",
+        "Common pitfall"
+      ],
+      "rows": [
+        [
+          "Hostname allowlist",
+          "Connecting to attacker-chosen hosts",
+          "Overly broad wildcards or allowing user-controlled subdomains"
+        ],
+        [
+          "DNS resolution verification",
+          "Connecting to private or link-local IPs",
+          "Not considering rebinding or not checking all A/AAAA answers"
+        ],
+        [
+          "Redirects disabled or re-validated",
+          "Bypass via redirect chain",
+          "Validating only the first hop"
+        ],
+        [
+          "Timeouts and byte limits",
+          "Slowloris-style and large-response DoS",
+          "Buffering full bodies into memory"
+        ],
+        [
+          "Egress firewall or proxy",
+          "Bypasses and regressions in app logic",
+          "Allowing wide outbound access by default"
+        ]
+      ]
     },
     {
       "id": "question-reveal-1",
       "type": "question",
       "variant": "reveal-answer",
-      "prompt": "Why is validating only the initial URL unsafe if your HTTP client follows redirects automatically?",
-      "answer": "Because the final destination can change after validation, so the server may connect to an internal or otherwise forbidden host after a redirect.",
-      "explanation": "Attackers can use an allowed domain that redirects to a blocked location, including via an open redirect on the allowed domain. If redirects are enabled, you must disable them or re-validate every hop using the same policy.",
+      "prompt": "Why is validating only the initial URL unsafe if the HTTP client follows redirects automatically?",
+      "answer": "Because the final destination can change after validation, so the server may connect to an internal or forbidden host after a redirect.",
+      "explanation": "Attackers can host an allowed URL that redirects to a blocked location, or exploit an open redirect on an allowed domain. If redirects are enabled, you must disable them or re-validate every hop with the same policy.",
+      "code": "",
+      "codeLanguage": "javascript",
       "buttonLabel": "Show Answer"
     },
     {
       "id": "section-3",
       "type": "section",
-      "title": "3. Open Redirects: Borrowing Your Domain's Trust"
+      "title": "3. Open redirects: borrowing your domain's trust"
     },
     {
       "id": "text-4",
       "type": "text",
-      "text": "An **open redirect** is when your application redirects a user to an attacker-chosen destination. The obvious impact is phishing, but the more subtle risk is ==data leakage== when tokens or identifiers appear in URLs and are then shared via referrers, logs, or screenshots.\n\nHistorically, open redirects spread as frameworks made redirects easy and teams added `next` and `returnTo` parameters to improve UX. The fix is not \"better regex\". It is a clear ==redirect policy==."
-    },
-    {
-      "id": "heading-3",
-      "type": "heading",
-      "text": "Common mistake: redirect to `next` with no constraints",
-      "variant": "dont"
-    },
-    {
-      "id": "code-3",
-      "type": "code",
-      "language": "javascript",
-      "code": "import express from 'express';\n\nconst app = express();\n\n// Vulnerable open redirect.\napp.get('/login/complete', (req, res) => {\n  const next = String(req.query.next || '/');\n\n  // ... establish session ...\n\n  // If next is https://attacker.example/phish, the user is sent there.\n  res.redirect(302, next);\n});\n\napp.listen(3000);"
+      "text": "An **open redirect** is when your app redirects a user to an attacker-chosen destination. The obvious impact is phishing, but a common escalation is ==data leakage== when tokens or identifiers appear in URLs and get copied, logged, or sent as referrers.\n\nHistorically, open redirects spread as frameworks made redirects easy and teams added `next` and `returnTo` parameters to improve UX and support SSO. The fix is a clear ==redirect policy==, not a more complicated regex."
     },
     {
       "id": "text-5",
       "type": "text",
-      "text": "Bypasses are not limited to a plain `https://attacker.example`. In real stacks, different layers decode, normalize, and parse URLs in different ways."
+      "text": "Redirect bypasses are not limited to a plain `https://attacker.example`. Different layers decode and normalize differently, and browsers treat some URL forms as external even without a scheme."
     },
     {
       "id": "list-3",
@@ -204,8 +231,20 @@
         "**Absolute URL**: `https://attacker.example/` is clearly external.",
         "**Scheme-relative URL**: `//attacker.example/` is treated as external by browsers and many redirect helpers.",
         "**Encoded slashes**: `%2F%2Fattacker.example` may become `//attacker.example` after decoding in some stacks.",
-        "**Backslash confusion**: `\\\\attacker.example` may be normalized into a network-path reference or a different path by proxies or clients."
+        "**Backslash confusion**: `\\\\attacker.example` may be normalized inconsistently across proxies and clients."
       ]
+    },
+    {
+      "id": "heading-3",
+      "type": "heading",
+      "text": "Common mistake: redirecting to `next` with no constraints",
+      "variant": "dont"
+    },
+    {
+      "id": "code-3",
+      "type": "code",
+      "language": "javascript",
+      "code": "import express from 'express';\n\nconst app = express();\n\n// Vulnerable open redirect.\napp.get('/login/complete', (req, res) => {\n  const next = String(req.query.next || '/');\n\n  // ... establish session ...\n\n  // If next is //attacker.example/phish, the user is sent there.\n  res.redirect(302, next);\n});\n\napp.listen(3000);"
     },
     {
       "id": "heading-4",
@@ -217,43 +256,13 @@
       "id": "code-4",
       "type": "code",
       "language": "javascript",
-      "code": "const DEFAULT_NEXT = '/';\n\nexport function safeNextPath(input) {\n  if (typeof input !== 'string') return DEFAULT_NEXT;\n\n  const next = input.trim();\n  if (!next) return DEFAULT_NEXT;\n  if (next.length > 2048) return DEFAULT_NEXT;\n\n  // Allow only same-origin paths.\n  if (!next.startsWith('/')) return DEFAULT_NEXT;\n  if (next.startsWith('//')) return DEFAULT_NEXT; // scheme-relative\n  if (next.includes('\\\\')) return DEFAULT_NEXT; // backslash normalization tricks\n\n  // Optional tightening: only allow known in-app destinations.\n  const allowedPrefixes = ['/app', '/settings', '/dashboard', '/'];\n  const ok = allowedPrefixes.some((p) => next === p || next.startsWith(p + '/'));\n  return ok ? next : DEFAULT_NEXT;\n}\n\n// Example usage in an Express handler:\n// res.redirect(302, safeNextPath(req.query.next));"
+      "code": "const DEFAULT_NEXT = '/';\n\nexport function safeNextPath(input) {\n  if (typeof input !== 'string') return DEFAULT_NEXT;\n\n  const next = input.trim();\n  if (!next) return DEFAULT_NEXT;\n  if (next.length > 2048) return DEFAULT_NEXT;\n\n  // Allow only same-origin paths.\n  if (!next.startsWith('/')) return DEFAULT_NEXT;\n  if (next.startsWith('//')) return DEFAULT_NEXT; // scheme-relative\n  if (next.includes('\\\\')) return DEFAULT_NEXT; // normalization tricks\n\n  // Optional tightening: allow only known in-app destinations.\n  const allowedPrefixes = ['/app', '/settings', '/dashboard', '/'];\n  const ok = allowedPrefixes.some((p) => next === p || next.startsWith(p + '/'));\n  return ok ? next : DEFAULT_NEXT;\n}\n\n// Example usage:\n// res.redirect(302, safeNextPath(req.query.next));\n\n// Stronger pattern: store destination server-side (session) and accept only a short key.\n// That prevents an attacker from injecting a full URL via a query parameter."
     },
     {
-      "id": "table-2",
-      "type": "table",
-      "headers": [
-        "Input pattern",
-        "Example",
-        "Recommended behavior"
-      ],
-      "rows": [
-        [
-          "Same-origin path",
-          "/dashboard",
-          "Allow"
-        ],
-        [
-          "Absolute URL",
-          "https://attacker.example/phish",
-          "Replace with /"
-        ],
-        [
-          "Scheme-relative URL",
-          "//attacker.example/phish",
-          "Replace with /"
-        ],
-        [
-          "Backslash confusion",
-          "\\\\attacker.example\\phish",
-          "Replace with /"
-        ],
-        [
-          "Overly long or malformed",
-          "A 20KB string",
-          "Replace with /"
-        ]
-      ]
+      "id": "callout-3",
+      "type": "callout",
+      "text": "If you use OAuth or SAML, treat redirect handling as part of ==token handling==. Tight redirect policies reduce phishing and also reduce the chance of ==token leakage== into referrers and logs.",
+      "variant": "note"
     },
     {
       "id": "question-fill-1",
@@ -269,24 +278,24 @@
         "same-origin"
       ],
       "placeholder": "relative",
-      "explanation": "Restricting redirects to same-origin, path-absolute destinations prevents sending users to attacker-controlled domains while still supporting deep links within your app."
+      "explanation": "Restricting redirects to same-origin, path-absolute values prevents sending users to attacker-controlled domains while still supporting deep links within the app."
     },
     {
       "id": "section-4",
       "type": "section",
-      "title": "4. Request Smuggling: HTTP Desync From Parser Disagreement"
+      "title": "4. Request smuggling: HTTP desync from parser disagreement"
     },
     {
       "id": "text-6",
       "type": "text",
-      "text": "**Request smuggling** is an HTTP desynchronization issue. It happens when a front-end component (CDN, WAF, reverse proxy, load balancer) and a backend server disagree about where one request ends and the next begins.\n\nThis class became widely practical with the rise of proxy stacks and keep-alive in HTTP/1.1. It remains relevant today because many deployments still translate protocols at the edge, such as HTTP/2 or HTTP/3 externally and HTTP/1.1 internally, which can reintroduce ==normalization mismatches==."
+      "text": "**Request smuggling** is an HTTP desynchronization issue. It happens when a front-end component (CDN, WAF, reverse proxy, load balancer) and a backend server disagree about where one request ends and the next begins.\n\nThis class became widely practical with HTTP/1.1 keep-alive and proxy stacks. It remains relevant because many deployments terminate HTTP/2 or HTTP/3 at the edge and translate to HTTP/1.1 upstream, which can reintroduce ==normalization mismatches==."
     },
     {
       "id": "image-2",
       "type": "image",
-      "src": "/images/lessons/ssrf-open-redirects-request-smuggling-concepts/parser-disagreement.png",
-      "alt": "Proxy interprets one request while backend interprets two requests from the same TCP connection",
-      "caption": "Smuggling is about disagreement: the same bytes produce different request boundaries across hops."
+      "src": "/images/lessons/ssrf-open-redirects-request-smuggling-concepts/http-desync-keepalive.png",
+      "alt": "Proxy and backend interpreting the same TCP byte stream as different request boundaries",
+      "caption": "Smuggling is about disagreement: the same bytes produce different request sequences across hops."
     },
     {
       "id": "table-3",
@@ -295,33 +304,28 @@
         "Family",
         "Ambiguity used",
         "Typical mismatch",
-        "Common outcomes"
+        "What can happen"
       ],
       "rows": [
         [
           "CL.TE",
           "Both `Content-Length` and `Transfer-Encoding: chunked`",
           "Proxy honors `Content-Length`, backend honors chunked decoding",
-          "Hidden second request processed by backend"
+          "Hidden second request reaches backend"
         ],
         [
           "TE.CL",
           "Both present, components choose differently",
           "Proxy decodes chunked, backend trusts `Content-Length`",
-          "Backend waits for bytes that proxy thinks belong to next request"
+          "Backend consumes bytes from next request"
         ],
         [
           "Multiple CL",
           "Two `Content-Length` values",
-          "Different parsers choose first vs last header occurrence",
+          "Parsers choose first vs last occurrence",
           "Intermittent desync and routing anomalies"
         ]
       ]
-    },
-    {
-      "id": "text-7",
-      "type": "text",
-      "text": "The specific payload format varies by target. What matters is the condition: ==two components choose different framing rules==. Once desynced, the backend may treat attacker-controlled bytes as a separate request, often on a reused connection."
     },
     {
       "id": "heading-5",
@@ -336,6 +340,11 @@
       "code": "POST /submit HTTP/1.1\nHost: victim.example\nConnection: keep-alive\nContent-Length: 4\nTransfer-Encoding: chunked\n\n0\r\n\r\nGET /admin HTTP/1.1\nHost: victim.example\n\n"
     },
     {
+      "id": "text-7",
+      "type": "text",
+      "text": "In a vulnerable chain, the front proxy might treat the body as 4 bytes long and forward extra bytes as part of the same request, while the backend treats the body as chunked and sees the appended bytes as a new request. The attacker aims to get the backend to process a ==smuggled request== that the front-end security layer never evaluated."
+    },
+    {
       "id": "heading-6",
       "type": "heading",
       "text": "Defense focus: normalize and reject ambiguity at the edge",
@@ -345,83 +354,200 @@
       "id": "code-6",
       "type": "code",
       "language": "nginx",
-      "code": "# Conceptual NGINX hardening example. Validate in staging.\n# Goal: reject ambiguous framing and reduce desync risk.\n\nserver {\n  listen 443 ssl;\n\n  # If your clients do not require chunked uploads, reject Transfer-Encoding.\n  if ($http_transfer_encoding != \"\") {\n    return 400;\n  }\n\n  # Multiple Content-Length values are often rendered like \"123, 456\".\n  if ($http_content_length ~ \",\") {\n    return 400;\n  }\n\n  client_header_timeout 10s;\n  client_body_timeout 10s;\n\n  location / {\n    proxy_http_version 1.1;\n\n    # Remove hop-by-hop semantics.\n    proxy_set_header Connection \"\";\n\n    # Buffer full requests before sending upstream.\n    # Trade-offs include latency and memory, but it improves normalization.\n    proxy_request_buffering on;\n\n    proxy_pass http://app_backend;\n  }\n}"
+      "code": "# Conceptual NGINX hardening example. Validate in staging.\n# Goal: reject ambiguous framing and reduce desync risk.\n\nserver {\n  listen 443 ssl;\n\n  # If your clients do not require chunked uploads, reject Transfer-Encoding.\n  if ($http_transfer_encoding != \"\") {\n    return 400;\n  }\n\n  # Multiple Content-Length values are often rendered like \"123, 456\".\n  if ($http_content_length ~ \",\") {\n    return 400;\n  }\n\n  client_header_timeout 10s;\n  client_body_timeout 10s;\n\n  location / {\n    proxy_http_version 1.1;\n\n    # Remove hop-by-hop semantics.\n    proxy_set_header Connection \"\";\n\n    # Buffer full requests before sending upstream to improve normalization.\n    proxy_request_buffering on;\n\n    proxy_pass http://app_backend;\n  }\n}"
     },
     {
       "id": "callout-4",
       "type": "callout",
-      "text": "Request smuggling is frequently an ==integration issue== between components and defaults. Fixes usually require ==edge enforcement== so ambiguous requests never reach backends, plus regular config review when upgrading proxies, CDNs, or enabling new protocol features.",
+      "text": "Request smuggling is frequently an ==integration issue== between components and defaults. Fixes usually require ==edge enforcement== so ambiguous requests never reach backends, plus review when upgrading CDNs, proxies, service meshes, or enabling new protocol features.",
       "variant": "warning"
     },
     {
       "id": "question-mc-2",
       "type": "question",
       "variant": "multiple-choice",
-      "question": "What is the core prerequisite for HTTP/1.1 request smuggling?",
+      "question": "Which condition is the essential prerequisite for HTTP request smuggling?",
       "options": [
-        "A missing CSRF token on a form endpoint",
-        "Two components that split requests differently from the same byte stream",
-        "A database error that reveals a stack trace",
-        "A server that disables keep-alive"
+        "A missing CSRF token on a state-changing endpoint",
+        "A parser disagreement between two HTTP components about request boundaries",
+        "A reflected XSS issue in an error page",
+        "A backend that disables keep-alive"
       ],
-      "correctAnswer": "Two components that split requests differently from the same byte stream",
-      "explanation": "Smuggling requires parser disagreement. If every hop rejects ambiguous framing and enforces a single interpretation, the same bytes cannot become two different request sequences."
+      "correctAnswer": "A parser disagreement between two HTTP components about request boundaries",
+      "explanation": "Smuggling requires inconsistent interpretation of the same byte stream across hops so one side sees a different request boundary than the other."
     },
     {
       "id": "section-5",
       "type": "section",
-      "title": "5. Putting It Together: Practical Guardrails and What Changes Next"
+      "title": "5. Putting it together: guardrails, testing, and what changes next"
     },
     {
       "id": "text-8",
       "type": "text",
-      "text": "These issues are easier to prevent when you treat them as system design problems. Application code is important, but ==defaults==, ==shared libraries==, and ==edge controls== often decide whether a bypass becomes an incident.\n\nLooking forward, keep an eye on protocol and infrastructure evolution. HTTP/3 reduces some classes of network issues, but many deployments will still terminate at the edge and translate to HTTP/1.1 internally. Service meshes and internal gateways also add hops where ==inconsistent normalization== can reappear."
+      "text": "These issues are easier to prevent if you treat them as system design problems, not just input validation bugs. Application code matters, but ==defaults==, ==shared libraries==, and ==edge controls== often decide whether a bypass becomes an incident.\n\nNear-term evolution tends to add more hops: protocol termination at the edge, internal gateways, service meshes, and dedicated fetcher services for previews and AI agents. Each hop can introduce new parsing and normalization behavior, so consistency and centralized policy become more valuable over time."
     },
     {
-      "id": "list-5",
+      "id": "list-4",
       "type": "list",
       "items": [
-        "**Centralize validation**: one SSRF URL policy function, one redirect sanitizer, one shared HTTP client wrapper.",
-        "**Make safe defaults easy**: `redirect: 'manual'`, tight timeouts, byte limits, and explicit DNS checks for SSRF-capable code paths.",
-        "**Constrain destinations**: SSRF and OAuth-style redirects both benefit from ==allowlists== and exact matching of expected hosts or paths.",
-        "**Harden the edge**: normalize requests, reject ambiguous headers, and keep proxy and backend parsing behavior aligned.",
-        "**Test the full chain**: include CDN and WAF behavior in security testing, not just the app server."
+        "**Centralize policy**: one SSRF URL policy function, one redirect sanitizer, one shared HTTP client wrapper with safe defaults.",
+        "**Reduce blast radius**: run fetchers in a separate network segment with ==minimal egress== and no access to internal admin planes.",
+        "**Prefer server-side state**: store intended post-login destinations in session storage, not in a long-lived `next` query parameter.",
+        "**Test the full chain**: include CDN, WAF, reverse proxy, and protocol translation behavior in security testing, not just the app server.",
+        "**Treat upgrades as security changes**: proxy and HTTP client updates can change redirect behavior and parser quirks."
       ]
     },
     {
       "id": "table-4",
       "type": "table",
       "headers": [
-        "Capability",
-        "Safe baseline",
-        "Stronger hardening"
+        "What to monitor",
+        "Why it helps",
+        "Example signal"
       ],
       "rows": [
         [
-          "SSRF-capable fetcher",
-          "Allowlist hostnames, `https` only, redirects disabled, timeouts and max bytes",
-          "Egress proxy blocking private ranges, isolated network for fetchers, destination logging"
+          "Outbound destinations",
+          "Detect SSRF attempts and unexpected egress",
+          "Requests to link-local or unusual ports"
         ],
         [
-          "Redirect after login",
-          "Same-origin, path-absolute only",
-          "Allowlist internal prefixes, store destinations server-side instead of query params"
+          "Redirect outcomes",
+          "Detect open redirect probing and unsafe `next` inputs",
+          "Spike in `next=//...` patterns"
         ],
         [
-          "Proxy chain handling HTTP/1.1",
-          "Reject ambiguous framing at the edge",
-          "Request buffering, consistent HTTP versions end-to-end, periodic configuration review"
+          "Rejected framing",
+          "Detect request smuggling probes early",
+          "400 responses with both `Content-Length` and `Transfer-Encoding` present"
+        ],
+        [
+          "DNS answers used by fetchers",
+          "Detect risky resolution and rebinding patterns",
+          "Same hostname resolving to different IP ranges over time"
         ]
       ]
+    },
+    {
+      "id": "code-7",
+      "type": "code",
+      "language": "javascript",
+      "code": "import { safeNextPath } from './safe-next-path.js';\n\n// Minimal unit tests that catch common open-redirect bypass inputs.\n// In real code, use a test runner (Vitest, Jest) and include more cases.\n\nconst cases = [\n  { in: '/dashboard', out: '/dashboard' },\n  { in: '//evil.example/x', out: '/' },\n  { in: 'https://evil.example/x', out: '/' },\n  { in: '   /settings  ', out: '/settings' },\n  { in: '\\\\\\\\evil.example', out: '/' },\n  { in: '/app/../admin', out: '/app/../admin' } // Consider adding path normalization if needed.\n];\n\nfor (const c of cases) {\n  const got = safeNextPath(c.in);\n  if (got !== c.out) {\n    throw new Error(`safeNextPath(${JSON.stringify(c.in)}) = ${got}, expected ${c.out}`);\n  }\n}\n\nconsole.log('ok');"
+    },
+    {
+      "id": "callout-5",
+      "type": "callout",
+      "text": "Be explicit about what you normalize. For redirects, many teams choose to ==avoid path normalization== because it can create unexpected behavior. If you do normalize, do it once, do it consistently, and test it like a security feature.",
+      "variant": "tip"
     },
     {
       "id": "question-reveal-2",
       "type": "question",
       "variant": "reveal-answer",
-      "prompt": "You already have an SSRF allowlist in application code. Why should you still implement network egress controls?",
-      "answer": "Because code-level validation can be bypassed or regress over time, and egress controls still block private and link-local destinations even if the application makes a bad outbound request.",
-      "explanation": "SSRF defenses fail in practice due to library changes (redirect defaults), new parsing edge cases, DNS rebinding, and inconsistent validation across services. Egress controls reduce reliance on perfect application logic and limit blast radius.",
+      "prompt": "Why do layered defenses matter more for SSRF than for many other input validation issues?",
+      "answer": "Because SSRF turns the server into a network client, so a single validation miss can reach internal networks; egress controls and isolation reduce impact even when app logic fails.",
+      "explanation": "SSRF is a capability escalation. Defense in depth (policy, redirects, DNS checks, timeouts, and network egress restrictions) reduces the chance that any one mistake becomes access to internal systems or cloud metadata.",
+      "code": "",
+      "codeLanguage": "javascript",
       "buttonLabel": "Show Answer"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "quiz-1",
+      "question": "Which feature addition is most likely to introduce SSRF risk over time?",
+      "options": [
+        "Adding a new static JavaScript bundle to the frontend",
+        "Adding an endpoint that fetches a user-provided URL to generate previews",
+        "Adding server-side rendering for internal templates only",
+        "Adding stricter password hashing parameters"
+      ],
+      "correctAnswer": "Adding an endpoint that fetches a user-provided URL to generate previews",
+      "explanation": "Any server-side fetch driven by user input can become an attacker-controlled outbound network capability."
+    },
+    {
+      "id": "quiz-2",
+      "question": "Why is a hostname allowlist by itself sometimes insufficient for SSRF prevention?",
+      "options": [
+        "HTTPS does not work with hostnames",
+        "DNS can resolve an allowed hostname to a private or link-local IP address",
+        "Allowlisted hosts cannot return HTML safely",
+        "Hostnames are not logged by most proxies"
+      ],
+      "correctAnswer": "DNS can resolve an allowed hostname to a private or link-local IP address",
+      "explanation": "Without DNS resolution checks and egress controls, an allowed hostname can still map to unsafe destinations."
+    },
+    {
+      "id": "quiz-3",
+      "question": "Which redirect destination is the safest baseline to allow from an untrusted `next` parameter in a typical web app?",
+      "options": [
+        "Any `https://` URL as long as it uses TLS",
+        "Only a same-origin, path-absolute value that starts with `/` and is not `//...`",
+        "Any URL that matches a regex for allowed domains",
+        "Any value as long as you URL-encode it first"
+      ],
+      "correctAnswer": "Only a same-origin, path-absolute value that starts with `/` and is not `//...`",
+      "explanation": "Restricting to same-origin paths prevents external redirects while preserving common deep-link UX."
+    },
+    {
+      "id": "quiz-4",
+      "question": "What is the primary risk created by an open redirect during an OAuth login flow?",
+      "options": [
+        "It automatically disables TLS for the session",
+        "It can enable phishing and may leak tokens via URLs, referrers, or logs",
+        "It forces the user to re-enter their password on every request",
+        "It prevents the app from setting cookies"
+      ],
+      "correctAnswer": "It can enable phishing and may leak tokens via URLs, referrers, or logs",
+      "explanation": "Open redirects borrow trust from your domain and can also expose sensitive parameters carried in URLs."
+    },
+    {
+      "id": "quiz-5",
+      "question": "Which request header pattern is a classic indicator of potential request smuggling risk that should be rejected or normalized at the edge?",
+      "options": [
+        "Both `Content-Length` and `Transfer-Encoding: chunked` present",
+        "`User-Agent` and `Accept` present",
+        "`Cookie` and `Authorization` present",
+        "`Host` and `Referer` present"
+      ],
+      "correctAnswer": "Both `Content-Length` and `Transfer-Encoding: chunked` present",
+      "explanation": "Ambiguous framing headers can cause different components to split the same byte stream into different request boundaries."
+    },
+    {
+      "id": "quiz-6",
+      "question": "Which edge configuration choice most directly reduces request smuggling risk in common proxy setups?",
+      "options": [
+        "Turning off gzip compression",
+        "Rejecting ambiguous framing and buffering requests before sending upstream",
+        "Setting a longer keep-alive timeout",
+        "Disabling all response caching"
+      ],
+      "correctAnswer": "Rejecting ambiguous framing and buffering requests before sending upstream",
+      "explanation": "Normalization and ambiguity rejection at the edge prevent desync conditions from reaching backends."
+    },
+    {
+      "id": "quiz-7",
+      "question": "In SSRF defenses, what is the main reason to set `redirect: 'manual'` (or equivalent) in an HTTP client?",
+      "options": [
+        "To improve performance by avoiding extra network round trips",
+        "To ensure cookies are not sent on outbound requests",
+        "To prevent policy bypass via redirect chains to forbidden destinations",
+        "To automatically decompress response bodies"
+      ],
+      "correctAnswer": "To prevent policy bypass via redirect chains to forbidden destinations",
+      "explanation": "If redirects are followed automatically, validation of only the initial URL can be bypassed by redirecting to a blocked host."
+    },
+    {
+      "id": "quiz-8",
+      "question": "Why can request smuggling still matter in stacks that support HTTP/2 or HTTP/3?",
+      "options": [
+        "HTTP/2 and HTTP/3 require `Transfer-Encoding: chunked`",
+        "Many deployments terminate modern protocols at the edge and translate to HTTP/1.1 upstream",
+        "TLS prevents any proxy from parsing requests safely",
+        "Browsers always downgrade to HTTP/1.0 on slow networks"
+      ],
+      "correctAnswer": "Many deployments terminate modern protocols at the edge and translate to HTTP/1.1 upstream",
+      "explanation": "Protocol translation and multi-hop parsing can reintroduce framing and normalization mismatches that enable desync."
     }
   ]
 }

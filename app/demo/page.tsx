@@ -8,19 +8,25 @@ import { synthwave84 } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import NavigationHover from '@/components/NavigationHover';
 import Breadcrumb from '@/components/Breadcrumb';
 import QuestionBlock from '@/components/QuestionBlock';
+import LessonQuiz from '@/components/LessonQuiz';
 
-const SectionCode = ({ code, language = 'javascript' }: { code: string; language?: string }) => (
-    <SyntaxHighlighter language={language} style={synthwave84}>
-        {code}
-    </SyntaxHighlighter>
+const SectionCode = ({ code, language = 'javascript', explanation }: { code: string; language?: string; explanation?: string }) => (
+    <div className="section-code">
+        {explanation && <p className="section-code__explanation">{formatText(explanation)}</p>}
+        <SyntaxHighlighter language={language} style={synthwave84}>
+            {code}
+        </SyntaxHighlighter>
+    </div>
 );
 
 const SectionList = ({ points }: { points: string[] }) => (
-    <ul>
+    <div className="lesson-card-grid">
         {points.map((point, index) => (
-            <li key={index}>{formatText(point)}</li>
+            <div key={index} className="lesson-card-grid__card">
+                {formatText(point)}
+            </div>
         ))}
-    </ul>
+    </div>
 );
 
 const SectionHeading = ({ title, variant }: { title: string; variant?: string }) => {
@@ -105,7 +111,7 @@ const ContentRenderer = ({ item }: { item: any }) => {
         case 'heading':
             return <SectionHeading title={item.text} variant={item.variant} />;
         case 'code':
-            return <SectionCode code={item.code} language={item.language} />;
+            return <SectionCode code={item.code} language={item.language} explanation={item.explanation} />;
         case 'callout':
             return <SectionCallout content={item.text} type={item.variant} />;
         case 'image':
@@ -120,7 +126,7 @@ const ContentRenderer = ({ item }: { item: any }) => {
 };
 
 const DemoPage = () => {
-    const lesson = DemoLesson;
+    const lesson = DemoLesson as any;
 
     // Extract sections for navigation
     const sections = lesson.content
@@ -129,6 +135,11 @@ const DemoPage = () => {
             id: item.id,
             label: item.title,
         }));
+
+    // Add quiz to navigation if present
+    if (lesson.quiz && lesson.quiz.length > 0) {
+        sections.push({ id: 'section-quiz', label: 'Quiz' });
+    }
 
     // Group content by sections for rendering
     const groupedContent: any[] = [];
@@ -188,6 +199,14 @@ const DemoPage = () => {
                         ))}
                     </section>
                 ))}
+
+                {/* End-of-lesson quiz */}
+                {lesson.quiz && lesson.quiz.length > 0 && (
+                    <section id="section-quiz" className="learning-section section">
+                        <h2 className="learning-section-header">Quiz</h2>
+                        <LessonQuiz quiz={lesson.quiz} />
+                    </section>
+                )}
             </div>
         </div>
     );

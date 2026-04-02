@@ -19,22 +19,24 @@ const Section = ({ title, id, children }: { title: string; id: string; children:
     </section>
 );
 
-const SectionCode = ({ code, language = 'javascript' }: { code: string; language?: string }) => (
-    <SyntaxHighlighter language={language} style={synthwave84}>
-        {code}
-    </SyntaxHighlighter>
+const SectionCode = ({ code, language = 'javascript', explanation }: { code: string; language?: string; explanation?: string }) => (
+    <div className="section-code">
+        {explanation && <p className="section-code__explanation">{formatText(explanation)}</p>}
+        <SyntaxHighlighter language={language} style={synthwave84}>
+            {code}
+        </SyntaxHighlighter>
+    </div>
 );
 
-const SectionList = ({ points, listType = 'unordered' }: { points: string[]; listType?: 'ordered' | 'unordered' }) => {
-    const ListTag = listType === 'ordered' ? 'ol' : 'ul';
-    return (
-        <ListTag>
-            {points.map((point, index) => (
-                <li key={index}>{formatText(point)}</li>
-            ))}
-        </ListTag>
-    );
-};
+const SectionList = ({ points }: { points: string[] }) => (
+    <div className="lesson-card-grid">
+        {points.map((point, index) => (
+            <div key={index} className="lesson-card-grid__card">
+                {formatText(point)}
+            </div>
+        ))}
+    </div>
+);
 
 const SectionHeading = ({ title, variant }: { title: string; variant?: string }) => {
     let emoji = '';
@@ -177,11 +179,11 @@ const LessonScreen = () => {
                                 case 'text':
                                     return <p key={itemIndex}>{formatText(item.content)}</p>;
                                 case 'list':
-                                    return <SectionList key={itemIndex} points={item.items} listType={item.listType} />;
+                                    return <SectionList key={itemIndex} points={item.items} />;
                                 case 'heading':
                                     return <SectionHeading key={itemIndex} title={item.content} variant={item.variant} />;
                                 case 'code':
-                                    return <SectionCode key={itemIndex} code={item.content} />;
+                                    return <SectionCode key={itemIndex} code={item.code} language={item.language} explanation={item.explanation} />;
                                 case 'callout':
                                     return <SectionCallout key={itemIndex} content={item.content} type={item.variant} />;
                                 case 'image':
