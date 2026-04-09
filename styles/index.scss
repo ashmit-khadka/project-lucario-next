@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
 $size-screen: 1000px;
 $screen-padding-mobile: 1rem 1.5rem;
 
@@ -40,6 +42,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: $colour-background;
+    color: $color-font-primary;
 
     @include screen-sm {
         padding-top: 6rem;
@@ -232,11 +235,12 @@ a {
         margin-bottom: 4rem;
 
         h1 {
-            font-size: $font-size-xl;
+            font-size: 3.75rem;
             color: $color-font-primary;
-            font-weight: bold;
+            font-weight: 700;
+            font-family: 'DM Serif Display', serif;
+            letter-spacing: 0.01em;
             margin-bottom: 1rem;
-            //@extend .dm-mono-regular;
         }
 
         p {

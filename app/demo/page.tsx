@@ -19,15 +19,16 @@ const SectionCode = ({ code, language = 'javascript', explanation }: { code: str
     </div>
 );
 
-const SectionList = ({ points }: { points: string[] }) => (
-    <div className="lesson-card-grid">
-        {points.map((point, index) => (
-            <div key={index} className="lesson-card-grid__card">
-                {formatText(point)}
-            </div>
-        ))}
-    </div>
-);
+const SectionList = ({ points, ordered = false }: { points: string[]; ordered?: boolean }) => {
+    const Tag = ordered ? 'ol' : 'ul';
+    return (
+        <Tag className="lesson-list">
+            {points.map((point, index) => (
+                <li key={index}>{formatText(point)}</li>
+            ))}
+        </Tag>
+    );
+};
 
 const SectionHeading = ({ title, variant }: { title: string; variant?: string }) => {
     let emoji = '';
@@ -47,6 +48,13 @@ const SectionHeading = ({ title, variant }: { title: string; variant?: string })
         </h4>
     );
 };
+
+const SectionQuote = ({ quote, source }: { quote: string; source?: string }) => (
+    <blockquote className="learning-quote">
+        <p className="learning-quote__text">&ldquo;{quote}&rdquo;</p>
+        {source && <footer className="learning-quote__source">&mdash; {source}</footer>}
+    </blockquote>
+);
 
 const SectionCallout = ({ content, type = 'info' }: { content: string; type?: string }) => {
     const calloutConfig = {
@@ -107,11 +115,13 @@ const ContentRenderer = ({ item }: { item: any }) => {
         case 'text':
             return <p>{formatText(item.text)}</p>;
         case 'list':
-            return <SectionList points={item.items} />;
+            return <SectionList points={item.items} ordered={item.ordered} />;
         case 'heading':
             return <SectionHeading title={item.text} variant={item.variant} />;
         case 'code':
             return <SectionCode code={item.code} language={item.language} explanation={item.explanation} />;
+        case 'quote':
+            return <SectionQuote quote={item.text} source={item.source} />;
         case 'callout':
             return <SectionCallout content={item.text} type={item.variant} />;
         case 'image':
@@ -179,14 +189,12 @@ const DemoPage = () => {
                 <div className="screen-intro">
                     <h1 className="screen-header">{formatText(lesson.title)}</h1>
                     <p>{lesson.description}</p>
-                    
-                    {/* Display metadata */}
-                    <div style={{ marginTop: '1rem', opacity: 0.7, fontSize: '0.9rem' }}>
-                        <span>📊 Difficulty: {lesson.meta.difficulty}</span>
-                        {' • '}
-                        <span>⏱️ Duration: {lesson.meta.duration} min</span>
-                        {' • '}
-                        <span>🏷️ Tags: {lesson.meta.tags.join(', ')}</span>
+
+                    <div className="lesson-author">
+                        <div className="lesson-author__avatar">AK</div>
+                        <span className="lesson-author__name">
+                            Ashmit Khadka<span className="lesson-author__role">, Senior Software Engineer</span>
+                        </span>
                     </div>
                 </div>
 

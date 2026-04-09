@@ -41,6 +41,8 @@ export async function GET(
                 title: lesson.title,
                 description: lesson.description,
                 sections: lesson.sections,
+                module: lesson.module || null,
+                chapter: lesson.chapter || null,
             },
             quiz: lesson.quiz || null,
         };

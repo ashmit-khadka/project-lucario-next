@@ -10,7 +10,6 @@
 
         .question-block-badge {
             @extend .dm-mono-regular;
-            font-size: $font-size-sm;
             background-color: $color-font-primary;
             color: $color-font-primary-lighter;
             padding: 0.25rem 0.75rem;

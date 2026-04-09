@@ -8,14 +8,22 @@
 
 .learning-section {
 
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.75rem;
 
     .learning-section-header {
-        font-size: 2rem;
+        font-size: $font-size-xl2;
         font-weight: 600;
+        font-family: 'DM Serif Display', serif;
+        letter-spacing: 0.01em;
+    }
+
+    .learning-header {
+        font-family: 'DM Serif Display', serif;
+        font-size: $font-size-lg2;
+        letter-spacing: 0.01em;
     }
 
     .learning-section-code-block {
@@ -31,16 +39,13 @@
         width: 100%;
         overflow-x: auto;
         border: 1px solid rgba($color-font-primary, 0.18);
-        border-radius: 1rem;
         background: rgba($color-font-primary-lighter, 0.7);
         box-shadow: 0 10px 24px rgba($color-font-primary-darker, 0.08);
     }
 
     .learning-table {
         width: 100%;
-        min-width: 36rem;
         border-collapse: collapse;
-        font-size: 0.98rem;
         line-height: 1.55;
         font-family: "DM Sans", sans-serif;
 
@@ -58,16 +63,10 @@
         }
 
         th {
-            font-size: 0.84rem;
             font-weight: 700;
             letter-spacing: 0.04em;
             text-transform: uppercase;
             white-space: nowrap;
-        }
-
-        td {
-            color: $color-font-primary-dark;
-            font-weight: 400;
         }
 
         tbody tr {
@@ -104,14 +103,14 @@
         border-left: 4px solid;
         border-radius: 12px;
         margin: 0.75rem 0;
-        font-size: 0.96rem;
+        font-size: $font-size-md4;
         line-height: 1.6;
         background-color: rgba($color-font-primary, 0.02);
         font-family: "DM Sans", sans-serif;
 
         .callout-emoji {
             flex-shrink: 0;
-            font-size: 1.35rem;
+            font-size: $font-size-md5;
             line-height: 1;
             margin-top: 0.15rem;
         }
@@ -157,31 +156,67 @@
 }
 
 
-.lesson-card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.85rem;
+.lesson-list {
+    padding-left: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: $font-size-md3;
+    line-height: 1.65;
+    color: $color-font-primary-darker;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    list-style: none;
 
-    @include screen-sm {
-        grid-template-columns: 1fr;
+    li {
+        list-style: none;
+        padding-left: 2rem;
+        position: relative;
+
+        &::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            font-size: $font-size-md;
+        }
+    }
+}
+
+ol.lesson-list {
+    padding-left: 1.5rem;
+    list-style: decimal;
+
+    li {
+        list-style: decimal;
+        padding-left: 0.25rem;
+
+        &::before {
+            content: none;
+        }
+    }
+}
+
+.learning-quote {
+    margin: 0;
+    padding: 1.5rem 0 1.5rem 1.75rem;
+    border-left: 3px solid $color-font-primary;
+
+    &__text {
+        font-family: "DM Mono", monospace;
+        font-size: $font-size-md;
+        line-height: 1.6;
+        font-weight: 400;
+        color: $color-font-primary;
+        font-style: italic;
+        margin: 0 0 0.75rem 0;
     }
 
-    &__card {
-        background: rgba($color-font-primary-lighter, 0.7);
-        border: 1px solid rgba($color-font-primary, 0.14);
-        border-radius: 10px;
-        padding: 0.9rem 1.1rem;
+    &__source {
         font-family: "DM Sans", sans-serif;
-        font-size: 0.95rem;
-        line-height: 1.55;
-        color: $color-font-primary-darker;
-        box-shadow: 0 2px 8px rgba($color-font-primary-darker, 0.06);
-        transition: box-shadow 0.15s ease, border-color 0.15s ease;
-
-        &:hover {
-            border-color: rgba($color-font-primary, 0.3);
-            box-shadow: 0 4px 14px rgba($color-font-primary-darker, 0.1);
-        }
+        font-size: $font-size-sm;
+        color: $color-font-primary;
+        opacity: 0.7;
+        font-style: normal;
     }
 }
 
@@ -190,7 +225,7 @@
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9em;
+    font-size: $font-size-md2;
 }
 
 .section-code {
@@ -200,12 +235,68 @@
 
     &__explanation {
         font-family: "DM Sans", sans-serif;
-        font-size: 0.9rem;
+        font-size: $font-size-md2;
         color: $color-font-primary-dark;
         opacity: 0.8;
         margin: 0;
         padding: 0 0.25rem;
         font-style: italic;
+    }
+}
+
+.learning-image {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    figcaption {
+        font-family: "DM Sans", sans-serif;
+        font-size: $font-size-md3;
+        color: $color-font-primary;
+        opacity: 0.65;
+        font-style: italic;
+        padding: 0 0.5rem;
+    }
+}
+
+.lesson-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid $color-font-primary;
+    border-bottom: 1px solid $color-font-primary;
+
+    &__avatar {
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 50%;
+        background-color: $color-underline;
+        color: $color-font-primary;
+        font-family: "DM Mono", monospace;
+        font-size: $font-size-md;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        letter-spacing: 0.03em;
+    }
+
+    &__name {
+        font-family: "DM Mono", monospace;
+        font-size: $font-size-md;
+        font-weight: 500;
+    }
+
+    &__role {
+        font-weight: 300;
     }
 }
 
@@ -217,6 +308,8 @@
 }
 
 .inline-term {
+    font-family: "DM Mono", monospace;
+    font-size: $font-size-md;
     color: $color-font-primary;
     font-weight: 500;
     text-decoration: underline;
@@ -232,6 +325,77 @@
     &:hover {
         text-decoration-color: $color-font-primary;
         color: $color-font-primary-dark;
+    }
+}
+
+.term-hover-card {
+    background: $colour-background;
+    border: 1px solid rgba($color-font-primary, 0.18);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    max-width: 280px;
+    box-shadow: 0 8px 28px rgba($color-font-primary-darker, 0.12), 0 2px 8px rgba($color-font-primary, 0.08);
+    animation: hoverCardFadeIn 0.15s ease;
+    z-index: 9999;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        margin-bottom: 0.55rem;
+    }
+
+    &__icon {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    &__title {
+        font-family: "DM Mono", monospace;
+        font-size: $font-size-md;
+        font-weight: 600;
+        color: $color-font-primary-dark;
+    }
+
+    &__body {
+        font-size: $font-size-sm;
+        color: $color-font-primary-dark;
+        line-height: 1.55;
+        margin-bottom: 0.7rem;
+        opacity: 0.85;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    &__tag {
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: $color-font-primary-light;
+        background: rgba($color-font-primary, 0.08);
+        border-radius: 4px;
+        padding: 0.15rem 0.45rem;
+    }
+
+    &__arrow {
+        fill: $colour-background;
+        filter: drop-shadow(0 1px 2px rgba($color-font-primary, 0.15));
+    }
+}
+
+@keyframes hoverCardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

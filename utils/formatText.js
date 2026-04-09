@@ -1,4 +1,5 @@
 import React from 'react';
+import TermHoverCard from '../components/TermHoverCard';
 
 /**
  * Formats text with code, bold, italic, highlight, and term styling using the following syntax:
@@ -7,11 +8,12 @@ import React from 'react';
  * _italic_ for italic text
  * ==highlight== for highlighted text
  * {{term}} for clickable technical terms
- * 
+ *
  * @param {string} text - The text to format
+ * @param {Record<string, string>} [glossary] - Optional map of term → definition for tooltips
  * @returns {Array} Array of React elements and strings
  */
-const formatText = (text) => {
+const formatText = (text, glossary = {}) => {
     if (!text) return null;
 
     // Regex for matching different patterns
@@ -46,6 +48,10 @@ const formatText = (text) => {
     let lastIndex = 0;
 
     matches.forEach((match, index) => {
+        // Skip matches that are entirely inside an already-consumed span
+        // (e.g. {{term}} nested inside **bold** or ==highlight==)
+        if (match.start < lastIndex) return;
+
         // Add text before the match
         if (match.start > lastIndex) {
             result.push(text.substring(lastIndex, match.start));
@@ -63,31 +69,35 @@ const formatText = (text) => {
             case 'bold':
                 result.push(
                     <strong key={`bold-${index}`}>
-                        {match.content}
+                        {formatText(match.content, glossary)}
                     </strong>
                 );
                 break;
             case 'italic':
                 result.push(
                     <em key={`italic-${index}`}>
-                        {match.content}
+                        {formatText(match.content, glossary)}
                     </em>
                 );
                 break;
             case 'highlight':
                 result.push(
                     <mark key={`highlight-${index}`} className="inline-highlight">
-                        {formatText(match.content)}
+                        {formatText(match.content, glossary)}
                     </mark>
                 );
                 break;
-            case 'term':
+            case 'term': {
+                const definition = glossary[match.content];
                 result.push(
-                    <span key={`term-${index}`} className="inline-term">
-                        {match.content}
-                    </span>
+                    <TermHoverCard
+                        key={`term-${index}`}
+                        term={match.content}
+                        definition={definition}
+                    />
                 );
                 break;
+            }
             default:
                 result.push(match.content);
         }

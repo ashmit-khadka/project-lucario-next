@@ -117,6 +117,7 @@ export interface Lesson {
   title: string;
   description: string;
   meta: LessonMeta;
+  keyTerms?: string[];
   content: ContentItem[];
   quiz?: Quiz;
 }

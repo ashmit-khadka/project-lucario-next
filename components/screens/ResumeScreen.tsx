@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ADPLogo from '../../assets/image/logos/adp.jpg';
+import CTMLogo from '../../assets/image/logos/ctm.png';
 import PNSLogo from '../../assets/image/pnsuk_logo.png';
 import KCLLogo from '../../assets/image/kcl_logo.jpg';
 import UEALogo from '../../assets/image/uea_logo.webp';

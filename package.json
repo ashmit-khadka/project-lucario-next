@@ -12,6 +12,8 @@
     "tools:migrate": "tsx tools/scripts/migrateOldLessons.ts"
   },
   "dependencies": {
+    "@google/genai": "^1.48.0",
+    "@radix-ui/react-hover-card": "^1.1.15",
     "axios": "^1.9.0",
     "dotenv": "^17.2.3",
     "framer-motion": "^12.10.0",

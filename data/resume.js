@@ -2,6 +2,7 @@ import ADPLogo from '../assets/image/logos/adp.jpg';
 import PNSLogo from '../assets/image/pnsuk_logo.png';
 import KCLLogo from '../assets/image/kcl_logo.jpg';
 import UEALogo from '../assets/image/uea_logo.webp';
+import CTMLogo from '../assets/image/logos/ctm.png';
 
 import IconEmail from '../assets/icons/noun-mail-1428698.svg';
 import IconPhone from '../assets/icons/noun-phone-7849386.svg';
@@ -56,10 +57,26 @@ const text ={
         ],
         workExperience: [
             {
+                company: "Compare the Market",
+                position: "Senior Software Engineer",
+                startDate: "August 2025",
+                endDate: "Present",
+                responsibilities: [
+                    "Lead development of high-traffic comparison platform features serving millions of UK customers.",
+                    "Architect and implement scalable microservices using modern web technologies and cloud infrastructure.",
+                    "Drive technical design decisions and establish engineering best practices across development teams.",
+                    "Mentor junior and mid-level engineers through code reviews, pair programming, and technical guidance.",
+                    "Collaborate with product managers and stakeholders to translate business requirements into technical solutions.",
+                    "Optimize application performance and user experience across web and mobile platforms.",
+                    "Champion quality through comprehensive testing strategies and CI/CD pipeline improvements.",
+                ],
+                logo: CTMLogo, // Add logo later if available
+            },
+            {
                 company: "ADP (Automatic Data Processing)",
                 position: "Software Engineer",
                 startDate: "September 2021",
-                endDate: "Present",
+                endDate: "July 2025",
                 responsibilities: [
                     "Hackathon 2024 winner for developing a web application that tracks code deployments across multiple environments, improving visibility and release traceability.",
                     "Delivered over 500+ features and production bug fixes across the full stack using _React_, _TypeScript_, _Node.js_, _C#_.",

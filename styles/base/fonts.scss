@@ -2,11 +2,19 @@ $font-color-primary: #580081;
 $font-color-primary-light: #C1ABCC;
 
 
-$font-size-xs: 0.6rem;
-$font-size-sm: 0.8rem;
-$font-size-md: 1.2rem;
-$font-size-lg: 1.5rem;
-$font-size-xl: 2rem;
+$font-size-2xs:  0.6rem;   // was $font-size-xs
+$font-size-xs:   0.8rem;   // was $font-size-sm
+$font-size-sm:   0.85rem;
+$font-size-sm2:  0.88rem;  // em-relative contexts (inline code)
+$font-size-md2:  0.9rem;
+$font-size-md3:  0.95rem;
+$font-size-md4:  0.98rem;
+$font-size-md:   1.2rem;   // unchanged
+$font-size-md5:  1.35rem;
+$font-size-lg:   1.5rem;   // unchanged
+$font-size-lg2:  1.6rem;
+$font-size-xl:   2rem;     // unchanged
+$font-size-xl2:  2.4rem;
 
 .dm-mono-light {
     font-family: "DM Mono", monospace;

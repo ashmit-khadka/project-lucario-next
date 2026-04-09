@@ -5,6 +5,14 @@ import { useParams } from 'next/navigation';
 import formatText from '../../utils/formatText';
 import { getLesson } from '../../services/courseServices';
 
+interface LessonData {
+    title: string;
+    description: string;
+    sections: any[];
+    module?: string | null;
+    chapter?: string | null;
+}
+
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { synthwave84 } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import QuizScreen from './QuizScreen';
@@ -28,14 +36,22 @@ const SectionCode = ({ code, language = 'javascript', explanation }: { code: str
     </div>
 );
 
-const SectionList = ({ points }: { points: string[] }) => (
-    <div className="lesson-card-grid">
-        {points.map((point, index) => (
-            <div key={index} className="lesson-card-grid__card">
-                {formatText(point)}
-            </div>
-        ))}
-    </div>
+const SectionList = ({ points, ordered = false }: { points: string[]; ordered?: boolean }) => {
+    const Tag = ordered ? 'ol' : 'ul';
+    return (
+        <Tag className="lesson-list">
+            {points.map((point, index) => (
+                <li key={index}>{formatText(point)}</li>
+            ))}
+        </Tag>
+    );
+};
+
+const SectionQuote = ({ quote, source }: { quote: string; source?: string }) => (
+    <blockquote className="learning-quote">
+        <p className="learning-quote__text">&ldquo;{quote}&rdquo;</p>
+        {source && <footer className="learning-quote__source">&mdash; {source}</footer>}
+    </blockquote>
 );
 
 const SectionHeading = ({ title, variant }: { title: string; variant?: string }) => {
@@ -110,9 +126,9 @@ const LessonScreen = () => {
     const skill = params?.skill as string;
     const lessonId = params?.lessonId as string; // Extract the lesson ID from the URL
 
-    const [course, setCourse] = useState(null); // State to hold the course data if needed
-    const [lesson, setLesson] = useState(null); // State to hold the dynamically loaded lesson
-    const [quiz, setQuiz] = useState(null); // State to hold the quiz data if needed
+    const [course, setCourse] = useState<{ id: string; name: string; link: string } | null>(null);
+    const [lesson, setLesson] = useState<LessonData | null>(null);
+    const [quiz, setQuiz] = useState<any>(null);
 
 
     useEffect(() => {
@@ -145,7 +161,7 @@ const LessonScreen = () => {
         label: '📝 Quiz',
     });
 
-    if (!lesson) {
+    if (!lesson || !course) {
         return <div className="screen-empty"></div>
     }
 
@@ -163,6 +179,8 @@ const LessonScreen = () => {
                         { label: "Home", link: "/" },
                         { label: "Learn", link: "/learn" },
                         { label: course.name, link: `/learn/${skill}` },
+                        ...(lesson.module ? [{ label: lesson.module, link: `/learn/${skill}` }] : []),
+                        ...(lesson.chapter ? [{ label: lesson.chapter, link: `/learn/${skill}` }] : []),
                         { label: lesson.title, link: `/learn/${skill}/lesson/${lessonId}` },
                     ]}
                 />
@@ -172,14 +190,16 @@ const LessonScreen = () => {
                     <p>{lesson.description}</p>
                 </div>
 
-                {lesson.sections.map((section, sectionIndex) => (
+                {lesson.sections.map((section: any, sectionIndex: number) => (
                     <Section key={sectionIndex} id={`section-${sectionIndex}`} title={section.title}>
-                        {section.content.map((item, itemIndex) => {
+                        {section.content.map((item: any, itemIndex: number) => {
                             switch (item.type) {
                                 case 'text':
                                     return <p key={itemIndex}>{formatText(item.content)}</p>;
                                 case 'list':
-                                    return <SectionList key={itemIndex} points={item.items} />;
+                                    return <SectionList key={itemIndex} points={item.items} ordered={item.ordered} />;
+                                case 'quote':
+                                    return <SectionQuote key={itemIndex} quote={item.text} source={item.source} />;
                                 case 'heading':
                                     return <SectionHeading key={itemIndex} title={item.content} variant={item.variant} />;
                                 case 'code':

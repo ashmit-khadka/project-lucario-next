@@ -122,11 +122,18 @@ const LandingScreen = () => {
                 <SectionTitle title="Experience" />
                 <div className="section-items">
                     <ExperienceItem
-                        title="Software Engineer"
-                        organization="ADP (Automatic Data Processing)"
-                        date="September 2021 - Present"
+                        title={text.default.workExperience[0].position}
+                        organization={text.default.workExperience[0].company}
+                        date={text.default.workExperience[0].startDate + " - " + text.default.workExperience[0].endDate}
                         responsibilities={text.default.workExperience[0].responsibilities}
                         logo={text.default.workExperience[0].logo}
+                    />
+                    <ExperienceItem
+                        title={text.default.workExperience[1].position}
+                        organization={text.default.workExperience[1].company}
+                        date={text.default.workExperience[1].startDate + " - " + text.default.workExperience[1].endDate}
+                        responsibilities={text.default.workExperience[1].responsibilities}
+                        logo={text.default.workExperience[1].logo}
                         awards={[
                             { image: ImageAppStore, text: "4.9/5 from 37k+ reviews, Apple App Store" },
                             { image: ImagePlayStore, text: "4.9/5 from 10k+ reviews, Google Play Store" },
@@ -138,18 +145,18 @@ const LandingScreen = () => {
                         ]}
                     />
                     <ExperienceItem
-                        title="Associate Software Engineer"
-                        organization="ADP (Automatic Data Processing)"
-                        date="July 2019 - July 2020"
-                        responsibilities={text.default.workExperience[1].responsibilities}
-                        logo={text.default.workExperience[1].logo}
-                    />
-                    <ExperienceItem
                         title={text.default.workExperience[2].position}
                         organization={text.default.workExperience[2].company}
                         date={text.default.workExperience[2].startDate + " - " + text.default.workExperience[2].endDate}
                         responsibilities={text.default.workExperience[2].responsibilities}
                         logo={text.default.workExperience[2].logo}
+                    />
+                    <ExperienceItem
+                        title={text.default.workExperience[3].position}
+                        organization={text.default.workExperience[3].company}
+                        date={text.default.workExperience[3].startDate + " - " + text.default.workExperience[3].endDate}
+                        responsibilities={text.default.workExperience[3].responsibilities}
+                        logo={text.default.workExperience[3].logo}
                     />
                 </div>
             </div>
