@@ -12,6 +12,8 @@ export type ContentType =
   | 'image'
   | 'table';
 
+export type UUID = string;
+
 export type DifficultyLevel = 'beginner' | 'intermediate' | 'advanced';
 
 export type CalloutVariant = 'info' | 'warning' | 'tip' | 'danger' | 'note';

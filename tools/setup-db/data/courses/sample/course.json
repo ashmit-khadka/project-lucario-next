@@ -1,0 +1,18 @@
+{
+  "_id": "507f1f77bcf86cd799439001",
+  "slug": "production-ready-ai",
+  "version": "1.0.0",
+  "title": "Production-Ready AI Software Engineering",
+  "description": "A comprehensive course on building, deploying, and operating AI systems that are reliable, observable, and scalable in real-world production environments.",
+  "meta": {
+    "difficulty": "intermediate",
+    "author": "Lucario",
+    "tags": ["AI/ML", "System Design", "Production Readiness", "LLM Operations"]
+  },
+  "chapterIds": ["507f1f77bcf86cd799439002"],
+  "stats": {
+    "totalChapters": 1,
+    "totalLessons": 1,
+    "totalDuration": 25
+  }
+}

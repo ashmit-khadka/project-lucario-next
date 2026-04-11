@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "507f1f77bcf86cd799439002",
+    "slug": "from-demo-to-production",
+    "title": "From Demo AI to Real AI Systems",
+    "description": "Explore the critical gap between a compelling demo and a production-ready AI system, and learn the engineering discipline required to bridge it.",
+    "order": 1,
+    "courseId": "507f1f77bcf86cd799439001",
+    "lessonIds": ["507f1f77bcf86cd799439003"]
+  }
+]

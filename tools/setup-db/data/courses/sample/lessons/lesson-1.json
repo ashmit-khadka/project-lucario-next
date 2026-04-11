@@ -1,5 +1,5 @@
 {
-  "id": "why-most-ai-demos-fail-in-production",
+  "_id": "507f1f77bcf86cd799439003",
   "slug": "why-most-ai-demos-fail-in-production",
   "version": "1.0.0",
   "title": "Why Most AI Demos Fail in Production",
@@ -44,7 +44,7 @@
     {
       "id": "image-1",
       "type": "image",
-      "src": "/images/lessons/why-most-ai-demos-fail-in-production/demo-vs-reality.png",
+      "src": "/images/demo.jpg",
       "alt": "A magician on a clean stage contrasted with the complex machinery backstage.",
       "caption": "The demo is the flawless trick on stage; production is the messy, complex, and failure-prone machinery required to make it happen every time."
     },
@@ -207,7 +207,7 @@
     {
       "id": "image-2",
       "type": "image",
-      "src": "/images/lessons/why-most-ai-demos-fail-in-production/inconsistent-ai.png",
+      "src": "/images/demo.jpg",
       "alt": "A confused person looking at a weather vane that points in multiple directions at once.",
       "caption": "Inconsistency erodes trust. If an AI system gives different answers to the same question, users will quickly learn not to rely on it."
     },

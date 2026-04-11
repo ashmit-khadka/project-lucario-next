@@ -82,6 +82,26 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Setup DB",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "program": "${workspaceFolder}/tools/setup-db/setupDb.ts",
+            "cwd": "${workspaceFolder}/tools/setup-db",
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Next.js: Server",
             "runtimeExecutable": "npm",
             "runtimeArgs": [

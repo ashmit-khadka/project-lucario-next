@@ -341,19 +341,16 @@
     }
 }
 
-// ── Mobile floating nav (sticky top) ──
+// ── Mobile floating nav (sticky on scroll) ──
 .floating-nav--mobile {
     display: none; // hidden on desktop
 
     @include screen-sm {
         display: block;
-        position: fixed;
-        top: 6rem;
-        left: 0;
-        right: 0;
-        z-index: 1100;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: $colour-background;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
@@ -368,7 +365,6 @@
         background: transparent;
         cursor: pointer;
         @extend .dm-mono-regular;
-        font-size: $font-size-sm;
         color: $color-font-primary;
 
         .floating-nav-mobile-label {

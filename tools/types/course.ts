@@ -2,139 +2,69 @@
  * Course structure types and interfaces
  */
 
-import type { DifficultyLevel } from './lesson';
+import type { DifficultyLevel, UUID } from './lesson';
 
-// Lesson metadata (lightweight reference)
-export interface LessonReference {
-  id: string;
-  slug: string;
-  title: string;
-  chapterId: string;
-  order: number;
-  duration: number;
-  difficulty: DifficultyLevel;
-}
+export type { UUID };
 
-// Chapter structure
-export interface Chapter {
-  id: string;
-  title: string;
-  description?: string;
-  order: number;
-  lessonIds: string[]; // References to lesson IDs
-}
+// ── DB Documents ──────────────────────────────────────────────
 
-// Full course structure
-export interface Course {
-  id: string;
-  name: string;
-  slug: string;
-  description: string;
+export interface CourseMeta {
   difficulty: DifficultyLevel;
   icon?: string;
+  author?: string;
+  tags?: string[];
+}
+
+export interface CourseStats {
+  totalChapters: number;
   totalLessons: number;
-  totalDuration: number; // Total minutes
-  chapters: Chapter[];
-  lessons: LessonReference[]; // Flat list for quick lookup
+  totalDuration: number; // minutes
 }
 
-// ============================================================
-// INPUT CONFIGURATION (JSON format for course generation)
-// ============================================================
+export interface Course {
+  _id: UUID;
+  slug: string;
+  version: string;
+  title: string;
+  description: string;
+  meta: CourseMeta;
+  chapterIds: UUID[];
+  stats: CourseStats;
+}
 
-/**
- * Course input configuration - JSON structure
- */
+// ── Input / Generation Config ─────────────────────────────────
+
+export interface LessonInput {
+  name: string;        // kebab-case slug
+  title: string;
+  description: string;
+  topics: string[];
+  difficulty?: DifficultyLevel;
+}
+
+export interface ChapterInput {
+  name: string;        // kebab-case slug
+  title: string;
+  description: string;
+  lessons: LessonInput[];
+}
+
 export interface CourseInput {
-  course: CourseInfo;
-  content: ContentItem[];
-}
-
-/**
- * Course metadata
- */
-export interface CourseInfo {
-  name: string;           // Unique identifier (kebab-case): "full-stack-foundations"
-  title: string;          // Display name: "Full-Stack Foundations"
-  description: string;    // Course description (required)
-  difficulty: DifficultyLevel;
-  icon?: string;          // Optional icon path
-  author?: string;        // Course author
-  version?: string;       // Course version (e.g., "1.0.0")
-}
-
-/**
- * Base interface for all content items
- */
-interface BaseContentItem {
-  type: 'chapter' | 'lesson';
-  name: string;           // Unique identifier (kebab-case)
-  title: string;          // Display title
-  description: string;    // Description (required for all content)
-}
-
-/**
- * Chapter/Sub-chapter - container for other content
- */
-export interface ChapterItem extends BaseContentItem {
-  type: 'chapter';
-  content: ContentItem[]; // Nested chapters or lessons
-}
-
-/**
- * Lesson - individual learning unit
- */
-export interface LessonItem extends BaseContentItem {
-  type: 'lesson';
-  topics: string[];       // Topics to cover (required)
-  difficulty?: DifficultyLevel; // Optional override of course difficulty
-}
-
-/**
- * Union type for all content items
- */
-export type ContentItem = ChapterItem | LessonItem;
-
-// ============================================================
-// LEGACY INTERFACES (deprecated)
-// ============================================================
-
-/**
- * @deprecated Use CourseInput instead
- */
-export interface CourseConfig {
-  id: string;
-  name: string;
+  name: string;        // kebab-case slug
+  title: string;
   description: string;
   difficulty: DifficultyLevel;
   icon?: string;
-  chapters: ChapterConfig[];
+  author?: string;
+  tags?: string[];
+  chapters: ChapterInput[];
 }
 
-/**
- * @deprecated Use ChapterItem instead
- */
-export interface ChapterConfig {
-  id: string;
-  title: string;
-  description?: string;
-  order: number;
-  lessons: LessonConfig[];
-}
+// ── Generation Result ─────────────────────────────────────────
 
-/**
- * @deprecated Use LessonItem instead
- */
-export interface LessonConfig {
-  title: string;
-  topics: string[];
-  duration?: number;
-}
-
-// Generation result
 export interface GenerationResult {
   course: Course;
-  lessonFiles: string[]; // Paths to generated lesson files
+  lessonFiles: string[];
   success: boolean;
   errors?: string[];
 }
