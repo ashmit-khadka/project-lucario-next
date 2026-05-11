@@ -1,4 +1,4 @@
-/**
+﻿/**
  * generateGlossary.ts
  *
  * Scans all lesson JSON files in a directory, collects every unique {{term}}
@@ -25,7 +25,7 @@ dotenv.config({ path: join(__dirname, '../../.env') });
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// ── Extract every {{term}} from a raw string ──
+// â”€â”€ Extract every {{term}} from a raw string â”€â”€
 function extractTermsFromText(text: string): string[] {
   const regex = /\{\{([^}]+)\}\}/g;
   const terms: string[] = [];
@@ -36,7 +36,7 @@ function extractTermsFromText(text: string): string[] {
   return terms;
 }
 
-// ── Recursively collect terms from any nested JSON value ──
+// â”€â”€ Recursively collect terms from any nested JSON value â”€â”€
 function collectTermsFromValue(value: unknown): string[] {
   if (typeof value === 'string') {
     return extractTermsFromText(value);
@@ -50,7 +50,7 @@ function collectTermsFromValue(value: unknown): string[] {
   return [];
 }
 
-// ── Load all lesson JSON files from a directory ──
+// â”€â”€ Load all lesson JSON files from a directory â”€â”€
 function loadLessonFiles(dir: string): unknown[] {
   const absDir = resolve(dir);
   if (!existsSync(absDir)) {
@@ -67,7 +67,7 @@ function loadLessonFiles(dir: string): unknown[] {
   });
 }
 
-// ── Gather all unique terms from a set of lessons ──
+// â”€â”€ Gather all unique terms from a set of lessons â”€â”€
 function gatherAllTerms(lessons: unknown[]): string[] {
   const termSet = new Set<string>();
 
@@ -87,18 +87,18 @@ function gatherAllTerms(lessons: unknown[]): string[] {
   return Array.from(termSet).sort((a, b) => a.localeCompare(b));
 }
 
-// ── Ask the AI for a canonical one-sentence definition for every term ──
+// â”€â”€ Ask the AI for a canonical one-sentence definition for every term â”€â”€
 async function defineTerms(
   terms: string[],
   courseName: string
 ): Promise<Record<string, string>> {
   if (terms.length === 0) return {};
 
-  console.log(`\n📡 Requesting definitions for ${terms.length} terms...`);
+  console.log(`\nðŸ“¡ Requesting definitions for ${terms.length} terms...`);
 
   const systemPrompt = `You are a precise technical dictionary for software engineering courses.
 For each term provided, write a single clear sentence (20-40 words) that defines it accurately and concisely.
-The definition must be self-contained — a learner should understand the term without any surrounding context.
+The definition must be self-contained â€” a learner should understand the term without any surrounding context.
 Use plain English. Avoid jargon unless it is the term itself.
 The definitions will appear as tooltips inside a course called "${courseName}".
 
@@ -122,7 +122,7 @@ Return ONLY the JSON object, no markdown fences or commentary.`;
   return JSON.parse(raw) as Record<string, string>;
 }
 
-// ── Main ──
+// â”€â”€ Main â”€â”€
 async function generateGlossary(opts: {
   dir: string;
   out: string;
@@ -130,7 +130,7 @@ async function generateGlossary(opts: {
 }): Promise<void> {
   const startTime = Date.now();
 
-  console.log(`\n📚 Generating glossary`);
+  console.log(`\nðŸ“š Generating glossary`);
   console.log(`   Course: ${opts.course}`);
   console.log(`   Source: ${resolve(opts.dir)}`);
   console.log(`   Output: ${resolve(opts.out)}`);
@@ -142,7 +142,7 @@ async function generateGlossary(opts: {
   console.log(`   Unique terms:  ${terms.length}`);
 
   if (terms.length === 0) {
-    console.log('\n⚠  No terms found — nothing to do.');
+    console.log('\nâš   No terms found â€” nothing to do.');
     return;
   }
 
@@ -154,7 +154,7 @@ async function generateGlossary(opts: {
       existing = JSON.parse(readFileSync(resolve(opts.out), 'utf-8'));
       console.log(`   Existing defs: ${Object.keys(existing).length}`);
     } catch {
-      console.warn('⚠  Could not parse existing glossary — will regenerate all.');
+      console.warn('âš   Could not parse existing glossary â€” will regenerate all.');
     }
   }
 
@@ -172,12 +172,12 @@ async function generateGlossary(opts: {
   writeFileSync(resolve(opts.out), JSON.stringify(merged, null, 2), 'utf-8');
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`\n✅ Glossary written: ${resolve(opts.out)}`);
+  console.log(`\nâœ… Glossary written: ${resolve(opts.out)}`);
   console.log(`   Total terms: ${Object.keys(merged).length}`);
   console.log(`   Duration:    ${elapsed}s`);
 }
 
-// ── CLI ──
+// â”€â”€ CLI â”€â”€
 function parseArgs(argv: string[]): Partial<{ dir: string; out: string; course: string }> {
   const args = argv.slice(2);
   const result: Partial<{ dir: string; out: string; course: string }> = {};
@@ -199,7 +199,7 @@ const opts = parseArgs(process.argv);
 const missing = (['dir', 'out', 'course'] as const).filter((k) => !opts[k]);
 
 if (missing.length > 0) {
-  console.error(`\n❌ Missing required arguments: ${missing.map((k) => `--${k}`).join(', ')}`);
+  console.error(`\nâŒ Missing required arguments: ${missing.map((k) => `--${k}`).join(', ')}`);
   console.error('\nUsage:');
   console.error(
     '  generateGlossary.ts --dir "<lessons-dir>" --out "<output-path>" --course "<course-name>"'
@@ -212,6 +212,7 @@ if (missing.length > 0) {
 }
 
 generateGlossary(opts as { dir: string; out: string; course: string }).catch((err) => {
-  console.error('\n❌ Glossary generation failed:', err);
+  console.error('\nâŒ Glossary generation failed:', err);
   process.exit(1);
 });
+

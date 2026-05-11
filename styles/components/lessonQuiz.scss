@@ -16,7 +16,6 @@
 
     .lesson-quiz-badge {
         @extend .dm-mono-regular;
-        font-size: $font-size-sm;
         background-color: $color-font-primary;
         color: $color-font-primary-lighter;
         padding: 0.25rem 0.75rem;
@@ -25,7 +24,6 @@
 
     .lesson-quiz-counter {
         @extend .dm-mono-regular;
-        font-size: $font-size-sm;
         color: $color-font-primary-light;
     }
 
@@ -45,7 +43,6 @@
     }
 
     .lesson-quiz-question {
-        font-size: $font-size-md;
         color: $color-font-primary;
         margin-bottom: 1.25rem;
         line-height: 1.55;
@@ -70,7 +67,6 @@
         border-radius: 6px;
         cursor: pointer;
         transition: background-color 0.15s ease, border-color 0.15s ease;
-        font-size: 0.98rem;
 
         &:hover {
             background-color: rgba($color-font-primary, 0.06);
@@ -94,7 +90,6 @@
 
     .lesson-quiz-option-marker {
         @extend .dm-mono-regular;
-        font-size: $font-size-sm;
         width: 1.6rem;
         height: 1.6rem;
         display: flex;
@@ -108,7 +103,6 @@
     // ── Button ──
     .lesson-quiz-btn {
         @extend .dm-mono-regular;
-        font-size: $font-size-sm;
         background-color: $color-font-primary;
         color: $color-font-primary-lighter;
         border: none;
@@ -149,7 +143,6 @@
 
     .lesson-quiz-explanation {
         opacity: 0.85;
-        font-size: $font-size-sm;
     }
 
     // ── Results screen ──
@@ -165,7 +158,6 @@
     }
 
     .lesson-quiz-score {
-        font-size: 1.4rem;
         font-weight: 600;
         color: $color-font-primary;
         margin-bottom: 0.5rem;

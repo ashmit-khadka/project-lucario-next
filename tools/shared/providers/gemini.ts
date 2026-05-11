@@ -1,5 +1,5 @@
-import { GoogleGenAI } from '@google/genai';
-import type { LLMProvider } from '../types';
+﻿import { GoogleGenAI } from '@google/genai';
+import type { LLMProvider } from './types';
 
 export class GeminiProvider implements LLMProvider {
     readonly name = 'Gemini 2.5 Pro (Google)';
@@ -28,8 +28,6 @@ export class GeminiProvider implements LLMProvider {
     }
 
     async generateImage(_prompt: string, _destPath: string): Promise<string | null> {
-        // Gemini 2.5 Pro does not support image generation — return null so the
-        // orchestrator can skip the image generation step gracefully.
         console.log('   ⚠  Gemini provider does not support image generation — skipping.');
         return null;
     }

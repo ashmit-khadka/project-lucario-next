@@ -18,7 +18,6 @@
     }
 
     .question-block-prompt {
-        font-size: $font-size-md;
         margin-bottom: 1rem;
         color: $color-font-primary;
     }
@@ -26,7 +25,6 @@
     // ── Button ──
     .question-block-btn {
         @extend .dm-mono-regular;
-        font-size: $font-size-sm;
         background-color: $color-font-primary;
         color: $color-font-primary-lighter;
         border: none;
@@ -73,7 +71,6 @@
 
     .question-block-explanation {
         opacity: 0.85;
-        font-size: $font-size-sm;
     }
 }
 
@@ -118,7 +115,6 @@
 
             .question-block-option-marker {
                 @extend .dm-mono-regular;
-                font-size: $font-size-sm;
                 width: 1.6rem;
                 height: 1.6rem;
                 display: flex;
@@ -148,7 +144,6 @@
 
     .question-block-input {
         @extend .dm-mono-regular;
-        font-size: $font-size-sm;
         padding: 0.5rem 0.75rem;
         border: 1px solid rgba($color-font-primary, 0.3);
         border-radius: 4px;

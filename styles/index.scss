@@ -178,6 +178,7 @@ a {
 
 
 @media print {
+
     p,
     h1,
     h2,
@@ -202,7 +203,8 @@ a {
         size: A4;
     }
 
-    html, body {
+    html,
+    body {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -246,9 +248,9 @@ a {
         p {
             margin-bottom: 1rem;
             //@extend .dm-sans-regular;
-        }   
-        
-    }  
+        }
+
+    }
 }
 
 .screen-empty {

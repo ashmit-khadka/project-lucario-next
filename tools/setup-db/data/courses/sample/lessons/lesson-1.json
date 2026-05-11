@@ -1,382 +1,356 @@
 {
   "_id": "507f1f77bcf86cd799439003",
+  "id": "why-most-ai-demos-fail-in-production",
   "slug": "why-most-ai-demos-fail-in-production",
   "version": "1.0.0",
   "title": "Why Most AI Demos Fail in Production",
-  "description": "Explore the critical gap between a compelling AI demo and a reliable, production-ready system.",
+  "description": "An analysis of the critical gap between impressive AI demonstrations and the robust, reliable systems required for production use.",
   "meta": {
     "difficulty": "intermediate",
     "duration": 25,
     "prerequisites": [],
     "tags": [
-      "AI/ML",
-      "System Design",
+      "AI Systems",
       "Production Readiness",
+      "System Design",
       "LLM Operations"
     ],
     "author": "AI Generated",
-    "lastUpdated": "2026-04-10"
+    "lastUpdated": "2026-05-08"
   },
   "keyTerms": [
+    "Demo",
+    "Prototype",
+    "Pilot",
+    "Production System",
+    "Happy Path",
+    "Adversarial Usage",
+    "Prompt Injection",
+    "Long Tail",
+    "Observability",
     "RAG",
-    "prompt injection",
-    "p95 latency",
-    "non-determinism",
-    "OpenTelemetry",
-    "evals"
+    "Guardrails",
+    "Fallback Behaviour",
+    "Latency",
+    "p99 Latency",
+    "Hallucination",
+    "Evaluation Harness",
+    "Red Teaming",
+    "SLO"
   ],
   "content": [
     {
       "id": "section-1",
       "type": "section",
-      "title": "1. The Anatomy of a 'Wow' Demo"
+      "title": "1. The Production Readiness Spectrum"
     },
     {
       "id": "text-1",
       "type": "text",
-      "text": "We've all seen it: the AI demo that feels like magic. In thirty seconds, it summarizes a dense document, writes flawless code, or generates a stunning image. The immediate reaction is excitement and a rush to get this capability into users' hands. This is the **allure of the 'wow' demo**, a powerful tool for showcasing what is _possible_. However, it's crucial to distinguish this proof of possibility from a proof of reliability."
+      "text": "The journey from an idea to a production AI system involves distinct stages, each with a different purpose and success criteria. A common failure pattern is mistaking success at one stage for readiness at another. The most dangerous leap is from a compelling **demo** directly to what is believed to be a production-ready feature, skipping the crucial intermediate steps."
     },
     {
       "id": "text-2",
       "type": "text",
-      "text": "A demo is a carefully staged performance. It operates on a conceptual soundstage with perfect lighting, a scripted interaction, and a well-rehearsed actor. Its primary goal is to **create maximum impact** with minimum complexity. ==A successful demo proves that a desired outcome can be achieved at least once, under ideal conditions==; it says almost nothing about whether that outcome can be achieved consistently, safely, and at scale."
-    },
-    {
-      "id": "image-1",
-      "type": "image",
-      "src": "/images/demo.jpg",
-      "alt": "A magician on a clean stage contrasted with the complex machinery backstage.",
-      "caption": "The demo is the flawless trick on stage; production is the messy, complex, and failure-prone machinery required to make it happen every time."
-    },
-    {
-      "id": "text-3",
-      "type": "text",
-      "text": "Understanding where a project sits on the maturity spectrum is key to managing expectations and planning engineering work. A feature typically evolves through several distinct phases, each with a different purpose and set of success criteria. Shipping a demo directly to production is like entering a go-kart in a Formula 1 race: the core concept of a wheeled vehicle is there, but it lacks the resilience, safety, and performance for the real environment."
+      "text": "This mistake stems from a fundamental misunderstanding of what each stage proves. A {{Demo}} proves a concept is **possible**. A {{Prototype}} proves it is **buildable**. A {{Pilot}} proves it has **value** for a limited audience. A {{Production System}} must prove it is **reliable**, **scalable**, and **safe** for everyone, all the time."
     },
     {
       "id": "table-1",
       "type": "table",
       "headers": [
         "Stage",
-        "Goal",
-        "Users",
-        "Data",
-        "Failure Tolerance"
+        "Primary Goal",
+        "Key Question",
+        "Typical User"
       ],
       "rows": [
         [
-          "**Demo**",
-          "Prove possibility; generate excitement.",
-          "Internal team, stakeholders.",
-          "Curated, clean, 'happy path' only.",
-          "Very high (failure is hidden)."
+          "Demo",
+          "Demonstrate possibility",
+          "Can this even work?",
+          "The developer"
         ],
         [
-          "**Prototype**",
-          "Explore technical feasibility; test a core mechanism.",
-          "Engineers, designers.",
-          "Small, controlled but slightly varied.",
-          "High (failure is for learning)."
+          "Prototype",
+          "Explore feasibility",
+          "Can we build a basic version?",
+          "Internal team"
         ],
         [
-          "**Pilot**",
-          "Validate user value; find edge cases.",
-          "A small group of trusted, real users.",
-          "Real, but limited in scope and volume.",
-          "Medium (failures are expected and monitored)."
+          "Pilot",
+          "Validate value and usability",
+          "Does this solve a real problem?",
+          "A small, trusted user group"
         ],
         [
-          "**Production**",
-          "Deliver reliable, scalable value.",
-          "General user population.",
-          "Wild, unpredictable, and high-volume.",
-          "Very low (failures impact users and business)."
+          "Production",
+          "Deliver reliable service at scale",
+          "Does it always work correctly and safely?",
+          "All target users"
         ]
       ]
     },
     {
+      "id": "text-3",
+      "type": "text",
+      "text": "The engineering discipline, cost, and rigour increase exponentially at each step. Demos are cheap and fast, designed to generate excitement. ==Production systems are expensive and slow to build because they are designed to earn and maintain user trust== through predictable behaviour, not novelty."
+    },
+    {
       "id": "section-2",
       "type": "section",
-      "title": "2. The Demo's Perfect, Fragile World"
+      "title": "2. The Demo Illusion: The Tyranny of the Happy Path"
     },
     {
       "id": "text-4",
       "type": "text",
-      "text": "Demos succeed because they operate within an extremely narrow, predictable context. The input data is hand-picked to be perfect for the task, free of noise, ambiguity, or typos. The prompt is carefully engineered by the developer who built the system, following the ideal format to elicit the best possible response. This **manicured environment** eliminates the vast majority of variables that production systems must handle every second."
+      "text": "AI demos are almost always successful for one simple reason: they operate exclusively on the **{{Happy Path}}**. The developer, knowing exactly how the system works, provides a perfect, unambiguous prompt with clean, supportive context data. This curated interaction is designed to showcase the model's best-case performance, creating a powerful illusion of competence."
     },
     {
       "id": "text-5",
       "type": "text",
-      "text": "Real users, however, are anything but predictable. They submit queries with typos, use slang, mix languages, provide incomplete information, or have ambiguous intent. They don't know or care about the ideal prompt format. ==The chasm between a developer's curated prompt and a real user's chaotic query is where most AI systems break down==. A system that can't gracefully handle this variability is fundamentally not ready for production."
+      "text": "Real users, however, live off the happy path. They submit queries with typos, ambiguous phrasing, and faulty assumptions. They provide messy, unstructured data and often do not know what a 'good' prompt looks like. ==A system that only works with pristine, developer-crafted inputs is functionally useless in the real world==."
+    },
+    {
+      "id": "image-1",
+      "type": "image",
+      "src": "/images/lessons/why-most-ai-demos-fail-in-production/happy-path-vs-reality.png",
+      "alt": "A smooth, paved garden path contrasted with a dense, chaotic jungle.",
+      "caption": "Demo environments are like manicured garden paths. Production is a chaotic jungle of unexpected inputs and user behaviours."
     },
     {
       "id": "list-1",
       "type": "list",
       "items": [
-        "**Ambiguous Intent**: \"show me sales data\" - for which region? what time period? summarized how?",
-        "**Messy Inputs**: \"summarize this pdf pls thx\" - attached PDF is a scanned, low-quality image.",
-        "**Implicit Context**: \"what's the status of the Johnson account?\" - assumes the AI knows which Johnson.",
-        "**Out-of-Scope Requests**: Asking a customer support bot for stock market advice."
+        "**Demo Input:** \"Summarise the Q3 2026 financial report provided in the attached PDF, focusing on revenue growth in the EMEA region.\"",
+        "**Real User Input:** \"how did we do last quarter in europe\"",
+        "**Demo Input:** \"Write a Python function to calculate the factorial of a number.\"",
+        "**Real User Input:** \"code for factorial\""
       ]
     },
     {
       "id": "text-6",
       "type": "text",
-      "text": "The items in this list are not edge cases; they represent the **normal operating conditions** for any system interacting with humans. A production system must be architected with the explicit assumption that its inputs will be messy and its user's intent will often be unclear. This requires building robust validation, clarification dialogues, and sanitization layers that are completely absent in a demo."
-    },
-    {
-      "id": "heading-1",
-      "type": "heading",
-      "text": "Adversarial Behavior"
-    },
-    {
-      "id": "text-7",
-      "type": "text",
-      "text": "Beyond simple messiness, production systems must contend with users who are actively trying to break them. This can range from curious prodding to malicious attacks. The most common example is **{{prompt injection}}**, where users craft inputs to bypass safety filters, reveal the underlying prompt, or trick the model into performing unintended actions. Demos operate on trust; production systems must operate on a principle of zero-trust for all user-provided input."
-    },
-    {
-      "id": "question-mc-1",
-      "type": "question",
-      "variant": "multiple-choice",
-      "question": "An AI demo flawlessly summarizes a clean, well-structured medical report. Why is it likely to fail in a real hospital environment?",
-      "options": [
-        "The model is not large enough.",
-        "Doctors will not trust the AI.",
-        "Real medical notes contain jargon, abbreviations, typos, and handwritten sections.",
-        "The hospital's internet connection is too slow."
-      ],
-      "correctAnswer": "Real medical notes contain jargon, abbreviations, typos, and handwritten sections.",
-      "explanation": "The primary gap is the 'messiness' of real-world data compared to the curated data used in a demo. Production systems must be robust to this variability."
+      "text": "The gap between these two styles of interaction is enormous. The demo input is specific, context-rich, and complete. The real user input is vague, lacks context, and uses colloquial language. A production system must be engineered to bridge this gap, often through sophisticated prompt engineering, clarification dialogues, or robust input validation."
     },
     {
       "id": "section-3",
       "type": "section",
-      "title": "3. The Iceberg: Hidden Production Dependencies"
+      "title": "3. The Hostile World of Production"
+    },
+    {
+      "id": "text-7",
+      "type": "text",
+      "text": "Beyond unintentional messiness, production systems face inputs that are actively malicious. **{{Adversarial Usage}}** is a certainty. Users will try to bypass safety filters, trick the model into revealing sensitive information, or use {{Prompt Injection}} to hijack the system's instructions. Demos never account for this; they assume a cooperative user."
     },
     {
       "id": "text-8",
       "type": "text",
-      "text": "A demo is the tip of an iceberg. The impressive result is visible above the water, but it's supported by a massive, unseen foundation of infrastructure, data pipelines, and operational tooling. Shipping a demo is like trying to float the iceberg's tip by itself; it will immediately capsize. These hidden dependencies are where most of the real engineering work lies."
-    },
-    {
-      "id": "text-9",
-      "type": "text",
-      "text": "For systems using {{RAG}}, data retrieval is a critical and fragile dependency. A demo can use a single, perfect document where the answer is clean and unambiguous. In production, the retrieval system must search a vast, messy, and constantly changing knowledge base. ==The quality of the AI's output is capped by the quality of the information it can retrieve==, and in the real world, retrieval is a profound challenge."
-    },
-    {
-      "id": "list-2",
-      "type": "list",
-      "items": [
-        "**Relevance Failures**: Retrieving documents that are only vaguely related to the user's query.",
-        "**Stale Data**: Retrieving outdated information that is no longer correct.",
-        "**Conflicting Sources**: Finding multiple documents with contradictory facts.",
-        "**Access Control**: Failing to respect user permissions, either leaking data or hiding information the user should see."
-      ]
-    },
-    {
-      "id": "text-10",
-      "type": "text",
-      "text": "Performance is another hidden dependency. A demo for one user on a developer's machine is instantaneous. A production service handling hundreds of concurrent requests will reveal bottlenecks like model cold-start times, token generation speed, and API rate limits. Measuring and optimizing for **{{p95 latency}}** is a core production discipline, ensuring that most users have a good experience, not just the lucky ones."
+      "text": "Furthermore, production means operating at scale, which exposes the system to the brutal reality of the **{{Long Tail}}**. A failure mode that occurs only 0.01% of the time is irrelevant in a demo of 10 requests. In production with 1 million requests per day, that same failure happens 100 times, eroding user trust and creating a stream of support tickets."
     },
     {
       "id": "callout-1",
       "type": "callout",
       "variant": "warning",
-      "text": "Users have a finite latency budget. An AI feature that is unpredictably slow can make the entire application feel broken, often leading users to abandon it entirely. ==Consistent, predictable performance is a feature in itself.=="
+      "text": "==The core mistake is assuming users will behave as you did during the demo==. You must assume they will do the opposite: provide the worst possible input, misunderstand the feature, and actively try to break it."
     },
     {
-      "id": "text-11",
-      "type": "text",
-      "text": "Finally, demos are entirely unobserved. Production systems, on the other hand, are blind and unmanageable without robust observability. This includes logging every request and response, tracing calls across microservices, monitoring costs and token consumption, and collecting user feedback. Tools like **{{OpenTelemetry}}** are essential for understanding how the system is behaving, where it's failing, and how much it's costing."
+      "id": "question-mc-1",
+      "type": "question",
+      "variant": "multiple-choice",
+      "question": "What is the primary reason that a failure rate of 0.1% is acceptable in a demo but dangerous in production?",
+      "options": [
+        "The model is less accurate in production.",
+        "The cost per failure is higher in a demo.",
+        "Production scale turns rare failures into frequent events.",
+        "Demos are not monitored for failures."
+      ],
+      "correctAnswer": "Production scale turns rare failures into frequent events.",
+      "explanation": "At production scale, even very low-probability failure modes (the 'long tail') will occur frequently, impacting many users and requiring significant engineering effort to mitigate."
     },
     {
       "id": "section-4",
       "type": "section",
-      "title": "4. The Evaporation of User Trust"
+      "title": "4. The Invisible Machinery"
     },
     {
-      "id": "text-12",
+      "id": "text-9",
       "type": "text",
-      "text": "The ultimate goal of a production AI system is to be useful, and usefulness is built on a foundation of user trust. A single impressive interaction means nothing if the user can't rely on the system to behave predictably over time. Trust is the currency of AI products; it is earned in drops and lost in buckets."
-    },
-    {
-      "id": "text-13",
-      "type": "text",
-      "text": "A key challenge is the inherent **{{non-determinism}}** of many large language models. The same prompt can produce slightly different outputs on subsequent runs. While this can be a feature for creative tasks, it can be a trust-destroying bug in factual or analytical applications. When a user asks the same question twice and gets two different answers, they rightly conclude the system is unreliable."
+      "text": "A demo is typically just a single API call to a language model. A production system is a complex assembly of surrounding infrastructure that makes that call safe and reliable. This 'invisible machinery' is where the majority of the engineering effort lies, and it is completely absent from a demo."
     },
     {
       "id": "image-2",
       "type": "image",
-      "src": "/images/demo.jpg",
-      "alt": "A confused person looking at a weather vane that points in multiple directions at once.",
-      "caption": "Inconsistency erodes trust. If an AI system gives different answers to the same question, users will quickly learn not to rely on it."
+      "src": "/images/lessons/why-most-ai-demos-fail-in-production/production-iceberg.png",
+      "alt": "An iceberg where the tip is the LLM call and the massive submerged part is production infrastructure.",
+      "caption": "The demo is just the tip of the iceberg. The real work is in the vast, submerged machinery of production infrastructure."
+    },
+    {
+      "id": "text-10",
+      "type": "text",
+      "text": "This machinery handles all the ugly realities that demos ignore. It ensures the system is observable, performs within latency budgets, and behaves gracefully when components fail. Without this, the system is a black box that is impossible to debug, intolerably slow, or brittle."
+    },
+    {
+      "id": "heading-1",
+      "type": "heading",
+      "text": "Critical Production Components Absent in Demos"
+    },
+    {
+      "id": "list-2",
+      "type": "list",
+      "items": [
+        "**{{Observability}}:** Structured logs, traces, and metrics to understand what the system is doing, especially when it fails. How do you debug a bad response without knowing the exact prompt and retrieved context?",
+        "**{{RAG}} Pipeline:** For retrieval-augmented generation, the quality and freshness of the retrieved context is everything. Demos often use a perfect, hand-picked document; production requires a robust, scalable retrieval and ranking system.",
+        "**{{Guardrails}} and Validation:** Input/output filters to prevent {{Prompt Injection}}, block harmful content, and ensure responses are on-topic and correctly formatted.",
+        "**{{Fallback Behaviour}}:** What happens if the LLM API times out, returns an error, or produces a {{Hallucination}}? A production system must have a safe default, like \"I'm unable to answer right now,\" instead of crashing or showing a nonsensical reply.",
+        "**{{Latency}} Management:** A demo that takes 15 seconds is impressive. A product that takes 15 seconds is broken. Production systems require aggressive caching, model optimisations, and strict {{p99 Latency}} targets.",
+        "**Permissions and Data Access:** The system must respect user permissions. The {{RAG}} pipeline cannot retrieve documents that the user is not authorised to see. This is a critical security concern ignored by demos."
+      ]
+    },
+    {
+      "id": "text-11",
+      "type": "text",
+      "text": "Each of these components requires significant design, implementation, and maintenance. They represent the difference between a clever script and a trustworthy product. ==The 'AI' part of the system is often the easiest; the production engineering around it is the hard part==."
+    },
+    {
+      "id": "section-5",
+      "type": "section",
+      "title": "5. The Fragility of User Trust"
+    },
+    {
+      "id": "text-12",
+      "type": "text",
+      "text": "A single, stunningly correct answer in a demo creates a powerful impression of intelligence. However, user trust is not built on peak performance. It is built on **predictability** and **consistency**. An AI that is brilliant one moment and unhelpfully wrong the next is not seen as a flawed genius; it is seen as an unreliable tool and will be abandoned."
+    },
+    {
+      "id": "text-13",
+      "type": "text",
+      "text": "Inconsistent behaviour is toxic to trust. This can manifest as fluctuating response quality, changing tone, or failing to perform the same task twice in a row. A production system must be repeatable. This is why techniques like {{Evaluation Harness}} testing and continuous {{Red Teaming}} are essential to lock in a baseline of quality and safety."
     },
     {
       "id": "text-14",
       "type": "text",
-      "text": "This is why repeatability and robust evaluation are paramount. Production systems use techniques like setting model `temperature` to 0 to reduce randomness, and they are tested against comprehensive suites of **{{evals}}** to ensure consistent behavior on critical inputs. ==A production system is defined not by its best-case output, but by its predictable and safe worst-case behavior==. This includes having a well-defined fallback path for when the AI fails, such as providing a simpler answer, admitting it doesn't know, or offering to connect the user with a human."
+      "text": "The goal is not to create a system that is always perfect, as that is impossible. ==The goal is to create a system whose failure modes are predictable, bounded, and safe==. When the system fails, it should fail gracefully and inform the user, preserving the trust that has been earned during successful interactions. A demo's singular success says nothing about its behaviour under failure."
     },
     {
       "id": "question-reveal-1",
       "type": "question",
       "variant": "reveal-answer",
-      "prompt": "A customer support chatbot fails to find an answer to a user's question about a refund. What would be a production-quality fallback behavior?",
-      "answer": "A good fallback would be to transparently state it cannot find the answer and then provide a direct, low-friction path to a human agent, like opening a support ticket or starting a live chat.",
-      "explanation": "The key is to fail gracefully. Instead of giving a generic error, the system should acknowledge the failure and provide the user with a productive next step, preserving their trust in the overall support experience.",
-      "buttonLabel": "Show Answer"
+      "prompt": "An AI-powered trip planner sometimes generates amazing, detailed itineraries. Other times, for similar requests, it produces a single, unhelpful sentence. What is the most likely impact on users?",
+      "answer": "Users will quickly stop trusting and using the feature. The inconsistency makes it unreliable, regardless of its occasional brilliance.",
+      "explanation": "Predictability is more important than peak performance for building user trust. An unreliable tool, even one that is sometimes amazing, will not be integrated into a user's workflow.",
+      "buttonLabel": "Reveal Impact"
     },
     {
-      "id": "section-5",
+      "id": "section-6",
       "type": "section",
-      "title": "5. From Demo to Deployed: The Production Checklist"
+      "title": "6. Bridging the Gap: From Demo to Production"
     },
     {
       "id": "text-15",
       "type": "text",
-      "text": "Despite the risks, the pressure to ship a compelling demo directly to production can be immense. Stakeholders see the 'magic' and want it in the product immediately, often underestimating the engineering chasm that needs to be crossed. This pressure to maintain velocity can lead teams to take on significant **technical debt and product risk** by shipping a fragile, demo-quality feature."
+      "text": "Moving from a successful demo to a production-ready system requires a deliberate shift in mindset from 'making it work once' to 'making it not fail'. This involves a significant amount of engineering work that is often underestimated. Organisational pressure to ship quickly after a successful demo can lead teams to launch what is effectively a public prototype."
     },
     {
       "id": "text-16",
       "type": "text",
-      "text": "Bridging this gap requires reframing the conversation. The work that happens after the demo isn't 'slowing down'; it is the **fundamental engineering discipline** of building a professional-grade product. It's about systematically identifying and mitigating the risks associated with scale, variability, and failure. The following table provides a practical checklist for evaluating whether a system is truly ready for production."
+      "text": "This pressure often arises because stakeholders, impressed by the demo, do not see the massive, invisible iceberg of work remaining. It is the engineering team's responsibility to articulate this gap and advocate for the time and resources needed to build the necessary production infrastructure. Shipping a demo is not a shortcut; it is a direct path to technical debt and user abandonment."
     },
     {
-      "id": "table-2",
-      "type": "table",
-      "headers": [
-        "Concern",
-        "Demo-Ready Approach",
-        "Production-Ready Approach"
-      ],
-      "rows": [
-        [
-          "**Input Handling**",
-          "Assumes clean, perfect input.",
-          "Validates, sanitizes, and handles messy, ambiguous, and malicious inputs."
-        ],
-        [
-          "**Testing**",
-          "Manual checks on a few 'happy path' examples.",
-          "Automated suite of unit, integration, and regression {{evals}} covering hundreds of edge cases."
-        ],
-        [
-          "**Dependencies**",
-          "Uses hardcoded data or a single clean document.",
-          "Integrates with real, live, and messy data sources with robust error handling."
-        ],
-        [
-          "**Performance**",
-          "Works for a single user.",
-          "Load tested and optimized for concurrent users, with defined {{p95 latency}} SLOs."
-        ],
-        [
-          "**Observability**",
-          "No logging or monitoring.",
-          "Structured logging, distributed tracing, cost monitoring, and automated alerting."
-        ],
-        [
-          "**Failure Mode**",
-          "Crashes or gives a nonsensical answer.",
-          "Fails gracefully with helpful fallbacks and clear error messages."
-        ],
-        [
-          "**Security**",
-          "None.",
-          "Protects against {{prompt injection}}, data leakage, and respects user permissions."
-        ]
+      "id": "heading-2",
+      "type": "heading",
+      "variant": "do",
+      "text": "Production-Ready Evaluation Checklist"
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "items": [
+        "**Define an {{SLO}}:** What is the target for availability and latency? How will you measure it?",
+        "**Implement Observability:** Do you have detailed logs and traces for every request, especially failures?",
+        "**Build an {{Evaluation Harness}}:** Do you have a suite of test cases to prevent quality regressions?",
+        "**Design Fallback Logic:** What happens when the model, a data source, or a guardrail fails?",
+        "**Conduct {{Red Teaming}}:** Have you actively tried to break the system with adversarial prompts?",
+        "**Secure Data Access:** Are you certain the system cannot leak data a user is not meant to see?"
       ]
     },
     {
-      "id": "callout-2",
-      "type": "callout",
-      "variant": "tip",
-      "text": "This checklist is a guide, not a rigid mandate. The required level of production-readiness depends on the use case. An internal tool for summarizing meeting notes has a much lower bar for reliability than a customer-facing AI that provides financial advice."
+      "id": "text-17",
+      "type": "text",
+      "text": "Answering these questions moves the conversation from the demo's 'what if' to production's 'what always'. A system is only ready for production when it has robust, tested answers for all these points. ==Ultimately, a production AI system is judged not by its best day, but by its graceful handling of its worst day==."
     }
   ],
   "quiz": [
     {
       "id": "quiz-1",
-      "question": "What is the primary goal of an AI demo?",
+      "question": "What is the primary goal of the 'Pilot' stage in the AI production readiness spectrum?",
       "options": [
-        "To test the system's scalability and performance.",
-        "To prove a concept is possible and generate excitement.",
-        "To gather data from real users.",
-        "To identify and fix all potential bugs."
+        "To demonstrate that a concept is possible.",
+        "To explore the technical feasibility of building a feature.",
+        "To validate that the system provides real value to a small group of trusted users.",
+        "To ensure the system can operate reliably at full scale."
       ],
-      "correctAnswer": "To prove a concept is possible and generate excitement.",
-      "explanation": "A demo is a showcase designed to demonstrate a capability under ideal conditions, not to function as a robust, user-ready product."
+      "correctAnswer": "To validate that the system provides real value to a small group of trusted users.",
+      "explanation": "The Pilot stage focuses on moving from a technical prototype to validating real-world usefulness and usability with a limited, controlled user base."
     },
     {
       "id": "quiz-2",
-      "question": "Why is 'the gap between a curated prompt and a real user's query' so significant?",
+      "question": "The term 'Happy Path' refers to:",
       "options": [
-        "Because users are not creative enough to write good prompts.",
-        "Because real user queries are often messy, ambiguous, and don't follow the 'happy path'.",
-        "Because API costs are higher for longer user queries.",
-        "Because developers are better at English than most users."
+        "The most efficient cloud infrastructure routing for an API call.",
+        "A user interface that is easy and enjoyable to use.",
+        "An ideal, curated scenario where inputs are perfect and the system performs optimally.",
+        "A code path that has been fully optimised for performance."
       ],
-      "correctAnswer": "Because real user queries are often messy, ambiguous, and don't follow the 'happy path'.",
-      "explanation": "Production systems must be designed to handle the immense variability and unpredictability of real user input, which is a major source of failure."
+      "correctAnswer": "An ideal, curated scenario where inputs are perfect and the system performs optimally.",
+      "explanation": "The 'Happy Path' describes the perfect conditions used in demos, which do not reflect the messy, varied inputs from real users."
     },
     {
       "id": "quiz-3",
-      "question": "Which of these is a 'hidden dependency' often ignored in AI demos?",
+      "question": "Which of the following is an example of the 'invisible machinery' required for production AI but absent in a demo?",
       "options": [
-        "The specific LLM being used.",
-        "The color scheme of the user interface.",
-        "The quality and latency of the data retrieval system (in RAG).",
-        "The name of the project."
+        "The choice of a specific large language model.",
+        "The algorithm used for text summarisation.",
+        "The user interface for displaying the AI's output.",
+        "Robust logging and tracing for debugging failed requests."
       ],
-      "correctAnswer": "The quality and latency of the data retrieval system (in RAG).",
-      "explanation": "Demos often use perfect, hardcoded data, hiding the immense challenge of building a fast and accurate retrieval system over real-world data sources."
+      "correctAnswer": "Robust logging and tracing for debugging failed requests.",
+      "explanation": "Observability (logging, tracing, metrics) is a critical piece of production infrastructure that is unnecessary for a simple demo but essential for operating a real system."
     },
     {
       "id": "quiz-4",
-      "question": "What is the most likely consequence of an AI system exhibiting non-determinism (giving different answers to the same question)?",
+      "question": "Why is consistency more important than peak performance for building user trust in an AI system?",
       "options": [
-        "Increased computational costs.",
-        "Erosion of user trust.",
-        "Better creative outputs.",
-        "Faster response times."
+        "Consistent systems are cheaper to run.",
+        "Users rely on predictable behaviour to integrate a tool into their workflow.",
+        "Peak performance often leads to higher latency.",
+        "Consistent outputs are easier to cache."
       ],
-      "correctAnswer": "Erosion of user trust.",
-      "explanation": "Users expect predictable and consistent behavior. When a system seems capricious or unreliable, they will stop trusting and using it."
+      "correctAnswer": "Users rely on predictable behaviour to integrate a tool into their workflow.",
+      "explanation": "A tool that is unreliable, even if occasionally brilliant, cannot be trusted and will be abandoned. Predictability is the foundation of user trust."
     },
     {
       "id": "quiz-5",
-      "question": "A production-ready AI system fails to answer a user's query. What should it do?",
+      "question": "What is 'Prompt Injection'?",
       "options": [
-        "Return a generic 'Error 500' message.",
-        "Close the user's session automatically.",
-        "Attempt to answer a different, easier question.",
-        "Acknowledge the failure and provide a graceful fallback, like connecting to a human agent."
+        "A technique for optimising prompts to get better responses.",
+        "An automated system for generating test prompts.",
+        "An adversarial attack where a user's input tries to overwrite or bypass the system's original instructions.",
+        "A method for caching prompts to reduce latency."
       ],
-      "correctAnswer": "Acknowledge the failure and provide a graceful fallback, like connecting to a human agent.",
-      "explanation": "Graceful degradation is a hallmark of a production system. It should fail in a way that is helpful and preserves the user's trust."
+      "correctAnswer": "An adversarial attack where a user's input tries to overwrite or bypass the system's original instructions.",
+      "explanation": "Prompt injection is a security vulnerability where malicious input manipulates the LLM's behaviour, which production systems must defend against using guardrails."
     },
     {
       "id": "quiz-6",
-      "question": "What does the term 'prompt injection' refer to?",
+      "question": "What does a 'Fallback Behaviour' in a production AI system handle?",
       "options": [
-        "A technique for making prompts run faster.",
-        "An automated tool for writing better prompts.",
-        "An adversarial attack where users craft inputs to bypass safety filters or hijack the AI's function.",
-        "The process of loading a prompt into the model's memory."
+        "Re-routing traffic to a different data centre during an outage.",
+        "Providing a safe, default response when the primary AI model fails or returns an unsafe answer.",
+        "Using a less powerful model for non-critical user requests.",
+        "Rolling back to a previous version of the software after a bad deploy."
       ],
-      "correctAnswer": "An adversarial attack where users craft inputs to bypass safety filters or hijack the AI's function.",
-      "explanation": "This is a key security concern for production AI systems that demos completely ignore, as it involves malicious user intent."
-    },
-    {
-      "id": "quiz-7",
-      "question": "When evaluating a new AI feature, which metric is a better indicator of production readiness than a single amazing output?",
-      "options": [
-        "The speed of the demo.",
-        "The charisma of the presenter.",
-        "Consistent, predictable performance across a wide range of test cases (evals).",
-        "The novelty of the underlying algorithm."
-      ],
-      "correctAnswer": "Consistent, predictable performance across a wide range of test cases (evals).",
-      "explanation": "Reliability and predictability at scale, validated by robust evaluations, are far more important for a production system than a single, cherry-picked success."
+      "correctAnswer": "Providing a safe, default response when the primary AI model fails or returns an unsafe answer.",
+      "explanation": "Fallback behaviour ensures the system fails gracefully (e.g., with a message like 'I cannot answer that') instead of crashing or showing a nonsensical output, which preserves user trust."
     }
   ]
 }

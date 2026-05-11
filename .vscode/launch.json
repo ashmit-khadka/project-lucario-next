@@ -4,6 +4,32 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Generate Course Manifest (Gemini)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "program": "${workspaceFolder}/tools/generate-course/generateCourse.ts",
+            "args": [
+                "--provider", "gemini",
+                "--course",   "Full-Stack Web Engineering",
+                "--input",    "${workspaceFolder}/tools/generate-course/input/lesson.text",
+                "--output",   "${workspaceFolder}/tools/generate-course/input/lesson.json"
+            ],
+            "cwd": "${workspaceFolder}/tools/generate-course",
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Generate Lesson (OpenAI)",
             "skipFiles": [
                 "<node_internals>/**"
@@ -13,7 +39,7 @@
                 "--import",
                 "tsx"
             ],
-            "program": "${workspaceFolder}/tools/generator-lesson/generateLesson.ts",
+            "program": "${workspaceFolder}/tools/generate-lesson/generateLesson.ts",
             "args": [
                 "--provider", "openai",
                 "--course",    "Production-Ready AI Software Engineering",
@@ -33,7 +59,7 @@
                 "--objectives", "Identify organizational reasons teams mistakenly ship demos as products",
                 "--objectives", "Evaluate an AI system and determine whether it is truly production-ready or merely demo-ready"
             ],
-            "cwd": "${workspaceFolder}/tools/generator-lesson",
+            "cwd": "${workspaceFolder}/tools/generate-lesson",
             "console": "integratedTerminal",
             "outputCapture": "std",
             "env": {
@@ -52,7 +78,7 @@
                 "--import",
                 "tsx"
             ],
-            "program": "${workspaceFolder}/tools/generator-lesson/generateLesson.ts",
+            "program": "${workspaceFolder}/tools/generate-lesson/generateLesson.ts",
             "args": [
                 "--provider", "gemini",
                 "--course",    "Production-Ready AI Software Engineering",
@@ -72,7 +98,27 @@
                 "--objectives", "Identify organizational reasons teams mistakenly ship demos as products",
                 "--objectives", "Evaluate an AI system and determine whether it is truly production-ready or merely demo-ready"
             ],
-            "cwd": "${workspaceFolder}/tools/generator-lesson",
+            "cwd": "${workspaceFolder}/tools/generate-lesson",
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Generate Glossary",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "program": "${workspaceFolder}/tools/generate-glossary/generateGlossary.ts",
+            "cwd": "${workspaceFolder}/tools/generate-glossary",
             "console": "integratedTerminal",
             "outputCapture": "std",
             "env": {

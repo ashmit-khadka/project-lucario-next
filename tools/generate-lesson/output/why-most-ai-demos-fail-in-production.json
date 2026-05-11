@@ -114,7 +114,8 @@
       "type": "image",
       "src": "/images/lessons/why-most-ai-demos-fail-in-production/happy-path-vs-reality.png",
       "alt": "A smooth, paved garden path contrasted with a dense, chaotic jungle.",
-      "caption": "Demo environments are like manicured garden paths. Production is a chaotic jungle of unexpected inputs and user behaviours."
+      "caption": "Demo environments are like manicured garden paths. Production is a chaotic jungle of unexpected inputs and user behaviours.",
+      "prompt": "A striking split-image. On the left, a perfectly straight, clean, bright stone path through a beautifully manicured Zen garden. On the right, a dark, tangled, overgrown jungle with muddy tracks, thorns, and hidden pitfalls. The visual metaphor contrasts the ideal 'happy path' of a demo with the messy reality of a production environment."
     },
     {
       "id": "list-1",
@@ -181,7 +182,8 @@
       "type": "image",
       "src": "/images/lessons/why-most-ai-demos-fail-in-production/production-iceberg.png",
       "alt": "An iceberg where the tip is the LLM call and the massive submerged part is production infrastructure.",
-      "caption": "The demo is just the tip of the iceberg. The real work is in the vast, submerged machinery of production infrastructure."
+      "caption": "The demo is just the tip of the iceberg. The real work is in the vast, submerged machinery of production infrastructure.",
+      "prompt": "An epic, cinematic shot of an iceberg. The small tip above the water is labeled 'LLM API Call'. The enormous, complex ice structure below the surface is labeled with many interconnected parts: 'Data Retrieval (RAG)', 'Input Validation', 'Permissions & ACLs', 'Caching Layers', 'Guardrails & Safety Filters', 'Observability & Logging', 'Fallback Logic', 'Rate Limiting', 'Evaluation Harness'."
     },
     {
       "id": "text-10",

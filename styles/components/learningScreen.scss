@@ -11,19 +11,20 @@
     margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 1.5rem;
 
     .learning-section-header {
-        font-size: $font-size-xl2;
+        font-size: $font-size-lg2;
         font-weight: 600;
         font-family: 'DM Serif Display', serif;
         letter-spacing: 0.01em;
     }
 
     .learning-header {
-        font-family: 'DM Serif Display', serif;
-        font-size: $font-size-lg2;
-        letter-spacing: 0.01em;
+        //font-family: 'DM Sans', serif;
+        font-weight: 600;
+        font-size: $font-size-md3;
+        //letter-spacing: 0.01em;
     }
 
     .learning-section-code-block {
@@ -31,7 +32,6 @@
         padding: 1rem;
         border-radius: 4px;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 1em;
         overflow-x: auto;
     }
 
@@ -101,16 +101,15 @@
         padding: 1.25rem 1.5rem;
         border: 2px solid rgba($color-font-primary, 0.15);
         border-left: 4px solid;
-        border-radius: 12px;
         margin: 0.75rem 0;
-        font-size: $font-size-md4;
         line-height: 1.6;
         background-color: rgba($color-font-primary, 0.02);
-        font-family: "DM Sans", sans-serif;
+        font-family: "DM Mono", monospace;
+        font-weight: 600;
+        font-size: $font-size-sm4;
 
         .callout-emoji {
             flex-shrink: 0;
-            font-size: $font-size-md5;
             line-height: 1;
             margin-top: 0.15rem;
         }
@@ -128,7 +127,6 @@
                 background-color: rgba($color-font-primary, 0.08);
                 padding: 0.15rem 0.35rem;
                 border-radius: 0.25rem;
-                font-size: 0.88em;
                 font-family: "DM Mono", monospace;
             }
         }
@@ -160,7 +158,6 @@
     padding-left: 0;
     margin: 0;
     font-family: "DM Sans", sans-serif;
-    font-size: $font-size-md3;
     line-height: 1.65;
     color: $color-font-primary-darker;
     display: flex;
@@ -177,7 +174,6 @@
             content: '✦';
             position: absolute;
             left: 0;
-            font-size: $font-size-md;
         }
     }
 }
@@ -203,7 +199,6 @@ ol.lesson-list {
 
     &__text {
         font-family: "DM Mono", monospace;
-        font-size: $font-size-md;
         line-height: 1.6;
         font-weight: 400;
         color: $color-font-primary;
@@ -213,7 +208,6 @@ ol.lesson-list {
 
     &__source {
         font-family: "DM Sans", sans-serif;
-        font-size: $font-size-sm;
         color: $color-font-primary;
         opacity: 0.7;
         font-style: normal;
@@ -225,7 +219,6 @@ ol.lesson-list {
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: $font-size-md4;
 }
 
 .section-code {
@@ -235,7 +228,6 @@ ol.lesson-list {
 
     &__explanation {
         font-family: "DM Sans", sans-serif;
-        font-size: $font-size-md2;
         color: $color-font-primary-dark;
         opacity: 0.8;
         margin: 0;
@@ -257,7 +249,6 @@ ol.lesson-list {
 
     figcaption {
         font-family: "DM Sans", sans-serif;
-        font-size: $font-size-md3;
         color: $color-font-primary;
         opacity: 0.65;
         font-style: italic;
@@ -281,7 +272,6 @@ ol.lesson-list {
         background-color: $color-underline;
         color: $color-font-primary;
         font-family: "DM Mono", monospace;
-        font-size: $font-size-md;
         font-weight: 500;
         display: flex;
         align-items: center;
@@ -292,7 +282,6 @@ ol.lesson-list {
 
     &__name {
         font-family: "DM Mono", monospace;
-        font-size: $font-size-md;
         font-weight: 600;
     }
 
@@ -310,7 +299,6 @@ ol.lesson-list {
 
 .inline-term {
     font-family: "DM Mono", monospace;
-    font-size: $font-size-md;
     color: $color-font-primary;
     font-weight: 500;
     text-decoration: underline;
@@ -347,19 +335,16 @@ ol.lesson-list {
     }
 
     &__icon {
-        font-size: 1rem;
         line-height: 1;
     }
 
     &__title {
         font-family: "DM Mono", monospace;
-        font-size: $font-size-md;
         font-weight: 600;
         color: $color-font-primary-dark;
     }
 
     &__body {
-        font-size: $font-size-sm;
         color: $color-font-primary-dark;
         line-height: 1.55;
         margin-bottom: 0.7rem;
@@ -373,7 +358,6 @@ ol.lesson-list {
     }
 
     &__tag {
-        font-size: 0.7rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.06em;
@@ -394,6 +378,7 @@ ol.lesson-list {
         opacity: 0;
         transform: translateY(4px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -429,7 +414,7 @@ ol.lesson-list {
             transform: translateY(-5px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        
+
 
         h2 {
             font-size: $font-size-lg;
@@ -437,6 +422,7 @@ ol.lesson-list {
             color: $color-font-primary-lighter;
             font-weight: bold;
         }
+
         p {
             color: $color-font-primary-lighter;
             margin-bottom: 0.3rem;
@@ -454,7 +440,7 @@ ol.lesson-list {
 
         img {
             width: 2rem;
-            height: 2rem; 
+            height: 2rem;
             margin-right: 0.5rem;
             vertical-align: middle;
         }

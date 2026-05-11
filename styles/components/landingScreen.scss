@@ -157,7 +157,7 @@
             }
 
             &-awards {
-               display: grid;
+                display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
                 gap: 1rem 2rem;
                 padding-top: 2rem;
@@ -338,7 +338,7 @@
                 transition: all 0.3s ease;
 
                 @include screen-sm {
-                    font-size: $font-size-xl;
+                    font-size: $font-size-lg;
                 }
             }
 
@@ -357,7 +357,7 @@
 
             @include screen-sm {
                 padding-top: 2rem;
-            }  
+            }
 
             & img {
                 width: 18rem;
@@ -380,13 +380,13 @@
                 @include screen-sm {
                     padding-top: 3rem;
                     font-size: $font-size-md;
-                }    
+                }
             }
 
             &-icon {
                 position: relative;
                 margin-bottom: 2rem;
-    
+
                 // Common styles for tech icons
                 svg {
                     width: 4.5rem;
@@ -394,14 +394,14 @@
                     position: absolute;
                     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
                     transition: all 0.3s ease;
-    
+
                     &:hover {
                         transform: translateY(-5px);
                         filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
                     }
                 }
 
-                
+
                 &--javascript {
                     position: absolute;
                     top: 00px;
@@ -448,7 +448,7 @@
                 rgba($color-font-primary-darker, 1) 100%);
         box-shadow: 0 10px 20px rgba($color-font-primary-darker, .4);
         overflow: hidden;
-    
+
 
         & img {
             width: 4rem;
@@ -463,8 +463,8 @@
             gap: 2rem;
             padding: 2rem 0 4rem;
             overflow: hidden;
-    
-    
+
+
         }
 
         &-expand {
@@ -489,11 +489,11 @@
             align-items: center;
             gap: 1rem;
             font-size: 1.5rem;
-    
+
             & p {
                 color: $color-font-primary-lighter !important;
             }
-        }    
+        }
     }
 
 }
@@ -511,7 +511,7 @@
         }
 
         &--light {
-            
+
             & h2 {
                 color: $color-font-primary-lighter !important;
             }
@@ -525,7 +525,7 @@
                     //padding-left: 2.5rem;
                 }
             }
-        }   
+        }
     }
 
     &-items {

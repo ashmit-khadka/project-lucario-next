@@ -1,10 +1,9 @@
-import { writeFileSync } from 'fs';
+﻿import { writeFileSync } from 'fs';
 import OpenAI from 'openai';
 import https from 'https';
 import http from 'http';
-import type { LLMProvider } from '../types';
+import type { LLMProvider } from './types';
 
-// ── Image style prompt prepended to every image generation request ──
 const IMAGE_STYLE_PROMPT = `Create a horizontal hand-drawn illustration in a soft sketchbook style with a transparent background. The artwork should feel like a lightly painted pencil-and-ink concept sketch: loose hand-drawn outlines, slightly imperfect strokes, soft textured shading, and muted storybook colours. Do not use a monochrome palette. Use several different colours, but keep them all desaturated, earthy, and understated, such as dusty mustard, sage green, muted teal, faded terracotta, warm beige, soft brown, and smoky blue. Avoid bright or neon colours.
 
 The illustration should be a rich, engaging scene or metaphorical visual that captures the core idea of the concept being taught. Think editorially: like a beautiful illustration you would find in a premium textbook, a New Yorker article, or a thoughtful blog post. Use visual metaphors, allegories, and storytelling rather than diagrams, flowcharts, or infographics. For example, if the concept is about fragile systems, show a delicate house of cards on a wobbly table; if it is about trust, show hands reaching across a gap. The image should make a reader pause and think.
