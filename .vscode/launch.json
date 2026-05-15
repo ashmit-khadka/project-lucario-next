@@ -4,7 +4,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Generate Course Manifest (Gemini)",
+            "name": "Generate Curriculum",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -13,12 +13,12 @@
                 "--import",
                 "tsx"
             ],
-            "program": "${workspaceFolder}/tools/generate-course/generateCourse.ts",
+            "program": "${workspaceFolder}/tools/generate-course/generateCurriculum.ts",
             "args": [
                 "--provider", "gemini",
-                "--course",   "Full-Stack Web Engineering",
-                "--input",    "${workspaceFolder}/tools/generate-course/input/lesson.text",
-                "--output",   "${workspaceFolder}/tools/generate-course/input/lesson.json"
+                "--course",   "${input:courseTitle}",
+                "--input",    "${workspaceFolder}/tools/generate-course/input/lesson.txt",
+                "--output",   "${workspaceFolder}/tools/generate-course/output/lesson.json"
             ],
             "cwd": "${workspaceFolder}/tools/generate-course",
             "console": "integratedTerminal",
@@ -27,6 +27,32 @@
                 "NODE_ENV": "development"
             }
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Generate Course Content",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--import",
+                "tsx"
+            ],
+            "program": "${workspaceFolder}/tools/generate-course/generateCourseContent.ts",
+            "args": [
+                "--curriculum-id", "6a04c6a3350b1020372dbf69",
+                "--chapters", "The V8 Engine & Optimization Pipeline",
+                "--lessons", "${input:lessonFilter}"
+            ],
+            "cwd": "${workspaceFolder}/tools/generate-course",
+            "console": "integratedTerminal",
+            "outputCapture": "std",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+
         {
             "type": "node",
             "request": "launch",
@@ -181,6 +207,31 @@
             ],
             "stopAll": true,
             "preLaunchTask": null
+        }
+    ],
+    "inputs": [
+        {
+            "id": "courseTitle",
+            "type": "promptString",
+            "description": "Enter the Course Title",
+            "default": "My Course"
+        },
+        {
+            "id": "curriculumId",
+            "type": "promptString",
+            "description": "Enter the curriculum ID"
+        },
+        {
+            "id": "chapterFilter",
+            "type": "promptString",
+            "description": "Chapters to generate (comma separated names/slugs)",
+            "default": "all"
+        },
+        {
+            "id": "lessonFilter",
+            "type": "promptString",
+            "description": "Lessons to generate (comma separated names/slugs)",
+            "default": "all"
         }
     ]
 }

@@ -250,7 +250,7 @@ async function generateLessonImages(provider: LLMProvider, lesson: any, lessonSl
 }
 
 // â”€â”€ Resolve which provider to use based on --provider flag â”€â”€
-function resolveProvider(providerName: string): LLMProvider {
+export function resolveProvider(providerName: string): LLMProvider {
     switch (providerName.toLowerCase()) {
         case 'gemini':
         case 'google': {
@@ -268,7 +268,7 @@ function resolveProvider(providerName: string): LLMProvider {
 }
 
 // â”€â”€ Main orchestrator â€” provider is injected, never hard-coded â”€â”€
-async function generateLesson(ctx: LessonContext, provider: LLMProvider): Promise<void> {
+export async function generateLesson(ctx: LessonContext, provider: LLMProvider): Promise<void> {
     const startTime = Date.now();
     console.log(`\nðŸš€ Generating lesson`);
     console.log(`   Provider:   ${provider.name}`);
@@ -324,31 +324,36 @@ async function generateLesson(ctx: LessonContext, provider: LLMProvider): Promis
     const demoLessonPath = join(__dirname, '../../data/learning/demo_lesson.json');
     const setupDbLessonPath = join(__dirname, '../setup-db/data/courses/sample/lessons/lesson-1.json');
 
-    // Add the fixed demo _id to the data
-    const FIXED_DEMO_ID = '507f1f77bcf86cd799439003';
+    // Use the context ID if provided, otherwise fallback to the fixed demo ID
+    const lessonId = ctx.id || '507f1f77bcf86cd799439003';
+    const isDemo = lessonId === '507f1f77bcf86cd799439003';
+
     const lessonWithFixedId = {
-        _id: FIXED_DEMO_ID,
+        _id: lessonId,
         ...lessonForData
     };
 
-    // Raw output keeps prompt fields intact (useful for later image generation)
+    // Raw output keeps prompt fields intact
     writeFileSync(filepath, JSON.stringify(lesson, null, 2), 'utf-8');
-    // Data copy has prompts stripped (demo_lesson.json and setup-db lesson-1.json)
-    writeFileSync(demoLessonPath, JSON.stringify(lessonForData, null, 2), 'utf-8');
-    writeFileSync(setupDbLessonPath, JSON.stringify(lessonWithFixedId, null, 2), 'utf-8');
+    
+    if (isDemo) {
+        // Only update static demo files if it is the demo lesson
+        writeFileSync(demoLessonPath, JSON.stringify(lessonForData, null, 2), 'utf-8');
+        writeFileSync(setupDbLessonPath, JSON.stringify(lessonWithFixedId, null, 2), 'utf-8');
+    }
 
     // Update database directly
-    const CONNECTION_STRING = 'mongodb://localhost:27017';
-    const DB_NAME = process.env.NODE_ENV === 'development' ? 'lucario-dev' : 'lucario';
+    const CONNECTION_STRING = process.env.MONGODB_URI ?? 'mongodb://localhost:27017';
+    const DB_NAME = process.env.MONGODB_DB ?? (process.env.NODE_ENV === 'development' ? 'lucario-dev' : 'lucario');
     const client = new MongoClient(CONNECTION_STRING);
     try {
         await client.connect();
         const db = client.db(DB_NAME);
-        const objectId = new ObjectId(FIXED_DEMO_ID);
+        const objectId = new ObjectId(lessonId);
         
         await db.collection('lessons').updateOne(
             { _id: objectId },
-            { $set: lessonForData },
+            { $set: { ...lessonForData, status: 'completed' } },
             { upsert: true }
         );
         console.log(`\n✅ Saved to database (${DB_NAME}.lessons)`);
@@ -407,8 +412,10 @@ function parseArgs(argv: string[]): ParsedArgs {
     return result;
 }
 
-const parsed = parseArgs(process.argv);
-const missing = (['course', 'module', 'chapter', 'lesson'] as (keyof LessonContext)[]).filter(k => !parsed[k]);
+const isCLI = process.argv[1] && process.argv[1].includes('generateLesson.ts');
+if (isCLI) {
+    const parsed = parseArgs(process.argv);
+    const missing = (['course', 'module', 'chapter', 'lesson'] as (keyof LessonContext)[]).filter(k => !parsed[k]);
 
 if (missing.length > 0) {
     console.error(`\nâŒ Missing required arguments: ${missing.map(k => `--${k}`).join(', ')}`);
@@ -423,3 +430,5 @@ generateLesson(parsed as LessonContext, provider).catch((err) => {
     console.error('\nâŒ Generation failed:', err);
     process.exit(1);
 });
+
+}

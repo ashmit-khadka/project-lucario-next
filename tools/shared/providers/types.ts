@@ -1,6 +1,7 @@
-﻿// ── Shared LLM provider interface ──
+// ── Shared LLM provider interface ──
 
 export interface LessonContext {
+    id?: string;
     course: string;
     module: string;
     chapter: string;

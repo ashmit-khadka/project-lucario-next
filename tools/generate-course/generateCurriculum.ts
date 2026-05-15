@@ -1,6 +1,7 @@
-﻿import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import * as dotenv from 'dotenv';
+import { jsonrepair } from 'jsonrepair';
 
 import type { LLMProvider } from '../shared/providers/types';
 import { OpenAIProvider } from '../shared/providers/openai';
@@ -12,26 +13,20 @@ const OUTPUT_DIR = join(__dirname, 'output');
 
 // ── Schema example embedded in the system prompt ──
 const SCHEMA_EXAMPLE = `{
-  "course": "Full-Stack Web Engineering",
-  "modules": [
+  "module": "Module Title",
+  "description": "One sentence describing what this module covers and why it matters.",
+  "depth": 5,
+  "chapters": [
     {
-      "module": "Module Title",
-      "description": "One sentence describing what this module covers and why it matters.",
-      "depth": 5,
-      "chapters": [
+      "chapter": "Chapter Title",
+      "description": "One sentence describing the chapter focus.",
+      "depth": 4,
+      "lessons": [
         {
-          "chapter": "Chapter Title",
-          "description": "One sentence describing the chapter focus.",
-          "depth": 4,
-          "lessons": [
-            {
-              "lesson": "Lesson Title",
-              "objectives": [
-                "Verb-first learning objective that is specific and measurable",
-                "Another objective covering a distinct concept or skill"
-              ],
-              "status": "pending"
-            }
+          "lesson": "Lesson Title",
+          "objectives": [
+            "Verb-first learning objective that is specific and measurable",
+            "Another objective covering a distinct concept or skill"
           ]
         }
       ]
@@ -41,26 +36,25 @@ const SCHEMA_EXAMPLE = `{
 
 // ── System prompt ──
 function buildSystemPrompt(): string {
-    return `You are an expert technical curriculum designer. You generate structured course manifests in JSON format.
+    return `You are an expert technical curriculum designer. You generate structured curriculums in JSON format.
 
-Your output must be a single JSON object that exactly matches this schema:
+Your output must be a single JSON object that exactly matches this schema for ONE module:
 
 ${SCHEMA_EXAMPLE}
 
 SCHEMA RULES:
-- "course": the full course title as a string.
-- "modules": array of module objects. Each module has:
-    - "module": numbered title string, e.g. "1. Foundations"
-    - "description": one clear sentence explaining what the module covers and why it belongs in the course.
-    - "depth": integer 1–5 extracted from the [X/5] marker on the module heading in the outline. If no marker is present, default to 3.
-    - "chapters": array of chapter objects. Each chapter has:
-        - "chapter": numbered title string, e.g. "1.1 JavaScript Runtime Fundamentals"
-        - "description": one clear sentence scoping the chapter focus.
-        - "depth": integer 1–5 extracted from the [X/5] marker on the chapter heading in the outline. If no marker is present, default to 3.
-        - "lessons": array of lesson objects. Each lesson has:
-            - "lesson": numbered title string, e.g. "1.1.1 Event Loop & Scheduling"
-            - "objectives": array of 2-4 learning objective strings (see OBJECTIVE RULES)
-            - "status": always "pending"
+- "module": title string WITHOUT any numbering, e.g. "Foundations"
+- "description": one clear sentence explaining what the module covers and why it belongs in the course.
+- "depth": integer 1–5 extracted from the [X/5] marker on the module heading in the outline. If no marker is present, default to 3.
+- "chapters": array of chapter objects. Each chapter has:
+    - "chapter": title string WITHOUT any numbering, e.g. "JavaScript Runtime Fundamentals"
+    - "description": one clear sentence scoping the chapter focus.
+    - "depth": integer 1–5 extracted from the [X/5] marker on the chapter heading in the outline. If no marker is present, default to 3.
+    - "lessons": array of lesson objects. Each lesson has:
+        - "lesson": title string WITHOUT any numbering, e.g. "Event Loop & Scheduling"
+        - "objectives": array of 2-4 learning objective strings (see OBJECTIVE RULES)
+
+STRIP ALL NUMBERING: Never include prefix numbers like '1.', '1.1', or '5.8' in any module, chapter, or lesson titles.
 
 DEPTH RULES:
 - depth 1–2: introductory awareness — objectives use verbs like Identify, Describe, Recognise.
@@ -79,7 +73,7 @@ OBJECTIVE RULES:
 COVERAGE RULES:
 - Every module, chapter, and lesson from the input outline must appear in the output.
 - Do not add, merge, split, or remove any modules, chapters, or lessons.
-- Preserve the exact numbering and titles from the input.
+- Preserve the exact titles from the input, but strip out the numbering.
 - Do not invent extra lessons or chapters.
 
 TONE:
@@ -90,20 +84,20 @@ Return ONLY the JSON object. No markdown fences, no commentary, no explanation.`
 }
 
 // ── User prompt ──
-function buildUserPrompt(courseTitle: string, outline: string): string {
-    return `Generate a complete course manifest for the following course.
+function buildUserPrompt(courseTitle: string, moduleOutline: string): string {
+    return `Generate the JSON structure for the following module.
 
 Course title: "${courseTitle}"
 
-Course outline (modules > chapters > lessons with bullet-point topic hints):
+Module outline (chapters > lessons with bullet-point topic hints):
 
-${outline}
+${moduleOutline}
 
 Use the topic hints under each lesson to inform the learning objectives. The hints describe the content territory — your job is to turn them into precise, verb-first learning objectives.
 
 Each module and chapter heading contains a depth marker in the format [X/5]. Extract the integer X and set it as the "depth" field on that object. Calibrate the ambition of learning objectives accordingly — higher depth means expert-level mastery verbs (Implement, Architect, Evaluate); lower depth means awareness verbs (Identify, Describe, Recognise).
 
-Return the full JSON manifest covering every module, chapter, and lesson in the outline above.`;
+Return the JSON object for this specific module.`;
 }
 
 // ── Resolve provider ──
@@ -131,32 +125,55 @@ async function generateCourse(
     provider: LLMProvider,
     outputPath: string,
 ): Promise<void> {
-    console.log(`\n🎓 Generating course manifest`);
+    console.log(`\n🎓 Generating curriculum`);
     console.log(`   Course:   ${courseTitle}`);
     console.log(`   Provider: ${provider.name}`);
     console.log(`   Output:   ${outputPath}\n`);
 
-    console.log('⏳ Calling LLM...');
-    const start = Date.now();
-    const raw = await provider.generateLesson(buildSystemPrompt(), buildUserPrompt(courseTitle, outlineText));
-    const elapsed = ((Date.now() - start) / 1000).toFixed(1);
-    console.log(`✅ Response received in ${elapsed}s`);
+    const moduleChunks = outlineText.split(/(?:^|\n)(?=## Module \d+:?)/i).filter(chunk => chunk.trim().length > 0);
+    console.log(`\n📦 Found ${moduleChunks.length} modules to process.`);
 
-    let parsed: unknown;
-    try {
-        parsed = JSON.parse(raw);
-    } catch {
-        console.error('\n❌ Response was not valid JSON:\n', raw.slice(0, 500));
-        throw new Error('Invalid JSON response from provider');
+    const generatedModules = [];
+
+    for (let i = 0; i < moduleChunks.length; i++) {
+        const chunk = moduleChunks[i];
+        const match = chunk.match(/## Module \d+:? ([^\n]+)/i) || chunk.match(/## Module \d+/i);
+        const modTitle = match ? match[0].replace('## ', '') : `Module Chunk ${i + 1}`;
+        console.log(`\n⏳ Processing ${modTitle}...`);
+
+        const start = Date.now();
+        const raw = await provider.generateLesson(buildSystemPrompt(), buildUserPrompt(courseTitle, chunk));
+        const elapsed = ((Date.now() - start) / 1000).toFixed(1);
+        console.log(`   ✅ Response received in ${elapsed}s`);
+
+        let parsedMod: any;
+        try {
+            parsedMod = JSON.parse(raw);
+        } catch (parseError) {
+            console.log('   ⚠️ Initial JSON parse failed. Attempting to repair cut-off JSON...');
+            try {
+                const repaired = jsonrepair(raw);
+                parsedMod = JSON.parse(repaired);
+                console.log('   ✅ Successfully repaired and parsed JSON!');
+            } catch (repairError) {
+                console.error('\n❌ Response was fundamentally invalid JSON and could not be repaired:\n', raw.slice(0, 500));
+                throw new Error(`Invalid JSON response from provider for module chunk ${i + 1}`);
+            }
+        }
+        generatedModules.push(parsedMod);
     }
 
-    if (!existsSync(OUTPUT_DIR)) mkdirSync(OUTPUT_DIR, { recursive: true });
-    writeFileSync(outputPath, JSON.stringify(parsed, null, 2), 'utf-8');
+    const cariculum = {
+        course: courseTitle,
+        modules: generatedModules
+    };
 
-    const manifest = parsed as any;
-    const modules  = manifest.modules?.length ?? 0;
-    const chapters = manifest.modules?.reduce((a: number, m: any) => a + (m.chapters?.length ?? 0), 0) ?? 0;
-    const lessons  = manifest.modules?.reduce((a: number, m: any) =>
+    if (!existsSync(OUTPUT_DIR)) mkdirSync(OUTPUT_DIR, { recursive: true });
+    writeFileSync(outputPath, JSON.stringify(cariculum, null, 2), 'utf-8');
+
+    const modules  = cariculum.modules?.length ?? 0;
+    const chapters = cariculum.modules?.reduce((a: number, m: any) => a + (m.chapters?.length ?? 0), 0) ?? 0;
+    const lessons  = cariculum.modules?.reduce((a: number, m: any) =>
         a + m.chapters?.reduce((b: number, c: any) => b + (c.lessons?.length ?? 0), 0), 0) ?? 0;
 
     console.log(`\n📊 Summary`);
@@ -164,6 +181,28 @@ async function generateCourse(
     console.log(`   Chapters: ${chapters}`);
     console.log(`   Lessons:  ${lessons}`);
     console.log(`\n📄 Written: ${outputPath}`);
+
+    // Save to database
+    try {
+        const { MongoClient } = await import('mongodb');
+        const CONNECTION_STRING = process.env.MONGODB_URI ?? 'mongodb://localhost:27017';
+        const DB_NAME = process.env.MONGODB_DB ?? (process.env.NODE_ENV === 'development' ? 'lucario-dev' : 'lucario');
+        const client = new MongoClient(CONNECTION_STRING);
+        await client.connect();
+        const db = client.db(DB_NAME);
+        
+        const doc = {
+            status: 'pending_build',
+            createdAt: new Date(),
+            course: cariculum.course,
+            modules: cariculum.modules
+        };
+        const result = await db.collection('curricula').insertOne(doc);
+        console.log(`✅ Saved to database (${DB_NAME}.curricula) with ID: ${result.insertedId}`);
+        await client.close();
+    } catch (err) {
+        console.error('\n❌ Failed to save to database:', err);
+    }
 }
 
 // ── CLI ──
