@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b747",
+  "id": "build-measure-learn-feedback-loops",
+  "slug": "build-measure-learn-feedback-loops",
+  "version": "1.0.0",
+  "title": "Build-Measure-Learn Feedback Loops",
+  "description": "Architect \"Build-Measure-Learn\" feedback loops for technical experimentation. Implement professional processes to validate technical initiatives directly with user data and business growth metrics.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect \"Build-Measure-Learn\" feedback loops for technical experimentation.",
+    "Implement professional processes to validate technical initiatives directly with user data and business growth metrics."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b744",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

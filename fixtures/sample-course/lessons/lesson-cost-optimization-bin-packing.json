@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b716",
+  "id": "cost-optimization-bin-packing",
+  "slug": "cost-optimization-bin-packing",
+  "version": "1.0.0",
+  "title": "Cost Optimization & Bin-Packing",
+  "description": "Analyze Kubernetes cost optimization strategies, including bin-packing and resource request tuning. Utilize cost analysis tools like Kubecost to identify orphaned resources and reduce cloud expenditure.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze Kubernetes cost optimization strategies, including bin-packing and resource request tuning.",
+    "Utilize cost analysis tools like Kubecost to identify orphaned resources and reduce cloud expenditure."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b713",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

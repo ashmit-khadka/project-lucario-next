@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b645",
+  "id": "master-playwright-cypress-at-scale",
+  "slug": "master-playwright-cypress-at-scale",
+  "version": "1.0.0",
+  "title": "Master Playwright/Cypress at Scale",
+  "description": "Architect stable and selector-resilient E2E test suites using tools like Playwright or Cypress. Utilize automatic waiting and multi-tab orchestration to enhance the reliability of browser automation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect stable and selector-resilient E2E test suites using tools like Playwright or Cypress.",
+    "Utilize automatic waiting and multi-tab orchestration to enhance the reliability of browser automation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b644",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

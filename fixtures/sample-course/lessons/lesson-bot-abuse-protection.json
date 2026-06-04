@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b587",
+  "id": "bot-abuse-protection",
+  "slug": "bot-abuse-protection",
+  "version": "1.0.0",
+  "title": "Bot & Abuse Protection",
+  "description": "Architect bot and abuse protection mechanisms for API endpoints. Implement techniques like IP-reputation checks, TLS fingerprinting, and behavioral analysis to mitigate automated attacks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect bot and abuse protection mechanisms for API endpoints.",
+    "Implement techniques like IP-reputation checks, TLS fingerprinting, and behavioral analysis to mitigate automated attacks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b584",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b626",
+  "id": "bff-backend-for-frontend-for-ui",
+  "slug": "bff-backend-for-frontend-for-ui",
+  "version": "1.0.0",
+  "title": "BFF (Backend for Frontend) for UI",
+  "description": "Architect a Backend for Frontend (BFF) layer to optimize data consumption for UI clients. Design a dedicated service layer that aggregates and normalizes data from downstream microservices.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a Backend for Frontend (BFF) layer to optimize data consumption for UI clients.",
+    "Design a dedicated service layer that aggregates and normalizes data from downstream microservices."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b625",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

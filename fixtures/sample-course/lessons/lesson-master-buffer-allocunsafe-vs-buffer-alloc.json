@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b49f",
+  "id": "master-buffer-allocunsafe-vs-buffer-alloc",
+  "slug": "master-buffer-allocunsafe-vs-buffer-alloc",
+  "version": "1.0.0",
+  "title": "Master Buffer.allocUnsafe vs. Buffer.alloc",
+  "description": "Distinguish between `Buffer.allocUnsafe` and `Buffer.alloc` in terms of memory allocation and security. Explain the concept of memory pooling and pre-allocation with Node.js Buffers. Identify and mitigate security risks associated with uninitialized memory from `Buffer.allocUnsafe`.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Distinguish between `Buffer.allocUnsafe` and `Buffer.alloc` in terms of memory allocation and security.",
+    "Explain the concept of memory pooling and pre-allocation with Node.js Buffers.",
+    "Identify and mitigate security risks associated with uninitialized memory from `Buffer.allocUnsafe`."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b49e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

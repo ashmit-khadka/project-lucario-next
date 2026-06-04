@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6e5",
+  "id": "prompt-injection-red-teaming",
+  "slug": "prompt-injection-red-teaming",
+  "version": "1.0.0",
+  "title": "Prompt Injection & Red Teaming",
+  "description": "Master prompt injection attacks and red teaming methodologies to identify vulnerabilities in LLM-powered applications. Architect defensive layers, including system prompt hardening and input sanitization, to mitigate adversarial attacks like jailbreaking or indirect prompt injection.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master prompt injection attacks and red teaming methodologies to identify vulnerabilities in LLM-powered applications.",
+    "Architect defensive layers, including system prompt hardening and input sanitization, to mitigate adversarial attacks like jailbreaking or indirect prompt injection."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6e2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

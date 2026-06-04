@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b722",
+  "id": "lightweight-governance-boards",
+  "slug": "lightweight-governance-boards",
+  "version": "1.0.0",
+  "title": "Lightweight Governance Boards",
+  "description": "Architect lightweight governance boards to ensure consistency in API standards and security practices. Implement cross-team synchronization methods that promote architectural alignment without creating bureaucratic bottlenecks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect lightweight governance boards to ensure consistency in API standards and security practices.",
+    "Implement cross-team synchronization methods that promote architectural alignment without creating bureaucratic bottlenecks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b71f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

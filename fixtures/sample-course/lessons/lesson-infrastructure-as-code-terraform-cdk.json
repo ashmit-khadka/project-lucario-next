@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b611",
+  "id": "infrastructure-as-code-terraform-cdk",
+  "slug": "infrastructure-as-code-terraform-cdk",
+  "version": "1.0.0",
+  "title": "Infrastructure as Code (Terraform/CDK)",
+  "description": "Master Infrastructure as Code (IaC) principles using tools like Terraform or AWS CDK. Architect reproducible cloud environments by managing declarative modules, state files, and multi-environment deployments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master Infrastructure as Code (IaC) principles using tools like Terraform or AWS CDK.",
+    "Architect reproducible cloud environments by managing declarative modules, state files, and multi-environment deployments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b610",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

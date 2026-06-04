@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b579",
+  "id": "architecting-an-idempotency-layer",
+  "slug": "architecting-an-idempotency-layer",
+  "version": "1.0.0",
+  "title": "Architecting an Idempotency Layer",
+  "description": "Architect an idempotency layer using Idempotency-Key tracking with tools like Redis. Guarantee \"Exactly-Once\" execution for non-idempotent operations such as payment processing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect an idempotency layer using Idempotency-Key tracking with tools like Redis.",
+    "Guarantee \"Exactly-Once\" execution for non-idempotent operations such as payment processing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b578",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

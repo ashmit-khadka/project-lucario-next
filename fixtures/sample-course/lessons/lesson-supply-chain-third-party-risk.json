@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b73b",
+  "id": "supply-chain-third-party-risk",
+  "slug": "supply-chain-third-party-risk",
+  "version": "1.0.0",
+  "title": "Supply Chain & Third-Party Risk",
+  "description": "Manage supply chain and third-party risks associated with external library dependencies. Architect a lifecycle for tracking End-of-Life (EOL) dates and security vulnerability Service Level Agreements (SLAs) for dependencies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Manage supply chain and third-party risks associated with external library dependencies.",
+    "Architect a lifecycle for tracking End-of-Life (EOL) dates and security vulnerability Service Level Agreements (SLAs) for dependencies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b737",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

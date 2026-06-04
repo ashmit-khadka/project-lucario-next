@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b699",
+  "id": "pseudonymization-tokenization",
+  "slug": "pseudonymization-tokenization",
+  "version": "1.0.0",
+  "title": "Pseudonymization & Tokenization",
+  "description": "Design Token Vaults to replace sensitive data with non-sensitive identifiers. Manage cryptographic mapping and re-identification keys in isolated, high-security environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design Token Vaults to replace sensitive data with non-sensitive identifiers.",
+    "Manage cryptographic mapping and re-identification keys in isolated, high-security environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b697",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

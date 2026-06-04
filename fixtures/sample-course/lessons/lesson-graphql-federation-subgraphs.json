@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b56a",
+  "id": "graphql-federation-subgraphs",
+  "slug": "graphql-federation-subgraphs",
+  "version": "1.0.0",
+  "title": "GraphQL Federation & Subgraphs",
+  "description": "Architect GraphQL solutions using Federation and Subgraphs to scale development across independent teams. Implement the Apollo Federation specification to create a unified global graph from multiple services.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect GraphQL solutions using Federation and Subgraphs to scale development across independent teams.",
+    "Implement the Apollo Federation specification to create a unified global graph from multiple services."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b566",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

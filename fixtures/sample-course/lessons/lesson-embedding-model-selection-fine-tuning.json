@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6ce",
+  "id": "embedding-model-selection-fine-tuning",
+  "slug": "embedding-model-selection-fine-tuning",
+  "version": "1.0.0",
+  "title": "Embedding Model Selection & Fine-tuning",
+  "description": "Evaluate the trade-offs between open-weights and proprietary embedding models for RAG applications. Implement domain-specific embedding fine-tuning to improve retrieval recall and relevance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the trade-offs between open-weights and proprietary embedding models for RAG applications.",
+    "Implement domain-specific embedding fine-tuning to improve retrieval recall and relevance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6cc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

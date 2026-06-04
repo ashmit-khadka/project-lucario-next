@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ab",
+  "id": "conduct-post-mortem-debugging",
+  "slug": "conduct-post-mortem-debugging",
+  "version": "1.0.0",
+  "title": "Conduct Post-Mortem Debugging",
+  "description": "Generate Core Dumps from failing Node.js processes in production. Analyze Core Dumps using `llnode` to inspect process state, stack, and heap at the moment of failure. Conduct thorough post-mortem debugging to diagnose intermittent crashes and memory corruption issues.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Generate Core Dumps from failing Node.js processes in production.",
+    "Analyze Core Dumps using `llnode` to inspect process state, stack, and heap at the moment of failure.",
+    "Conduct thorough post-mortem debugging to diagnose intermittent crashes and memory corruption issues."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b4a9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

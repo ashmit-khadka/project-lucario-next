@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6d8",
+  "id": "plan-and-execute-patterns",
+  "slug": "plan-and-execute-patterns",
+  "version": "1.0.0",
+  "title": "Plan-and-Execute Patterns",
+  "description": "Master plan-and-execute patterns to structure long-running agentic workflows. Decouple high-level task planning from low-level execution to improve the reliability and transparency of agent operations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master plan-and-execute patterns to structure long-running agentic workflows.",
+    "Decouple high-level task planning from low-level execution to improve the reliability and transparency of agent operations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6d5",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

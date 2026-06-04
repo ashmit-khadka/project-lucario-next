@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Section {
     id: string;
@@ -104,30 +105,43 @@ const NavigationHover = ({ sections, showAfterSection = null }: NavigationHoverP
     return (
         <>
             {/* ── Desktop: fixed left-side nav (unchanged layout) ── */}
-            <nav className="floating-nav floating-nav--desktop">
+            <motion.nav 
+                className="floating-nav floating-nav--desktop"
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+            >
                 {/* Progress bar */}
                 <div className="floating-nav-progress">
-                    <div
+                    <motion.div
                         className="floating-nav-progress-fill"
                         style={{ height: `${scrollProgress}%` }}
+                        transition={{ type: "spring", stiffness: 100, damping: 18 }}
                     />
                 </div>
 
                 <ul>
                     {sections.map(({ id, label }) => (
-                        <li
+                        <motion.li
                             key={id}
                             className={`floating-nav-item ${activeSection === id ? "active" : ""}`}
                             onClick={() => scrollToSection(id)}
+                            whileHover={{ x: 6, color: "var(--color-font-primary-dark)" }}
+                            transition={{ duration: 0.2 }}
                         >
                             {label}
-                        </li>
+                        </motion.li>
                     ))}
                 </ul>
-            </nav>
+            </motion.nav>
 
             {/* ── Mobile: sticky top bar with collapse/expand ── */}
-            <nav className={`floating-nav floating-nav--mobile ${isExpanded ? "floating-nav--expanded" : ""}`}>
+            <motion.nav 
+                className={`floating-nav floating-nav--mobile ${isExpanded ? "floating-nav--expanded" : ""}`}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+            >
                 {/* Collapsed bar: progress + tap to expand */}
                 <button
                     className="floating-nav-mobile-header"
@@ -141,34 +155,49 @@ const NavigationHover = ({ sections, showAfterSection = null }: NavigationHoverP
                             : 'Sections'}
                     </span>
 
-                    <span className={`floating-nav-mobile-chevron ${isExpanded ? "open" : ""}`}>
+                    <motion.span 
+                        className={`floating-nav-mobile-chevron ${isExpanded ? "open" : ""}`}
+                        animate={{ rotate: isExpanded ? 180 : 0 }}
+                        transition={{ duration: 0.2 }}
+                    >
                         ▾
-                    </span>
+                    </motion.span>
                 </button>
 
                 {/* Horizontal progress bar */}
                 <div className="floating-nav-progress-h">
-                    <div
+                    <motion.div
                         className="floating-nav-progress-h-fill"
                         style={{ width: `${scrollProgress}%` }}
+                        transition={{ type: "spring", stiffness: 100, damping: 18 }}
                     />
                 </div>
 
                 {/* Expandable section list */}
-                {isExpanded && (
-                    <ul className="floating-nav-mobile-list">
-                        {sections.map(({ id, label }) => (
-                            <li
-                                key={id}
-                                className={`floating-nav-item ${activeSection === id ? "active" : ""}`}
-                                onClick={() => scrollToSection(id)}
-                            >
-                                {label}
-                            </li>
-                        ))}
-                    </ul>
-                )}
-            </nav>
+                <AnimatePresence>
+                    {isExpanded && (
+                        <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.25, ease: "easeInOut" }}
+                            style={{ overflow: "hidden" }}
+                        >
+                            <ul className="floating-nav-mobile-list">
+                                {sections.map(({ id, label }) => (
+                                    <li
+                                        key={id}
+                                        className={`floating-nav-item ${activeSection === id ? "active" : ""}`}
+                                        onClick={() => scrollToSection(id)}
+                                    >
+                                        {label}
+                                    </li>
+                                ))}
+                            </ul>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </motion.nav>
         </>
     );
 };

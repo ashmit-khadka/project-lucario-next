@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5a7",
+  "id": "master-message-durability-acknowledgments",
+  "slug": "master-message-durability-acknowledgments",
+  "version": "1.0.0",
+  "title": "Master Message Durability & Acknowledgments",
+  "description": "Design 'At-Least-Once' delivery systems for sockets using sequence numbering. Master message durability and acknowledgment mechanisms using client-side retry buffers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design 'At-Least-Once' delivery systems for sockets using sequence numbering.",
+    "Master message durability and acknowledgment mechanisms using client-side retry buffers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

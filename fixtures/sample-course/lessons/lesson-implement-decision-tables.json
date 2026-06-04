@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b51e",
+  "id": "implement-decision-tables",
+  "slug": "implement-decision-tables",
+  "version": "1.0.0",
+  "title": "Implement Decision Tables",
+  "description": "Implement decision tables to model and execute multi-variate business decisions. Evaluate the use of decision tables as an alternative to complex nested `if/else` structures for clarity and maintainability.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement decision tables to model and execute multi-variate business decisions.",
+    "Evaluate the use of decision tables as an alternative to complex nested `if/else` structures for clarity and maintainability."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b51b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b487",
+  "id": "master-hidden-classes-shapes-and-inline-caches-ic",
+  "slug": "master-hidden-classes-shapes-and-inline-caches-ic",
+  "version": "1.0.0",
+  "title": "Master Hidden Classes (Shapes) and Inline Caches (IC)",
+  "description": "Explain the role of Hidden Classes (Shapes) in V8's property access optimization. Describe how Inline Caches (IC) improve repeated property access performance. Design JavaScript data structures that leverage Hidden Classes and Inline Caches to minimize property access overhead.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the role of Hidden Classes (Shapes) in V8's property access optimization.",
+    "Describe how Inline Caches (IC) improve repeated property access performance.",
+    "Design JavaScript data structures that leverage Hidden Classes and Inline Caches to minimize property access overhead."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b485",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

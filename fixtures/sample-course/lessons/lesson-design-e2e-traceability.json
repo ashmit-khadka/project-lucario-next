@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b647",
+  "id": "design-e2e-traceability",
+  "slug": "design-e2e-traceability",
+  "version": "1.0.0",
+  "title": "Design E2E Traceability",
+  "description": "Design systems for linking E2E test traces (e.g., Playwright) with backend OpenTelemetry spans. Enable full-stack debugging of failed automated test runs through integrated traceability.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design systems for linking E2E test traces (e.g., Playwright) with backend OpenTelemetry spans.",
+    "Enable full-stack debugging of failed automated test runs through integrated traceability."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b644",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

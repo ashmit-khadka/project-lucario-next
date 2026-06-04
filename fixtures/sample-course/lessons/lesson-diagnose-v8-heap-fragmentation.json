@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b491",
+  "id": "diagnose-v8-heap-fragmentation",
+  "slug": "diagnose-v8-heap-fragmentation",
+  "version": "1.0.0",
+  "title": "Diagnose V8 Heap Fragmentation",
+  "description": "Diagnose V8 Heap fragmentation and memory leaks using Heap Snapshots. Utilize Allocation Timelines in Chrome DevTools to trace memory allocation patterns. Analyze 'Retaining Path' information to pinpoint the source of memory leaks and fragmentation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Diagnose V8 Heap fragmentation and memory leaks using Heap Snapshots.",
+    "Utilize Allocation Timelines in Chrome DevTools to trace memory allocation patterns.",
+    "Analyze 'Retaining Path' information to pinpoint the source of memory leaks and fragmentation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b48f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b62e",
+  "id": "web-workers-comlink",
+  "slug": "web-workers-comlink",
+  "version": "1.0.0",
+  "title": "Web Workers & Comlink",
+  "description": "Architect \"Off-Main-Thread\" compute strategies using Web Workers for heavy data processing. Implement Comlink to facilitate seamless communication between the main thread and web workers, maintaining UI responsiveness.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect \"Off-Main-Thread\" compute strategies using Web Workers for heavy data processing.",
+    "Implement Comlink to facilitate seamless communication between the main thread and web workers, maintaining UI responsiveness."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b62d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

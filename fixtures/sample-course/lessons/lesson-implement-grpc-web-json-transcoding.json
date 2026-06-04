@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b590",
+  "id": "implement-grpc-web-json-transcoding",
+  "slug": "implement-grpc-web-json-transcoding",
+  "version": "1.0.0",
+  "title": "Implement gRPC-Web & JSON Transcoding",
+  "description": "Architect proxy-based bridges using tools like Envoy to enable browser-side consumption of gRPC services. Implement gRPC-Web and JSON transcoding to expose gRPC services over HTTP/1.1 and HTTP/2 for web clients.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect proxy-based bridges using tools like Envoy to enable browser-side consumption of gRPC services.",
+    "Implement gRPC-Web and JSON transcoding to expose gRPC services over HTTP/1.1 and HTTP/2 for web clients."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b58d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b745",
+  "id": "executive-communication",
+  "slug": "executive-communication",
+  "version": "1.0.0",
+  "title": "Executive Communication",
+  "description": "Architect communication strategies to explain complex technical trade-offs to executive stakeholders. Translate technical decisions into business terms such as ROI, risk, and market velocity for C-suite audiences.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect communication strategies to explain complex technical trade-offs to executive stakeholders.",
+    "Translate technical decisions into business terms such as ROI, risk, and market velocity for C-suite audiences."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b744",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

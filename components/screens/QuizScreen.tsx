@@ -22,7 +22,7 @@ const QuizScreen = (props: QuizScreenProps) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [showResults, setShowResults] = useState(false);
-    const [feedback, setFeedback] = useState(null);
+    const [feedback, setFeedback] = useState<{ correct: boolean; explaination: string } | null>(null);
     // const [quizData, setQuizData] = useState([]);
 
     // useEffect(() => {
@@ -50,7 +50,7 @@ const QuizScreen = (props: QuizScreenProps) => {
 
     const currentQuestion = quizData[currentQuestionIndex];
 
-    const handleAnswer = (userAnswer) => {
+    const handleAnswer = (userAnswer: any) => {
         const isCorrect =
             currentQuestion.type === "true-false"
                 ? userAnswer === currentQuestion.answer
@@ -96,7 +96,7 @@ const QuizScreen = (props: QuizScreenProps) => {
                         <h2>{currentQuestion.question}</h2>
                         <QuestionCodeBlck />
                         <ul className="quiz-options">
-                            {currentQuestion.options.map((option, index) => (
+                            {(currentQuestion.options || []).map((option, index) => (
                                 <li
                                     key={index}
                                     onClick={() => handleAnswer(option)}
@@ -137,7 +137,7 @@ const QuizScreen = (props: QuizScreenProps) => {
                         <input
                             type="text"
                             className="quiz-input"
-                            onKeyDown={(e) => {
+                            onKeyDown={(e: any) => {
                                 if (e.key === "Enter") {
                                     handleAnswer(e.target.value);
                                     e.target.value = "";
@@ -186,6 +186,7 @@ const QuizScreen = (props: QuizScreenProps) => {
     const progress = ((currentQuestionIndex) / quizData.length) * 100;
 
     const QuestionFeedback = () => {
+        if (!feedback) return null;
         return (
             <div className="quiz-feedback">
                 <p className={feedback.correct ? "feedback-correct" : "feedback-incorrect"}>

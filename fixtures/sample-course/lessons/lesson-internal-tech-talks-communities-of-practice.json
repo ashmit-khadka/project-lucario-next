@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b736",
+  "id": "internal-tech-talks-communities-of-practice",
+  "slug": "internal-tech-talks-communities-of-practice",
+  "version": "1.0.0",
+  "title": "Internal Tech Talks & Communities of Practice",
+  "description": "Design internal tech talk programs and communities of practice to facilitate knowledge sharing. Architect an ecosystem that breaks down technical silos and promotes cross-pollination of architectural patterns.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design internal tech talk programs and communities of practice to facilitate knowledge sharing.",
+    "Architect an ecosystem that breaks down technical silos and promotes cross-pollination of architectural patterns."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b733",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

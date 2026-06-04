@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b70f",
+  "id": "pod-security-admission-psa",
+  "slug": "pod-security-admission-psa",
+  "version": "1.0.0",
+  "title": "Pod Security Admission (PSA)",
+  "description": "Implement Pod Security Admission (PSA) to enforce security standards on pods. Design namespaces with Restricted, Baseline, and Privileged profiles to apply the principle of least privilege at runtime.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Pod Security Admission (PSA) to enforce security standards on pods.",
+    "Design namespaces with Restricted, Baseline, and Privileged profiles to apply the principle of least privilege at runtime."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b70e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

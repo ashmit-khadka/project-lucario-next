@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f1",
+  "id": "graceful-container-shutdown",
+  "slug": "graceful-container-shutdown",
+  "version": "1.0.0",
+  "title": "Graceful Container Shutdown",
+  "description": "Implement graceful container shutdown mechanisms using SIGTERM handling. Architect connection draining strategies to ensure zero-downtime deployments and clean resource teardown.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement graceful container shutdown mechanisms using SIGTERM handling.",
+    "Architect connection draining strategies to ensure zero-downtime deployments and clean resource teardown."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5ed",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

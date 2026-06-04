@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5bb",
+  "id": "page-level-storage-fill-factors",
+  "slug": "page-level-storage-fill-factors",
+  "version": "1.0.0",
+  "title": "Page-Level Storage & Fill Factors",
+  "description": "Deconstruct the structure of database pages and their impact on disk I/O performance. Optimize storage efficiency and retrieval speed by managing row-ordering, data alignment, and fill factors within database pages.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the structure of database pages and their impact on disk I/O performance.",
+    "Optimize storage efficiency and retrieval speed by managing row-ordering, data alignment, and fill factors within database pages."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5b9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

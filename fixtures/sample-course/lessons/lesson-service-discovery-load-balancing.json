@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6fe",
+  "id": "service-discovery-load-balancing",
+  "slug": "service-discovery-load-balancing",
+  "version": "1.0.0",
+  "title": "Service Discovery & Load Balancing",
+  "description": "Architect service discovery and load balancing using ClusterIP, NodePort, and LoadBalancer service types. Deconstruct the evolution of load balancing from kube-proxy (IPtables) to IPVS or eBPF.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect service discovery and load balancing using ClusterIP, NodePort, and LoadBalancer service types.",
+    "Deconstruct the evolution of load balancing from kube-proxy (IPtables) to IPVS or eBPF."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b6fc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

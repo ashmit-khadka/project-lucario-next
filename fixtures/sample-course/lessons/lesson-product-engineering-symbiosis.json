@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b746",
+  "id": "product-engineering-symbiosis",
+  "slug": "product-engineering-symbiosis",
+  "version": "1.0.0",
+  "title": "Product-Engineering Symbiosis",
+  "description": "Implement a symbiotic partnership model between product and engineering teams. Design processes that empower engineers to contribute to the product roadmap by identifying critical technical enablers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a symbiotic partnership model between product and engineering teams.",
+    "Design processes that empower engineers to contribute to the product roadmap by identifying critical technical enablers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b744",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

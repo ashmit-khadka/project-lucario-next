@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4cf",
+  "id": "load-shedding-request-prioritization",
+  "slug": "load-shedding-request-prioritization",
+  "version": "1.0.0",
+  "title": "Load Shedding & Request Prioritization",
+  "description": "Implement load shedding techniques to protect systems from extreme saturation. Design request prioritization algorithms and priority queues for critical traffic. Evaluate the trade-offs of rejecting low-value traffic to maintain core service availability.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement load shedding techniques to protect systems from extreme saturation.",
+    "Design request prioritization algorithms and priority queues for critical traffic.",
+    "Evaluate the trade-offs of rejecting low-value traffic to maintain core service availability."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4cc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

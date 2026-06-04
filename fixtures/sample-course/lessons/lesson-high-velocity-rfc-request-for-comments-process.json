@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b720",
+  "id": "high-velocity-rfc-request-for-comments-process",
+  "slug": "high-velocity-rfc-request-for-comments-process",
+  "version": "1.0.0",
+  "title": "High-Velocity RFC (Request for Comments) Process",
+  "description": "Design a high-velocity Request for Comments (RFC) process for major architectural changes. Implement a culture of asynchronous peer review to foster consensus and prevent technical silos.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design a high-velocity Request for Comments (RFC) process for major architectural changes.",
+    "Implement a culture of asynchronous peer review to foster consensus and prevent technical silos."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b71f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4f1",
+  "id": "aggregate-roots-boundaries",
+  "slug": "aggregate-roots-boundaries",
+  "version": "1.0.0",
+  "title": "Aggregate Roots & Boundaries",
+  "description": "Architect aggregate roots to define strict entry points for managing domain state changes. Enforce boundary traversal rules using TypeScript’s module visibility to maintain aggregate integrity.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect aggregate roots to define strict entry points for managing domain state changes.",
+    "Enforce boundary traversal rules using TypeScript’s module visibility to maintain aggregate integrity."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4ee",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

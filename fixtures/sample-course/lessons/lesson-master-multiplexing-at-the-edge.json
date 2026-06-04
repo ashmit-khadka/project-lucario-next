@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5b6",
+  "id": "master-multiplexing-at-the-edge",
+  "slug": "master-multiplexing-at-the-edge",
+  "version": "1.0.0",
+  "title": "Master Multiplexing at the Edge",
+  "description": "Design entry points that handle various real-time protocols on a single port. Master multiplexing techniques at the edge using ALPN and SNI routing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design entry points that handle various real-time protocols on a single port.",
+    "Master multiplexing techniques at the edge using ALPN and SNI routing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5b4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

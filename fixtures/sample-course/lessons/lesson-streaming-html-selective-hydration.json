@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b61f",
+  "id": "streaming-html-selective-hydration",
+  "slug": "streaming-html-selective-hydration",
+  "version": "1.0.0",
+  "title": "Streaming HTML & Selective Hydration",
+  "description": "Implement server-side streaming HTML to deliver critical UI content faster. Utilize Suspense for selective hydration, prioritizing interactivity for above-the-fold content.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement server-side streaming HTML to deliver critical UI content faster.",
+    "Utilize Suspense for selective hydration, prioritizing interactivity for above-the-fold content."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b61b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

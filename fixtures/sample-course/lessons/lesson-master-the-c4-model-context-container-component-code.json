@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b55d",
+  "id": "master-the-c4-model-context-container-component-code",
+  "slug": "master-the-c4-model-context-container-component-code",
+  "version": "1.0.0",
+  "title": "Master the C4 Model (Context, Container, Component, Code)",
+  "description": "Implement the C4 Model for documenting software architecture at multiple levels of abstraction. Design architecture diagrams that effectively communicate to diverse audiences, from executives to developers. Apply C4 principles to create consistent and understandable architectural documentation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement the C4 Model for documenting software architecture at multiple levels of abstraction.",
+    "Design architecture diagrams that effectively communicate to diverse audiences, from executives to developers.",
+    "Apply C4 principles to create consistent and understandable architectural documentation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b55c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

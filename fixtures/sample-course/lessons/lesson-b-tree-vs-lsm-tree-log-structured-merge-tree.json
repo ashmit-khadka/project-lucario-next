@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ba",
+  "id": "b-tree-vs-lsm-tree-log-structured-merge-tree",
+  "slug": "b-tree-vs-lsm-tree-log-structured-merge-tree",
+  "version": "1.0.0",
+  "title": "B-Tree vs. LSM-Tree (Log-Structured Merge-Tree)",
+  "description": "Analyze the fundamental differences in data structure and operation between B-Trees and LSM-Trees. Evaluate the trade-offs between read amplification and write amplification for B-Tree and LSM-Tree based on specific workload profiles.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the fundamental differences in data structure and operation between B-Trees and LSM-Trees.",
+    "Evaluate the trade-offs between read amplification and write amplification for B-Tree and LSM-Tree based on specific workload profiles."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5b9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

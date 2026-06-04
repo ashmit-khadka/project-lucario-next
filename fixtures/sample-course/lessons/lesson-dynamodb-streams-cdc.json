@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5fb",
+  "id": "dynamodb-streams-cdc",
+  "slug": "dynamodb-streams-cdc",
+  "version": "1.0.0",
+  "title": "DynamoDB Streams & CDC",
+  "description": "Master the use of DynamoDB Streams for Change Data Capture (CDC). Architect real-time downstream synchronization patterns based on database write events.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the use of DynamoDB Streams for Change Data Capture (CDC).",
+    "Architect real-time downstream synchronization patterns based on database write events."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5f7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

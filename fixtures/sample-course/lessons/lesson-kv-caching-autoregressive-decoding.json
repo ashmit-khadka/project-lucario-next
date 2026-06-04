@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6ca",
+  "id": "kv-caching-autoregressive-decoding",
+  "slug": "kv-caching-autoregressive-decoding",
+  "version": "1.0.0",
+  "title": "KV Caching & Autoregressive Decoding",
+  "description": "Implement KV caching strategies to accelerate LLM inference by reusing previous token computations. Trace how KV caching minimizes the 'Time to First Token' (TTFT) during autoregressive decoding.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement KV caching strategies to accelerate LLM inference by reusing previous token computations.",
+    "Trace how KV caching minimizes the 'Time to First Token' (TTFT) during autoregressive decoding."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6c7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b585",
+  "id": "distributed-rate-limiting",
+  "slug": "distributed-rate-limiting",
+  "version": "1.0.0",
+  "title": "Distributed Rate Limiting",
+  "description": "Implement distributed rate limiting algorithms, such as Token Bucket or Sliding Window. Architect rate limiting solutions using Redis to enforce per-user and organization-wide limits across a cluster.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement distributed rate limiting algorithms, such as Token Bucket or Sliding Window.",
+    "Architect rate limiting solutions using Redis to enforce per-user and organization-wide limits across a cluster."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b584",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

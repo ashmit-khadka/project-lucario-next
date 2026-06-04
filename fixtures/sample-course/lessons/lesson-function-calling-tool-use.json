@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6ea",
+  "id": "function-calling-tool-use",
+  "slug": "function-calling-tool-use",
+  "version": "1.0.0",
+  "title": "Function Calling & Tool Use",
+  "description": "Master function calling and tool use capabilities in LLMs to extend their functionality. Architect tight integration between LLMs and existing software systems by defining clear, typed interfaces for model-driven tool execution.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master function calling and tool use capabilities in LLMs to extend their functionality.",
+    "Architect tight integration between LLMs and existing software systems by defining clear, typed interfaces for model-driven tool execution."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6e7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

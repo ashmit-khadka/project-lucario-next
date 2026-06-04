@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4cb",
+  "id": "direct-server-return-dsr",
+  "slug": "direct-server-return-dsr",
+  "version": "1.0.0",
+  "title": "Direct Server Return (DSR)",
+  "description": "Analyze the architecture and operational principles of Direct Server Return (DSR). Evaluate the performance benefits of DSR in high-throughput load balancing scenarios. Identify scenarios where DSR can eliminate load balancer bottlenecks and improve efficiency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the architecture and operational principles of Direct Server Return (DSR).",
+    "Evaluate the performance benefits of DSR in high-throughput load balancing scenarios.",
+    "Identify scenarios where DSR can eliminate load balancer bottlenecks and improve efficiency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

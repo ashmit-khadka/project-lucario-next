@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6e6",
+  "id": "ai-observability-tracing",
+  "slug": "ai-observability-tracing",
+  "version": "1.0.0",
+  "title": "AI Observability & Tracing",
+  "description": "Implement AI observability and tracing using tools like LangSmith or Arize Phoenix. Trace agentic workflows to identify bottlenecks and debug non-deterministic failure modes in production.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement AI observability and tracing using tools like LangSmith or Arize Phoenix.",
+    "Trace agentic workflows to identify bottlenecks and debug non-deterministic failure modes in production."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6e2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

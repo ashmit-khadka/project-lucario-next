@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b529",
+  "id": "architect-hierarchical-actor-systems",
+  "slug": "architect-hierarchical-actor-systems",
+  "version": "1.0.0",
+  "title": "Architect Hierarchical Actor Systems",
+  "description": "Architect hierarchical actor systems with parent-child relationships for robust supervision. Design strategies for error recovery and dynamic lifecycle management within actor hierarchies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect hierarchical actor systems with parent-child relationships for robust supervision.",
+    "Design strategies for error recovery and dynamic lifecycle management within actor hierarchies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b527",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

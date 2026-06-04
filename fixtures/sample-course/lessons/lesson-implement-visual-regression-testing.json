@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b646",
+  "id": "implement-visual-regression-testing",
+  "slug": "implement-visual-regression-testing",
+  "version": "1.0.0",
+  "title": "Implement Visual Regression Testing",
+  "description": "Implement visual regression testing using pixel-perfect or DOM-based comparison tools (e.g., Applitools, Percy). Detect UI regressions that are challenging to identify with traditional assertion-based testing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement visual regression testing using pixel-perfect or DOM-based comparison tools (e.g., Applitools, Percy).",
+    "Detect UI regressions that are challenging to identify with traditional assertion-based testing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b644",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

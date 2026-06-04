@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b528",
+  "id": "master-isolated-state-encapsulation",
+  "slug": "master-isolated-state-encapsulation",
+  "version": "1.0.0",
+  "title": "Master Isolated State Encapsulation",
+  "description": "Master the Actor Model for encapsulating state and eliminating shared-mutable-state bugs. Implement asynchronous message passing between actors to manage system interactions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the Actor Model for encapsulating state and eliminating shared-mutable-state bugs.",
+    "Implement asynchronous message passing between actors to manage system interactions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b527",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

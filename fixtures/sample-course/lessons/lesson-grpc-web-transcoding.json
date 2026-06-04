@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4dd",
+  "id": "grpc-web-transcoding",
+  "slug": "grpc-web-transcoding",
+  "version": "1.0.0",
+  "title": "gRPC-Web & Transcoding",
+  "description": "Analyze the necessity of gRPC-Web for browser-side communication with gRPC backends. Explain how proxy-based transcoding (e.g., Envoy) bridges the gap between HTTP/1.1+ and gRPC. Implement gRPC-Web clients to interact with gRPC services from web browsers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the necessity of gRPC-Web for browser-side communication with gRPC backends.",
+    "Explain how proxy-based transcoding (e.g., Envoy) bridges the gap between HTTP/1.1+ and gRPC.",
+    "Implement gRPC-Web clients to interact with gRPC services from web browsers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4da",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b73f",
+  "id": "automated-cost-guardrails",
+  "slug": "automated-cost-guardrails",
+  "version": "1.0.0",
+  "title": "Automated Cost Guardrails",
+  "description": "Architect automated cost guardrails using cleanup scripts and spot-instance prioritization. Implement budget-breach alerts and mechanisms to maintain fiscal discipline in distributed cloud environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect automated cost guardrails using cleanup scripts and spot-instance prioritization.",
+    "Implement budget-breach alerts and mechanisms to maintain fiscal discipline in distributed cloud environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b73c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

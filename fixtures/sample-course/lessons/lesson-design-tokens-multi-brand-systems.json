@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b632",
+  "id": "design-tokens-multi-brand-systems",
+  "slug": "design-tokens-multi-brand-systems",
+  "version": "1.0.0",
+  "title": "Design Tokens & Multi-Brand Systems",
+  "description": "Architect a headless design token architecture to define visual properties. Implement strategies for multi-brand systems and theme-switching using design tokens to avoid CSS duplication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a headless design token architecture to define visual properties.",
+    "Implement strategies for multi-brand systems and theme-switching using design tokens to avoid CSS duplication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b631",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

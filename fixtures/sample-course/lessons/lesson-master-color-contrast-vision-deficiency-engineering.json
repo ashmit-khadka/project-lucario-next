@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6bd",
+  "id": "master-color-contrast-vision-deficiency-engineering",
+  "slug": "master-color-contrast-vision-deficiency-engineering",
+  "version": "1.0.0",
+  "title": "Master Color Contrast & Vision-Deficiency Engineering",
+  "description": "Architect themes that satisfy WCAG 2.1 AAA contrast ratios for improved readability. Implement specialized \"Color-Blind Modes\" that convey semantic meaning through patterns and icons.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect themes that satisfy WCAG 2.1 AAA contrast ratios for improved readability.",
+    "Implement specialized \"Color-Blind Modes\" that convey semantic meaning through patterns and icons."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6ba",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b56c",
+  "id": "resolving-n-1-with-dataloader",
+  "slug": "resolving-n-1-with-dataloader",
+  "version": "1.0.0",
+  "title": "Resolving N+1 with DataLoader",
+  "description": "Resolve the N+1 problem in GraphQL by implementing the DataLoader pattern. Apply request-scoped batching and memoization across deeply nested resolver trees to optimize data fetching.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Resolve the N+1 problem in GraphQL by implementing the DataLoader pattern.",
+    "Apply request-scoped batching and memoization across deeply nested resolver trees to optimize data fetching."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b56b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

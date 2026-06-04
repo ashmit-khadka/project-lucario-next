@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f8",
+  "id": "dynamodb-single-table-design",
+  "slug": "dynamodb-single-table-design",
+  "version": "1.0.0",
+  "title": "DynamoDB Single-Table Design",
+  "description": "Master DynamoDB single-table design principles for complex relational modeling. Implement efficient data access patterns using Partition Keys, Sort Keys, and Global Secondary Indexes to achieve sub-10ms performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master DynamoDB single-table design principles for complex relational modeling.",
+    "Implement efficient data access patterns using Partition Keys, Sort Keys, and Global Secondary Indexes to achieve sub-10ms performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5f7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

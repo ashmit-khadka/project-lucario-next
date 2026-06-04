@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b51d",
+  "id": "master-attribute-based-access-control-abac",
+  "slug": "master-attribute-based-access-control-abac",
+  "version": "1.0.0",
+  "title": "Master Attribute-Based Access Control (ABAC)",
+  "description": "Master the modeling of complex permissioning requirements using Attribute-Based Access Control (ABAC). Design deterministic boolean expressions for access control based on dynamic attributes of subjects and resources.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the modeling of complex permissioning requirements using Attribute-Based Access Control (ABAC).",
+    "Design deterministic boolean expressions for access control based on dynamic attributes of subjects and resources."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b51b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

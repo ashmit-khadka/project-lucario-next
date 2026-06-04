@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b71d",
+  "id": "cluster-api-capi",
+  "slug": "cluster-api-capi",
+  "version": "1.0.0",
+  "title": "Cluster API (CAPI)",
+  "description": "Master the Cluster API (CAPI) for programmatic Kubernetes cluster lifecycle management. Implement consistent cluster provisioning and management across heterogeneous cloud providers and on-premises infrastructure.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the Cluster API (CAPI) for programmatic Kubernetes cluster lifecycle management.",
+    "Implement consistent cluster provisioning and management across heterogeneous cloud providers and on-premises infrastructure."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b71b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

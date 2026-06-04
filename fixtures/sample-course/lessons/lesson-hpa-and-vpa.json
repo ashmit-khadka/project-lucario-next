@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b714",
+  "id": "hpa-and-vpa",
+  "slug": "hpa-and-vpa",
+  "version": "1.0.0",
+  "title": "HPA and VPA",
+  "description": "Master Horizontal Pod Autoscaling (HPA) and Vertical Pod Autoscaling (VPA) for dynamic workload scaling. Implement HPA and VPA based on standard and custom metrics (e.g., queue depth, request latency) to handle traffic bursts.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master Horizontal Pod Autoscaling (HPA) and Vertical Pod Autoscaling (VPA) for dynamic workload scaling.",
+    "Implement HPA and VPA based on standard and custom metrics (e.g., queue depth, request latency) to handle traffic bursts."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b713",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

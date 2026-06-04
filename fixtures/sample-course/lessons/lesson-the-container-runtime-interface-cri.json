@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6f6",
+  "id": "the-container-runtime-interface-cri",
+  "slug": "the-container-runtime-interface-cri",
+  "version": "1.0.0",
+  "title": "The Container Runtime Interface (CRI)",
+  "description": "Analyze the interaction between kubelet, containerd, and low-level runtimes via the Container Runtime Interface (CRI). Evaluate different container runtimes (e.g., runc vs. Kata Containers) based on their isolation models and performance characteristics.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the interaction between kubelet, containerd, and low-level runtimes via the Container Runtime Interface (CRI).",
+    "Evaluate different container runtimes (e.g., runc vs. Kata Containers) based on their isolation models and performance characteristics."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b6f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,123 @@
+@import '../base/colours';
+@import '../base/mixins';
+
+.lesson-flow-container {
+    margin-bottom: 32px;
+    
+    .lesson-flow-header {
+        margin-bottom: 16px;
+
+        .lesson-flow-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: $color-font-primary;
+            margin: 0 0 8px 0;
+        }
+
+        .lesson-flow-description {
+            color: $color-font-primary-lighter;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+    }
+
+    /* Override React Flow defaults for the Controls panel */
+    .react-flow__panel.react-flow__controls {
+        button {
+            background: transparent;
+            border-bottom: 1px solid rgba(239, 199, 255, 0.1);
+            
+            &:hover {
+                background: rgba(239, 199, 255, 0.1);
+            }
+            
+            svg {
+                fill: $color-font-primary-lighter;
+            }
+        }
+    }
+}
+
+.lesson-flow-node {
+    background-color: rgba($color-font-primary-lighter, 0.05);
+    border: 1px solid rgba($color-font-primary-lighter, 0.15);
+    border-radius: 8px;
+    padding: 16px;
+    min-width: 150px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &:hover {
+        border-color: rgba($color-font-primary, 0.5);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba($color-font-primary, 0.1);
+    }
+
+    &.selected {
+        border-color: $color-font-primary;
+        box-shadow: 0 0 0 1px $color-font-primary, 0 0 15px rgba($color-font-primary, 0.2);
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        background-color: rgba($color-font-primary, 0.1);
+        color: $color-font-primary;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: $color-font-primary;
+    }
+
+    &__desc {
+        font-size: 0.8rem;
+        color: $color-font-primary-lighter;
+        margin-top: 4px;
+        max-width: 180px;
+        line-height: 1.3;
+    }
+
+    /* Target Handles */
+    .lesson-flow-handle {
+        width: 10px;
+        height: 10px;
+        background-color: $color-font-primary-darker;
+        border: 2px solid $color-font-primary;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    /* Node Variants */
+    &--highlight {
+        background-color: rgba($color-font-primary, 0.1);
+        border-color: rgba($color-font-primary, 0.4);
+    }
+
+    &--warning {
+        background-color: rgba(#ffcc00, 0.05);
+        border-color: rgba(#ffcc00, 0.3);
+        
+        .lesson-flow-node__icon {
+            background-color: rgba(#ffcc00, 0.1);
+            color: #ffcc00;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4db",
+  "id": "binary-serialization-with-protobuf",
+  "slug": "binary-serialization-with-protobuf",
+  "version": "1.0.0",
+  "title": "Binary Serialization with Protobuf",
+  "description": "Analyze the wire-format efficiency and field numbering of Protocol Buffers. Compare the performance gains of binary serialization with Protobuf over JSON. Design .proto schemas for efficient data exchange in microservices.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the wire-format efficiency and field numbering of Protocol Buffers.",
+    "Compare the performance gains of binary serialization with Protobuf over JSON.",
+    "Design .proto schemas for efficient data exchange in microservices."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4da",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

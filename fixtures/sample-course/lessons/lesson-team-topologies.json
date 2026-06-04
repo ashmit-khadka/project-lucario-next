@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b72a",
+  "id": "team-topologies",
+  "slug": "team-topologies",
+  "version": "1.0.0",
+  "title": "Team Topologies",
+  "description": "Architect team boundaries in an organization based on principles of \"Cognitive Load\" and \"Stream-Aligned\" patterns. Minimize high-bandwidth coordination requirements across teams through effective application of Team Topologies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect team boundaries in an organization based on principles of \"Cognitive Load\" and \"Stream-Aligned\" patterns.",
+    "Minimize high-bandwidth coordination requirements across teams through effective application of Team Topologies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b729",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

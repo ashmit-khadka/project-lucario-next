@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b693",
+  "id": "data-subject-access-requests-dsar-automation",
+  "slug": "data-subject-access-requests-dsar-automation",
+  "version": "1.0.0",
+  "title": "Data Subject Access Requests (DSAR) Automation",
+  "description": "Design high-performance Search and Extract engines to aggregate a user's entire PII footprint on demand. Architect systems capable of crawling distributed microservices, data lakes, and cold storage for DSAR fulfillment.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design high-performance Search and Extract engines to aggregate a user's entire PII footprint on demand.",
+    "Architect systems capable of crawling distributed microservices, data lakes, and cold storage for DSAR fulfillment."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b692",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

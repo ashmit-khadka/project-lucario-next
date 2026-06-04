@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b70d",
+  "id": "crossplane-for-universal-iac",
+  "slug": "crossplane-for-universal-iac",
+  "version": "1.0.0",
+  "title": "Crossplane for Universal IaC",
+  "description": "Architect \"Infrastructure as a Resource\" inside Kubernetes using Crossplane for universal Infrastructure as Code. Implement the management of cloud services (e.g., RDS, S3) via the Kubernetes declarative API using Crossplane.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect \"Infrastructure as a Resource\" inside Kubernetes using Crossplane for universal Infrastructure as Code.",
+    "Implement the management of cloud services (e.g., RDS, S3) via the Kubernetes declarative API using Crossplane."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b70a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

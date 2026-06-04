@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b662",
+  "id": "master-adaptive-load-shedding",
+  "slug": "master-adaptive-load-shedding",
+  "version": "1.0.0",
+  "title": "Master Adaptive Load Shedding",
+  "description": "Architect dynamic concurrency limits based on principles like Little's Law. Implement automatic rejection of low-priority traffic during periods of system degradation. Design load shedding mechanisms to preserve system stability under extreme load conditions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect dynamic concurrency limits based on principles like Little's Law.",
+    "Implement automatic rejection of low-priority traffic during periods of system degradation.",
+    "Design load shedding mechanisms to preserve system stability under extreme load conditions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b660",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

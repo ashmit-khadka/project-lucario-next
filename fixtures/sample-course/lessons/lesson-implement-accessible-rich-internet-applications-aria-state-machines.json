@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6af",
+  "id": "implement-accessible-rich-internet-applications-aria-state-machines",
+  "slug": "implement-accessible-rich-internet-applications-aria-state-machines",
+  "version": "1.0.0",
+  "title": "Implement Accessible Rich Internet Applications (ARIA) State Machines",
+  "description": "Utilize ARIA attributes like `aria-expanded` and `aria-selected` to communicate UI states. Synchronize visual UI states with the accessibility layer using `aria-controls` in real-time.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize ARIA attributes like `aria-expanded` and `aria-selected` to communicate UI states.",
+    "Synchronize visual UI states with the accessibility layer using `aria-controls` in real-time."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6ad",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

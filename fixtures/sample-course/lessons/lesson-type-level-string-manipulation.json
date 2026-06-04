@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4eb",
+  "id": "type-level-string-manipulation",
+  "slug": "type-level-string-manipulation",
+  "version": "1.0.0",
+  "title": "Type-Level String Manipulation",
+  "description": "Leverage Template Literal Types to perform type-safe string transformations. Implement type-level string manipulation for tasks such as parsing CSS, routing URLs, or accessing nested object paths.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Leverage Template Literal Types to perform type-safe string transformations.",
+    "Implement type-level string manipulation for tasks such as parsing CSS, routing URLs, or accessing nested object paths."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4e9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

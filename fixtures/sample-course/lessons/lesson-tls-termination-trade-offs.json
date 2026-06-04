@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4bb",
+  "id": "tls-termination-trade-offs",
+  "slug": "tls-termination-trade-offs",
+  "version": "1.0.0",
+  "title": "TLS Termination Trade-offs",
+  "description": "Compare the architectural trade-offs of TLS termination at the Edge (CDN), Load Balancer, or application server. Evaluate the security implications of different TLS termination points, focusing on \"Last Mile\" encryption. Analyze the latency impact of TLS termination location on overall application performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Compare the architectural trade-offs of TLS termination at the Edge (CDN), Load Balancer, or application server.",
+    "Evaluate the security implications of different TLS termination points, focusing on \"Last Mile\" encryption.",
+    "Analyze the latency impact of TLS termination location on overall application performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4b8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

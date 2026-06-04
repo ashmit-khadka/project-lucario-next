@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b57d",
+  "id": "evaluating-api-versioning-strategies",
+  "slug": "evaluating-api-versioning-strategies",
+  "version": "1.0.0",
+  "title": "Evaluating API Versioning Strategies",
+  "description": "Evaluate different API versioning strategies (Path, Header, Content-Negotiation). Analyze the impact of versioning choices on CDN caching, proxy routing, and client complexity.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate different API versioning strategies (Path, Header, Content-Negotiation).",
+    "Analyze the impact of versioning choices on CDN caching, proxy routing, and client complexity."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b57c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b51a",
+  "id": "implement-declarative-timeouts",
+  "slug": "implement-declarative-timeouts",
+  "version": "1.0.0",
+  "title": "Implement Declarative Timeouts",
+  "description": "Implement declarative timeouts within state machines to trigger delayed transitions. Master the use of timeouts to automate handling of Service Level Agreement (SLA) breaches and orchestrate escalations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement declarative timeouts within state machines to trigger delayed transitions.",
+    "Master the use of timeouts to automate handling of Service Level Agreement (SLA) breaches and orchestrate escalations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b517",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

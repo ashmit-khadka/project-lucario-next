@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b682",
+  "id": "api-security-posture-management-aspm",
+  "slug": "api-security-posture-management-aspm",
+  "version": "1.0.0",
+  "title": "API Security Posture Management (ASPM)",
+  "description": "Implement automated tools for discovering 'Shadow APIs' and maintaining API inventory. Detect Insecure Direct Object References (IDOR) through behavioral analysis of API request patterns. Establish an effective API Security Posture Management (ASPM) strategy.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement automated tools for discovering 'Shadow APIs' and maintaining API inventory.",
+    "Detect Insecure Direct Object References (IDOR) through behavioral analysis of API request patterns.",
+    "Establish an effective API Security Posture Management (ASPM) strategy."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b680",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

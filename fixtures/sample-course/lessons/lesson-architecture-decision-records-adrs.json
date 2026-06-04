@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b721",
+  "id": "architecture-decision-records-adrs",
+  "slug": "architecture-decision-records-adrs",
+  "version": "1.0.0",
+  "title": "Architecture Decision Records (ADRs)",
+  "description": "Implement a version-controlled repository for Architecture Decision Records (ADRs). Utilize ADRs to document the rationale behind major system choices, preventing future misunderstandings and re-work.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a version-controlled repository for Architecture Decision Records (ADRs).",
+    "Utilize ADRs to document the rationale behind major system choices, preventing future misunderstandings and re-work."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b71f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

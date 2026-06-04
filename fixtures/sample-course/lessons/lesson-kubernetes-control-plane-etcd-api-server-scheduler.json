@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6f8",
+  "id": "kubernetes-control-plane-etcd-api-server-scheduler",
+  "slug": "kubernetes-control-plane-etcd-api-server-scheduler",
+  "version": "1.0.0",
+  "title": "Kubernetes Control Plane (etcd, API Server, Scheduler)",
+  "description": "Master the roles and interactions of etcd, API Server, and Scheduler within the Kubernetes Control Plane. Explain the 'Declarative Reconciliation Loop' to ensure desired state consistency across Kubernetes nodes.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the roles and interactions of etcd, API Server, and Scheduler within the Kubernetes Control Plane.",
+    "Explain the 'Declarative Reconciliation Loop' to ensure desired state consistency across Kubernetes nodes."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b6f7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

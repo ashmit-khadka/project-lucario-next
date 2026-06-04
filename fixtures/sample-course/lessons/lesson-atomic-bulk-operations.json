@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b57b",
+  "id": "atomic-bulk-operations",
+  "slug": "atomic-bulk-operations",
+  "version": "1.0.0",
+  "title": "Atomic Bulk Operations",
+  "description": "Design transactional batch APIs to ensure \"All-or-Nothing\" consistency for multi-resource updates. Manage telemetry for partial successes or failures within atomic bulk operations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design transactional batch APIs to ensure \"All-or-Nothing\" consistency for multi-resource updates.",
+    "Manage telemetry for partial successes or failures within atomic bulk operations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b578",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

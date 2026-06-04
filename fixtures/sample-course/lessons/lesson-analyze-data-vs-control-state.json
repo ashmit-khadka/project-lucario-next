@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b50d",
+  "id": "analyze-data-vs-control-state",
+  "slug": "analyze-data-vs-control-state",
+  "version": "1.0.0",
+  "title": "Analyze Data vs. Control State",
+  "description": "Analyze system variables to distinguish between control state, which dictates logic transitions, and extended state, which provides contextual data. Evaluate existing systems to identify miscategorized state variables and refactor them for clarity.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze system variables to distinguish between control state, which dictates logic transitions, and extended state, which provides contextual data.",
+    "Evaluate existing systems to identify miscategorized state variables and refactor them for clarity."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b50a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

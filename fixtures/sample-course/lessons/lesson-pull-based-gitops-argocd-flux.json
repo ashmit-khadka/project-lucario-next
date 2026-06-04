@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b70b",
+  "id": "pull-based-gitops-argocd-flux",
+  "slug": "pull-based-gitops-argocd-flux",
+  "version": "1.0.0",
+  "title": "Pull-based GitOps (ArgoCD/Flux)",
+  "description": "Master pull-based GitOps principles using tools like ArgoCD or Flux. Architect continuous delivery systems where the cluster reconciles its state to a Git-based source of truth.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master pull-based GitOps principles using tools like ArgoCD or Flux.",
+    "Architect continuous delivery systems where the cluster reconciles its state to a Git-based source of truth."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b70a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

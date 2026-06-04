@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4d9",
+  "id": "sticky-sessions-socket-pub-sub",
+  "slug": "sticky-sessions-socket-pub-sub",
+  "version": "1.0.0",
+  "title": "Sticky Sessions & Socket Pub/Sub",
+  "description": "Architect sticky session implementations for WebSocket connections in clustered environments. Implement pub/sub patterns for state synchronization across multiple server nodes. Evaluate the use of backplanes like Redis or NATS for real-time data distribution.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect sticky session implementations for WebSocket connections in clustered environments.",
+    "Implement pub/sub patterns for state synchronization across multiple server nodes.",
+    "Evaluate the use of backplanes like Redis or NATS for real-time data distribution."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4d6",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b536",
+  "id": "implement-modular-monoliths",
+  "slug": "implement-modular-monoliths",
+  "version": "1.0.0",
+  "title": "Implement Modular Monoliths",
+  "description": "Implement logical 'seams' within a monolithic application to define clear module boundaries. Utilize build-time tooling to enforce strict architectural boundaries in a modular monolith. Evaluate how modular monoliths maintain refactorability while avoiding the operational cost of distributed systems.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement logical 'seams' within a monolithic application to define clear module boundaries.",
+    "Utilize build-time tooling to enforce strict architectural boundaries in a modular monolith.",
+    "Evaluate how modular monoliths maintain refactorability while avoiding the operational cost of distributed systems."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b534",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

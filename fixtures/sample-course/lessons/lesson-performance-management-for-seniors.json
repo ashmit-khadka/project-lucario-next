@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b743",
+  "id": "performance-management-for-seniors",
+  "slug": "performance-management-for-seniors",
+  "version": "1.0.0",
+  "title": "Performance Management for Seniors",
+  "description": "Design performance management systems and career ladders for senior individual contributors and managers. Implement parallel career tracks to retain and develop technical talent without requiring a transition to people management.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design performance management systems and career ladders for senior individual contributors and managers.",
+    "Implement parallel career tracks to retain and develop technical talent without requiring a transition to people management."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b740",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

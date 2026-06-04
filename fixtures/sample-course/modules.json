@@ -1,0 +1,338 @@
+[
+  {
+    "_id": "6a115062bfafb1ab7ac3b484",
+    "slug": "the-node-js-javascript-runtime",
+    "title": "The Node.js & JavaScript Runtime",
+    "description": "This module provides an in-depth exploration of the core components and advanced internals of the Node.js and JavaScript runtime, essential for optimizing performance and building robust server-side applications.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b485",
+      "6a115062bfafb1ab7ac3b48a",
+      "6a115062bfafb1ab7ac3b48f",
+      "6a115062bfafb1ab7ac3b494",
+      "6a115062bfafb1ab7ac3b499",
+      "6a115062bfafb1ab7ac3b49e",
+      "6a115062bfafb1ab7ac3b4a2",
+      "6a115062bfafb1ab7ac3b4a6",
+      "6a115062bfafb1ab7ac3b4a9"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4ad",
+    "slug": "web-networking-communication-protocols",
+    "title": "Web Networking & Communication Protocols",
+    "description": "This module covers the fundamental web networking concepts and communication protocols, equipping engineers to design high-performance, reliable, and secure distributed systems.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b4ae",
+      "6a115062bfafb1ab7ac3b4b3",
+      "6a115062bfafb1ab7ac3b4b8",
+      "6a115062bfafb1ab7ac3b4bd",
+      "6a115062bfafb1ab7ac3b4c2",
+      "6a115062bfafb1ab7ac3b4c7",
+      "6a115062bfafb1ab7ac3b4cc",
+      "6a115062bfafb1ab7ac3b4d1",
+      "6a115062bfafb1ab7ac3b4d6",
+      "6a115062bfafb1ab7ac3b4da"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4de",
+    "slug": "advanced-typescript-system-modeling",
+    "title": "Advanced TypeScript & System Modeling",
+    "description": "This module delves into sophisticated TypeScript features and architectural patterns to design robust, type-safe, and maintainable software systems.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b4df",
+      "6a115062bfafb1ab7ac3b4e4",
+      "6a115062bfafb1ab7ac3b4e9",
+      "6a115062bfafb1ab7ac3b4ee",
+      "6a115062bfafb1ab7ac3b4f2",
+      "6a115062bfafb1ab7ac3b4f6",
+      "6a115062bfafb1ab7ac3b4fa",
+      "6a115062bfafb1ab7ac3b4fe",
+      "6a115062bfafb1ab7ac3b502",
+      "6a115062bfafb1ab7ac3b506"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b509",
+    "slug": "logic-state-modeling-the-deterministic-engineer",
+    "title": "Logic & State Modeling (The Deterministic Engineer)",
+    "description": "This module explores the principles of deterministic engineering, focusing on state modeling techniques to build predictable, robust, and manageable systems in complex software environments.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b50a",
+      "6a115062bfafb1ab7ac3b50e",
+      "6a115062bfafb1ab7ac3b512",
+      "6a115062bfafb1ab7ac3b517",
+      "6a115062bfafb1ab7ac3b51b",
+      "6a115062bfafb1ab7ac3b51f",
+      "6a115062bfafb1ab7ac3b523",
+      "6a115062bfafb1ab7ac3b527",
+      "6a115062bfafb1ab7ac3b52b",
+      "6a115062bfafb1ab7ac3b52f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b533",
+    "slug": "macro-architecture-system-patterns-microservices-federation",
+    "title": "Macro-Architecture & System Patterns (Microservices, Federation)",
+    "description": "This module explores advanced architectural patterns for large-scale distributed systems, including microservices, micro-frontends, and cloud-native solutions, to enable scalable, resilient, and independently deployable services.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b534",
+      "6a115062bfafb1ab7ac3b539",
+      "6a115062bfafb1ab7ac3b53e",
+      "6a115062bfafb1ab7ac3b542",
+      "6a115062bfafb1ab7ac3b547",
+      "6a115062bfafb1ab7ac3b54c",
+      "6a115062bfafb1ab7ac3b550",
+      "6a115062bfafb1ab7ac3b554",
+      "6a115062bfafb1ab7ac3b558",
+      "6a115062bfafb1ab7ac3b55c"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b560",
+    "slug": "scalable-backend-api-engineering-rest-graphql",
+    "title": "Scalable Backend API Engineering (REST & GraphQL)",
+    "description": "This module provides a comprehensive guide to designing, implementing, and maintaining robust, scalable, and resilient backend APIs using both REST and GraphQL architectural styles.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b561",
+      "6a115062bfafb1ab7ac3b566",
+      "6a115062bfafb1ab7ac3b56b",
+      "6a115062bfafb1ab7ac3b570",
+      "6a115062bfafb1ab7ac3b574",
+      "6a115062bfafb1ab7ac3b578",
+      "6a115062bfafb1ab7ac3b57c",
+      "6a115062bfafb1ab7ac3b580",
+      "6a115062bfafb1ab7ac3b584",
+      "6a115062bfafb1ab7ac3b588"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b58c",
+    "slug": "real-time-cross-protocol-engineering-grpc-webrtc-sockets",
+    "title": "Real-Time & Cross-Protocol Engineering (gRPC, WebRTC, Sockets)",
+    "description": "This module covers various real-time and cross-protocol communication technologies like gRPC, WebSockets, and WebRTC, which are crucial for building responsive and efficient modern distributed systems.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b58d",
+      "6a115062bfafb1ab7ac3b592",
+      "6a115062bfafb1ab7ac3b597",
+      "6a115062bfafb1ab7ac3b59c",
+      "6a115062bfafb1ab7ac3b5a0",
+      "6a115062bfafb1ab7ac3b5a4",
+      "6a115062bfafb1ab7ac3b5a8",
+      "6a115062bfafb1ab7ac3b5ac",
+      "6a115062bfafb1ab7ac3b5b0",
+      "6a115062bfafb1ab7ac3b5b4"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5b8",
+    "slug": "data-engineering-distributed-systems",
+    "title": "Data Engineering & Distributed Systems",
+    "description": "This module delves into the foundational and advanced concepts of data engineering and distributed systems, crucial for designing and managing highly scalable, resilient, and performant data infrastructures.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b5b9",
+      "6a115062bfafb1ab7ac3b5be",
+      "6a115062bfafb1ab7ac3b5c3",
+      "6a115062bfafb1ab7ac3b5c8",
+      "6a115062bfafb1ab7ac3b5cd",
+      "6a115062bfafb1ab7ac3b5d2",
+      "6a115062bfafb1ab7ac3b5d7",
+      "6a115062bfafb1ab7ac3b5db",
+      "6a115062bfafb1ab7ac3b5df",
+      "6a115062bfafb1ab7ac3b5e3"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5e7",
+    "slug": "cloud-services-serverless-architecture",
+    "title": "Cloud Services & Serverless Architecture",
+    "description": "This module equips engineering leaders with the knowledge to design, implement, and manage highly scalable, resilient, and cost-effective cloud-native applications and infrastructure using modern cloud services and serverless architectures.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b5e8",
+      "6a115062bfafb1ab7ac3b5ed",
+      "6a115062bfafb1ab7ac3b5f2",
+      "6a115062bfafb1ab7ac3b5f7",
+      "6a115062bfafb1ab7ac3b5fc",
+      "6a115062bfafb1ab7ac3b601",
+      "6a115062bfafb1ab7ac3b606",
+      "6a115062bfafb1ab7ac3b60b",
+      "6a115062bfafb1ab7ac3b610"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b615",
+    "slug": "modern-frontend-architecture-delivery",
+    "title": "Modern Frontend Architecture & Delivery",
+    "description": "This module equips engineering leaders with the knowledge and skills to design, implement, and maintain high-performance, secure, and scalable modern frontend applications.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b616",
+      "6a115062bfafb1ab7ac3b61b",
+      "6a115062bfafb1ab7ac3b620",
+      "6a115062bfafb1ab7ac3b625",
+      "6a115062bfafb1ab7ac3b629",
+      "6a115062bfafb1ab7ac3b62d",
+      "6a115062bfafb1ab7ac3b631"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b634",
+    "slug": "quality-engineering-testing-strategy",
+    "title": "Quality Engineering & Testing Strategy",
+    "description": "This module covers advanced strategies and practices for ensuring software quality and building robust testing frameworks in complex engineering environments.",
+    "order": 11,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b635",
+      "6a115062bfafb1ab7ac3b63a",
+      "6a115062bfafb1ab7ac3b63f",
+      "6a115062bfafb1ab7ac3b644",
+      "6a115062bfafb1ab7ac3b648",
+      "6a115062bfafb1ab7ac3b64d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b651",
+    "slug": "production-reliability-observability-opentelemetry",
+    "title": "Production Reliability & Observability (OpenTelemetry)",
+    "description": "This module equips engineers with the advanced skills to build, monitor, and maintain highly reliable production systems using OpenTelemetry, robust logging, effective alerting, and resilience patterns.",
+    "order": 12,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b652",
+      "6a115062bfafb1ab7ac3b657",
+      "6a115062bfafb1ab7ac3b65c",
+      "6a115062bfafb1ab7ac3b660",
+      "6a115062bfafb1ab7ac3b665",
+      "6a115062bfafb1ab7ac3b669"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b66c",
+    "slug": "security-identity-engineering",
+    "title": "Security & Identity Engineering",
+    "description": "This module equips engineers with advanced strategies and hands-on techniques to design, implement, and maintain robust security across modern applications, identity systems, infrastructure, and APIs.",
+    "order": 13,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b66d",
+      "6a115062bfafb1ab7ac3b672",
+      "6a115062bfafb1ab7ac3b676",
+      "6a115062bfafb1ab7ac3b67b",
+      "6a115062bfafb1ab7ac3b680",
+      "6a115062bfafb1ab7ac3b684"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b688",
+    "slug": "compliance-privacy-engineering",
+    "title": "Compliance & Privacy Engineering",
+    "description": "This module equips engineers with advanced techniques to build systems that inherently satisfy complex global compliance and privacy regulations, safeguarding sensitive data against legal risks.",
+    "order": 14,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b689",
+      "6a115062bfafb1ab7ac3b68e",
+      "6a115062bfafb1ab7ac3b692",
+      "6a115062bfafb1ab7ac3b697",
+      "6a115062bfafb1ab7ac3b69b",
+      "6a115062bfafb1ab7ac3b69f",
+      "6a115062bfafb1ab7ac3b6a3"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6a7",
+    "slug": "inclusive-design-ux-engineering",
+    "title": "Inclusive Design & UX Engineering",
+    "description": "This module equips engineers with the advanced principles and techniques required to build web applications that are accessible, inclusive, and highly performant for a diverse global audience.",
+    "order": 15,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b6a8",
+      "6a115062bfafb1ab7ac3b6ad",
+      "6a115062bfafb1ab7ac3b6b1",
+      "6a115062bfafb1ab7ac3b6b5",
+      "6a115062bfafb1ab7ac3b6ba",
+      "6a115062bfafb1ab7ac3b6be",
+      "6a115062bfafb1ab7ac3b6c2"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6c6",
+    "slug": "ai-engineering-agentic-systems",
+    "title": "AI Engineering & Agentic Systems",
+    "description": "This module covers the core architectures, advanced techniques, and infrastructure considerations for building, optimizing, and deploying sophisticated AI and agentic systems.",
+    "order": 16,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b6c7",
+      "6a115062bfafb1ab7ac3b6cc",
+      "6a115062bfafb1ab7ac3b6d1",
+      "6a115062bfafb1ab7ac3b6d5",
+      "6a115062bfafb1ab7ac3b6da",
+      "6a115062bfafb1ab7ac3b6de",
+      "6a115062bfafb1ab7ac3b6e2",
+      "6a115062bfafb1ab7ac3b6e7",
+      "6a115062bfafb1ab7ac3b6eb",
+      "6a115062bfafb1ab7ac3b6ee"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6f1",
+    "slug": "infrastructure-containers-cloud-native",
+    "title": "Infrastructure, Containers & Cloud Native",
+    "description": "This module provides an in-depth exploration of the foundational technologies, architectural patterns, and advanced operational strategies for designing, deploying, and managing robust cloud-native infrastructure.",
+    "order": 17,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b6f2",
+      "6a115062bfafb1ab7ac3b6f7",
+      "6a115062bfafb1ab7ac3b6fc",
+      "6a115062bfafb1ab7ac3b701",
+      "6a115062bfafb1ab7ac3b706",
+      "6a115062bfafb1ab7ac3b70a",
+      "6a115062bfafb1ab7ac3b70e",
+      "6a115062bfafb1ab7ac3b713",
+      "6a115062bfafb1ab7ac3b717",
+      "6a115062bfafb1ab7ac3b71b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b71e",
+    "slug": "engineering-leadership-professional-process",
+    "title": "Engineering Leadership & Professional Process",
+    "description": "This module equips engineering leaders with the strategies and processes required to align technical vision with business goals, govern architectural decisions, optimize development velocity, and lead high-performing teams.",
+    "order": 18,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "chapterIds": [
+      "6a115062bfafb1ab7ac3b71f",
+      "6a115062bfafb1ab7ac3b724",
+      "6a115062bfafb1ab7ac3b729",
+      "6a115062bfafb1ab7ac3b72e",
+      "6a115062bfafb1ab7ac3b733",
+      "6a115062bfafb1ab7ac3b737",
+      "6a115062bfafb1ab7ac3b73c",
+      "6a115062bfafb1ab7ac3b740",
+      "6a115062bfafb1ab7ac3b744"
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b63e",
+  "id": "implement-service-virtualization",
+  "slug": "implement-service-virtualization",
+  "version": "1.0.0",
+  "title": "Implement Service Virtualization",
+  "description": "Implement service virtualization using tools such as Prism or WireMock. Simulate complex downstream failure modes and network latency for local development and testing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement service virtualization using tools such as Prism or WireMock.",
+    "Simulate complex downstream failure modes and network latency for local development and testing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

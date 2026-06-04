@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6a9",
+  "id": "master-the-accessibility-tree-aom",
+  "slug": "master-the-accessibility-tree-aom",
+  "version": "1.0.0",
+  "title": "Master the Accessibility Tree (AOM)",
+  "description": "Analyze how the browser transforms the Document Object Model (DOM) into the Accessibility Object Model (AOM). Implement manual overrides for the Accessibility Tree using `aria-owns` and `aria-flowto`.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze how the browser transforms the Document Object Model (DOM) into the Accessibility Object Model (AOM).",
+    "Implement manual overrides for the Accessibility Tree using `aria-owns` and `aria-flowto`."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6a8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

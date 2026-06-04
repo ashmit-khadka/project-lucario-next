@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4f9",
+  "id": "di-containers-vs-manual-injection",
+  "slug": "di-containers-vs-manual-injection",
+  "version": "1.0.0",
+  "title": "DI Containers vs. Manual Injection",
+  "description": "Evaluate the performance and complexity trade-offs between DI containers (e.g., Inversify) and manual functional factory composition. Analyze scenarios where reflection-based containers provide benefits versus the simplicity of manual injection.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the performance and complexity trade-offs between DI containers (e.g., Inversify) and manual functional factory composition.",
+    "Analyze scenarios where reflection-based containers provide benefits versus the simplicity of manual injection."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4f6",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

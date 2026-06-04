@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b55b",
+  "id": "evaluate-migration-rollback-criteria",
+  "slug": "evaluate-migration-rollback-criteria",
+  "version": "1.0.0",
+  "title": "Evaluate Migration Rollback Criteria",
+  "description": "Design automated 'Kill Switches' for safe migration rollbacks. Define clear P99 latency and error rate thresholds that trigger automated reverts to legacy systems. Evaluate the critical criteria for successful migration and the conditions requiring a rollback.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design automated 'Kill Switches' for safe migration rollbacks.",
+    "Define clear P99 latency and error rate thresholds that trigger automated reverts to legacy systems.",
+    "Evaluate the critical criteria for successful migration and the conditions requiring a rollback."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b558",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

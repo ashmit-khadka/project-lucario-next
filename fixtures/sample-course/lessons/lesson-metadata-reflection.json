@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b508",
+  "id": "metadata-reflection",
+  "slug": "metadata-reflection",
+  "version": "1.0.0",
+  "title": "Metadata Reflection",
+  "description": "Utilize `reflect-metadata` to perform runtime reflection on type-system hints. Build declarative frameworks (e.g., OpenAPI generators, DI registrations) based on reflected metadata.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize `reflect-metadata` to perform runtime reflection on type-system hints.",
+    "Build declarative frameworks (e.g., OpenAPI generators, DI registrations) based on reflected metadata."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b506",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

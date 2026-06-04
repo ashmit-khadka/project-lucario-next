@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5bd",
+  "id": "columnar-storage-parquet-orc",
+  "slug": "columnar-storage-parquet-orc",
+  "version": "1.0.0",
+  "title": "Columnar Storage (Parquet/ORC)",
+  "description": "Evaluate the benefits and use cases of columnar storage formats like Parquet and ORC for analytical workloads. Architect data layouts that leverage compression and predicate pushdown in columnar stores to optimize massive analytical queries.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the benefits and use cases of columnar storage formats like Parquet and ORC for analytical workloads.",
+    "Architect data layouts that leverage compression and predicate pushdown in columnar stores to optimize massive analytical queries."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5b9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

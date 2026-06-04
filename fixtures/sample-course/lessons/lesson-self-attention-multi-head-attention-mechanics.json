@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6c8",
+  "id": "self-attention-multi-head-attention-mechanics",
+  "slug": "self-attention-multi-head-attention-mechanics",
+  "version": "1.0.0",
+  "title": "Self-Attention & Multi-Head Attention mechanics",
+  "description": "Analyze the mechanics of self-attention and multi-head attention within transformer models. Explain how QKT dot-product scaling contributes to the quadratic complexity of context windows. Describe the emergence of 'In-context Learning' as a property of transformer architectures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the mechanics of self-attention and multi-head attention within transformer models.",
+    "Explain how QKT dot-product scaling contributes to the quadratic complexity of context windows.",
+    "Describe the emergence of 'In-context Learning' as a property of transformer architectures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6c7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

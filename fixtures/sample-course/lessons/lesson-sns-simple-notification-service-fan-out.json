@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5fe",
+  "id": "sns-simple-notification-service-fan-out",
+  "slug": "sns-simple-notification-service-fan-out",
+  "version": "1.0.0",
+  "title": "SNS (Simple Notification Service) Fan-out",
+  "description": "Implement SNS fan-out patterns for broadcasting events to multiple subscribers. Architect publish/subscribe solutions that trigger diverse consumers from a single upstream event.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement SNS fan-out patterns for broadcasting events to multiple subscribers.",
+    "Architect publish/subscribe solutions that trigger diverse consumers from a single upstream event."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5fc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

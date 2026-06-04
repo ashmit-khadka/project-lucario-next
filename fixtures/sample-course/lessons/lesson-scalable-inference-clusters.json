@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6df",
+  "id": "scalable-inference-clusters",
+  "slug": "scalable-inference-clusters",
+  "version": "1.0.0",
+  "title": "Scalable Inference Clusters",
+  "description": "Architect scalable inference clusters by evaluating serving frameworks such as vLLM, TGI, and Triton. Implement Continuous Batching to maximize GPU utilization and inference throughput.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect scalable inference clusters by evaluating serving frameworks such as vLLM, TGI, and Triton.",
+    "Implement Continuous Batching to maximize GPU utilization and inference throughput."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6de",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

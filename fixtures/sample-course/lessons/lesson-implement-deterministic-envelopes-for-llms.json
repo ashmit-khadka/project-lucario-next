@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b530",
+  "id": "implement-deterministic-envelopes-for-llms",
+  "slug": "implement-deterministic-envelopes-for-llms",
+  "version": "1.0.0",
+  "title": "Implement Deterministic Envelopes for LLMs",
+  "description": "Implement state machines to create deterministic envelopes that constrain probabilistic LLM outputs. Design execution paths that guide AI responses through predictable and controlled stages.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement state machines to create deterministic envelopes that constrain probabilistic LLM outputs.",
+    "Design execution paths that guide AI responses through predictable and controlled stages."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b52f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

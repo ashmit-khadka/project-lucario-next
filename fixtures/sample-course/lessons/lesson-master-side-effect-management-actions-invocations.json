@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b519",
+  "id": "master-side-effect-management-actions-invocations",
+  "slug": "master-side-effect-management-actions-invocations",
+  "version": "1.0.0",
+  "title": "Master Side-Effect Management (Actions & Invocations)",
+  "description": "Master the decoupling of \"Fire-and-Forget\" actions from managed \"Invocations\" (e.g., Promises, Callbacks) within state machines. Implement strategies for isolating and testing side-effects to maintain the purity of state logic.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the decoupling of \"Fire-and-Forget\" actions from managed \"Invocations\" (e.g., Promises, Callbacks) within state machines.",
+    "Implement strategies for isolating and testing side-effects to maintain the purity of state logic."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b517",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

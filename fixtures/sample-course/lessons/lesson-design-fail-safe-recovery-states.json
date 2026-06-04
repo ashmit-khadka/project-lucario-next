@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b52c",
+  "id": "design-fail-safe-recovery-states",
+  "slug": "design-fail-safe-recovery-states",
+  "version": "1.0.0",
+  "title": "Design Fail-Safe Recovery States",
+  "description": "Design fail-safe recovery states that automatically trigger upon critical system failures or invariant violations. Implement \"Emergency\" logic branches to gracefully handle failures in external dependencies or internal components.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design fail-safe recovery states that automatically trigger upon critical system failures or invariant violations.",
+    "Implement \"Emergency\" logic branches to gracefully handle failures in external dependencies or internal components."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b52b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

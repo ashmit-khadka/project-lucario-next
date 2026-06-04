@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6ef",
+  "id": "local-llm-serving-ollama-lm-studio",
+  "slug": "local-llm-serving-ollama-lm-studio",
+  "version": "1.0.0",
+  "title": "Local LLM Serving (Ollama/LM Studio)",
+  "description": "Implement local LLM serving using platforms like Ollama or LM Studio. Architect 'Privacy-First' applications that execute inference entirely on-device to minimize data exposure and latency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement local LLM serving using platforms like Ollama or LM Studio.",
+    "Architect 'Privacy-First' applications that execute inference entirely on-device to minimize data exposure and latency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6ee",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

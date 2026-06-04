@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5d1",
+  "id": "active-active-multi-region-replication",
+  "slug": "active-active-multi-region-replication",
+  "version": "1.0.0",
+  "title": "Active-Active Multi-Region Replication",
+  "description": "Architect active-active multi-region replication strategies for geographically distributed data. Manage conflict resolution complexities, comparing Last-Write-Wins (LWW) and Conflict-free Replicated Data Types (CRDTs), in multi-master environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect active-active multi-region replication strategies for geographically distributed data.",
+    "Manage conflict resolution complexities, comparing Last-Write-Wins (LWW) and Conflict-free Replicated Data Types (CRDTs), in multi-master environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5cd",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

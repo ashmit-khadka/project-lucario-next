@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b55e",
+  "id": "implement-adrs-architecture-decision-records",
+  "slug": "implement-adrs-architecture-decision-records",
+  "version": "1.0.0",
+  "title": "Implement ADRs (Architecture Decision Records)",
+  "description": "Implement a version-controlled process for creating Architecture Decision Records (ADRs). Document the rationale, alternatives considered, and trade-offs for high-impact architectural decisions. Utilize ADRs to establish historical context and foster consistency in architectural governance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a version-controlled process for creating Architecture Decision Records (ADRs).",
+    "Document the rationale, alternatives considered, and trade-offs for high-impact architectural decisions.",
+    "Utilize ADRs to establish historical context and foster consistency in architectural governance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b55c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

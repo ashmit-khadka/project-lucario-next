@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5b1",
+  "id": "evaluate-redis-vs-nats-vs-kafka-for-real-time",
+  "slug": "evaluate-redis-vs-nats-vs-kafka-for-real-time",
+  "version": "1.0.0",
+  "title": "Evaluate Redis vs. NATS vs. Kafka for Real-Time",
+  "description": "Evaluate Redis, NATS, and Kafka based on latency requirements, persistence needs, and fan-out scale. Choose the appropriate messaging backbone for specific real-time system requirements.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate Redis, NATS, and Kafka based on latency requirements, persistence needs, and fan-out scale.",
+    "Choose the appropriate messaging backbone for specific real-time system requirements."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5b0",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

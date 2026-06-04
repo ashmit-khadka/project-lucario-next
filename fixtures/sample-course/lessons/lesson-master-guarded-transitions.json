@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b516",
+  "id": "master-guarded-transitions",
+  "slug": "master-guarded-transitions",
+  "version": "1.0.0",
+  "title": "Master Guarded Transitions",
+  "description": "Master the implementation of guarded transitions to enforce conditional logic before state changes. Define and apply \"Contextual Invariants\" to prevent invalid state transitions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the implementation of guarded transitions to enforce conditional logic before state changes.",
+    "Define and apply \"Contextual Invariants\" to prevent invalid state transitions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b512",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

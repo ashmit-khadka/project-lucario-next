@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b573",
+  "id": "request-shaping-sanitization-layers",
+  "slug": "request-shaping-sanitization-layers",
+  "version": "1.0.0",
+  "title": "Request Shaping & Sanitization Layers",
+  "description": "Design robust request shaping and sanitization layers for incoming API data. Implement strict normalization and coercion to ensure input consistency before data reaches core service layers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design robust request shaping and sanitization layers for incoming API data.",
+    "Implement strict normalization and coercion to ensure input consistency before data reaches core service layers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b570",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

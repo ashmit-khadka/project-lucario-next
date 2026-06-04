@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b686",
+  "id": "audit-logging-forensic-readiness",
+  "slug": "audit-logging-forensic-readiness",
+  "version": "1.0.0",
+  "title": "Audit Logging & Forensic Readiness",
+  "description": "Design systems for immutable, tamper-proof audit logging of security-sensitive events. Implement logging strategies that satisfy compliance requirements for forensic readiness. Enable rapid post-incident forensic analysis through well-structured and secure logs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design systems for immutable, tamper-proof audit logging of security-sensitive events.",
+    "Implement logging strategies that satisfy compliance requirements for forensic readiness.",
+    "Enable rapid post-incident forensic analysis through well-structured and secure logs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b684",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

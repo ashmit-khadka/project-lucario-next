@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6d0",
+  "id": "vector-indexing-algorithms-hnsw-ivfflat",
+  "slug": "vector-indexing-algorithms-hnsw-ivfflat",
+  "version": "1.0.0",
+  "title": "Vector Indexing Algorithms (HNSW & IVFFlat)",
+  "description": "Master the principles of high-scale vector database indexing using algorithms like HNSW and IVFFlat. Analyze the trade-offs between search latency, memory usage, and recall accuracy for various vector indexing algorithms.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the principles of high-scale vector database indexing using algorithms like HNSW and IVFFlat.",
+    "Analyze the trade-offs between search latency, memory usage, and recall accuracy for various vector indexing algorithms."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6cc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b521",
+  "id": "implement-snapshotting-compaction",
+  "slug": "implement-snapshotting-compaction",
+  "version": "1.0.0",
+  "title": "Implement Snapshotting & Compaction",
+  "description": "Implement snapshotting strategies to create periodic state checkpoints for event-sourced systems. Optimize state reconstruction performance for high-frequency event streams through compaction techniques.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement snapshotting strategies to create periodic state checkpoints for event-sourced systems.",
+    "Optimize state reconstruction performance for high-frequency event streams through compaction techniques."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b51f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

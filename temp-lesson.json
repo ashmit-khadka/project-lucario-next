@@ -1,0 +1,28 @@
+{
+  "_id": "6a0e38acefd41f55252c2766",
+  "id": "trace-execution-through-all-6-phased-cycles",
+  "slug": "trace-execution-through-all-6-phased-cycles",
+  "version": "1.0.0",
+  "title": "Trace execution through all 6 Phased Cycles",
+  "description": "Trace the execution flow through all six phases of the Node.js Event Loop. Predict the exact execution order of asynchronous operations within the Event Loop. Implement strategies to prevent I/O starvation and ensure fair resource allocation in Event Loop cycles.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-20"
+  },
+  "objectives": [
+    "Trace the execution flow through all six phases of the Node.js Event Loop.",
+    "Predict the exact execution order of asynchronous operations within the Event Loop.",
+    "Implement strategies to prevent I/O starvation and ensure fair resource allocation in Event Loop cycles."
+  ],
+  "courseId": "6a0e38acefd41f55252c275e",
+  "moduleId": "6a0e38acefd41f55252c275f",
+  "chapterId": "6a0e38acefd41f55252c2765",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

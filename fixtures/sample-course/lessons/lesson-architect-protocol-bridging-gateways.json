@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5b5",
+  "id": "architect-protocol-bridging-gateways",
+  "slug": "architect-protocol-bridging-gateways",
+  "version": "1.0.0",
+  "title": "Architect Protocol Bridging Gateways",
+  "description": "Implement specialized proxies (e.g., Nginx, Envoy) for protocol translation. Architect protocol bridging gateways to enable compatibility between WebSocket, gRPC, and REST clients.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement specialized proxies (e.g., Nginx, Envoy) for protocol translation.",
+    "Architect protocol bridging gateways to enable compatibility between WebSocket, gRPC, and REST clients."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5b4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6ac",
+  "id": "analyze-live-region-mechanics",
+  "slug": "analyze-live-region-mechanics",
+  "version": "1.0.0",
+  "title": "Analyze Live Region Mechanics",
+  "description": "Utilize `aria-live` to announce dynamic content updates to assistive technologies. Employ `aria-atomic` to control the granularity of announcements for dynamic content.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize `aria-live` to announce dynamic content updates to assistive technologies.",
+    "Employ `aria-atomic` to control the granularity of announcements for dynamic content."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6a8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

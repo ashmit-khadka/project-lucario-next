@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b68b",
+  "id": "zero-knowledge-proofs-zkps",
+  "slug": "zero-knowledge-proofs-zkps",
+  "version": "1.0.0",
+  "title": "Zero-Knowledge Proofs (ZKPs)",
+  "description": "Architect validation logic using zk-SNARKs or STARKs to prove knowledge of a secret without revealing the secret data. Design systems where parties can verify assertions without exposing the underlying sensitive information.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect validation logic using zk-SNARKs or STARKs to prove knowledge of a secret without revealing the secret data.",
+    "Design systems where parties can verify assertions without exposing the underlying sensitive information."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b689",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

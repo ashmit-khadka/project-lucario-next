@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c5",
+  "id": "vary-header-cache-fragmentation",
+  "slug": "vary-header-cache-fragmentation",
+  "version": "1.0.0",
+  "title": "Vary Header & Cache Fragmentation",
+  "description": "Deconstruct the purpose and impact of the Vary header in caching. Analyze how headers like Accept-Encoding and User-Agent contribute to cache fragmentation. Implement strategies to mitigate cache fragmentation and improve cache hit ratios.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the purpose and impact of the Vary header in caching.",
+    "Analyze how headers like Accept-Encoding and User-Agent contribute to cache fragmentation.",
+    "Implement strategies to mitigate cache fragmentation and improve cache hit ratios."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

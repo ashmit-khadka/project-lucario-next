@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b541",
+  "id": "evaluate-versioning-models",
+  "slug": "evaluate-versioning-models",
+  "version": "1.0.0",
+  "title": "Evaluate Versioning Models",
+  "description": "Contrast 'One Version' (Single Version Policy) and Independent Versioning models in a monorepo context. Evaluate the impact of different versioning models on dependency management and 'dependency hell'. Analyze the organizational cost of synchronized migrations compared to independent component updates.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Contrast 'One Version' (Single Version Policy) and Independent Versioning models in a monorepo context.",
+    "Evaluate the impact of different versioning models on dependency management and 'dependency hell'.",
+    "Analyze the organizational cost of synchronized migrations compared to independent component updates."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b53e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

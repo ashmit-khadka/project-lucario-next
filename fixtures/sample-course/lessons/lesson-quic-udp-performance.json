@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4b1",
+  "id": "quic-udp-performance",
+  "slug": "quic-udp-performance",
+  "version": "1.0.0",
+  "title": "QUIC & UDP Performance",
+  "description": "Analyze the performance benefits of QUIC over TCP, including 0-RTT connection establishment. Deconstruct how independent stream multiplexing in QUIC mitigates Head-of-Line blocking. Explain QUIC's connection migration feature for seamless IP address changes.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the performance benefits of QUIC over TCP, including 0-RTT connection establishment.",
+    "Deconstruct how independent stream multiplexing in QUIC mitigates Head-of-Line blocking.",
+    "Explain QUIC's connection migration feature for seamless IP address changes."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4ae",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

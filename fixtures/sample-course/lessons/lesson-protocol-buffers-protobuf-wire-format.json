@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b58e",
+  "id": "protocol-buffers-protobuf-wire-format",
+  "slug": "protocol-buffers-protobuf-wire-format",
+  "version": "1.0.0",
+  "title": "Protocol Buffers (Protobuf) Wire-Format",
+  "description": "Analyze Varints, Tag-Length-Value encoding, and field numbering within Protobuf's wire format. Evaluate the binary efficiency and schema evolution capabilities of Protobuf's wire format.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze Varints, Tag-Length-Value encoding, and field numbering within Protobuf's wire format.",
+    "Evaluate the binary efficiency and schema evolution capabilities of Protobuf's wire format."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b58d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

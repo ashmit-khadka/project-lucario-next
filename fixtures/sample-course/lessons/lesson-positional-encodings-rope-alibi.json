@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6cb",
+  "id": "positional-encodings-rope-alibi",
+  "slug": "positional-encodings-rope-alibi",
+  "version": "1.0.0",
+  "title": "Positional Encodings (RoPE/ALiBi)",
+  "description": "Evaluate how positional encodings, such as RoPE and ALiBi, represent token order. Understand the architectural limitations of extending context length beyond training boundaries using different positional encoding schemes.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate how positional encodings, such as RoPE and ALiBi, represent token order.",
+    "Understand the architectural limitations of extending context length beyond training boundaries using different positional encoding schemes."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6c7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

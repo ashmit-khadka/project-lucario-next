@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b54d",
+  "id": "master-serverless-function-lifecycle",
+  "slug": "master-serverless-function-lifecycle",
+  "version": "1.0.0",
+  "title": "Master Serverless Function Lifecycle",
+  "description": "Optimize serverless function cold-starts using provisioned concurrency and efficient bundle sizes. Differentiate between the 'Initialization' and 'Execution' phases of serverless functions and their implications. Implement strategies to minimize latency in serverless function invocations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Optimize serverless function cold-starts using provisioned concurrency and efficient bundle sizes.",
+    "Differentiate between the 'Initialization' and 'Execution' phases of serverless functions and their implications.",
+    "Implement strategies to minimize latency in serverless function invocations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b54c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

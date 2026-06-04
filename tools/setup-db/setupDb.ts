@@ -8,7 +8,7 @@ dotenv.config({ path: join(__dirname, '../../.env') });
 const CONNECTION_STRING = 'mongodb://localhost:27017';
 const DB_NAME = process.env.NODE_ENV === 'development' ? 'lucario-dev' : 'lucario';
 
-const DATA_DIR = join(__dirname, './data/courses/sample');
+const DATA_DIR = join(__dirname, '../../fixtures/sample-course');
 
 // ── Helpers ───────────────────────────────────────────────────
 

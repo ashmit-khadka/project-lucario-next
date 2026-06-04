@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6e9",
+  "id": "audio-to-text-speech-to-speech-architecture",
+  "slug": "audio-to-text-speech-to-speech-architecture",
+  "version": "1.0.0",
+  "title": "Audio-to-Text & Speech-to-Speech Architecture",
+  "description": "Implement audio-to-text and speech-to-speech architectures utilizing Whisper and specialized TTS models. Build real-time, low-latency voice agents with emotional nuance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement audio-to-text and speech-to-speech architectures utilizing Whisper and specialized TTS models.",
+    "Build real-time, low-latency voice agents with emotional nuance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6e7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

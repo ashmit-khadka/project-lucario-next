@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b49a",
+  "id": "master-the-internal-buffer-state-highwatermark",
+  "slug": "master-the-internal-buffer-state-highwatermark",
+  "version": "1.0.0",
+  "title": "Master the Internal Buffer State (highWaterMark)",
+  "description": "Explain the concept of `highWaterMark` and its role in Readable and Writable streams. Master the internal buffer state of Node.js streams to control data flow. Implement strategies to prevent memory exhaustion during heavy I/O operations using `highWaterMark`.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the concept of `highWaterMark` and its role in Readable and Writable streams.",
+    "Master the internal buffer state of Node.js streams to control data flow.",
+    "Implement strategies to prevent memory exhaustion during heavy I/O operations using `highWaterMark`."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b499",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

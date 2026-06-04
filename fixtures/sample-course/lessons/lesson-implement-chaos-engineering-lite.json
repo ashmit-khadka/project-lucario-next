@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b64a",
+  "id": "implement-chaos-engineering-lite",
+  "slug": "implement-chaos-engineering-lite",
+  "version": "1.0.0",
+  "title": "Implement Chaos Engineering Lite",
+  "description": "Implement \"Chaos Engineering Lite\" practices using failure injection techniques (e.g., Gremlin or custom middleware). Verify the correct triggering of circuit breakers and fallbacks under simulated failure conditions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement \"Chaos Engineering Lite\" practices using failure injection techniques (e.g., Gremlin or custom middleware).",
+    "Verify the correct triggering of circuit breakers and fallbacks under simulated failure conditions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b648",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

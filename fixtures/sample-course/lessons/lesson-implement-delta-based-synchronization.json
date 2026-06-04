@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5a3",
+  "id": "implement-delta-based-synchronization",
+  "slug": "implement-delta-based-synchronization",
+  "version": "1.0.0",
+  "title": "Implement Delta-Based Synchronization",
+  "description": "Implement delta-based synchronization to transmit state differences rather than full snapshots. Optimize network bandwidth in high-frequency update loops using delta-based synchronization.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement delta-based synchronization to transmit state differences rather than full snapshots.",
+    "Optimize network bandwidth in high-frequency update loops using delta-based synchronization."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a0",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

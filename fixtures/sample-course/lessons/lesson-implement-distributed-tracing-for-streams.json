@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ad",
+  "id": "implement-distributed-tracing-for-streams",
+  "slug": "implement-distributed-tracing-for-streams",
+  "version": "1.0.0",
+  "title": "Implement Distributed Tracing for Streams",
+  "description": "Propagate OpenTelemetry trace contexts across long-lived gRPC and WebSocket streams. Implement distributed tracing to profile message-level latency in real-time systems.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Propagate OpenTelemetry trace contexts across long-lived gRPC and WebSocket streams.",
+    "Implement distributed tracing to profile message-level latency in real-time systems."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5ac",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6d2",
+  "id": "chain-of-thought-cot-tree-of-thoughts-tot",
+  "slug": "chain-of-thought-cot-tree-of-thoughts-tot",
+  "version": "1.0.0",
+  "title": "Chain-of-Thought (CoT) & Tree-of-Thoughts (ToT)",
+  "description": "Architect prompting structures like Chain-of-Thought (CoT) that guide models through reasoning steps. Master Tree-of-Thoughts (ToT) to enable models to explore multiple reasoning paths and self-correct.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect prompting structures like Chain-of-Thought (CoT) that guide models through reasoning steps.",
+    "Master Tree-of-Thoughts (ToT) to enable models to explore multiple reasoning paths and self-correct."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6d1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

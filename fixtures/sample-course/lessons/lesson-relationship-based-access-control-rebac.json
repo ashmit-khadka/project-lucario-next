@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b673",
+  "id": "relationship-based-access-control-rebac",
+  "slug": "relationship-based-access-control-rebac",
+  "version": "1.0.0",
+  "title": "Relationship-Based Access Control (ReBAC)",
+  "description": "Analyze Google’s Zanzibar paper to understand the principles of Relationship-Based Access Control. Implement fine-grained, recursive permissioning systems for complex user-resource ownership graphs. Design scalable ReBAC solutions capable of managing permissions at a global scale.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze Google’s Zanzibar paper to understand the principles of Relationship-Based Access Control.",
+    "Implement fine-grained, recursive permissioning systems for complex user-resource ownership graphs.",
+    "Design scalable ReBAC solutions capable of managing permissions at a global scale."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b672",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

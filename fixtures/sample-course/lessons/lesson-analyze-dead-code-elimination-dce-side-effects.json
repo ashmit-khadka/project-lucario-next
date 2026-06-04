@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b557",
+  "id": "analyze-dead-code-elimination-dce-side-effects",
+  "slug": "analyze-dead-code-elimination-dce-side-effects",
+  "version": "1.0.0",
+  "title": "Analyze Dead Code Elimination (DCE) & Side Effects",
+  "description": "Analyze the principles of Dead Code Elimination (DCE) and its role in bundle optimization. Identify common reasons why libraries fail to tree-shake effectively due to 'Side Effect' annotations. Optimize library exports and code structure to facilitate efficient DCE by modern bundlers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the principles of Dead Code Elimination (DCE) and its role in bundle optimization.",
+    "Identify common reasons why libraries fail to tree-shake effectively due to 'Side Effect' annotations.",
+    "Optimize library exports and code structure to facilitate efficient DCE by modern bundlers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b554",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6c4",
+  "id": "implement-virtualization-with-accessibility",
+  "slug": "implement-virtualization-with-accessibility",
+  "version": "1.0.0",
+  "title": "Implement Virtualization with Accessibility",
+  "description": "Solve the \"Virtual List\" problem while ensuring screen readers accurately report total items. Maintain accurate current position reporting for virtualized lists for assistive technologies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Solve the \"Virtual List\" problem while ensuring screen readers accurately report total items.",
+    "Maintain accurate current position reporting for virtualized lists for assistive technologies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6c2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

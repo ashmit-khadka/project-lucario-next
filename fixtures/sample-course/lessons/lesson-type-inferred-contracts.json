@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4e6",
+  "id": "type-inferred-contracts",
+  "slug": "type-inferred-contracts",
+  "version": "1.0.0",
+  "title": "Type-Inferred Contracts",
+  "description": "Architect systems where TypeScript types are automatically derived from runtime schemas, eliminating documentation-code drift. Implement a single source of truth for data contracts by linking runtime validation to compile-time types.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect systems where TypeScript types are automatically derived from runtime schemas, eliminating documentation-code drift.",
+    "Implement a single source of truth for data contracts by linking runtime validation to compile-time types."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4e4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

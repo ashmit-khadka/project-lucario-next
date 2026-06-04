@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5bf",
+  "id": "covering-indexes-index-only-scans",
+  "slug": "covering-indexes-index-only-scans",
+  "version": "1.0.0",
+  "title": "Covering Indexes & Index-Only Scans",
+  "description": "Explain the concept and benefits of covering indexes and index-only scans. Optimize read performance by designing covering indexes that eliminate secondary heap fetches.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the concept and benefits of covering indexes and index-only scans.",
+    "Optimize read performance by designing covering indexes that eliminate secondary heap fetches."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5be",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

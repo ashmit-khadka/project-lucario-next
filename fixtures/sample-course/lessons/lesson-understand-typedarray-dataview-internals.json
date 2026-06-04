@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b489",
+  "id": "understand-typedarray-dataview-internals",
+  "slug": "understand-typedarray-dataview-internals",
+  "version": "1.0.0",
+  "title": "Understand TypedArray & DataView Internals",
+  "description": "Describe the internal structure and memory representation of TypedArray objects. Utilize DataView for efficient, byte-level manipulation of binary data. Implement high-frequency numerical and binary operations using TypedArray and DataView to bypass standard JavaScript object overhead.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Describe the internal structure and memory representation of TypedArray objects.",
+    "Utilize DataView for efficient, byte-level manipulation of binary data.",
+    "Implement high-frequency numerical and binary operations using TypedArray and DataView to bypass standard JavaScript object overhead."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b485",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

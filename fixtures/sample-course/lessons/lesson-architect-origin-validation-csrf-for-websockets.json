@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5aa",
+  "id": "architect-origin-validation-csrf-for-websockets",
+  "slug": "architect-origin-validation-csrf-for-websockets",
+  "version": "1.0.0",
+  "title": "Architect Origin Validation & CSRF for WebSockets",
+  "description": "Strictly validate the `Origin` header during the HTTP upgrade phase for WebSockets. Architect solutions to prevent cross-site hijacking (CSRF) in WebSocket connections.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Strictly validate the `Origin` header during the HTTP upgrade phase for WebSockets.",
+    "Architect solutions to prevent cross-site hijacking (CSRF) in WebSocket connections."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

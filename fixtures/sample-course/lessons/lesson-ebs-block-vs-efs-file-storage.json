@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f5",
+  "id": "ebs-block-vs-efs-file-storage",
+  "slug": "ebs-block-vs-efs-file-storage",
+  "version": "1.0.0",
+  "title": "EBS (Block) vs. EFS (File) Storage",
+  "description": "Evaluate the characteristics and use cases of EBS (Block) versus EFS (File) storage. Choose the appropriate storage type based on requirements for IOPS performance or multi-node shared access.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the characteristics and use cases of EBS (Block) versus EFS (File) storage.",
+    "Choose the appropriate storage type based on requirements for IOPS performance or multi-node shared access."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

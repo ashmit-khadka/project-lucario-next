@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b738",
+  "id": "the-technical-debt-interest-rate",
+  "slug": "the-technical-debt-interest-rate",
+  "version": "1.0.0",
+  "title": "The Technical Debt Interest Rate",
+  "description": "Implement a classification system to distinguish between strategic and unintentional technical debt. Evaluate the \"interest rate\" and impact of different types of technical debt on project delivery and product quality.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a classification system to distinguish between strategic and unintentional technical debt.",
+    "Evaluate the \"interest rate\" and impact of different types of technical debt on project delivery and product quality."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b737",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

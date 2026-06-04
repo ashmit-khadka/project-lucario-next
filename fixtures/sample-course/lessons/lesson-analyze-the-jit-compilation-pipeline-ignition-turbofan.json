@@ -1,0 +1,68 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b486",
+  "id": "analyze-the-jit-compilation-pipeline-ignition-turbofan",
+  "slug": "analyze-the-jit-compilation-pipeline-ignition-turbofan",
+  "version": "1.0.0",
+  "title": "Analyze the JIT Compilation Pipeline (Ignition & TurboFan)",
+  "description": "Analyze the stages of the V8 JIT Compilation Pipeline, including Ignition and TurboFan. Identify common de-optimization triggers, such as polymorphic functions and 'Hot' code path changes. Evaluate strategies for stabilizing 'Hot' code paths to maintain optimal performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the stages of the V8 JIT Compilation Pipeline, including Ignition and TurboFan.",
+    "Identify common de-optimization triggers, such as polymorphic functions and 'Hot' code path changes.",
+    "Evaluate strategies for stabilizing 'Hot' code paths to maintain optimal performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b485",
+  "keyTerms": [],
+  "content": [
+    {
+      "id": "vis-bar-1",
+      "type": "visualisation",
+      "visType": "bar-chart",
+      "title": "Framework Popularity (Bar Chart)",
+      "data": [
+        { "name": "React", "value": 85 },
+        { "name": "Vue", "value": 50 },
+        { "name": "Svelte", "value": 45 },
+        { "name": "Angular", "value": 60 }
+      ]
+    },
+    {
+      "id": "vis-line-1",
+      "type": "visualisation",
+      "visType": "line-chart",
+      "title": "Learning Curve over 4 weeks (Line Chart)",
+      "data": [
+        { "name": "Week 1", "value": 10 },
+        { "name": "Week 2", "value": 30 },
+        { "name": "Week 3", "value": 60 },
+        { "name": "Week 4", "value": 90 }
+      ]
+    },
+    {
+      "id": "vis-flow-1",
+      "type": "visualisation",
+      "visType": "flowchart",
+      "title": "Process Flow (React Flow)",
+      "data": {
+        "nodes": [
+          { "id": "1", "position": { "x": 100, "y": 0 }, "data": { "label": "Start" } },
+          { "id": "2", "position": { "x": 100, "y": 100 }, "data": { "label": "End" } }
+        ],
+        "edges": [
+          { "id": "e1-2", "source": "1", "target": "2", "animated": true }
+        ]
+      }
+    }
+  ],
+  "quiz": []
+}

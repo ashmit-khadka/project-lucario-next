@@ -1,5 +1,5 @@
 import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
-import { join } from 'path';
+import { join, dirname } from 'path';
 import { MongoClient, ObjectId } from 'mongodb';
 import * as dotenv from 'dotenv';
 
@@ -95,6 +95,10 @@ CONTENT ITEM TYPES (use all of them liberally):
    fill-blank:
    { "id": "question-fill-N", "type": "question", "variant": "fill-blank", "question": "... ___ ...", "correctAnswer": "...", "acceptableAnswers": ["..."], "placeholder": "...", "explanation": "..." }
 
+10. visualisation  — data or process visualization block
+    { "id": "vis-N", "type": "visualisation", "title": "...", "visType": "flowchart" | "bar-chart" | "line-chart" | "pie-chart" | "radar-chart" | "area-chart" | "stacked-bar" | "timeline" | "scatter-plot" | "heatmap" | "venn-diagram" | "gantt-chart" | "layer-diagram" | "code-diff" | "tree-diagram", "data": { ... } }
+    For "flowchart", "data" must be: { "nodes": [{ "id": "1", "position": { "x": 0, "y": 0 }, "data": { "label": "..." } }], "edges": [{ "id": "e1-2", "source": "1", "target": "2", "animated": true }] }. Use flowchart in particular to explain processes.
+
 WRITING STYLE RULES:
 - Write sharp, plain technical prose using standard ASCII punctuation. No fluff.
 - Use British English spelling and grammar throughout (e.g., 'behaviour', 'characterise', 'colour', 'optimise').
@@ -123,7 +127,7 @@ FLOW AND STRUCTURE RULES:
 - After a list, always follow with a short "text" block that interprets what the list means, why it matters, or what the learner should take away from it.
 - Prefer multiple short content items over one dense content item.
 - Each content block should usually do one job only: explain, list, compare, warn, or test.
-- Avoid long walls of text. Split dense explanations into adjacent "text", "list", "callout", "table", or "question" blocks where appropriate.
+- Avoid long walls of text. Split dense explanations into adjacent "text", "list", "callout", "table", "visualisation", or "question" blocks where appropriate.
 - PARAGRAPH LENGTH RULE: A single "text" block should contain 3-5 full sentences. Do not write 1-sentence blocks â€” they leave ideas underdeveloped. If an explanation needs more than 5 sentences, split it into two consecutive blocks.
 - DEPTH RULE: Each concept deserves 2-3 sequential "text" blocks that build on each other. The pattern: (1) introduce the idea, (2) explain the mechanism or how it works, (3) describe a consequence or why it matters in practice. Short 1-sentence blocks are a sign of shallow writing.
 - MINIMUM TEXT BLOCKS PER SECTION: Every section must contain at least 3 "text" blocks before any list or table. A section that jumps straight from a heading into a list is too shallow.
@@ -144,9 +148,10 @@ CONTENT RULES:
 - Generate 4-6 sections with 25-40 total content items. A lesson with fewer than 25 items is too thin; more than 40 is too verbose.
 - COUNT CHECK: Before finalising the output, count the total content items. If the count is below 25, add more "text" blocks to the thinnest sections.
 - TEXT BLOCK RATIO: At least 50% of all content items must be "text" type.
-- Use a variety of content types. Every lesson must include at least: section, text, list, callout, table, and at least 2 question blocks.
+- Use a variety of content types. Every lesson must include at least: section, text, list, callout, table, visualisation, and at least 2 question blocks.
 - CODE BLOCKS: Do NOT include code blocks unless the lesson is explicitly and specifically about writing code, implementing an API, or demonstrating a concrete code pattern. Conceptual lessons, architectural topics, system design lessons, and general engineering principles should have zero code blocks. Only include code when showing actual implementation is the primary purpose of the lesson. When code is included, it must be realistic and production-quality â€” never pseudocode or toy examples. Every code block must have an "explanation" field of 1-2 sentences that appears above the code (in the rendered UI) and tells the learner what the code demonstrates and why it matters.
-- IMAGES: Dynamically include 1-3 image blocks per lesson based on how much value visualization adds to understanding the concepts. Use your judgment: if a concept is highly abstract, counterintuitive, or benefits from visual metaphor, include more images (2-3). If the lesson is more straightforward or procedural, use fewer (1-2). Each image should be an engaging, metaphorical, or narrative illustration that captures the essence of a concept â€” like editorial art in a premium textbook or magazine. Do NOT describe diagrams, flowcharts, infographics, icon sequences, or labeled process arrows. Instead, use visual metaphors and storytelling scenes. Prefer placing the first image early in the lesson to anchor the reader. For each image, write a detailed "prompt" field describing the scene, the mood, the objects, and the metaphor â€” as if directing an illustrator. Only include images where they genuinely enhance comprehension, not as decoration.
+- VISUALISATIONS: Dynamically include 1-3 "visualisation" blocks per lesson where it can really add value to the explanation. Make use of the "flowchart" visType in particular to explain processes, architectures, or pipelines. Use other visTypes (like "bar-chart", "code-diff", "timeline") to summarize data and replace walls of text.
+- IMAGES: Dynamically include 1-3 image blocks per lesson based on how much value visualization adds to understanding the concepts. Use your judgment: if a concept is highly abstract, counterintuitive, or benefits from visual metaphor, include more images (2-3). If the lesson is more straightforward or procedural, use fewer (1-2). Each image should be an engaging, metaphorical, or narrative illustration that captures the essence of a concept â€” like editorial art in a premium textbook or magazine. Do NOT describe diagrams, flowcharts, infographics, icon sequences, or labeled process arrows (use the "visualisation" block for those instead). Instead, use visual metaphors and storytelling scenes. Prefer placing the first image early in the lesson to anchor the reader. For each image, write a detailed "prompt" field describing the scene, the mood, the objects, and the metaphor â€” as if directing an illustrator. Only include images where they genuinely enhance comprehension, not as decoration.
 - Use inline formatting (**bold**, _italic_, \`code\`, ==highlight==, {{term}}) actively. Every "text" block should have highlighted phrases. Do not leave text blocks bare.
 - When useful, connect practical guidance to the historical reasons behind best practices and to the future-facing tradeoffs a developer may encounter next.
 - Every id must be unique within the lesson.
@@ -338,7 +343,10 @@ export async function generateLesson(ctx: LessonContext, provider: LLMProvider):
     
     if (isDemo) {
         // Only update static demo files if it is the demo lesson
+        if (!existsSync(dirname(demoLessonPath))) mkdirSync(dirname(demoLessonPath), { recursive: true });
         writeFileSync(demoLessonPath, JSON.stringify(lessonForData, null, 2), 'utf-8');
+        
+        if (!existsSync(dirname(setupDbLessonPath))) mkdirSync(dirname(setupDbLessonPath), { recursive: true });
         writeFileSync(setupDbLessonPath, JSON.stringify(lessonWithFixedId, null, 2), 'utf-8');
     }
 

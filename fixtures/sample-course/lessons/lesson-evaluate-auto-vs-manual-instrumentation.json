@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b656",
+  "id": "evaluate-auto-vs-manual-instrumentation",
+  "slug": "evaluate-auto-vs-manual-instrumentation",
+  "version": "1.0.0",
+  "title": "Evaluate Auto vs. Manual Instrumentation",
+  "description": "Analyze the performance overhead and trade-offs of auto-instrumentation methods, such as bytecode manipulation. Compare the benefits and challenges of auto-instrumentation versus explicit manual span lifecycle management. Evaluate the impact of monkey-patching and other auto-instrumentation techniques in Node.js environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the performance overhead and trade-offs of auto-instrumentation methods, such as bytecode manipulation.",
+    "Compare the benefits and challenges of auto-instrumentation versus explicit manual span lifecycle management.",
+    "Evaluate the impact of monkey-patching and other auto-instrumentation techniques in Node.js environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b652",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

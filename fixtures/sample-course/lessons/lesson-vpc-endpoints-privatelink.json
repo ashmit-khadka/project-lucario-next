@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b603",
+  "id": "vpc-endpoints-privatelink",
+  "slug": "vpc-endpoints-privatelink",
+  "version": "1.0.0",
+  "title": "VPC Endpoints & PrivateLink",
+  "description": "Implement VPC Endpoints and PrivateLink for secure, private access to cloud services. Architect solutions that reduce latency and data transfer costs by bypassing the public internet for cloud service communication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement VPC Endpoints and PrivateLink for secure, private access to cloud services.",
+    "Architect solutions that reduce latency and data transfer costs by bypassing the public internet for cloud service communication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b601",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

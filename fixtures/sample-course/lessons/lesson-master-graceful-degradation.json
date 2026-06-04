@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b664",
+  "id": "master-graceful-degradation",
+  "slug": "master-graceful-degradation",
+  "version": "1.0.0",
+  "title": "Master Graceful Degradation",
+  "description": "Architect UI and API fallbacks to provide degraded but functional experiences during partial outages. Implement strategies for serving stale cache data when primary services are unavailable. Design systems to return simplified responses when non-critical microservices experience failures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect UI and API fallbacks to provide degraded but functional experiences during partial outages.",
+    "Implement strategies for serving stale cache data when primary services are unavailable.",
+    "Design systems to return simplified responses when non-critical microservices experience failures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b660",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

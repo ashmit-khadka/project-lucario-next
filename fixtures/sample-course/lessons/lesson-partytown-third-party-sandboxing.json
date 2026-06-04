@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b62f",
+  "id": "partytown-third-party-sandboxing",
+  "slug": "partytown-third-party-sandboxing",
+  "version": "1.0.0",
+  "title": "Partytown & Third-Party Sandboxing",
+  "description": "Implement Partytown to offload third-party scripts (e.g., analytics, marketing) to web workers. Apply sandboxing techniques to prevent external scripts from degrading main thread performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Partytown to offload third-party scripts (e.g., analytics, marketing) to web workers.",
+    "Apply sandboxing techniques to prevent external scripts from degrading main thread performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b62d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

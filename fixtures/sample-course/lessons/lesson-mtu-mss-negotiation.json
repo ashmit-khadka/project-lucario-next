@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4b2",
+  "id": "mtu-mss-negotiation",
+  "slug": "mtu-mss-negotiation",
+  "version": "1.0.0",
+  "title": "MTU & MSS Negotiation",
+  "description": "Evaluate the role of MTU and MSS in network packet transmission. Diagnose common fragmentation issues and silent packet drops caused by PMTUD failures. Implement solutions to prevent MTU-related performance degradation in complex network topologies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the role of MTU and MSS in network packet transmission.",
+    "Diagnose common fragmentation issues and silent packet drops caused by PMTUD failures.",
+    "Implement solutions to prevent MTU-related performance degradation in complex network topologies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4ae",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

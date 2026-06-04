@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b69c",
+  "id": "consent-as-a-state-machine",
+  "slug": "consent-as-a-state-machine",
+  "version": "1.0.0",
+  "title": "Consent as a State Machine",
+  "description": "Model user consent (Opt-in/Opt-out) as a versioned and immutable state. Design systems to verify consent state at every point in the data processing pipeline.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Model user consent (Opt-in/Opt-out) as a versioned and immutable state.",
+    "Design systems to verify consent state at every point in the data processing pipeline."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b69b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b711",
+  "id": "image-signing-supply-chain-security-cosign-trivy",
+  "slug": "image-signing-supply-chain-security-cosign-trivy",
+  "version": "1.0.0",
+  "title": "Image Signing & Supply Chain Security (Cosign/Trivy)",
+  "description": "Implement image signing and verification using tools like Cosign to enhance supply chain security. Architect admission gates that only permit deployment of cryptographically verified and vulnerability-scanned images.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement image signing and verification using tools like Cosign to enhance supply chain security.",
+    "Architect admission gates that only permit deployment of cryptographically verified and vulnerability-scanned images."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b70e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

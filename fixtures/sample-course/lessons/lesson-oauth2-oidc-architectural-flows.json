@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b66e",
+  "id": "oauth2-oidc-architectural-flows",
+  "slug": "oauth2-oidc-architectural-flows",
+  "version": "1.0.0",
+  "title": "OAuth2 & OIDC Architectural Flows",
+  "description": "Design the Authorization Code Flow with PKCE to mitigate vulnerabilities found in the Implicit flow. Implement Token Exchange (RFC 8693) for secure identity propagation across microservices.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design the Authorization Code Flow with PKCE to mitigate vulnerabilities found in the Implicit flow.",
+    "Implement Token Exchange (RFC 8693) for secure identity propagation across microservices."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b66d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6bf",
+  "id": "architect-a11y-linting-static-analysis",
+  "slug": "architect-a11y-linting-static-analysis",
+  "version": "1.0.0",
+  "title": "Architect A11y-Linting & Static Analysis",
+  "description": "Integrate `eslint-plugin-jsx-a11y` into CI/CD pipelines. Implement custom Abstract Syntax Tree (AST)-based checks to prevent common semantic errors.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Integrate `eslint-plugin-jsx-a11y` into CI/CD pipelines.",
+    "Implement custom Abstract Syntax Tree (AST)-based checks to prevent common semantic errors."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6be",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

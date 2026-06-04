@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5da",
+  "id": "the-tcc-try-confirm-cancel-pattern",
+  "slug": "the-tcc-try-confirm-cancel-pattern",
+  "version": "1.0.0",
+  "title": "The TCC (Try-Confirm-Cancel) Pattern",
+  "description": "Master the Try-Confirm-Cancel (TCC) pattern for managing distributed transactions. Implement resource-level reservations using TCC to achieve atomic-like behavior in distributed systems while avoiding the overhead of Two-Phase Commit.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the Try-Confirm-Cancel (TCC) pattern for managing distributed transactions.",
+    "Implement resource-level reservations using TCC to achieve atomic-like behavior in distributed systems while avoiding the overhead of Two-Phase Commit."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5d7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

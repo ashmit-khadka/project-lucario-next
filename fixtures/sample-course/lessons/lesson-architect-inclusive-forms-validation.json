@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6c5",
+  "id": "architect-inclusive-forms-validation",
+  "slug": "architect-inclusive-forms-validation",
+  "version": "1.0.0",
+  "title": "Architect Inclusive Forms & Validation",
+  "description": "Implement real-time, non-disruptive error signaling using `aria-errormessage`. Ensure form-level feedback is announced via `aria-relevant` for accessibility.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement real-time, non-disruptive error signaling using `aria-errormessage`.",
+    "Ensure form-level feedback is announced via `aria-relevant` for accessibility."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6c2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

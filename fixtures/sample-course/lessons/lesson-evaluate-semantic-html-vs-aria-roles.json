@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6b0",
+  "id": "evaluate-semantic-html-vs-aria-roles",
+  "slug": "evaluate-semantic-html-vs-aria-roles",
+  "version": "1.0.0",
+  "title": "Evaluate Semantic HTML vs. ARIA Roles",
+  "description": "Implement the \"First Rule of ARIA\" by prioritizing native HTML elements for accessibility. Evaluate the compatibility of semantic HTML and ARIA roles across various browser and screen reader combinations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement the \"First Rule of ARIA\" by prioritizing native HTML elements for accessibility.",
+    "Evaluate the compatibility of semantic HTML and ARIA roles across various browser and screen reader combinations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6ad",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

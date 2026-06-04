@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6bc",
+  "id": "design-for-cognitive-load-error-prevention",
+  "slug": "design-for-cognitive-load-error-prevention",
+  "version": "1.0.0",
+  "title": "Design for Cognitive Load & Error Prevention",
+  "description": "Implement clear, persistent labeling and \"Undo\" patterns to reduce cognitive load. Design error prevention strategies that support users with ADHD, dyslexia, or executive dysfunction.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement clear, persistent labeling and \"Undo\" patterns to reduce cognitive load.",
+    "Design error prevention strategies that support users with ADHD, dyslexia, or executive dysfunction."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6ba",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

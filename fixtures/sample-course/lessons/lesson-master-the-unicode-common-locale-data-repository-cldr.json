@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6b6",
+  "id": "master-the-unicode-common-locale-data-repository-cldr",
+  "slug": "master-the-unicode-common-locale-data-repository-cldr",
+  "version": "1.0.0",
+  "title": "Master the Unicode Common Locale Data Repository (CLDR)",
+  "description": "Implement robust formatting logic for currencies, dates, and relative times using CLDR principles. Avoid relying on bloated client-side libraries for locale-specific formatting across diverse locales.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement robust formatting logic for currencies, dates, and relative times using CLDR principles.",
+    "Avoid relying on bloated client-side libraries for locale-specific formatting across diverse locales."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6b5",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5e6",
+  "id": "point-in-time-recovery-pitr",
+  "slug": "point-in-time-recovery-pitr",
+  "version": "1.0.0",
+  "title": "Point-in-Time Recovery (PITR)",
+  "description": "Master the concepts and techniques for Point-in-Time Recovery (PITR). Architect robust backup and recovery strategies that enable rolling back a database state to a specific millisecond to recover from data corruption or \"bad code\" deployments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the concepts and techniques for Point-in-Time Recovery (PITR).",
+    "Architect robust backup and recovery strategies that enable rolling back a database state to a specific millisecond to recover from data corruption or \"bad code\" deployments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5e3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

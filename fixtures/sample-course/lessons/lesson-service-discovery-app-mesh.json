@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f0",
+  "id": "service-discovery-app-mesh",
+  "slug": "service-discovery-app-mesh",
+  "version": "1.0.0",
+  "title": "Service Discovery & App Mesh",
+  "description": "Architect service discovery mechanisms using tools like AWS Cloud Map or Istio/Envoy. Implement robust internal networking to enable high-availability service-to-service communication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect service discovery mechanisms using tools like AWS Cloud Map or Istio/Envoy.",
+    "Implement robust internal networking to enable high-availability service-to-service communication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5ed",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

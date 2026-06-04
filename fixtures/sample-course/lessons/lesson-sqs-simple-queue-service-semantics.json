@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5fd",
+  "id": "sqs-simple-queue-service-semantics",
+  "slug": "sqs-simple-queue-service-semantics",
+  "version": "1.0.0",
+  "title": "SQS (Simple Queue Service) Semantics",
+  "description": "Master the semantics of SQS, distinguishing between Standard and FIFO queues. Architect resilient processing systems by managing SQS visibility timeouts and message group IDs for ordered message delivery.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the semantics of SQS, distinguishing between Standard and FIFO queues.",
+    "Architect resilient processing systems by managing SQS visibility timeouts and message group IDs for ordered message delivery."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5fc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

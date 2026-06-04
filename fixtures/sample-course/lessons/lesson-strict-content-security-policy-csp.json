@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b62b",
+  "id": "strict-content-security-policy-csp",
+  "slug": "strict-content-security-policy-csp",
+  "version": "1.0.0",
+  "title": "Strict Content Security Policy (CSP)",
+  "description": "Architect a strict Content Security Policy (CSP) to enhance client-side security. Design nonce-based or hash-based CSPs to prevent unauthorized script execution and data exfiltration.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a strict Content Security Policy (CSP) to enhance client-side security.",
+    "Design nonce-based or hash-based CSPs to prevent unauthorized script execution and data exfiltration."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b629",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

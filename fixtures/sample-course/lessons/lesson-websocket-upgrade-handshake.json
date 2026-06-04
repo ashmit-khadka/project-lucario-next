@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4d7",
+  "id": "websocket-upgrade-handshake",
+  "slug": "websocket-upgrade-handshake",
+  "version": "1.0.0",
+  "title": "WebSocket Upgrade Handshake",
+  "description": "Analyze the WebSocket upgrade handshake, including the 101 Switching Protocols response. Deconstruct the architectural costs associated with maintaining stateful, long-lived TCP WebSocket connections. Design strategies for scaling WebSocket servers to handle numerous concurrent connections.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the WebSocket upgrade handshake, including the 101 Switching Protocols response.",
+    "Deconstruct the architectural costs associated with maintaining stateful, long-lived TCP WebSocket connections.",
+    "Design strategies for scaling WebSocket servers to handle numerous concurrent connections."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4d6",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

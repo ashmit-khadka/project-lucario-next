@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b60c",
+  "id": "cloudwatch-metrics-logs-insights",
+  "slug": "cloudwatch-metrics-logs-insights",
+  "version": "1.0.0",
+  "title": "CloudWatch Metrics & Logs Insights",
+  "description": "Master CloudWatch Metrics and Logs Insights for comprehensive cloud monitoring. Architect automated dashboards and high-resolution alarms to detect anomalies in key performance indicators like error rates and P99 latency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master CloudWatch Metrics and Logs Insights for comprehensive cloud monitoring.",
+    "Architect automated dashboards and high-resolution alarms to detect anomalies in key performance indicators like error rates and P99 latency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b60b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

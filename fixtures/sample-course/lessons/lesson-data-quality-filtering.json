@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6ed",
+  "id": "data-quality-filtering",
+  "slug": "data-quality-filtering",
+  "version": "1.0.0",
+  "title": "Data Quality Filtering",
+  "description": "Master data quality filtering techniques for AI datasets. Implement embedding-based deduplication and toxicity filtering to ensure the integrity of data used for RAG or fine-tuning.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master data quality filtering techniques for AI datasets.",
+    "Implement embedding-based deduplication and toxicity filtering to ensure the integrity of data used for RAG or fine-tuning."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6eb",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b703",
+  "id": "traffic-management-patterns",
+  "slug": "traffic-management-patterns",
+  "version": "1.0.0",
+  "title": "Traffic Management Patterns",
+  "description": "Implement advanced traffic management patterns such as Canary deployments and Circuit Breaking within a service mesh. Architect Traffic Shadowing to enable safe production releases and improve system resilience.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement advanced traffic management patterns such as Canary deployments and Circuit Breaking within a service mesh.",
+    "Architect Traffic Shadowing to enable safe production releases and improve system resilience."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b701",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

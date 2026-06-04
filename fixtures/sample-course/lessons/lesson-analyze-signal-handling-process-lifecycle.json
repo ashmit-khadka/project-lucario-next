@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b48e",
+  "id": "analyze-signal-handling-process-lifecycle",
+  "slug": "analyze-signal-handling-process-lifecycle",
+  "version": "1.0.0",
+  "title": "Analyze Signal Handling & Process Lifecycle",
+  "description": "Analyze the mechanisms of signal handling in Node.js, including `SIGTERM` and `SIGINT` events. Master the graceful termination of stateful connections and ongoing operations during process shutdown. Design robust process lifecycle management strategies for Node.js applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the mechanisms of signal handling in Node.js, including `SIGTERM` and `SIGINT` events.",
+    "Master the graceful termination of stateful connections and ongoing operations during process shutdown.",
+    "Design robust process lifecycle management strategies for Node.js applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b48a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

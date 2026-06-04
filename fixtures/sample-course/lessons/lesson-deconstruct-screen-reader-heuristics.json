@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6aa",
+  "id": "deconstruct-screen-reader-heuristics",
+  "slug": "deconstruct-screen-reader-heuristics",
+  "version": "1.0.0",
+  "title": "Deconstruct Screen Reader Heuristics",
+  "description": "Analyze how common screen readers (VoiceOver, JAWS, NVDA) interpret semantic HTML structures. Implement \"Visually Hidden\" techniques to provide non-visual context without altering visual layout.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze how common screen readers (VoiceOver, JAWS, NVDA) interpret semantic HTML structures.",
+    "Implement \"Visually Hidden\" techniques to provide non-visual context without altering visual layout."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6a8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

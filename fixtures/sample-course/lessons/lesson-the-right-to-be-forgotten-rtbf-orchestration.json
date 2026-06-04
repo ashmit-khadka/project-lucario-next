@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b694",
+  "id": "the-right-to-be-forgotten-rtbf-orchestration",
+  "slug": "the-right-to-be-forgotten-rtbf-orchestration",
+  "version": "1.0.0",
+  "title": "The \"Right to be Forgotten\" (RTBF) Orchestration",
+  "description": "Architect reliable and idempotent deletion workflows for PII across distributed systems. Coordinate soft-deletes, hard-deletes, and downstream cache/backup purging to fulfill RTBF requests.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect reliable and idempotent deletion workflows for PII across distributed systems.",
+    "Coordinate soft-deletes, hard-deletes, and downstream cache/backup purging to fulfill RTBF requests."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b692",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

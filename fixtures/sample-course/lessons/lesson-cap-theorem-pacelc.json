@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5c9",
+  "id": "cap-theorem-pacelc",
+  "slug": "cap-theorem-pacelc",
+  "version": "1.0.0",
+  "title": "CAP Theorem & PACELC",
+  "description": "Deconstruct the CAP Theorem and its implications for distributed system design. Explain the PACELC theorem to understand the trade-offs between latency and consistency during normal operations versus network partitions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the CAP Theorem and its implications for distributed system design.",
+    "Explain the PACELC theorem to understand the trade-offs between latency and consistency during normal operations versus network partitions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5c8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

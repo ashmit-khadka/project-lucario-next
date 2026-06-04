@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b640",
+  "id": "master-testcontainers",
+  "slug": "master-testcontainers",
+  "version": "1.0.0",
+  "title": "Master Testcontainers",
+  "description": "Architect ephemeral, Docker-based test environments using Testcontainers for various services like PostgreSQL, Redis, and Kafka. Ensure environmental parity between local development and CI pipelines using containerized test environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect ephemeral, Docker-based test environments using Testcontainers for various services like PostgreSQL, Redis, and Kafka.",
+    "Ensure environmental parity between local development and CI pipelines using containerized test environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

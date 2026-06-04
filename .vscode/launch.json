@@ -65,31 +65,13 @@
                 "--import",
                 "tsx"
             ],
-            "program": "${workspaceFolder}/tools/generate-lesson/generateLesson.ts",
-            "args": [
-                "--provider", "openai",
-                "--course",    "Production-Ready AI Software Engineering",
-                "--module",    "What Makes an AI System Production-Ready",
-                "--chapter",   "From Demo AI to Real AI Systems",
-                "--lesson",    "Why most AI demos fail in production",
-                "--objectives", "Define the difference between a demo, prototype, pilot, and production AI system",
-                "--objectives", "Explain why demo success is usually based on narrow, curated, low-noise scenarios",
-                "--objectives", "Identify the gap between controlled prompts and real user behavior",
-                "--objectives", "Describe how messy inputs, ambiguous intent, and adversarial usage expose weaknesses",
-                "--objectives", "Explain why production systems must survive scale, variability, and failure",
-                "--objectives", "Identify hidden dependencies that demos ignore, such as retrieval quality, permissions, latency, and monitoring",
-                "--objectives", "Describe how user trust is lost when an AI system behaves inconsistently",
-                "--objectives", "Explain why a single impressive interaction says little about long-term reliability",
-                "--objectives", "Recognize the importance of repeatability, observability, and fallback behavior",
-                "--objectives", "Analyze the post-demo engineering work needed to make an AI feature production-ready",
-                "--objectives", "Identify organizational reasons teams mistakenly ship demos as products",
-                "--objectives", "Evaluate an AI system and determine whether it is truly production-ready or merely demo-ready"
-            ],
+            "program": "${workspaceFolder}/tools/generate-lesson/generateMock.ts",
             "cwd": "${workspaceFolder}/tools/generate-lesson",
             "console": "integratedTerminal",
             "outputCapture": "std",
             "env": {
-                "NODE_ENV": "development"
+                "NODE_ENV": "development",
+                "DEFAULT_PROVIDER": "openai"
             }
         },
         {
@@ -104,31 +86,13 @@
                 "--import",
                 "tsx"
             ],
-            "program": "${workspaceFolder}/tools/generate-lesson/generateLesson.ts",
-            "args": [
-                "--provider", "gemini",
-                "--course",    "Production-Ready AI Software Engineering",
-                "--module",    "What Makes an AI System Production-Ready",
-                "--chapter",   "From Demo AI to Real AI Systems",
-                "--lesson",    "Why most AI demos fail in production",
-                "--objectives", "Define the difference between a demo, prototype, pilot, and production AI system",
-                "--objectives", "Explain why demo success is usually based on narrow, curated, low-noise scenarios",
-                "--objectives", "Identify the gap between controlled prompts and real user behavior",
-                "--objectives", "Describe how messy inputs, ambiguous intent, and adversarial usage expose weaknesses",
-                "--objectives", "Explain why production systems must survive scale, variability, and failure",
-                "--objectives", "Identify hidden dependencies that demos ignore, such as retrieval quality, permissions, latency, and monitoring",
-                "--objectives", "Describe how user trust is lost when an AI system behaves inconsistently",
-                "--objectives", "Explain why a single impressive interaction says little about long-term reliability",
-                "--objectives", "Recognize the importance of repeatability, observability, and fallback behavior",
-                "--objectives", "Analyze the post-demo engineering work needed to make an AI feature production-ready",
-                "--objectives", "Identify organizational reasons teams mistakenly ship demos as products",
-                "--objectives", "Evaluate an AI system and determine whether it is truly production-ready or merely demo-ready"
-            ],
+            "program": "${workspaceFolder}/tools/generate-lesson/generateMock.ts",
             "cwd": "${workspaceFolder}/tools/generate-lesson",
             "console": "integratedTerminal",
             "outputCapture": "std",
             "env": {
-                "NODE_ENV": "development"
+                "NODE_ENV": "development",
+                "DEFAULT_PROVIDER": "gemini"
             }
         },
         {

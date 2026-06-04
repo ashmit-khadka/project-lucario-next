@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b49d",
+  "id": "utilize-async-iterators-as-streams",
+  "slug": "utilize-async-iterators-as-streams",
+  "version": "1.0.0",
+  "title": "Utilize Async Iterators as Streams",
+  "description": "Explain how Async Iterators (`for await...of`) can simplify stream consumption. Architect modern data pipelines using Async Iterators for efficient and readable stream processing. Convert traditional Node.js streams into Async Iterables for integration with native language constructs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain how Async Iterators (`for await...of`) can simplify stream consumption.",
+    "Architect modern data pipelines using Async Iterators for efficient and readable stream processing.",
+    "Convert traditional Node.js streams into Async Iterables for integration with native language constructs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b499",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

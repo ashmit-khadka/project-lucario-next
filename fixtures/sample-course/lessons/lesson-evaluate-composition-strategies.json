@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b53c",
+  "id": "evaluate-composition-strategies",
+  "slug": "evaluate-composition-strategies",
+  "version": "1.0.0",
+  "title": "Evaluate Composition Strategies",
+  "description": "Contrast Server-Side, Client-Side, and Build-time composition strategies for Micro-Frontends. Evaluate the impact of different composition strategies on SEO and application performance. Analyze how various composition approaches affect team autonomy and development workflows.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Contrast Server-Side, Client-Side, and Build-time composition strategies for Micro-Frontends.",
+    "Evaluate the impact of different composition strategies on SEO and application performance.",
+    "Analyze how various composition approaches affect team autonomy and development workflows."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b539",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

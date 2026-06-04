@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b649",
+  "id": "architect-performance-regression-gates",
+  "slug": "architect-performance-regression-gates",
+  "version": "1.0.0",
+  "title": "Architect Performance Regression Gates",
+  "description": "Architect performance regression gates using tools like k6 or Lighthouse CI. Implement automated checks to block deployments that fail to meet API latency or Web Vitals SLOs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect performance regression gates using tools like k6 or Lighthouse CI.",
+    "Implement automated checks to block deployments that fail to meet API latency or Web Vitals SLOs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b648",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

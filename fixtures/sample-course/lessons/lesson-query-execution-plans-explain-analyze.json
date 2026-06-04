@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5c1",
+  "id": "query-execution-plans-explain-analyze",
+  "slug": "query-execution-plans-explain-analyze",
+  "version": "1.0.0",
+  "title": "Query Execution Plans (EXPLAIN ANALYZE)",
+  "description": "Analyze query execution plans using tools like `EXPLAIN ANALYZE` to understand database query behavior. Diagnose performance bottlenecks by distinguishing between index scans and sequential scans and identifying optimizer miscalculations in join cardinality.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze query execution plans using tools like `EXPLAIN ANALYZE` to understand database query behavior.",
+    "Diagnose performance bottlenecks by distinguishing between index scans and sequential scans and identifying optimizer miscalculations in join cardinality."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5be",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

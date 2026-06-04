@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5e5",
+  "id": "chaos-engineering-for-data",
+  "slug": "chaos-engineering-for-data",
+  "version": "1.0.0",
+  "title": "Chaos Engineering for Data",
+  "description": "Implement chaos engineering principles specifically for data systems. Simulate \"Split-Brain\" scenarios and network partitions to verify data cluster consistency guarantees under failure conditions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement chaos engineering principles specifically for data systems.",
+    "Simulate \"Split-Brain\" scenarios and network partitions to verify data cluster consistency guarantees under failure conditions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5e3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

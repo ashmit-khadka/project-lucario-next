@@ -122,7 +122,7 @@ const SectionDivider = () => {
 }
 
 
-const SkillSection = (props) => {
+const SkillSection = (props: any) => {
 
     const { languages, frameworks, cloud, database, testing, tools } = props;
 
@@ -155,13 +155,13 @@ const SkillSection = (props) => {
     )
 }
 
-const ProjectSection = (props) => {
+const ProjectSection = (props: any) => {
     const { projects } = props;
     return (
         <section className="resume-section">
             <SectionHeader header="Projects" icon={<IconProfile />} />
             <ul>
-                {projects.map((project, index) => (
+                {projects.map((project: any, index: number) => (
                     <ProjectItem
                         key={index}
                         title={project.title}
@@ -174,7 +174,7 @@ const ProjectSection = (props) => {
     );
 }
 
-const ProjectItem = (props) => {
+const ProjectItem = (props: any) => {
     const { title, description, context } = props;
     return (
         <li className="project">
@@ -183,7 +183,7 @@ const ProjectItem = (props) => {
     );
 }
 
-const ProfileSection = (props) => {
+const ProfileSection = (props: any) => {
     const { text } = props;
     return (
         <section >
@@ -193,7 +193,7 @@ const ProfileSection = (props) => {
     );
 }
 
-const WorkExperienceSection = (props) => {
+const WorkExperienceSection = (props: any) => {
     const { workExperience } = props;
     return (
         <section>
@@ -201,7 +201,7 @@ const WorkExperienceSection = (props) => {
             <div
                 style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
             >
-                {workExperience.map((entry, index) => (
+                {workExperience.map((entry: any, index: number) => (
                     <WorkExperience
                         key={index}
                         company={entry.company}
@@ -217,7 +217,7 @@ const WorkExperienceSection = (props) => {
     );
 }
 
-const WorkExperience = (props) => {
+const WorkExperience = (props: any) => {
     const { company, position, startDate, endDate, responsibilities, logo } = props;
 
     return (
@@ -231,7 +231,7 @@ const WorkExperience = (props) => {
                 </div>
             </div>
             <ul className="responsibilities">
-                {responsibilities.map((item, index) => (
+                {responsibilities.map((item: any, index: number) => (
                     <li key={index}>{parseText(item)}</li>
                 ))}
             </ul>
@@ -239,7 +239,7 @@ const WorkExperience = (props) => {
     );
 }
 
-const ContactSection = (props) => {
+const ContactSection = (props: any) => {
     const { name, title, entries } = props;
     return (
         <section className="resume-section contact-info">
@@ -248,7 +248,7 @@ const ContactSection = (props) => {
                 <p>{title}</p>
             </div>
             <ul className="resume-info">
-                {entries.map((entry, index) => (
+                {entries.map((entry: any, index: number) => (
                     <li key={index} className="resume-contact">
                         {entry.icon}
                         {entry.link ? (
@@ -269,13 +269,13 @@ const ContactSection = (props) => {
     );
 }
 
-const EducationSection = (props) => {
+const EducationSection = (props: any) => {
     const { entries } = props;
     return (
         <section className="resume-section resume-education">
             <SectionHeader header="Education" icon={<IconEducation />} />
             <ul>
-                {entries.map((entry, index) => (
+                {entries.map((entry: any, index: number) => (
                     <li key={index} className="resume-education-entry">
                         <img src={entry.logo} alt={`${entry.from} logo`} className="education-logo" />
                         <div>
@@ -289,13 +289,13 @@ const EducationSection = (props) => {
     );
 }
 
-const CertificationSection = (props) => {
+const CertificationSection = (props: any) => {
     const { entries } = props;
     return (
         <section className="resume-section resume-certifications">
             <SectionHeader header="Certifications" icon={<IconCertificate />} />
             <ul>
-                {entries.map((entry, index) => (
+                {entries.map((entry: any, index: number) => (
                     <li key={index}>
                         <a
                             href={entry.link}
@@ -311,13 +311,13 @@ const CertificationSection = (props) => {
     );
 }
 
-const AwardSection = (props) => {
+const AwardSection = (props: any) => {
     const { entries } = props;
     return (
         <section className="resume-section resume-awards">
             <SectionHeader header="Awards" icon={<IconCertificate />} />
             <ul>
-                {entries.map((entry, index) => (
+                {entries.map((entry: any, index: number) => (
                     <li key={index}>
                         <p><span className="bold">{entry.title}</span> - {entry.from}, {entry.date}</p>
                     </li>
@@ -328,7 +328,7 @@ const AwardSection = (props) => {
 }
 
 
-const SectionHeader = (props) => {
+const SectionHeader = (props: any) => {
     const { header, icon } = props;
     return (
         <div className="resume-section-header">

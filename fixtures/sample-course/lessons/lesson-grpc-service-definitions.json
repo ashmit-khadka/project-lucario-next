@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4dc",
+  "id": "grpc-service-definitions",
+  "slug": "grpc-service-definitions",
+  "version": "1.0.0",
+  "title": "gRPC Service Definitions",
+  "description": "Implement gRPC service definitions for various communication patterns (Unary, Streaming). Architect client-streaming, server-streaming, and bidirectional-streaming gRPC contracts. Evaluate gRPC as an inter-service communication framework compared to REST.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement gRPC service definitions for various communication patterns (Unary, Streaming).",
+    "Architect client-streaming, server-streaming, and bidirectional-streaming gRPC contracts.",
+    "Evaluate gRPC as an inter-service communication framework compared to REST."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4da",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

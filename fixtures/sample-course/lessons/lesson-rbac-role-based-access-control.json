@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b710",
+  "id": "rbac-role-based-access-control",
+  "slug": "rbac-role-based-access-control",
+  "version": "1.0.0",
+  "title": "RBAC (Role-Based Access Control)",
+  "description": "Master Role-Based Access Control (RBAC) to define granular permissions within a Kubernetes cluster. Architect RBAC using Roles, ClusterRoles, and ServiceAccounts to mitigate the risk of lateral movement after a pod compromise.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master Role-Based Access Control (RBAC) to define granular permissions within a Kubernetes cluster.",
+    "Architect RBAC using Roles, ClusterRoles, and ServiceAccounts to mitigate the risk of lateral movement after a pod compromise."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b70e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

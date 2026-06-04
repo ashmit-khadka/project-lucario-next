@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b638",
+  "id": "master-shift-left-and-shift-right-strategies",
+  "slug": "master-shift-left-and-shift-right-strategies",
+  "version": "1.0.0",
+  "title": "Master Shift-Left and Shift-Right Strategies",
+  "description": "Design a software development lifecycle that integrates shift-left quality practices like static analysis. Implement shift-right strategies, including Canary releases and Feature Flags, for effective testing in production.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design a software development lifecycle that integrates shift-left quality practices like static analysis.",
+    "Implement shift-right strategies, including Canary releases and Feature Flags, for effective testing in production."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b635",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4e1",
+  "id": "opaque-types",
+  "slug": "opaque-types",
+  "version": "1.0.0",
+  "title": "Opaque Types",
+  "description": "Implement opaque types using intersection types and unique symbols to hide internal data structures. Design strict public interfaces for opaque types, exposing controlled access to underlying values.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement opaque types using intersection types and unique symbols to hide internal data structures.",
+    "Design strict public interfaces for opaque types, exposing controlled access to underlying values."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4df",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

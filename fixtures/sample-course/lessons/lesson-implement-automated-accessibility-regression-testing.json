@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6c0",
+  "id": "implement-automated-accessibility-regression-testing",
+  "slug": "implement-automated-accessibility-regression-testing",
+  "version": "1.0.0",
+  "title": "Implement Automated Accessibility Regression Testing",
+  "description": "Utilize `axe-core` and Playwright to crawl applications for WCAG violations. Configure build systems to fail when new WCAG violations are introduced in dynamic states.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize `axe-core` and Playwright to crawl applications for WCAG violations.",
+    "Configure build systems to fail when new WCAG violations are introduced in dynamic states."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6be",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

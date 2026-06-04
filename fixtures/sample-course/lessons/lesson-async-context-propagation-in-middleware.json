@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b571",
+  "id": "async-context-propagation-in-middleware",
+  "slug": "async-context-propagation-in-middleware",
+  "version": "1.0.0",
+  "title": "Async Context Propagation in Middleware",
+  "description": "Architect high-performance middleware pipelines in Node.js applications. Implement async context propagation for critical request identifiers (e.g., tenant IDs, correlation IDs) and authentication state across asynchronous operations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect high-performance middleware pipelines in Node.js applications.",
+    "Implement async context propagation for critical request identifiers (e.g., tenant IDs, correlation IDs) and authentication state across asynchronous operations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b570",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

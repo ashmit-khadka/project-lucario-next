@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b544",
+  "id": "architect-service-mesh-sidecars-istio-envoy",
+  "slug": "architect-service-mesh-sidecars-istio-envoy",
+  "version": "1.0.0",
+  "title": "Architect Service Mesh & Sidecars (Istio/Envoy)",
+  "description": "Architect a Service Mesh using Istio or Envoy to manage inter-service communication. Implement mTLS, automated retries, and circuit breakers at the infrastructure level. Decouple resilience, observability, and security concerns from application logic using sidecar patterns.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a Service Mesh using Istio or Envoy to manage inter-service communication.",
+    "Implement mTLS, automated retries, and circuit breakers at the infrastructure level.",
+    "Decouple resilience, observability, and security concerns from application logic using sidecar patterns."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b542",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

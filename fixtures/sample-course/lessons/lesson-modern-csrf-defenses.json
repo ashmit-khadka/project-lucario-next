@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b678",
+  "id": "modern-csrf-defenses",
+  "slug": "modern-csrf-defenses",
+  "version": "1.0.0",
+  "title": "Modern CSRF Defenses",
+  "description": "Evaluate the limitations of the `SameSite` cookie attribute in CSRF protection. Implement custom header verification as a CSRF defense for SPAs and mobile-backed APIs. Design comprehensive CSRF protection strategies for various application architectures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the limitations of the `SameSite` cookie attribute in CSRF protection.",
+    "Implement custom header verification as a CSRF defense for SPAs and mobile-backed APIs.",
+    "Design comprehensive CSRF protection strategies for various application architectures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b676",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

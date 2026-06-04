@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b690",
+  "id": "cross-border-data-transfer-cbdt-controls",
+  "slug": "cross-border-data-transfer-cbdt-controls",
+  "version": "1.0.0",
+  "title": "Cross-Border Data Transfer (CBDT) Controls",
+  "description": "Architect technical enforcement mechanisms for Standard Contractual Clauses (SCCs). Manage the legal-technical mapping of data movement across conflicting international jurisdictions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect technical enforcement mechanisms for Standard Contractual Clauses (SCCs).",
+    "Manage the legal-technical mapping of data movement across conflicting international jurisdictions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b68e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

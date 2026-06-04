@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b663",
+  "id": "design-stateful-circuit-breakers",
+  "slug": "design-stateful-circuit-breakers",
+  "version": "1.0.0",
+  "title": "Design Stateful Circuit Breakers",
+  "description": "Implement distributed circuit breakers using shared state backplanes like Redis. Prevent multi-node thundering herds when upstream dependencies recover from outages. Design fault-tolerant mechanisms for handling intermittent and prolonged downstream dependency failures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement distributed circuit breakers using shared state backplanes like Redis.",
+    "Prevent multi-node thundering herds when upstream dependencies recover from outages.",
+    "Design fault-tolerant mechanisms for handling intermittent and prolonged downstream dependency failures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b660",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

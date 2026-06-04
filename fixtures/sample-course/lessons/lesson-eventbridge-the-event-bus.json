@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ff",
+  "id": "eventbridge-the-event-bus",
+  "slug": "eventbridge-the-event-bus",
+  "version": "1.0.0",
+  "title": "EventBridge & The Event Bus",
+  "description": "Master the capabilities of EventBridge as a centralized, schema-driven event bus. Architect decoupled microservice architectures and cross-account event routing using EventBridge.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the capabilities of EventBridge as a centralized, schema-driven event bus.",
+    "Architect decoupled microservice architectures and cross-account event routing using EventBridge."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5fc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

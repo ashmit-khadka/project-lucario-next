@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b58b",
+  "id": "api-observability-golden-signals",
+  "slug": "api-observability-golden-signals",
+  "version": "1.0.0",
+  "title": "API Observability & Golden Signals",
+  "description": "Architect API observability solutions by implementing OpenTelemetry tracing for the full request lifecycle. Design custom dashboards to monitor API Golden Signals: Latency, Traffic, Errors, and Saturation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect API observability solutions by implementing OpenTelemetry tracing for the full request lifecycle.",
+    "Design custom dashboards to monitor API Golden Signals: Latency, Traffic, Errors, and Saturation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b588",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6b9",
+  "id": "master-localized-font-loading-glyph-management",
+  "slug": "master-localized-font-loading-glyph-management",
+  "version": "1.0.0",
+  "title": "Master Localized Font Loading & Glyph Management",
+  "description": "Architect font-loading strategies to prevent Flash of Invisible Text (FOIT) and Flash of Unstyled Text (FOUT) for non-Latin scripts. Manage the dynamic injection of language-specific web fonts effectively.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect font-loading strategies to prevent Flash of Invisible Text (FOIT) and Flash of Unstyled Text (FOUT) for non-Latin scripts.",
+    "Manage the dynamic injection of language-specific web fonts effectively."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6b5",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

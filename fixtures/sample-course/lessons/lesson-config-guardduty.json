@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b614",
+  "id": "config-guardduty",
+  "slug": "config-guardduty",
+  "version": "1.0.0",
+  "title": "Config & GuardDuty",
+  "description": "Utilize AWS Config for automated compliance monitoring and identifying configuration drift. Implement GuardDuty for automated threat detection and to identify potential account compromises in a cloud environment.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize AWS Config for automated compliance monitoring and identifying configuration drift.",
+    "Implement GuardDuty for automated threat detection and to identify potential account compromises in a cloud environment."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b610",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b522",
+  "id": "conduct-time-travel-debugging",
+  "slug": "conduct-time-travel-debugging",
+  "version": "1.0.0",
+  "title": "Conduct Time-Travel Debugging",
+  "description": "Utilize event logs to conduct time-travel debugging, reproducing production anomalies. Replay state transitions in a deterministic local harness to diagnose and resolve issues.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize event logs to conduct time-travel debugging, reproducing production anomalies.",
+    "Replay state transitions in a deterministic local harness to diagnose and resolve issues."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b51f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

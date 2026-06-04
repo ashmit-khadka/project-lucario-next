@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6b4",
+  "id": "implement-offline-first-low-bandwidth-resilience",
+  "slug": "implement-offline-first-low-bandwidth-resilience",
+  "version": "1.0.0",
+  "title": "Implement Offline-First & Low-Bandwidth Resilience",
+  "description": "Utilize Service Workers to enable offline functionality for web applications. Implement Background Sync to persist critical user tasks when connectivity is restored.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize Service Workers to enable offline functionality for web applications.",
+    "Implement Background Sync to persist critical user tasks when connectivity is restored."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6b1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

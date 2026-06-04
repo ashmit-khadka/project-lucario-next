@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b63b",
+  "id": "master-consumer-driven-contract-testing-pact",
+  "slug": "master-consumer-driven-contract-testing-pact",
+  "version": "1.0.0",
+  "title": "Master Consumer-Driven Contract Testing (Pact)",
+  "description": "Architect a Consumer-Driven Contract testing workflow using tools like Pact. Ensure binary and semantic API compatibility across decoupled service deployments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a Consumer-Driven Contract testing workflow using tools like Pact.",
+    "Ensure binary and semantic API compatibility across decoupled service deployments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

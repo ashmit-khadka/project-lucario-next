@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5a5",
+  "id": "implement-application-level-backpressure",
+  "slug": "implement-application-level-backpressure",
+  "version": "1.0.0",
+  "title": "Implement Application-Level Backpressure",
+  "description": "Design flow control mechanisms for WebSockets to prevent memory exhaustion. Implement application-level backpressure to manage disparities between producer and consumer speeds.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design flow control mechanisms for WebSockets to prevent memory exhaustion.",
+    "Implement application-level backpressure to manage disparities between producer and consumer speeds."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b59e",
+  "id": "master-http-2-http-3-streaming",
+  "slug": "master-http-2-http-3-streaming",
+  "version": "1.0.0",
+  "title": "Master HTTP/2 & HTTP/3 Streaming",
+  "description": "Utilize persistent streams in HTTP/2 and HTTP/3 to push data efficiently. Master HTTP/2 and HTTP/3 streaming to reduce handshake overhead and leverage native browser flow control.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize persistent streams in HTTP/2 and HTTP/3 to push data efficiently.",
+    "Master HTTP/2 and HTTP/3 streaming to reduce handshake overhead and leverage native browser flow control."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b59c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

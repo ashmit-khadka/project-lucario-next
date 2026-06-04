@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b723",
+  "id": "automated-architecture-guardrails",
+  "slug": "automated-architecture-guardrails",
+  "version": "1.0.0",
+  "title": "Automated Architecture Guardrails",
+  "description": "Implement automated architecture guardrails using static analysis and custom linters. Enforce architectural boundaries within a Continuous Integration (CI) pipeline, such as preventing unauthorized service-to-service calls.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement automated architecture guardrails using static analysis and custom linters.",
+    "Enforce architectural boundaries within a Continuous Integration (CI) pipeline, such as preventing unauthorized service-to-service calls."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b71f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

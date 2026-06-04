@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b594",
+  "id": "architect-websocket-scaling-via-pub-sub",
+  "slug": "architect-websocket-scaling-via-pub-sub",
+  "version": "1.0.0",
+  "title": "Architect WebSocket Scaling via Pub/Sub",
+  "description": "Implement a distributed backplane using Redis or NATS for WebSocket message synchronization. Architect scalable WebSocket solutions for clustered server fleets using Pub/Sub patterns.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a distributed backplane using Redis or NATS for WebSocket message synchronization.",
+    "Architect scalable WebSocket solutions for clustered server fleets using Pub/Sub patterns."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b592",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

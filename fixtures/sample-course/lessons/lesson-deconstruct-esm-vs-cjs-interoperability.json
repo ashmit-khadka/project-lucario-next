@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4a7",
+  "id": "deconstruct-esm-vs-cjs-interoperability",
+  "slug": "deconstruct-esm-vs-cjs-interoperability",
+  "version": "1.0.0",
+  "title": "Deconstruct ESM vs. CJS Interoperability",
+  "description": "Deconstruct the fundamental differences and interoperability challenges between ESM and CJS. Master the asynchronous module loader and the use of top-level await in ESM. Analyze the architectural implications of static versus dynamic imports on application structure and performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the fundamental differences and interoperability challenges between ESM and CJS.",
+    "Master the asynchronous module loader and the use of top-level await in ESM.",
+    "Analyze the architectural implications of static versus dynamic imports on application structure and performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b4a6",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

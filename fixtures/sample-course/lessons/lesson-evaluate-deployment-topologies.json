@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b538",
+  "id": "evaluate-deployment-topologies",
+  "slug": "evaluate-deployment-topologies",
+  "version": "1.0.0",
+  "title": "Evaluate Deployment Topologies",
+  "description": "Contrast blue/green, canary, and rolling update deployment strategies. Evaluate deployment topologies considering database schema compatibility requirements. Analyze the challenges of inter-service versioning during deployments across different topologies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Contrast blue/green, canary, and rolling update deployment strategies.",
+    "Evaluate deployment topologies considering database schema compatibility requirements.",
+    "Analyze the challenges of inter-service versioning during deployments across different topologies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b534",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

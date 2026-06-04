@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b66b",
+  "id": "implement-live-heap-introspection",
+  "slug": "implement-live-heap-introspection",
+  "version": "1.0.0",
+  "title": "Implement Live Heap Introspection",
+  "description": "Safely generate and export core dumps and heap snapshots from OOM-crashing production pods. Perform post-mortem analysis of heap snapshots to identify closure-based memory leaks. Utilize tools for live heap introspection to debug memory-related issues in deployed applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Safely generate and export core dumps and heap snapshots from OOM-crashing production pods.",
+    "Perform post-mortem analysis of heap snapshots to identify closure-based memory leaks.",
+    "Utilize tools for live heap introspection to debug memory-related issues in deployed applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b669",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c8",
+  "id": "l4-vs-l7-load-balancing",
+  "slug": "l4-vs-l7-load-balancing",
+  "version": "1.0.0",
+  "title": "L4 vs. L7 Load Balancing",
+  "description": "Compare the capabilities and use cases of Layer 4 (TCP) and Layer 7 (HTTP) load balancing. Evaluate the performance and feature trade-offs between packet switching and application-aware routing. Select appropriate load balancing strategies based on application requirements for throughput and intelligence.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Compare the capabilities and use cases of Layer 4 (TCP) and Layer 7 (HTTP) load balancing.",
+    "Evaluate the performance and feature trade-offs between packet switching and application-aware routing.",
+    "Select appropriate load balancing strategies based on application requirements for throughput and intelligence."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

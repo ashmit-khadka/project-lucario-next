@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4cd",
+  "id": "exponential-backoff-with-jitter",
+  "slug": "exponential-backoff-with-jitter",
+  "version": "1.0.0",
+  "title": "Exponential Backoff with Jitter",
+  "description": "Implement exponential backoff algorithms with jitter for retry mechanisms. Design retry policies that prevent \"Retry Storms\" from overwhelming recovering services. Evaluate the impact of different backoff strategies on system stability and recovery.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement exponential backoff algorithms with jitter for retry mechanisms.",
+    "Design retry policies that prevent \"Retry Storms\" from overwhelming recovering services.",
+    "Evaluate the impact of different backoff strategies on system stability and recovery."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4cc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

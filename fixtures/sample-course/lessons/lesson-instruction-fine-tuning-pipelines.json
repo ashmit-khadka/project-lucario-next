@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6dc",
+  "id": "instruction-fine-tuning-pipelines",
+  "slug": "instruction-fine-tuning-pipelines",
+  "version": "1.0.0",
+  "title": "Instruction Fine-tuning Pipelines",
+  "description": "Architect instruction fine-tuning pipelines using high-quality synthetic datasets (Evol-Instruct). Design Supervised Fine-tuning (SFT) strategies to align models with specific behavioral traits.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect instruction fine-tuning pipelines using high-quality synthetic datasets (Evol-Instruct).",
+    "Design Supervised Fine-tuning (SFT) strategies to align models with specific behavioral traits."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6da",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

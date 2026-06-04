@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b68a",
+  "id": "differential-privacy",
+  "slug": "differential-privacy",
+  "version": "1.0.0",
+  "title": "Differential Privacy",
+  "description": "Implement noise injection mechanisms (Laplacian/Gaussian) to achieve differential privacy. Design systems that enable aggregate data analysis while mathematically guaranteeing individual record privacy.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement noise injection mechanisms (Laplacian/Gaussian) to achieve differential privacy.",
+    "Design systems that enable aggregate data analysis while mathematically guaranteeing individual record privacy."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b689",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

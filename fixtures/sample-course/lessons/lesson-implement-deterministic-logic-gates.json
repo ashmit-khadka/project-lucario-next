@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b50c",
+  "id": "implement-deterministic-logic-gates",
+  "slug": "implement-deterministic-logic-gates",
+  "version": "1.0.0",
+  "title": "Implement Deterministic Logic Gates",
+  "description": "Implement pure transition functions that map current state and events to a predictable next state. Design state transitions to avoid hidden side-effects and maintain determinism.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement pure transition functions that map current state and events to a predictable next state.",
+    "Design state transitions to avoid hidden side-effects and maintain determinism."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b50a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

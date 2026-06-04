@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b551",
+  "id": "master-compute-edge-cloudflare-workers-vercel-edge",
+  "slug": "master-compute-edge-cloudflare-workers-vercel-edge",
+  "version": "1.0.0",
+  "title": "Master Compute@Edge (Cloudflare Workers/Vercel Edge)",
+  "description": "Implement low-latency logic, such as geo-redirection and A/B testing, at the CDN edge using platforms like Cloudflare Workers. Architect solutions that bypass origin latency by executing code closer to the user. Leverage edge computing to enhance application responsiveness and personalize user experiences globally.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement low-latency logic, such as geo-redirection and A/B testing, at the CDN edge using platforms like Cloudflare Workers.",
+    "Architect solutions that bypass origin latency by executing code closer to the user.",
+    "Leverage edge computing to enhance application responsiveness and personalize user experiences globally."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b550",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

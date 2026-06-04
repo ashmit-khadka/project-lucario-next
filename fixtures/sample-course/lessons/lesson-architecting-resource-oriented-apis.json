@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b562",
+  "id": "architecting-resource-oriented-apis",
+  "slug": "architecting-resource-oriented-apis",
+  "version": "1.0.0",
+  "title": "Architecting Resource-Oriented APIs",
+  "description": "Architect semantic, resource-oriented APIs by applying the Controller-Resource pattern. Decouple domain models from public API interfaces to ensure contract stability.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect semantic, resource-oriented APIs by applying the Controller-Resource pattern.",
+    "Decouple domain models from public API interfaces to ensure contract stability."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b561",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

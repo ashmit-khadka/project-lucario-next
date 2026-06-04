@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b55a",
+  "id": "implement-dual-writes-parallel-runs",
+  "slug": "implement-dual-writes-parallel-runs",
+  "version": "1.0.0",
+  "title": "Implement Dual Writes & Parallel Runs",
+  "description": "Implement dual writes to synchronize data across old and new data stores during migrations. Utilize parallel runs and 'Shadow Reads' to verify the correctness and performance of new systems. Design data migration strategies that ensure data integrity and minimize downtime.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement dual writes to synchronize data across old and new data stores during migrations.",
+    "Utilize parallel runs and 'Shadow Reads' to verify the correctness and performance of new systems.",
+    "Design data migration strategies that ensure data integrity and minimize downtime."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b558",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

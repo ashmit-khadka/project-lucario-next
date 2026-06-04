@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b622",
+  "id": "optimistic-ui-reconciliation",
+  "slug": "optimistic-ui-reconciliation",
+  "version": "1.0.0",
+  "title": "Optimistic UI & Reconciliation",
+  "description": "Implement optimistic UI updates to enhance user perceived performance. Design and implement robust state \"rollback\" logic to gracefully handle network failures during speculative updates.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement optimistic UI updates to enhance user perceived performance.",
+    "Design and implement robust state \"rollback\" logic to gracefully handle network failures during speculative updates."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b620",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -20,6 +20,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Database Setup
+
+To set up the database with mock data, make sure you have MongoDB running locally (default: `mongodb://localhost:27017`) and run the following command:
+
+```bash
+npm run tools:setup-db
+```
+
+This script will clear the existing database (`lucario-dev` in development) and seed it with sample data.
+
+If you want to export the current state of your database to the sample data folder, you can run:
+
+```bash
+npm run tools:export-db
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

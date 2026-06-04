@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b575",
+  "id": "cursor-based-pagination",
+  "slug": "cursor-based-pagination",
+  "version": "1.0.0",
+  "title": "Cursor-Based Pagination",
+  "description": "Implement cursor-based pagination using opaque Base64 cursors. Apply Keyset navigation to ensure stable sorting and high-performance deep scrolling in large datasets.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement cursor-based pagination using opaque Base64 cursors.",
+    "Apply Keyset navigation to ensure stable sorting and high-performance deep scrolling in large datasets."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b574",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

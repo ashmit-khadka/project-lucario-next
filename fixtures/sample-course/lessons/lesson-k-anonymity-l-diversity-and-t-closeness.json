@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b698",
+  "id": "k-anonymity-l-diversity-and-t-closeness",
+  "slug": "k-anonymity-l-diversity-and-t-closeness",
+  "version": "1.0.0",
+  "title": "K-Anonymity, L-Diversity, and T-Closeness",
+  "description": "Implement statistical models to prevent re-identification attacks using quasi-identifiers. Apply K-Anonymity, L-Diversity, and T-Closeness techniques to public datasets.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement statistical models to prevent re-identification attacks using quasi-identifiers.",
+    "Apply K-Anonymity, L-Diversity, and T-Closeness techniques to public datasets."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b697",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

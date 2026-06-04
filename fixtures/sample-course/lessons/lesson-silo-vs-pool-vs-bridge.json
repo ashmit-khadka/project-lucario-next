@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5dc",
+  "id": "silo-vs-pool-vs-bridge",
+  "slug": "silo-vs-pool-vs-bridge",
+  "version": "1.0.0",
+  "title": "Silo vs. Pool vs. Bridge",
+  "description": "Evaluate the architectural differences between silo, pool, and bridge models for multi-tenant data storage. Analyze the trade-offs in isolation, operational overhead, and scalability between \"Database-per-Tenant\" and \"Shared Schema\" approaches.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the architectural differences between silo, pool, and bridge models for multi-tenant data storage.",
+    "Analyze the trade-offs in isolation, operational overhead, and scalability between \"Database-per-Tenant\" and \"Shared Schema\" approaches."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5db",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

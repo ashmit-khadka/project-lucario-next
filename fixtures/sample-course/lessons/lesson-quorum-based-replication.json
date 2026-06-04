@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ce",
+  "id": "quorum-based-replication",
+  "slug": "quorum-based-replication",
+  "version": "1.0.0",
+  "title": "Quorum-Based Replication",
+  "description": "Master the principles of quorum-based replication for distributed data stores. Configure N, W, and R values to tune the balance between data durability, consistency, and read/write latency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the principles of quorum-based replication for distributed data stores.",
+    "Configure N, W, and R values to tune the balance between data durability, consistency, and read/write latency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5cd",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ce",
+  "id": "circuit-breakers-hystrix-pattern",
+  "slug": "circuit-breakers-hystrix-pattern",
+  "version": "1.0.0",
+  "title": "Circuit Breakers (Hystrix Pattern)",
+  "description": "Architect circuit breaker patterns (e.g., Hystrix) to prevent cascading failures. Implement fail-fast mechanisms and provide fallback responses for overloaded dependencies. Evaluate the effectiveness of circuit breakers in maintaining system resilience under stress.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect circuit breaker patterns (e.g., Hystrix) to prevent cascading failures.",
+    "Implement fail-fast mechanisms and provide fallback responses for overloaded dependencies.",
+    "Evaluate the effectiveness of circuit breakers in maintaining system resilience under stress."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4cc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

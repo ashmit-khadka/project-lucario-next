@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ed",
+  "id": "recursive-types",
+  "slug": "recursive-types",
+  "version": "1.0.0",
+  "title": "Recursive Types",
+  "description": "Architect recursive types to model hierarchical data structures like trees and graphs. Implement depth-limited recursion in types to prevent compiler stack overflows while maintaining type safety.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect recursive types to model hierarchical data structures like trees and graphs.",
+    "Implement depth-limited recursion in types to prevent compiler stack overflows while maintaining type safety."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4e9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

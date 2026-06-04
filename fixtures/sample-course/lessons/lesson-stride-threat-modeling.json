@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b685",
+  "id": "stride-threat-modeling",
+  "slug": "stride-threat-modeling",
+  "version": "1.0.0",
+  "title": "STRIDE Threat Modeling",
+  "description": "Design a repeatable process for conducting STRIDE threat modeling. Identify architectural attack vectors such as Spoofing, Tampering, and Repudiation during the design phase. Apply STRIDE methodology to proactively identify and mitigate security risks in new features.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design a repeatable process for conducting STRIDE threat modeling.",
+    "Identify architectural attack vectors such as Spoofing, Tampering, and Repudiation during the design phase.",
+    "Apply STRIDE methodology to proactively identify and mitigate security risks in new features."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b684",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

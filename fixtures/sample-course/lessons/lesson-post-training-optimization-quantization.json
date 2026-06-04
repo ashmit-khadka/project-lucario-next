@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6dd",
+  "id": "post-training-optimization-quantization",
+  "slug": "post-training-optimization-quantization",
+  "version": "1.0.0",
+  "title": "Post-Training Optimization (Quantization)",
+  "description": "Implement 4-bit/8-bit quantization techniques (e.g., GGUF, AWQ, EXL2) for LLMs. Master post-training optimization to reduce model footprint and enable high-throughput inference on consumer-grade hardware.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement 4-bit/8-bit quantization techniques (e.g., GGUF, AWQ, EXL2) for LLMs.",
+    "Master post-training optimization to reduce model footprint and enable high-throughput inference on consumer-grade hardware."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6da",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

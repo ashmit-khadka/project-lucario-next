@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b564",
+  "id": "discoverable-apis-with-hateoas-json-ld",
+  "slug": "discoverable-apis-with-hateoas-json-ld",
+  "version": "1.0.0",
+  "title": "Discoverable APIs with HATEOAS & JSON-LD",
+  "description": "Design discoverable APIs by applying HATEOAS principles using hypermedia links. Utilize JSON-LD to enhance API semantic meaning and enable navigational state transitions. Reduce client-server coupling through the implementation of hypermedia-driven interfaces.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design discoverable APIs by applying HATEOAS principles using hypermedia links.",
+    "Utilize JSON-LD to enhance API semantic meaning and enable navigational state transitions.",
+    "Reduce client-server coupling through the implementation of hypermedia-driven interfaces."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b561",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

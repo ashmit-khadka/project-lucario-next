@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b59a",
+  "id": "architect-sfu-selective-forwarding-unit-vs-mcu-architecture",
+  "slug": "architect-sfu-selective-forwarding-unit-vs-mcu-architecture",
+  "version": "1.0.0",
+  "title": "Architect SFU (Selective Forwarding Unit) vs. MCU Architecture",
+  "description": "Evaluate the trade-offs between P2P mesh, Selective Forwarding Unit (SFU), and Multi-point Control Unit (MCU) architectures. Architect appropriate media server solutions for multi-user real-time systems based on specific requirements.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the trade-offs between P2P mesh, Selective Forwarding Unit (SFU), and Multi-point Control Unit (MCU) architectures.",
+    "Architect appropriate media server solutions for multi-user real-time systems based on specific requirements."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b597",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b619",
+  "id": "layer-promotion-the-compositor-thread",
+  "slug": "layer-promotion-the-compositor-thread",
+  "version": "1.0.0",
+  "title": "Layer Promotion & The Compositor Thread",
+  "description": "Utilize will-change and transform-based animations to promote elements to their own layers. Architect visual updates that leverage the compositor thread and GPU to bypass main thread bottlenecks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize will-change and transform-based animations to promote elements to their own layers.",
+    "Architect visual updates that leverage the compositor thread and GPU to bypass main thread bottlenecks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b616",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

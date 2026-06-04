@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b56f",
+  "id": "resolver-level-caching-strategies",
+  "slug": "resolver-level-caching-strategies",
+  "version": "1.0.0",
+  "title": "Resolver-Level Caching Strategies",
+  "description": "Architect resolver-level caching strategies for GraphQL using Redis or in-memory LRU caches. Bypass redundant data fetching for expensive resolvers to improve API performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect resolver-level caching strategies for GraphQL using Redis or in-memory LRU caches.",
+    "Bypass redundant data fetching for expensive resolvers to improve API performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b56b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

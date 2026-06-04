@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b691",
+  "id": "data-sovereignty-gateways",
+  "slug": "data-sovereignty-gateways",
+  "version": "1.0.0",
+  "title": "Data Sovereignty Gateways",
+  "description": "Implement edge-level proxying solutions that intercept and encrypt PII before it leaves a sovereign territory. Design data flows ensuring cloud providers only receive encrypted or blind data.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement edge-level proxying solutions that intercept and encrypt PII before it leaves a sovereign territory.",
+    "Design data flows ensuring cloud providers only receive encrypted or blind data."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b68e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

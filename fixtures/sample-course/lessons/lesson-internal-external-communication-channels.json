@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b731",
+  "id": "internal-external-communication-channels",
+  "slug": "internal-external-communication-channels",
+  "version": "1.0.0",
+  "title": "Internal & External Communication Channels",
+  "description": "Architect internal and external communication channels for service degradations and outages. Design automated status page updates and stakeholder notification loops to maintain trust and transparency during crises.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect internal and external communication channels for service degradations and outages.",
+    "Design automated status page updates and stakeholder notification loops to maintain trust and transparency during crises."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b72e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

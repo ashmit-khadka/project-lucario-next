@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b655",
+  "id": "implement-custom-span-attributes-baggage",
+  "slug": "implement-custom-span-attributes-baggage",
+  "version": "1.0.0",
+  "title": "Implement Custom Span Attributes & Baggage",
+  "description": "Enrich distributed traces with relevant business-specific dimensions using custom span attributes. Utilize baggage for propagating contextual information across service boundaries. Mitigate high-cardinality explosions when adding custom attributes to avoid data store performance issues.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Enrich distributed traces with relevant business-specific dimensions using custom span attributes.",
+    "Utilize baggage for propagating contextual information across service boundaries.",
+    "Mitigate high-cardinality explosions when adding custom attributes to avoid data store performance issues."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b652",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b59b",
+  "id": "master-dtls-srtp-security",
+  "slug": "master-dtls-srtp-security",
+  "version": "1.0.0",
+  "title": "Master DTLS & SRTP Security",
+  "description": "Analyze the cryptographic handshake and media encryption layers of WebRTC. Master DTLS and SRTP security protocols to secure WebRTC streams against interception.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the cryptographic handshake and media encryption layers of WebRTC.",
+    "Master DTLS and SRTP security protocols to secure WebRTC streams against interception."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b597",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

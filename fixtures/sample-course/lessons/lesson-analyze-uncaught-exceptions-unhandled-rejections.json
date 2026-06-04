@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b498",
+  "id": "analyze-uncaught-exceptions-unhandled-rejections",
+  "slug": "analyze-uncaught-exceptions-unhandled-rejections",
+  "version": "1.0.0",
+  "title": "Analyze Uncaught Exceptions & Unhandled Rejections",
+  "description": "Analyze the lifecycle and implications of uncaught exceptions and unhandled promise rejections in Node.js. Design robust top-level error handlers to prevent process instability. Implement observability strategies for uncaught errors to maintain application health.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the lifecycle and implications of uncaught exceptions and unhandled promise rejections in Node.js.",
+    "Design robust top-level error handlers to prevent process instability.",
+    "Implement observability strategies for uncaught errors to maintain application health."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b494",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

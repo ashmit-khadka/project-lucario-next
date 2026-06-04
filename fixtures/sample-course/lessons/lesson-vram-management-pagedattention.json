@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6e0",
+  "id": "vram-management-pagedattention",
+  "slug": "vram-management-pagedattention",
+  "version": "1.0.0",
+  "title": "VRAM Management & PagedAttention",
+  "description": "Master VRAM management techniques for optimizing LLM inference performance. Analyze how PagedAttention enables larger batch sizes and longer context windows by mitigating memory fragmentation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master VRAM management techniques for optimizing LLM inference performance.",
+    "Analyze how PagedAttention enables larger batch sizes and longer context windows by mitigating memory fragmentation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6de",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

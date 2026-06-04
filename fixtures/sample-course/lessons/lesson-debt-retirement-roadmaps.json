@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b739",
+  "id": "debt-retirement-roadmaps",
+  "slug": "debt-retirement-roadmaps",
+  "version": "1.0.0",
+  "title": "Debt Retirement Roadmaps",
+  "description": "Architect long-term roadmaps for proactive technical debt retirement and infrastructure hardening. Design sprint cycles that allocate dedicated capacity for refactoring to prevent \"architecture bankruptcy.\"",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect long-term roadmaps for proactive technical debt retirement and infrastructure hardening.",
+    "Design sprint cycles that allocate dedicated capacity for refactoring to prevent \"architecture bankruptcy.\""
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b737",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

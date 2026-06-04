@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6a4",
+  "id": "hipaa-health-tech-technical-safeguards",
+  "slug": "hipaa-health-tech-technical-safeguards",
+  "version": "1.0.0",
+  "title": "HIPAA & Health-Tech Technical Safeguards",
+  "description": "Implement PHI encryption at rest and in transit for medical data systems. Design systems with unique user identification and automated session timeouts required by HIPAA.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement PHI encryption at rest and in transit for medical data systems.",
+    "Design systems with unique user identification and automated session timeouts required by HIPAA."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b6a3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

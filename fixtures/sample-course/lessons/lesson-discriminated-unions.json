@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ef",
+  "id": "discriminated-unions",
+  "slug": "discriminated-unions",
+  "version": "1.0.0",
+  "title": "Discriminated Unions",
+  "description": "Master discriminated unions to model complex business states in a type-safe manner. Implement exhaustiveness checking with the `never` type to ensure all logical branches are handled at compile-time.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master discriminated unions to model complex business states in a type-safe manner.",
+    "Implement exhaustiveness checking with the `never` type to ensure all logical branches are handled at compile-time."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4ee",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

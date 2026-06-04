@@ -72,7 +72,7 @@ const LandingScreen = () => {
 
     const [activeSection, setActiveSection] = useState('about');
 
-    const scrollToSection = (sectionId) => {
+    const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
@@ -276,8 +276,7 @@ const LandingScreen = () => {
     );
 }
 
-const ContactTile = (props) => {
-    const { text, icon } = props;
+const ContactTile = ({ text, icon }: { text: string; icon: React.ReactNode }) => {
     return (
         <motion.div
             className="landing-contact-tile"
@@ -313,10 +312,10 @@ const ContactTile = (props) => {
     );
 }
 
-const ExperienceItem = (props) => {
+const ExperienceItem = (props: { title: string; organization: string; date: string; responsibilities: string[]; logo: any; awards?: { image: any; text: string }[] }) => {
     const { title, organization, date, responsibilities, logo, awards } = props;
 
-    const awardItem = (image, text) => (
+    const awardItem = (image: any, text: string) => (
         <li className="landing-experience-tile-award">
             <img src={image.src} alt="Award" />
             <p>{parseText(text)}</p>
@@ -460,7 +459,7 @@ const AboutSectionIntro = (
     </motion.div>
 );
 
-const AboutSectionShortcuts = ({ activeSection, onSectionClick }) => {
+const AboutSectionShortcuts = ({ activeSection, onSectionClick }: { activeSection: string; onSectionClick: (id: string) => void }) => {
     const shortcuts = [
         { id: 'about', label: 'About me' },
         { id: 'skills', label: 'Skills' },
@@ -562,7 +561,7 @@ const AboutSectionBio = (
     </div>
 );
 
-const Skill = (props) => {
+const Skill = (props: { name: string; icon: any; index: number; isExpanded: boolean }) => {
     const { name, icon, index, isExpanded } = props;
 
     // Calculate stagger delay based on position
@@ -639,14 +638,14 @@ const SkillsSection = () => {
             height: "250px",
             transition: {
                 duration: 0.5,
-                ease: [0.4, 0, 0.2, 1]
+                ease: [0.4, 0, 0.2, 1] as const
             }
         },
         expanded: {
             height: "auto",
             transition: {
                 duration: 0.5,
-                ease: [0.4, 0, 0.2, 1]
+                ease: [0.4, 0, 0.2, 1] as const
             }
         }
     };
@@ -685,7 +684,7 @@ const SkillsSection = () => {
     );
 };
 
-const PortfolioSection = (props) => {
+const PortfolioSection = (props: { header: string; description: string; image: any; link?: string; flipped?: boolean }) => {
     const { header, description, image, link, flipped } = props;
 
     const imageClass = `landing-portfolio-tile-image ${flipped ? 'landing-portfolio-tile-image--flipped' : ''}`;
@@ -749,7 +748,7 @@ const PortfolioSection = (props) => {
     );
 }
 
-const EducationTile = (props) => {
+const EducationTile = (props: { title: string; description: string; logo: any }) => {
     const { title, description, logo } = props;
 
     return (
@@ -781,7 +780,7 @@ const EducationTile = (props) => {
     );
 }
 
-const CertificationTile = (props) => {
+const CertificationTile = (props: { title: string; institution: string; platform: string; year: string; logo: any; link?: string }) => {
     const { title, institution, platform, year, logo, link } = props;
 
     const handleOpenCertification = () => {
@@ -834,7 +833,7 @@ const CertificationTile = (props) => {
     );
 }
 
-const SectionTitle = (props) => {
+const SectionTitle = (props: { title: string; isLight?: boolean; isWide?: boolean }) => {
     const { title, isLight, isWide } = props;
     return (
         <div className={`section-title ${isLight ? 'section-title--light' : ''} ${isWide ? 'screen section-title--wide' : ''}`}>

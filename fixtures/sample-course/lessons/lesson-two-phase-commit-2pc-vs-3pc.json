@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5cc",
+  "id": "two-phase-commit-2pc-vs-3pc",
+  "slug": "two-phase-commit-2pc-vs-3pc",
+  "version": "1.0.0",
+  "title": "Two-Phase Commit (2PC) vs. 3PC",
+  "description": "Evaluate the mechanisms and trade-offs of Two-Phase Commit (2PC) and Three-Phase Commit (3PC) protocols. Analyze the \"blocking problem\" inherent in atomic commitment protocols and explain why they are often avoided in high-scale distributed systems.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the mechanisms and trade-offs of Two-Phase Commit (2PC) and Three-Phase Commit (3PC) protocols.",
+    "Analyze the \"blocking problem\" inherent in atomic commitment protocols and explain why they are often avoided in high-scale distributed systems."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5c8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

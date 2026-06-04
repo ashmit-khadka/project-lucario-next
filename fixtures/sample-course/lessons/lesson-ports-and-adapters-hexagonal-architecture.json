@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4f7",
+  "id": "ports-and-adapters-hexagonal-architecture",
+  "slug": "ports-and-adapters-hexagonal-architecture",
+  "version": "1.0.0",
+  "title": "Ports and Adapters (Hexagonal Architecture)",
+  "description": "Master the Ports and Adapters pattern to define clear infrastructure interfaces (\"Ports\"). Implement concrete \"Adapters\" to isolate core domain logic from external dependencies like databases and APIs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the Ports and Adapters pattern to define clear infrastructure interfaces (\"Ports\").",
+    "Implement concrete \"Adapters\" to isolate core domain logic from external dependencies like databases and APIs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4f6",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

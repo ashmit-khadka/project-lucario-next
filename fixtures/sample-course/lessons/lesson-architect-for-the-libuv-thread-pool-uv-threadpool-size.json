@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b48c",
+  "id": "architect-for-the-libuv-thread-pool-uv-threadpool-size",
+  "slug": "architect-for-the-libuv-thread-pool-uv-threadpool-size",
+  "version": "1.0.0",
+  "title": "Architect for the Libuv Thread Pool (UV_THREADPOOL_SIZE)",
+  "description": "Explain the purpose and function of the Libuv Thread Pool in Node.js. Manage the execution of CPU-intensive operations (FS, Crypto, DNS) on the thread pool. Architect applications to avoid blocking the main Event Loop through proper thread pool utilization.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the purpose and function of the Libuv Thread Pool in Node.js.",
+    "Manage the execution of CPU-intensive operations (FS, Crypto, DNS) on the thread pool.",
+    "Architect applications to avoid blocking the main Event Loop through proper thread pool utilization."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b48a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b734",
+  "id": "the-10x-influence-framework",
+  "slug": "the-10x-influence-framework",
+  "version": "1.0.0",
+  "title": "The 10x Influence Framework",
+  "description": "Apply the 10x Influence Framework to transition from individual contribution to organizational impact. Design frameworks, mentorship programs, and technical standards that elevate the capabilities of an entire engineering organization.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Apply the 10x Influence Framework to transition from individual contribution to organizational impact.",
+    "Design frameworks, mentorship programs, and technical standards that elevate the capabilities of an entire engineering organization."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b733",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

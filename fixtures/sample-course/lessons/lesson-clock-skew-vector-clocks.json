@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5cb",
+  "id": "clock-skew-vector-clocks",
+  "slug": "clock-skew-vector-clocks",
+  "version": "1.0.0",
+  "title": "Clock Skew & Vector Clocks",
+  "description": "Analyze the challenges introduced by clock skew in distributed systems, specifically concerning event ordering. Mitigate ordering problems using techniques like vector clocks in environments where physical clocks cannot be perfectly synchronized.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the challenges introduced by clock skew in distributed systems, specifically concerning event ordering.",
+    "Mitigate ordering problems using techniques like vector clocks in environments where physical clocks cannot be perfectly synchronized."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5c8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

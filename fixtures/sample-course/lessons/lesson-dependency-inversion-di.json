@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4f8",
+  "id": "dependency-inversion-di",
+  "slug": "dependency-inversion-di",
+  "version": "1.0.0",
+  "title": "Dependency Inversion (DI)",
+  "description": "Implement Dependency Inversion using constructor injection to manage object lifecycles. Utilize Composition Roots to configure dependencies, enabling seamless mock injection during testing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Dependency Inversion using constructor injection to manage object lifecycles.",
+    "Utilize Composition Roots to configure dependencies, enabling seamless mock injection during testing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4f6",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

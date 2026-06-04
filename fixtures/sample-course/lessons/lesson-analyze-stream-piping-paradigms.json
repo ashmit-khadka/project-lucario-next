@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b49c",
+  "id": "analyze-stream-piping-paradigms",
+  "slug": "analyze-stream-piping-paradigms",
+  "version": "1.0.0",
+  "title": "Analyze Stream Piping Paradigms",
+  "description": "Compare and contrast `.pipe()` and `stream.pipeline()` for connecting Node.js streams. Analyze the error propagation mechanisms in different stream piping paradigms. Utilize `stream.pipeline()` for robust error handling and automatic resource teardown in complex stream compositions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Compare and contrast `.pipe()` and `stream.pipeline()` for connecting Node.js streams.",
+    "Analyze the error propagation mechanisms in different stream piping paradigms.",
+    "Utilize `stream.pipeline()` for robust error handling and automatic resource teardown in complex stream compositions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b499",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

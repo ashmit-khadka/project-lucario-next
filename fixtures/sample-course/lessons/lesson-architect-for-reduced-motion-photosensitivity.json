@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6bb",
+  "id": "architect-for-reduced-motion-photosensitivity",
+  "slug": "architect-for-reduced-motion-photosensitivity",
+  "version": "1.0.0",
+  "title": "Architect for Reduced Motion & Photosensitivity",
+  "description": "Implement `prefers-reduced-motion` media queries to accommodate users with vestibular disorders. Automate animation-throttling to reduce risk for users with photosensitive epilepsy.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement `prefers-reduced-motion` media queries to accommodate users with vestibular disorders.",
+    "Automate animation-throttling to reduce risk for users with photosensitive epilepsy."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6ba",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

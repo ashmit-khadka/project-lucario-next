@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b642",
+  "id": "architect-production-data-masking-for-staging",
+  "slug": "architect-production-data-masking-for-staging",
+  "version": "1.0.0",
+  "title": "Architect Production Data Masking for Staging",
+  "description": "Architect automated workflows for cloning, anonymizing, and subsetting production data for staging environments. Implement production data masking to enable high-fidelity debugging and testing while maintaining data privacy.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect automated workflows for cloning, anonymizing, and subsetting production data for staging environments.",
+    "Implement production data masking to enable high-fidelity debugging and testing while maintaining data privacy."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

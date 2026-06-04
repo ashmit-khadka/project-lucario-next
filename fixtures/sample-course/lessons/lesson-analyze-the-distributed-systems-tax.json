@@ -1,0 +1,29 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b535",
+  "id": "analyze-the-distributed-systems-tax",
+  "slug": "analyze-the-distributed-systems-tax",
+  "version": "1.0.0",
+  "title": "Analyze the Distributed Systems Tax",
+  "description": "Quantify the overhead associated with network serialization in distributed systems. Analyze the challenges and costs of partial failure handling in microservice architectures. Explain the implications of eventual consistency and its impact on system design. Evaluate the 'Distributed Systems Tax' to make informed decisions about service boundary design.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Quantify the overhead associated with network serialization in distributed systems.",
+    "Analyze the challenges and costs of partial failure handling in microservice architectures.",
+    "Explain the implications of eventual consistency and its impact on system design.",
+    "Evaluate the 'Distributed Systems Tax' to make informed decisions about service boundary design."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b534",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

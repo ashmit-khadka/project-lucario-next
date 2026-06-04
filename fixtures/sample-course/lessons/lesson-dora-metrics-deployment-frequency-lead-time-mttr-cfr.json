@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b725",
+  "id": "dora-metrics-deployment-frequency-lead-time-mttr-cfr",
+  "slug": "dora-metrics-deployment-frequency-lead-time-mttr-cfr",
+  "version": "1.0.0",
+  "title": "DORA Metrics (Deployment Frequency, Lead Time, MTTR, CFR)",
+  "description": "Architect telemetry systems to accurately measure DORA metrics (Deployment Frequency, Lead Time for Changes, Mean Time to Restore, Change Failure Rate). Analyze DORA metrics to identify bottlenecks and drive improvements in the engineering pipeline's health.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect telemetry systems to accurately measure DORA metrics (Deployment Frequency, Lead Time for Changes, Mean Time to Restore, Change Failure Rate).",
+    "Analyze DORA metrics to identify bottlenecks and drive improvements in the engineering pipeline's health."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b724",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

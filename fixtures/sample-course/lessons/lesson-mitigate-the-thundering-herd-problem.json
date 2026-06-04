@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5a6",
+  "id": "mitigate-the-thundering-herd-problem",
+  "slug": "mitigate-the-thundering-herd-problem",
+  "version": "1.0.0",
+  "title": "Mitigate the Thundering Herd Problem",
+  "description": "Architect 'Jittered Reconnect' strategies to prevent the Thundering Herd Problem. Mitigate massive CPU and memory spikes following server-wide socket disconnects.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect 'Jittered Reconnect' strategies to prevent the Thundering Herd Problem.",
+    "Mitigate massive CPU and memory spikes following server-wide socket disconnects."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

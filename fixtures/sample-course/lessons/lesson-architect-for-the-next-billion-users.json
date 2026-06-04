@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6b2",
+  "id": "architect-for-the-next-billion-users",
+  "slug": "architect-for-the-next-billion-users",
+  "version": "1.0.0",
+  "title": "Architect for the \"Next Billion Users\"",
+  "description": "Implement network-aware UI adaptation using the Network Information API. Automatically serve low-resolution assets or disable non-critical animations based on connection speed.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement network-aware UI adaptation using the Network Information API.",
+    "Automatically serve low-resolution assets or disable non-critical animations based on connection speed."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6b1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

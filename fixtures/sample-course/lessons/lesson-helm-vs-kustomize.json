@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b70c",
+  "id": "helm-vs-kustomize",
+  "slug": "helm-vs-kustomize",
+  "version": "1.0.0",
+  "title": "Helm vs. Kustomize",
+  "description": "Evaluate Helm and Kustomize for Kubernetes configuration management. Design template-driven versus overlay-based configuration strategies for multi-environment deployments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate Helm and Kustomize for Kubernetes configuration management.",
+    "Design template-driven versus overlay-based configuration strategies for multi-environment deployments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b70a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

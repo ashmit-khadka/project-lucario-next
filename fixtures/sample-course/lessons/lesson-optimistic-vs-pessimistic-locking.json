@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5c6",
+  "id": "optimistic-vs-pessimistic-locking",
+  "slug": "optimistic-vs-pessimistic-locking",
+  "version": "1.0.0",
+  "title": "Optimistic vs. Pessimistic Locking",
+  "description": "Implement optimistic locking using version columns to manage concurrency in high-contention scenarios. Design pessimistic locking strategies for critical sections using mechanisms like `SELECT FOR UPDATE`.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement optimistic locking using version columns to manage concurrency in high-contention scenarios.",
+    "Design pessimistic locking strategies for critical sections using mechanisms like `SELECT FOR UPDATE`."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5c3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

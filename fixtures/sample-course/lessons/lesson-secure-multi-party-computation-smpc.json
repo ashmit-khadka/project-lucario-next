@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b68d",
+  "id": "secure-multi-party-computation-smpc",
+  "slug": "secure-multi-party-computation-smpc",
+  "version": "1.0.0",
+  "title": "Secure Multi-Party Computation (SMPC)",
+  "description": "Architect distributed protocols enabling multiple parties to jointly compute functions over private inputs. Implement SMPC solutions to ensure individual inputs remain confidential from other participants during computation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect distributed protocols enabling multiple parties to jointly compute functions over private inputs.",
+    "Implement SMPC solutions to ensure individual inputs remain confidential from other participants during computation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b689",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

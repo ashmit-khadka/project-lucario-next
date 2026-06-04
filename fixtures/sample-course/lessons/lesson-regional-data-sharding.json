@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b68f",
+  "id": "regional-data-sharding",
+  "slug": "regional-data-sharding",
+  "version": "1.0.0",
+  "title": "Regional Data Sharding",
+  "description": "Design database partitioning strategies that enforce physical data residency requirements. Architect VPC routing and geo-restricted replicas using country-code partition keys for compliant storage.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design database partitioning strategies that enforce physical data residency requirements.",
+    "Architect VPC routing and geo-restricted replicas using country-code partition keys for compliant storage."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b68e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6fd",
+  "id": "container-network-interface-cni",
+  "slug": "container-network-interface-cni",
+  "version": "1.0.0",
+  "title": "Container Network Interface (CNI)",
+  "description": "Master the Container Network Interface (CNI) for integrating networking solutions into Kubernetes. Evaluate Overlay (VxLAN/Geneve) versus Underlay (BGP) networking models based on performance and latency characteristics.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the Container Network Interface (CNI) for integrating networking solutions into Kubernetes.",
+    "Evaluate Overlay (VxLAN/Geneve) versus Underlay (BGP) networking models based on performance and latency characteristics."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b6fc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

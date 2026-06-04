@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6e4",
+  "id": "rag-evaluation-ragas-trulens",
+  "slug": "rag-evaluation-ragas-trulens",
+  "version": "1.0.0",
+  "title": "RAG Evaluation (RAGAS/TruLens)",
+  "description": "Implement RAG evaluation using specialized frameworks like RAGAS or TruLens. Architect metrics for Faithfulness, Answer Relevance, and Context Precision to scientifically measure and improve RAG performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement RAG evaluation using specialized frameworks like RAGAS or TruLens.",
+    "Architect metrics for Faithfulness, Answer Relevance, and Context Precision to scientifically measure and improve RAG performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6e2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

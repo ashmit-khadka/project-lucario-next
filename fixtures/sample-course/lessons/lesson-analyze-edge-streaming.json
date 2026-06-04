@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b553",
+  "id": "analyze-edge-streaming",
+  "slug": "analyze-edge-streaming",
+  "version": "1.0.0",
+  "title": "Analyze Edge Streaming",
+  "description": "Utilize HTTP streaming to personalize content rendered at the edge. Analyze how edge streaming can enhance user experience without compromising CDN cacheability. Design edge-based content delivery strategies that combine static caching with dynamic personalization.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize HTTP streaming to personalize content rendered at the edge.",
+    "Analyze how edge streaming can enhance user experience without compromising CDN cacheability.",
+    "Design edge-based content delivery strategies that combine static caching with dynamic personalization."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b550",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

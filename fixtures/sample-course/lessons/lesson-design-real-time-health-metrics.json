@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ae",
+  "id": "design-real-time-health-metrics",
+  "slug": "design-real-time-health-metrics",
+  "version": "1.0.0",
+  "title": "Design Real-Time Health Metrics",
+  "description": "Design health metrics such as 'Connection Churn' and 'Active Subscriptions' for real-time systems. Monitor 'Message Delivery Latency' and other key indicators to detect system degradation proactively.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design health metrics such as 'Connection Churn' and 'Active Subscriptions' for real-time systems.",
+    "Monitor 'Message Delivery Latency' and other key indicators to detect system degradation proactively."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5ac",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

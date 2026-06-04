@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b595",
+  "id": "implement-heartbeats-zombie-detection",
+  "slug": "implement-heartbeats-zombie-detection",
+  "version": "1.0.0",
+  "title": "Implement Heartbeats & Zombie Detection",
+  "description": "Design robust Ping/Pong mechanisms for WebSocket connections. Implement timeout logic to detect and clean up 'dead' TCP connections, preventing resource leaks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design robust Ping/Pong mechanisms for WebSocket connections.",
+    "Implement timeout logic to detect and clean up 'dead' TCP connections, preventing resource leaks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b592",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

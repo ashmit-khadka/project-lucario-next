@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b726",
+  "id": "developer-experience-devex-portals",
+  "slug": "developer-experience-devex-portals",
+  "version": "1.0.0",
+  "title": "Developer Experience (DevEx) Portals",
+  "description": "Implement internal developer experience (DevEx) portals to standardize \"Golden Paths.\" Architect platforms for streamlined service creation, documentation, and infrastructure provisioning.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement internal developer experience (DevEx) portals to standardize \"Golden Paths.\"",
+    "Architect platforms for streamlined service creation, documentation, and infrastructure provisioning."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b724",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

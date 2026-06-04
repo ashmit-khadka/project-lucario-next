@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4fd",
+  "id": "fluent-apis-builder-patterns",
+  "slug": "fluent-apis-builder-patterns",
+  "version": "1.0.0",
+  "title": "Fluent APIs & Builder Patterns",
+  "description": "Design fluent APIs using type-returning methods to guide developers through valid configuration sequences. Leverage builder patterns to create expressive and discoverable interfaces for complex object construction.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design fluent APIs using type-returning methods to guide developers through valid configuration sequences.",
+    "Leverage builder patterns to create expressive and discoverable interfaces for complex object construction."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4fa",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

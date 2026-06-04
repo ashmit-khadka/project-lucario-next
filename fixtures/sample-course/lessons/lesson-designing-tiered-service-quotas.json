@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b586",
+  "id": "designing-tiered-service-quotas",
+  "slug": "designing-tiered-service-quotas",
+  "version": "1.0.0",
+  "title": "Designing Tiered Service Quotas",
+  "description": "Design tiered service quotas that dynamically adjust API limits based on subscription status. Implement load shedding mechanisms to preserve API availability during system saturation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design tiered service quotas that dynamically adjust API limits based on subscription status.",
+    "Implement load shedding mechanisms to preserve API availability during system saturation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b584",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

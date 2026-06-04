@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4d5",
+  "id": "sri-subresource-integrity",
+  "slug": "sri-subresource-integrity",
+  "version": "1.0.0",
+  "title": "SRI (Subresource Integrity)",
+  "description": "Analyze the function of Subresource Integrity (SRI) in verifying third-party assets. Implement SRI to cryptographically ensure the integrity of CDN-delivered resources. Evaluate how SRI prevents supply-chain attacks targeting network-delivered assets.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the function of Subresource Integrity (SRI) in verifying third-party assets.",
+    "Implement SRI to cryptographically ensure the integrity of CDN-delivered resources.",
+    "Evaluate how SRI prevents supply-chain attacks targeting network-delivered assets."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4d1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

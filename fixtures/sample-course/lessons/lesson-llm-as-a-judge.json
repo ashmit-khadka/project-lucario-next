@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6e3",
+  "id": "llm-as-a-judge",
+  "slug": "llm-as-a-judge",
+  "version": "1.0.0",
+  "title": "LLM-as-a-Judge",
+  "description": "Master the concept of 'LLM-as-a-Judge' for automated evaluation of model outputs. Architect automated evaluation frameworks that use powerful models (e.g., GPT-4o, Claude 3.5) to grade the accuracy, safety, and style of smaller model outputs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the concept of 'LLM-as-a-Judge' for automated evaluation of model outputs.",
+    "Architect automated evaluation frameworks that use powerful models (e.g., GPT-4o, Claude 3.5) to grade the accuracy, safety, and style of smaller model outputs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6e2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

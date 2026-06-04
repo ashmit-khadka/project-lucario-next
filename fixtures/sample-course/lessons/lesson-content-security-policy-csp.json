@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4d4",
+  "id": "content-security-policy-csp",
+  "slug": "content-security-policy-csp",
+  "version": "1.0.0",
+  "title": "Content Security Policy (CSP)",
+  "description": "Architect Content Security Policies (CSP) to mitigate Cross-Site Scripting (XSS) attacks. Design strict, nonce-based CSPs that maintain compatibility with modern frontend frameworks. Implement CSP reporting mechanisms to monitor and refine security policies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect Content Security Policies (CSP) to mitigate Cross-Site Scripting (XSS) attacks.",
+    "Design strict, nonce-based CSPs that maintain compatibility with modern frontend frameworks.",
+    "Implement CSP reporting mechanisms to monitor and refine security policies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4d1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

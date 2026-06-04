@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b65e",
+  "id": "define-slis-slos-and-error-budgets",
+  "slug": "define-slis-slos-and-error-budgets",
+  "version": "1.0.0",
+  "title": "Define SLIs, SLOs, and Error Budgets",
+  "description": "Define clear Service Level Indicators (SLIs) to accurately measure user experience. Implement Service Level Objectives (SLOs) as mechanical governors for system reliability. Manage error budgets to balance feature development velocity with reliability goals, automatically halting deployments when exhausted.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Define clear Service Level Indicators (SLIs) to accurately measure user experience.",
+    "Implement Service Level Objectives (SLOs) as mechanical governors for system reliability.",
+    "Manage error budgets to balance feature development velocity with reliability goals, automatically halting deployments when exhausted."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b65c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

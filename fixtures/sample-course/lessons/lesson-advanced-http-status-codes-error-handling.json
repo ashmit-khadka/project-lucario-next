@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b563",
+  "id": "advanced-http-status-codes-error-handling",
+  "slug": "advanced-http-status-codes-error-handling",
+  "version": "1.0.0",
+  "title": "Advanced HTTP Status Codes & Error Handling",
+  "description": "Implement advanced HTTP status code logic for various asynchronous and error conditions (e.g., 202, 207, 429). Standardize API error responses using RFC 7807 (Problem Details) for consistent client-side handling.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement advanced HTTP status code logic for various asynchronous and error conditions (e.g., 202, 207, 429).",
+    "Standardize API error responses using RFC 7807 (Problem Details) for consistent client-side handling."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b561",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

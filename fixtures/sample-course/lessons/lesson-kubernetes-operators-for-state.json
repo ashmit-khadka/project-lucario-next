@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b709",
+  "id": "kubernetes-operators-for-state",
+  "slug": "kubernetes-operators-for-state",
+  "version": "1.0.0",
+  "title": "Kubernetes Operators for State",
+  "description": "Utilize the Operator SDK to automate complex operational tasks for stateful applications. Implement Kubernetes Operators to manage tasks such as database backups, schema migrations, and failover orchestration.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize the Operator SDK to automate complex operational tasks for stateful applications.",
+    "Implement Kubernetes Operators to manage tasks such as database backups, schema migrations, and failover orchestration."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b706",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

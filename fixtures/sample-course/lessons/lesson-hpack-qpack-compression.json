@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4bf",
+  "id": "hpack-qpack-compression",
+  "slug": "hpack-qpack-compression",
+  "version": "1.0.0",
+  "title": "HPACK & QPACK Compression",
+  "description": "Analyze the mechanisms of HPACK header compression in HTTP/2. Implement strategies for minimizing header overhead using HPACK and QPACK dynamic tables. Compare the compression techniques and benefits of HPACK and QPACK.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the mechanisms of HPACK header compression in HTTP/2.",
+    "Implement strategies for minimizing header overhead using HPACK and QPACK dynamic tables.",
+    "Compare the compression techniques and benefits of HPACK and QPACK."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4bd",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

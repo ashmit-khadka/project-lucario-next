@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b54f",
+  "id": "evaluate-serverless-databases",
+  "slug": "evaluate-serverless-databases",
+  "version": "1.0.0",
+  "title": "Evaluate Serverless Databases",
+  "description": "Analyze the trade-offs of using connection-pooling in ephemeral serverless environments. Contrast connection-pooling solutions like RDS Proxy with HTTP-based database access (e.g., DynamoDB). Evaluate serverless database options based on their performance, scalability, and cost implications for serverless applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the trade-offs of using connection-pooling in ephemeral serverless environments.",
+    "Contrast connection-pooling solutions like RDS Proxy with HTTP-based database access (e.g., DynamoDB).",
+    "Evaluate serverless database options based on their performance, scalability, and cost implications for serverless applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b54c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

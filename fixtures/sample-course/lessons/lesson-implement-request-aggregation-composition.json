@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b549",
+  "id": "implement-request-aggregation-composition",
+  "slug": "implement-request-aggregation-composition",
+  "version": "1.0.0",
+  "title": "Implement Request Aggregation & Composition",
+  "description": "Design API gateways to aggregate data from multiple microservices into a single response. Implement request composition to reduce client-side round-trips and 'Waterfall' latency. Optimize data retrieval patterns at the gateway level for improved client performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design API gateways to aggregate data from multiple microservices into a single response.",
+    "Implement request composition to reduce client-side round-trips and 'Waterfall' latency.",
+    "Optimize data retrieval patterns at the gateway level for improved client performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b547",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c9",
+  "id": "connection-draining-graceful-shutdown",
+  "slug": "connection-draining-graceful-shutdown",
+  "version": "1.0.0",
+  "title": "Connection Draining & Graceful Shutdown",
+  "description": "Implement connection draining mechanisms to allow active requests to complete before server shutdown. Architect graceful shutdown procedures for zero-downtime deployments during backend rotations. Design strategies for managing active socket lifecycles in a distributed system.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement connection draining mechanisms to allow active requests to complete before server shutdown.",
+    "Architect graceful shutdown procedures for zero-downtime deployments during backend rotations.",
+    "Design strategies for managing active socket lifecycles in a distributed system."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

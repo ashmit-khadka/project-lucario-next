@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b637",
+  "id": "implement-risk-based-testing-rbt",
+  "slug": "implement-risk-based-testing-rbt",
+  "version": "1.0.0",
+  "title": "Implement Risk-Based Testing (RBT)",
+  "description": "Architect a Risk-Based Testing strategy that accounts for business criticality, failure probability, and technical complexity. Allocate appropriate test depth and resources based on an assessment of system risks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a Risk-Based Testing strategy that accounts for business criticality, failure probability, and technical complexity.",
+    "Allocate appropriate test depth and resources based on an assessment of system risks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b635",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

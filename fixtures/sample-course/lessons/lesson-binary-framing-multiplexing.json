@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4be",
+  "id": "binary-framing-multiplexing",
+  "slug": "binary-framing-multiplexing",
+  "version": "1.0.0",
+  "title": "Binary Framing & Multiplexing",
+  "description": "Deconstruct the HTTP/2 binary framing layer and its role in multiplexing requests. Explain how HTTP/2 multiplexing mitigates application-level Head-of-Line (HoL) blocking. Identify the remaining TCP-level HoL blocking risks even with HTTP/2.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the HTTP/2 binary framing layer and its role in multiplexing requests.",
+    "Explain how HTTP/2 multiplexing mitigates application-level Head-of-Line (HoL) blocking.",
+    "Identify the remaining TCP-level HoL blocking risks even with HTTP/2."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4bd",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

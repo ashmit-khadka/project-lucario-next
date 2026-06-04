@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b667",
+  "id": "implement-blameless-post-mortems",
+  "slug": "implement-blameless-post-mortems",
+  "version": "1.0.0",
+  "title": "Implement Blameless Post-Mortems",
+  "description": "Conduct blameless post-mortems focusing on systemic issues rather than individual blame. Utilize Systems Thinking to identify architectural and tooling contributors to incidents. Move beyond \"Five Whys\" to uncover deeper organizational and technical root causes of failures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Conduct blameless post-mortems focusing on systemic issues rather than individual blame.",
+    "Utilize Systems Thinking to identify architectural and tooling contributors to incidents.",
+    "Move beyond \"Five Whys\" to uncover deeper organizational and technical root causes of failures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b665",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

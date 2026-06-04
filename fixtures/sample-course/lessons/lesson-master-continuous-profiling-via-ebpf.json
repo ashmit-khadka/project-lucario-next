@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b66a",
+  "id": "master-continuous-profiling-via-ebpf",
+  "slug": "master-continuous-profiling-via-ebpf",
+  "version": "1.0.0",
+  "title": "Master Continuous Profiling via eBPF",
+  "description": "Utilize continuous profiling tools like Parca or Pyroscope to collect always-on CPU and memory flamegraphs in production environments. Implement eBPF-based profiling with sub-1% compute overhead in production. Analyze continuous profiling data to identify performance bottlenecks and resource inefficiencies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize continuous profiling tools like Parca or Pyroscope to collect always-on CPU and memory flamegraphs in production environments.",
+    "Implement eBPF-based profiling with sub-1% compute overhead in production.",
+    "Analyze continuous profiling data to identify performance bottlenecks and resource inefficiencies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b669",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

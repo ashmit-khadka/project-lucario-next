@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b50b",
+  "id": "quantify-state-space-explosion",
+  "slug": "quantify-state-space-explosion",
+  "version": "1.0.0",
+  "title": "Quantify State Space Explosion",
+  "description": "Quantify the exponential growth of state space caused by unmanaged boolean flags. Refactor systems to utilize exclusive state enums, thereby eliminating \"impossible states\".",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Quantify the exponential growth of state space caused by unmanaged boolean flags.",
+    "Refactor systems to utilize exclusive state enums, thereby eliminating \"impossible states\"."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b50a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

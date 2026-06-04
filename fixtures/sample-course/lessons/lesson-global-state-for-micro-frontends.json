@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b624",
+  "id": "global-state-for-micro-frontends",
+  "slug": "global-state-for-micro-frontends",
+  "version": "1.0.0",
+  "title": "Global State for Micro-Frontends",
+  "description": "Architect strategies for managing global state across multiple micro-frontends. Design event-driven communication patterns to synchronize data across independent application boundaries.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect strategies for managing global state across multiple micro-frontends.",
+    "Design event-driven communication patterns to synchronize data across independent application boundaries."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b620",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

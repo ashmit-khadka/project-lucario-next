@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5de",
+  "id": "dynamic-tenant-migration",
+  "slug": "dynamic-tenant-migration",
+  "version": "1.0.0",
+  "title": "Dynamic Tenant Migration",
+  "description": "Architect systems capable of dynamically migrating tenant data shards across physical nodes. Design solutions to perform tenant migrations without downtime, specifically addressing \"Noisy Neighbor\" resource contention scenarios.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect systems capable of dynamically migrating tenant data shards across physical nodes.",
+    "Design solutions to perform tenant migrations without downtime, specifically addressing \"Noisy Neighbor\" resource contention scenarios."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5db",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b72f",
+  "id": "the-incident-command-system-ics",
+  "slug": "the-incident-command-system-ics",
+  "version": "1.0.0",
+  "title": "The Incident Command System (ICS)",
+  "description": "Architect a formal Incident Command System (ICS) framework for managing high-pressure Sev-1 outages. Define and implement clear roles and responsibilities (e.g., Commander, Scribe, Communications Lead) within an incident response team.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a formal Incident Command System (ICS) framework for managing high-pressure Sev-1 outages.",
+    "Define and implement clear roles and responsibilities (e.g., Commander, Scribe, Communications Lead) within an incident response team."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b72e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

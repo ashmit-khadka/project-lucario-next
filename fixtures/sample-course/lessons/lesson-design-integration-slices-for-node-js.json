@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b63c",
+  "id": "design-integration-slices-for-node-js",
+  "slug": "design-integration-slices-for-node-js",
+  "version": "1.0.0",
+  "title": "Design Integration Slices for Node.js",
+  "description": "Design integration tests for Node.js applications that verify interactions between middleware, handlers, and database layers. Test integration slices without relying on extensive mocking of internal service logic.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design integration tests for Node.js applications that verify interactions between middleware, handlers, and database layers.",
+    "Test integration slices without relying on extensive mocking of internal service logic."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f4",
+  "id": "storage-lifecycle-policies",
+  "slug": "storage-lifecycle-policies",
+  "version": "1.0.0",
+  "title": "Storage Lifecycle Policies",
+  "description": "Implement S3 storage lifecycle policies for automated data transitions. Architect cost-optimized strategies for long-term data retention and archival using S3 storage classes.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement S3 storage lifecycle policies for automated data transitions.",
+    "Architect cost-optimized strategies for long-term data retention and archival using S3 storage classes."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

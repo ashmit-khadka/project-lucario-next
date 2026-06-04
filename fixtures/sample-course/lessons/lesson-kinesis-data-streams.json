@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b600",
+  "id": "kinesis-data-streams",
+  "slug": "kinesis-data-streams",
+  "version": "1.0.0",
+  "title": "Kinesis Data Streams",
+  "description": "Architect high-throughput real-time data ingestion pipelines using Kinesis Data Streams. Implement strategies for managing shard scaling and consumer-checkpointing in Kinesis applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect high-throughput real-time data ingestion pipelines using Kinesis Data Streams.",
+    "Implement strategies for managing shard scaling and consumer-checkpointing in Kinesis applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5fc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

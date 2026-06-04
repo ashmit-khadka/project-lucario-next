@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b568",
+  "id": "the-nullability-paradox-in-graphql",
+  "slug": "the-nullability-paradox-in-graphql",
+  "version": "1.0.0",
+  "title": "The Nullability Paradox in GraphQL",
+  "description": "Implement a \"Nullable by Default\" strategy in GraphQL schemas. Ensure backward compatibility and resilient client-side UI rendering during partial data failures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a \"Nullable by Default\" strategy in GraphQL schemas.",
+    "Ensure backward compatibility and resilient client-side UI rendering during partial data failures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b566",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

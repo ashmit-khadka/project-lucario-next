@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b52e",
+  "id": "implement-circuit-breaker-state-integration",
+  "slug": "implement-circuit-breaker-state-integration",
+  "version": "1.0.0",
+  "title": "Implement Circuit-Breaker State Integration",
+  "description": "Implement circuit-breaker patterns by modeling dependency statuses (\"Open,\" \"Half-Open,\" \"Closed\") as first-class states. Integrate circuit-breaker logic into state machines to enhance resilience against failing external services.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement circuit-breaker patterns by modeling dependency statuses (\"Open,\" \"Half-Open,\" \"Closed\") as first-class states.",
+    "Integrate circuit-breaker logic into state machines to enhance resilience against failing external services."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b52b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

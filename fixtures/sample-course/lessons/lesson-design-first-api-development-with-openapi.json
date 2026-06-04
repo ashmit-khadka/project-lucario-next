@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b589",
+  "id": "design-first-api-development-with-openapi",
+  "slug": "design-first-api-development-with-openapi",
+  "version": "1.0.0",
+  "title": "Design-First API Development with OpenAPI",
+  "description": "Apply design-first API development principles using OpenAPI (Swagger). Utilize OpenAPI definitions to generate client SDKs, request validators, and interactive documentation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Apply design-first API development principles using OpenAPI (Swagger).",
+    "Utilize OpenAPI definitions to generate client SDKs, request validators, and interactive documentation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b588",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

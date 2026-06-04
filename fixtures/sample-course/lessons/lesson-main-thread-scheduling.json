@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b618",
+  "id": "main-thread-scheduling",
+  "slug": "main-thread-scheduling",
+  "version": "1.0.0",
+  "title": "Main Thread Scheduling",
+  "description": "Implement main thread scheduling techniques using scheduler.yield() to break up long tasks. Apply requestIdleCallback to schedule non-essential work, improving Interaction to Next Paint (INP).",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement main thread scheduling techniques using scheduler.yield() to break up long tasks.",
+    "Apply requestIdleCallback to schedule non-essential work, improving Interaction to Next Paint (INP)."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b616",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

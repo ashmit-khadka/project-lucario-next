@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4b9",
+  "id": "tls-1-3-handshake",
+  "slug": "tls-1-3-handshake",
+  "version": "1.0.0",
+  "title": "TLS 1.3 Handshake",
+  "description": "Analyze the efficiency improvements of the TLS 1.3 handshake, including 1-RTT and 0-RTT modes. Explain the role of Diffie-Hellman in achieving Perfect Forward Secrecy (PFS) in TLS 1.3. Evaluate the security implications of removed insecure ciphers in TLS 1.3.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the efficiency improvements of the TLS 1.3 handshake, including 1-RTT and 0-RTT modes.",
+    "Explain the role of Diffie-Hellman in achieving Perfect Forward Secrecy (PFS) in TLS 1.3.",
+    "Evaluate the security implications of removed insecure ciphers in TLS 1.3."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4b8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

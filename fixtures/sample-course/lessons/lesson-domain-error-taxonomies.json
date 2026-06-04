@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4f4",
+  "id": "domain-error-taxonomies",
+  "slug": "domain-error-taxonomies",
+  "version": "1.0.0",
+  "title": "Domain Error Taxonomies",
+  "description": "Design polymorphic error unions to create a granular domain error taxonomy. Architect typed error propagation across service layers, enabling fine-grained error matching and recovery.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design polymorphic error unions to create a granular domain error taxonomy.",
+    "Architect typed error propagation across service layers, enabling fine-grained error matching and recovery."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

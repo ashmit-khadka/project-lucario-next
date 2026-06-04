@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4a1",
+  "id": "architect-binary-wire-protocols",
+  "slug": "architect-binary-wire-protocols",
+  "version": "1.0.0",
+  "title": "Architect Binary Wire-Protocols",
+  "description": "Design custom binary wire-protocols for low-latency network communication. Implement efficient serializing and deserializing logic for binary data. Apply binary wire-protocols for P2P or internal IPC socket communication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design custom binary wire-protocols for low-latency network communication.",
+    "Implement efficient serializing and deserializing logic for binary data.",
+    "Apply binary wire-protocols for P2P or internal IPC socket communication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b49e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5b2",
+  "id": "architect-consumer-groups-partitioning",
+  "slug": "architect-consumer-groups-partitioning",
+  "version": "1.0.0",
+  "title": "Architect Consumer Groups & Partitioning",
+  "description": "Design high-throughput event consumers using consumer groups and partitioning. Architect solutions that balance load and ensure message order for real-time event processing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design high-throughput event consumers using consumer groups and partitioning.",
+    "Architect solutions that balance load and ensure message order for real-time event processing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5b0",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

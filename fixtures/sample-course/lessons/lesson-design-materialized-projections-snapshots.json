@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5e2",
+  "id": "design-materialized-projections-snapshots",
+  "slug": "design-materialized-projections-snapshots",
+  "version": "1.0.0",
+  "title": "Design Materialized Projections & Snapshots",
+  "description": "Design materialized projections to efficiently query the current state in event-sourced systems. Optimize read performance by maintaining up-to-date views and strategic snapshots of data derived from an event log.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design materialized projections to efficiently query the current state in event-sourced systems.",
+    "Optimize read performance by maintaining up-to-date views and strategic snapshots of data derived from an event log."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5df",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

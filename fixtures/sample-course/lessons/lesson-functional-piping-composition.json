@@ -1,0 +1,53 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4f5",
+  "id": "functional-piping-composition",
+  "slug": "functional-piping-composition",
+  "version": "1.0.0",
+  "title": "Functional Piping & Composition",
+  "description": "Implement functional piping and composition with Result types to chain asynchronous operations. Utilize libraries like `neverthrow` or `fp-ts` to maintain type-safe error paths throughout application logic.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement functional piping and composition with Result types to chain asynchronous operations.",
+    "Utilize libraries like `neverthrow` or `fp-ts` to maintain type-safe error paths throughout application logic."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4f2",
+  "keyTerms": [],
+  "content": [
+    {
+      "id": "section-1",
+      "type": "section",
+      "title": "1. Introduction to Functional Piping"
+    },
+    {
+      "id": "graph-fp-1",
+      "type": "graph",
+      "title": "Error Rates with Functional Piping vs Imperative",
+      "description": "Visualizing how error propagation using Result types decreases unhandled exceptions as codebase size grows.",
+      "data": [
+        { "loc": "10k", "piping": 5, "imperative": 5 },
+        { "loc": "50k", "piping": 8, "imperative": 20 },
+        { "loc": "100k", "piping": 12, "imperative": 50 },
+        { "loc": "200k", "piping": 18, "imperative": 120 }
+      ],
+      "config": {
+        "type": "area",
+        "xAxisKey": "loc",
+        "series": [
+          { "key": "piping", "name": "Functional Piping (Exceptions)", "color": "#EFC7FF" },
+          { "key": "imperative", "name": "Imperative (Exceptions)", "color": "#FF2A6D" }
+        ]
+      }
+    }
+  ],
+  "quiz": []
+}

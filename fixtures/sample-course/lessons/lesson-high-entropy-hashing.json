@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b67f",
+  "id": "high-entropy-hashing",
+  "slug": "high-entropy-hashing",
+  "version": "1.0.0",
+  "title": "High-Entropy Hashing",
+  "description": "Analyze Argon2 and Scrypt for secure password storage and key derivation. Implement high-entropy hashing algorithms suitable for modern security requirements. Understand the architectural trade-offs between CPU-hard and memory-hard hashing algorithms.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze Argon2 and Scrypt for secure password storage and key derivation.",
+    "Implement high-entropy hashing algorithms suitable for modern security requirements.",
+    "Understand the architectural trade-offs between CPU-hard and memory-hard hashing algorithms."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b67b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

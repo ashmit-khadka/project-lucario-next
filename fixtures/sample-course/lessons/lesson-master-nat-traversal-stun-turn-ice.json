@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b598",
+  "id": "master-nat-traversal-stun-turn-ice",
+  "slug": "master-nat-traversal-stun-turn-ice",
+  "version": "1.0.0",
+  "title": "Master NAT Traversal (STUN, TURN, ICE)",
+  "description": "Architect signaling servers and ICE candidates for establishing P2P connections. Master NAT traversal techniques (STUN, TURN, ICE) to overcome network restrictions for P2P communication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect signaling servers and ICE candidates for establishing P2P connections.",
+    "Master NAT traversal techniques (STUN, TURN, ICE) to overcome network restrictions for P2P communication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b597",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

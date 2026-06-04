@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c0",
+  "id": "http-2-server-push-priorities",
+  "slug": "http-2-server-push-priorities",
+  "version": "1.0.0",
+  "title": "HTTP/2 Server Push & Priorities",
+  "description": "Evaluate the practical limitations and challenges that led to the deprecation of HTTP/2 Server Push. Explain how HTTP 103 Early Hints provides a superior and more resilient preloading strategy. Compare the use cases and performance implications of HTTP/2 priorities with 103 Early Hints.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the practical limitations and challenges that led to the deprecation of HTTP/2 Server Push.",
+    "Explain how HTTP 103 Early Hints provides a superior and more resilient preloading strategy.",
+    "Compare the use cases and performance implications of HTTP/2 priorities with 103 Early Hints."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4bd",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b604",
+  "id": "vpc-peering-vs-transit-gateway",
+  "slug": "vpc-peering-vs-transit-gateway",
+  "version": "1.0.0",
+  "title": "VPC Peering vs. Transit Gateway",
+  "description": "Evaluate the differences and appropriate use cases for VPC Peering versus Transit Gateway. Choose the optimal interconnection strategy for multi-VPC architectures based on complexity, cost, and routing needs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the differences and appropriate use cases for VPC Peering versus Transit Gateway.",
+    "Choose the optimal interconnection strategy for multi-VPC architectures based on complexity, cost, and routing needs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b601",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

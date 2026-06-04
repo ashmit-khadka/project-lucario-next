@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b650",
+  "id": "evaluate-synthetic-monitoring-vs-e2e",
+  "slug": "evaluate-synthetic-monitoring-vs-e2e",
+  "version": "1.0.0",
+  "title": "Evaluate Synthetic Monitoring vs. E2E",
+  "description": "Evaluate the appropriate use cases for synthetic monitoring versus traditional E2E tests. Design persistent \"Pulse\" tests for production endpoints to proactively detect global outages.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the appropriate use cases for synthetic monitoring versus traditional E2E tests.",
+    "Design persistent \"Pulse\" tests for production endpoints to proactively detect global outages."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b64d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

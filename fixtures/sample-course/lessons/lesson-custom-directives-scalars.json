@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b569",
+  "id": "custom-directives-scalars",
+  "slug": "custom-directives-scalars",
+  "version": "1.0.0",
+  "title": "Custom Directives & Scalars",
+  "description": "Design custom GraphQL directives to implement schema-level cross-cutting concerns (e.g., authentication, caching). Implement custom scalar types for strict validation of specific data formats (e.g., Email, DateTime).",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design custom GraphQL directives to implement schema-level cross-cutting concerns (e.g., authentication, caching).",
+    "Implement custom scalar types for strict validation of specific data formats (e.g., Email, DateTime)."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b566",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

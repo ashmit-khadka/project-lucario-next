@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b57f",
+  "id": "designing-an-api-sunset-policy",
+  "slug": "designing-an-api-sunset-policy",
+  "version": "1.0.0",
+  "title": "Designing an API Sunset Policy",
+  "description": "Design a formal API sunset policy for managing deprecation. Implement automated deprecation headers (Sunset, Link) and logging to notify legacy API consumers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design a formal API sunset policy for managing deprecation.",
+    "Implement automated deprecation headers (Sunset, Link) and logging to notify legacy API consumers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b57c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

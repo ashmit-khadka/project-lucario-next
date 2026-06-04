@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b67c",
+  "id": "software-bill-of-materials-sbom-dependency-security",
+  "slug": "software-bill-of-materials-sbom-dependency-security",
+  "version": "1.0.0",
+  "title": "Software Bill of Materials (SBOM) & Dependency Security",
+  "description": "Architect CI/CD gates to enforce dependency security using SBOMs. Utilize tools like Snyk or Aqua to detect and block critical CVEs in dependencies. Mitigate risks from malicious 'Protestware' or compromised package versions in the supply chain.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect CI/CD gates to enforce dependency security using SBOMs.",
+    "Utilize tools like Snyk or Aqua to detect and block critical CVEs in dependencies.",
+    "Mitigate risks from malicious 'Protestware' or compromised package versions in the supply chain."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b67b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

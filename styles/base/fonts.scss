@@ -1,6 +1,15 @@
 $font-color-primary: #580081;
 $font-color-primary-light: #C1ABCC;
 
+$font-family-mono: "DM Mono", monospace;
+$font-family-serif: 'DM Serif Display', serif;
+$font-family-sans: "DM Sans", sans-serif;
+
+:root {
+    --font-family-mono: #{$font-family-mono};
+    --font-family-serif: #{$font-family-serif};
+    --font-family-sans: #{$font-family-sans};
+}
 
 $font-size-2xs: 0.4rem; // was $font-size-xs
 $font-size-xs: 0.6rem; // was $font-size-sm
@@ -17,44 +26,44 @@ $font-size-lg: 1.8rem; // unchanged
 $font-size-lg2: 2.2rem;
 
 .dm-mono-light {
-    font-family: "DM Mono", monospace;
+    font-family: $font-family-mono;
     font-weight: 300;
     font-style: normal;
 }
 
 .dm-mono-regular {
-    font-family: "DM Mono", monospace;
+    font-family: $font-family-mono;
     font-weight: 400;
     font-style: normal;
 }
 
 .dm-mono-medium {
-    font-family: "DM Mono", monospace;
+    font-family: $font-family-mono;
     font-weight: 500;
     font-style: normal;
 }
 
 .dm-mono-light-italic {
-    font-family: "DM Mono", monospace;
+    font-family: $font-family-mono;
     font-weight: 300;
     font-style: italic;
 }
 
 .dm-mono-regular-italic {
-    font-family: "DM Mono", monospace;
+    font-family: $font-family-mono;
     font-weight: 400;
     font-style: italic;
 }
 
 .dm-mono-medium-italic {
-    font-family: "DM Mono", monospace;
+    font-family: $font-family-mono;
     font-weight: 500;
     font-style: italic;
 }
 
 
 .dm-sans-regular {
-    font-family: "DM Sans", sans-serif;
+    font-family: $font-family-sans;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -62,14 +71,14 @@ $font-size-lg2: 2.2rem;
 }
 
 .dm-sans-medium {
-    font-family: "DM Sans", sans-serif;
+    font-family: $font-family-sans;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
 
 .dm-sans-bold {
-    font-family: "DM Sans", sans-serif;
+    font-family: $font-family-sans;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;

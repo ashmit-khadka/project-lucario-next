@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b73d",
+  "id": "cloud-cost-attribution",
+  "slug": "cloud-cost-attribution",
+  "version": "1.0.0",
+  "title": "Cloud Cost Attribution",
+  "description": "Architect comprehensive tagging strategies and resource-partitioning for granular cloud cost attribution. Provide visibility into \"cost per transaction\" or \"cost per customer\" through detailed financial engineering.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect comprehensive tagging strategies and resource-partitioning for granular cloud cost attribution.",
+    "Provide visibility into \"cost per transaction\" or \"cost per customer\" through detailed financial engineering."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b73c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

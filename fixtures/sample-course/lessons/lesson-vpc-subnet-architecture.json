@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b602",
+  "id": "vpc-subnet-architecture",
+  "slug": "vpc-subnet-architecture",
+  "version": "1.0.0",
+  "title": "VPC Subnet Architecture",
+  "description": "Master VPC subnet architecture principles, including Public, Private, and Isolated subnets. Architect secure network topologies by managing NAT Gateway placement and Route Table configurations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master VPC subnet architecture principles, including Public, Private, and Isolated subnets.",
+    "Architect secure network topologies by managing NAT Gateway placement and Route Table configurations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b601",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

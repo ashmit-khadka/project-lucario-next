@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b54b",
+  "id": "evaluate-gateway-performance",
+  "slug": "evaluate-gateway-performance",
+  "version": "1.0.0",
+  "title": "Evaluate Gateway Performance",
+  "description": "Contrast the performance characteristics of Node.js-based gateways with those built in Go, Rust, or Envoy. Evaluate gateway performance considering memory footprint and P99 latency under high-concurrency. Analyze the trade-offs in choosing a gateway technology based on performance requirements.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Contrast the performance characteristics of Node.js-based gateways with those built in Go, Rust, or Envoy.",
+    "Evaluate gateway performance considering memory footprint and P99 latency under high-concurrency.",
+    "Analyze the trade-offs in choosing a gateway technology based on performance requirements."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b547",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

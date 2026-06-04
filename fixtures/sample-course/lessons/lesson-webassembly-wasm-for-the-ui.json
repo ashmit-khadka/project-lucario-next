@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b630",
+  "id": "webassembly-wasm-for-the-ui",
+  "slug": "webassembly-wasm-for-the-ui",
+  "version": "1.0.0",
+  "title": "WebAssembly (WASM) for the UI",
+  "description": "Evaluate use cases for WebAssembly (WASM) in frontend applications, especially for compute-heavy tasks. Implement Rust/C++ bridges to leverage WASM for tasks like image processing or encryption, bypassing JavaScript engine limitations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate use cases for WebAssembly (WASM) in frontend applications, especially for compute-heavy tasks.",
+    "Implement Rust/C++ bridges to leverage WASM for tasks like image processing or encryption, bypassing JavaScript engine limitations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b62d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b59f",
+  "id": "architect-real-time-dashboards-with-long-polling-fallbacks",
+  "slug": "architect-real-time-dashboards-with-long-polling-fallbacks",
+  "version": "1.0.0",
+  "title": "Architect Real-Time Dashboards with Long Polling Fallbacks",
+  "description": "Design resilient real-time delivery systems that degrade gracefully to long polling. Architect real-time dashboards with fallbacks for environments where direct socket connections are blocked.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design resilient real-time delivery systems that degrade gracefully to long polling.",
+    "Architect real-time dashboards with fallbacks for environments where direct socket connections are blocked."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b59c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

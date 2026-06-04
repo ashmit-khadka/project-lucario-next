@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b58a",
+  "id": "consumer-driven-contract-testing-pact",
+  "slug": "consumer-driven-contract-testing-pact",
+  "version": "1.0.0",
+  "title": "Consumer-Driven Contract Testing (Pact)",
+  "description": "Implement Consumer-Driven Contract Testing using tools like Pact. Detect breaking changes in CI by validating API provider responses against client-recorded expectations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Consumer-Driven Contract Testing using tools like Pact.",
+    "Detect breaking changes in CI by validating API provider responses against client-recorded expectations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b588",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

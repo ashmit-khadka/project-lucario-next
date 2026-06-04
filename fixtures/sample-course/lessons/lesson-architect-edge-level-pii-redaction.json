@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b65b",
+  "id": "architect-edge-level-pii-redaction",
+  "slug": "architect-edge-level-pii-redaction",
+  "version": "1.0.0",
+  "title": "Architect Edge-Level PII Redaction",
+  "description": "Implement regex and structural sanitization within the OpenTelemetry Collector to redact PII from logs at the edge. Design robust PII redaction strategies to ensure compliance with regulations like GDPR and HIPAA. Configure telemetry pipelines to prevent sensitive data from reaching persistent storage.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement regex and structural sanitization within the OpenTelemetry Collector to redact PII from logs at the edge.",
+    "Design robust PII redaction strategies to ensure compliance with regulations like GDPR and HIPAA.",
+    "Configure telemetry pipelines to prevent sensitive data from reaching persistent storage."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b657",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

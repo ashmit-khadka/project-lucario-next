@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b62c",
+  "id": "subresource-integrity-sri-sboms",
+  "slug": "subresource-integrity-sri-sboms",
+  "version": "1.0.0",
+  "title": "Subresource Integrity (SRI) & SBOMs",
+  "description": "Implement Subresource Integrity (SRI) to cryptographically verify third-party assets from CDNs. Utilize Software Bill of Materials (SBOMs) to audit npm dependencies against supply-chain attacks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Subresource Integrity (SRI) to cryptographically verify third-party assets from CDNs.",
+    "Utilize Software Bill of Materials (SBOMs) to audit npm dependencies against supply-chain attacks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b629",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

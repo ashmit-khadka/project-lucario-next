@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6d9",
+  "id": "memory-persistence-in-agents",
+  "slug": "memory-persistence-in-agents",
+  "version": "1.0.0",
+  "title": "Memory & Persistence in Agents",
+  "description": "Implement short-term 'Working Memory' and long-term 'Episodic Memory' for AI agents. Architect memory systems using vector stores to maintain agent context across sessions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement short-term 'Working Memory' and long-term 'Episodic Memory' for AI agents.",
+    "Architect memory systems using vector stores to maintain agent context across sessions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6d5",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

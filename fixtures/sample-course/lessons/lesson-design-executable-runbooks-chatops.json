@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b668",
+  "id": "design-executable-runbooks-chatops",
+  "slug": "design-executable-runbooks-chatops",
+  "version": "1.0.0",
+  "title": "Design Executable Runbooks (ChatOps)",
+  "description": "Automate diagnostic data gathering and remediation scripts directly within ChatOps platforms like Slack or Teams. Design executable runbooks to streamline incident response workflows. Implement ChatOps solutions to reduce the Mean Time to Mitigate (MTTM) during incidents.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Automate diagnostic data gathering and remediation scripts directly within ChatOps platforms like Slack or Teams.",
+    "Design executable runbooks to streamline incident response workflows.",
+    "Implement ChatOps solutions to reduce the Mean Time to Mitigate (MTTM) during incidents."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b665",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b636",
+  "id": "evaluate-the-testing-trophy-vs-pyramid",
+  "slug": "evaluate-the-testing-trophy-vs-pyramid",
+  "version": "1.0.0",
+  "title": "Evaluate the Testing Trophy vs. Pyramid",
+  "description": "Evaluate the trade-offs between the Testing Trophy and Testing Pyramid models for modern distributed systems. Prioritize testing efforts across unit, integration, and E2E layers to achieve maximum production confidence.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the trade-offs between the Testing Trophy and Testing Pyramid models for modern distributed systems.",
+    "Prioritize testing efforts across unit, integration, and E2E layers to achieve maximum production confidence."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b635",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

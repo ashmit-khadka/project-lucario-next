@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6d6",
+  "id": "react-reasoning-acting-framework",
+  "slug": "react-reasoning-acting-framework",
+  "version": "1.0.0",
+  "title": "ReAct (Reasoning + Acting) Framework",
+  "description": "Master the ReAct (Reasoning + Acting) framework for building interactive AI agents. Architect agentic loops where the model observes, thinks, and acts by calling external APIs or executing code in a sandboxed environment.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the ReAct (Reasoning + Acting) framework for building interactive AI agents.",
+    "Architect agentic loops where the model observes, thinks, and acts by calling external APIs or executing code in a sandboxed environment."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6d5",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

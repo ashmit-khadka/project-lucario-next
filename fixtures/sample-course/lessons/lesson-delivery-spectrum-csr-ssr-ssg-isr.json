@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b61c",
+  "id": "delivery-spectrum-csr-ssr-ssg-isr",
+  "slug": "delivery-spectrum-csr-ssr-ssg-isr",
+  "version": "1.0.0",
+  "title": "Delivery Spectrum (CSR, SSR, SSG, ISR)",
+  "description": "Evaluate different delivery paradigms (CSR, SSR, SSG, ISR) based on their performance characteristics. Architect hybrid rendering strategies to optimize Time to First Byte (TTFB) and First Contentful Paint (FCP) for various application types.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate different delivery paradigms (CSR, SSR, SSG, ISR) based on their performance characteristics.",
+    "Architect hybrid rendering strategies to optimize Time to First Byte (TTFB) and First Contentful Paint (FCP) for various application types."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b61b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

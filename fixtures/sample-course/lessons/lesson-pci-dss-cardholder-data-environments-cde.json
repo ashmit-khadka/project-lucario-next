@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6a5",
+  "id": "pci-dss-cardholder-data-environments-cde",
+  "slug": "pci-dss-cardholder-data-environments-cde",
+  "version": "1.0.0",
+  "title": "PCI-DSS Cardholder Data Environments (CDE)",
+  "description": "Implement network segmentation to isolate cardholder data environments. Architect Point-to-Point Encryption (P2PE) solutions to minimize PCI audit scope.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement network segmentation to isolate cardholder data environments.",
+    "Architect Point-to-Point Encryption (P2PE) solutions to minimize PCI audit scope."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b6a3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b490",
+  "id": "master-the-orinoco-gc-architecture",
+  "slug": "master-the-orinoco-gc-architecture",
+  "version": "1.0.0",
+  "title": "Master the Orinoco GC Architecture",
+  "description": "Explain the components and phases of the Orinoco GC architecture. Analyze the impact of Scavenging (Young Generation) and Mark-Sweep-Compact (Old Generation) on application performance. Describe how incremental marking reduces GC pause latency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the components and phases of the Orinoco GC architecture.",
+    "Analyze the impact of Scavenging (Young Generation) and Mark-Sweep-Compact (Old Generation) on application performance.",
+    "Describe how incremental marking reduces GC pause latency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b48f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

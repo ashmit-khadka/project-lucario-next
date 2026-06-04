@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4f3",
+  "id": "the-result-pattern",
+  "slug": "the-result-pattern",
+  "version": "1.0.0",
+  "title": "The Result Pattern",
+  "description": "Master the `Result<T, E>` pattern to represent success or failure as first-class values. Implement explicit error handling, removing the non-deterministic nature of exceptions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the `Result<T, E>` pattern to represent success or failure as first-class values.",
+    "Implement explicit error handling, removing the non-deterministic nature of exceptions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

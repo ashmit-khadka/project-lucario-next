@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b505",
+  "id": "strictness-governance",
+  "slug": "strictness-governance",
+  "version": "1.0.0",
+  "title": "Strictness Governance",
+  "description": "Implement `tsconfig` evolution strategies to gradually increase type strictness. Utilize `typescript-eslint` to enforce architectural linting rules that supplement compiler checks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement `tsconfig` evolution strategies to gradually increase type strictness.",
+    "Utilize `typescript-eslint` to enforce architectural linting rules that supplement compiler checks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b502",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

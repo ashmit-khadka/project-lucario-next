@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b702",
+  "id": "sidecar-vs-ambient-mesh-istio-linkerd",
+  "slug": "sidecar-vs-ambient-mesh-istio-linkerd",
+  "version": "1.0.0",
+  "title": "Sidecar vs. Ambient Mesh (Istio/Linkerd)",
+  "description": "Master the architectural differences between sidecar and ambient service mesh deployments (e.g., Istio/Linkerd). Evaluate the resource trade-offs and operational complexities of per-pod proxies versus daemon-set based transparent redirection.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the architectural differences between sidecar and ambient service mesh deployments (e.g., Istio/Linkerd).",
+    "Evaluate the resource trade-offs and operational complexities of per-pod proxies versus daemon-set based transparent redirection."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b701",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

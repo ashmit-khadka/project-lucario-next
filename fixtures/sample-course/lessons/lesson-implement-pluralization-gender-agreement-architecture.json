@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6b8",
+  "id": "implement-pluralization-gender-agreement-architecture",
+  "slug": "implement-pluralization-gender-agreement-architecture",
+  "version": "1.0.0",
+  "title": "Implement Pluralization & Gender Agreement Architecture",
+  "description": "Design translation schemas using ICU Message Format to handle complex pluralization rules. Implement solutions for gender agreement and other linguistic complexities in localized content.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design translation schemas using ICU Message Format to handle complex pluralization rules.",
+    "Implement solutions for gender agreement and other linguistic complexities in localized content."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6b5",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

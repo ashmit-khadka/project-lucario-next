@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b61d",
+  "id": "hydration-overhead",
+  "slug": "hydration-overhead",
+  "version": "1.0.0",
+  "title": "Hydration Overhead",
+  "description": "Analyze the performance implications and overhead associated with client-side hydration. Implement techniques like Islands Architecture or Resumability to eliminate client-side JavaScript bootup latency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the performance implications and overhead associated with client-side hydration.",
+    "Implement techniques like Islands Architecture or Resumability to eliminate client-side JavaScript bootup latency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b61b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

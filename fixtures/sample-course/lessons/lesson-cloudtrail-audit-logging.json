@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b60e",
+  "id": "cloudtrail-audit-logging",
+  "slug": "cloudtrail-audit-logging",
+  "version": "1.0.0",
+  "title": "CloudTrail & Audit Logging",
+  "description": "Master CloudTrail for comprehensive audit logging of API calls and resource changes. Implement automated security auditing and compliance tracking using CloudTrail logs for incident response.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master CloudTrail for comprehensive audit logging of API calls and resource changes.",
+    "Implement automated security auditing and compliance tracking using CloudTrail logs for incident response."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b60b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6db",
+  "id": "lora-low-rank-adaptation-qlora",
+  "slug": "lora-low-rank-adaptation-qlora",
+  "version": "1.0.0",
+  "title": "LoRA (Low-Rank Adaptation) & QLoRA",
+  "description": "Implement Parameter-Efficient Fine-Tuning (PEFT) methods like LoRA and QLoRA. Adapt massive models to specific tasks with minimal VRAM and compute requirements.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Parameter-Efficient Fine-Tuning (PEFT) methods like LoRA and QLoRA.",
+    "Adapt massive models to specific tasks with minimal VRAM and compute requirements."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6da",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

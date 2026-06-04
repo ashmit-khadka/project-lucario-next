@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b735",
+  "id": "sponsorship-vs-mentorship",
+  "slug": "sponsorship-vs-mentorship",
+  "version": "1.0.0",
+  "title": "Sponsorship vs. Mentorship",
+  "description": "Distinguish between mentorship and sponsorship, applying each appropriately for career development. Architect opportunities for junior and mid-level engineers to lead high-visibility projects, fostering future technical leadership.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Distinguish between mentorship and sponsorship, applying each appropriately for career development.",
+    "Architect opportunities for junior and mid-level engineers to lead high-visibility projects, fostering future technical leadership."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b733",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

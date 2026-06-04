@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b612",
+  "id": "cost-optimization-strategies",
+  "slug": "cost-optimization-strategies",
+  "version": "1.0.0",
+  "title": "Cost Optimization Strategies",
+  "description": "Implement various cost optimization strategies, including Spot Instances and Savings Plans. Architect cloud systems to minimize spend through automated resource cleanup without compromising performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement various cost optimization strategies, including Spot Instances and Savings Plans.",
+    "Architect cloud systems to minimize spend through automated resource cleanup without compromising performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b610",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b727",
+  "id": "continuous-deployment-cd-for-high-stakes-systems",
+  "slug": "continuous-deployment-cd-for-high-stakes-systems",
+  "version": "1.0.0",
+  "title": "Continuous Deployment (CD) for High-Stakes Systems",
+  "description": "Architect Continuous Deployment (CD) pipelines for high-stakes systems. Implement automated canary analysis and dark launch strategies to minimize user-facing failure risk during production deployments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect Continuous Deployment (CD) pipelines for high-stakes systems.",
+    "Implement automated canary analysis and dark launch strategies to minimize user-facing failure risk during production deployments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b724",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

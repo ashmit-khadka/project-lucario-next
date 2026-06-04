@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ea",
+  "id": "conditional-types-distributive-unions",
+  "slug": "conditional-types-distributive-unions",
+  "version": "1.0.0",
+  "title": "Conditional Types & Distributive Unions",
+  "description": "Master conditional types (`T extends U ? X : Y`) to create types that react to specific conditions. Utilize distributive unions to build self-adjusting types based on union member distribution.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master conditional types (`T extends U ? X : Y`) to create types that react to specific conditions.",
+    "Utilize distributive unions to build self-adjusting types based on union member distribution."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4e9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b548",
+  "id": "master-the-bff-backend-for-frontend-pattern",
+  "slug": "master-the-bff-backend-for-frontend-pattern",
+  "version": "1.0.0",
+  "title": "Master the BFF (Backend for Frontend) Pattern",
+  "description": "Architect specialized Backend for Frontend (BFF) service layers for different client types. Optimize API payloads and aggregate downstream data specific to mobile, desktop, or IoT clients. Design BFFs to enhance user experience by tailoring data consumption.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect specialized Backend for Frontend (BFF) service layers for different client types.",
+    "Optimize API payloads and aggregate downstream data specific to mobile, desktop, or IoT clients.",
+    "Design BFFs to enhance user experience by tailoring data consumption."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b547",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

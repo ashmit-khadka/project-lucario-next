@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b61a",
+  "id": "browser-memory-management",
+  "slug": "browser-memory-management",
+  "version": "1.0.0",
+  "title": "Browser Memory Management",
+  "description": "Analyze browser memory usage patterns to identify potential leaks. Utilize Chrome DevTools Memory Tab and \"Retaining Path\" analysis to pinpoint detached DOM nodes and closure-based memory leaks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze browser memory usage patterns to identify potential leaks.",
+    "Utilize Chrome DevTools Memory Tab and \"Retaining Path\" analysis to pinpoint detached DOM nodes and closure-based memory leaks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b616",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

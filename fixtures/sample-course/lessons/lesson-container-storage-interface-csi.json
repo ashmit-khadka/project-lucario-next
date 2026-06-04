@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b707",
+  "id": "container-storage-interface-csi",
+  "slug": "container-storage-interface-csi",
+  "version": "1.0.0",
+  "title": "Container Storage Interface (CSI)",
+  "description": "Master the Container Storage Interface (CSI) for dynamic volume provisioning in Kubernetes. Analyze the trade-offs of Block (EBS), File (EFS), and Object storage for stateful applications in cloud-native environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the Container Storage Interface (CSI) for dynamic volume provisioning in Kubernetes.",
+    "Analyze the trade-offs of Block (EBS), File (EFS), and Object storage for stateful applications in cloud-native environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b706",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b64c",
+  "id": "master-fuzz-testing-property-based-testing",
+  "slug": "master-fuzz-testing-property-based-testing",
+  "version": "1.0.0",
+  "title": "Master Fuzz Testing & Property-Based Testing",
+  "description": "Master fuzz testing and property-based testing techniques using tools like `fast-check`. Uncover subtle edge cases and vulnerabilities in complex business logic through generative testing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master fuzz testing and property-based testing techniques using tools like `fast-check`.",
+    "Uncover subtle edge cases and vulnerabilities in complex business logic through generative testing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b648",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

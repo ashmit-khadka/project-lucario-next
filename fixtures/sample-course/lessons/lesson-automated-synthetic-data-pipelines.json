@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6ec",
+  "id": "automated-synthetic-data-pipelines",
+  "slug": "automated-synthetic-data-pipelines",
+  "version": "1.0.0",
+  "title": "Automated Synthetic Data Pipelines",
+  "description": "Architect automated synthetic data pipelines to generate training data. Utilize large models to generate, refine, and filter training data for smaller, specialized student models through distillation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect automated synthetic data pipelines to generate training data.",
+    "Utilize large models to generate, refine, and filter training data for smaller, specialized student models through distillation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6eb",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

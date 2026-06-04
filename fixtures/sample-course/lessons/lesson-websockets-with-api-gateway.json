@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b609",
+  "id": "websockets-with-api-gateway",
+  "slug": "websockets-with-api-gateway",
+  "version": "1.0.0",
+  "title": "Websockets with API Gateway",
+  "description": "Architect real-time communication solutions using Websockets with API Gateway. Implement stateful serverless applications by managing connection IDs and callback URLs for persistent connections.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect real-time communication solutions using Websockets with API Gateway.",
+    "Implement stateful serverless applications by managing connection IDs and callback URLs for persistent connections."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b606",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

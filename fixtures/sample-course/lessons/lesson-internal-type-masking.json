@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b500",
+  "id": "internal-type-masking",
+  "slug": "internal-type-masking",
+  "version": "1.0.0",
+  "title": "Internal Type Masking",
+  "description": "Utilize `package.json` \"exports\" and JSDoc `@internal` tags to control public API visibility. Implement type masking to hide complex internal type-level machinery from external library consumers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize `package.json` \"exports\" and JSDoc `@internal` tags to control public API visibility.",
+    "Implement type masking to hide complex internal type-level machinery from external library consumers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4fe",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

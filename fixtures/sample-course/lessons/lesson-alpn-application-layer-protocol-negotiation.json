@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4bc",
+  "id": "alpn-application-layer-protocol-negotiation",
+  "slug": "alpn-application-layer-protocol-negotiation",
+  "version": "1.0.0",
+  "title": "ALPN (Application-Layer Protocol Negotiation)",
+  "description": "Explain the role of ALPN in negotiating application layer protocols during the TLS handshake. Describe how browsers and servers use ALPN to select HTTP versions like HTTP/2 and HTTP/3. Analyze the impact of ALPN on protocol upgrade paths and connection efficiency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the role of ALPN in negotiating application layer protocols during the TLS handshake.",
+    "Describe how browsers and servers use ALPN to select HTTP versions like HTTP/2 and HTTP/3.",
+    "Analyze the impact of ALPN on protocol upgrade paths and connection efficiency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4b8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b719",
+  "id": "cluster-wide-prometheus-thanos",
+  "slug": "cluster-wide-prometheus-thanos",
+  "version": "1.0.0",
+  "title": "Cluster-wide Prometheus/Thanos",
+  "description": "Architect highly available metric collection and long-term storage using Prometheus and Thanos. Design scalable monitoring solutions for thousands of pods across multiple Kubernetes clusters.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect highly available metric collection and long-term storage using Prometheus and Thanos.",
+    "Design scalable monitoring solutions for thousands of pods across multiple Kubernetes clusters."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b717",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

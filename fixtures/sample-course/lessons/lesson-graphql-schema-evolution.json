@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b57e",
+  "id": "graphql-schema-evolution",
+  "slug": "graphql-schema-evolution",
+  "version": "1.0.0",
+  "title": "GraphQL Schema Evolution",
+  "description": "Manage GraphQL schema evolution using field-level deprecation. Utilize tools like Apollo Studio or Hive for utilization tracking to facilitate consumer migration.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Manage GraphQL schema evolution using field-level deprecation.",
+    "Utilize tools like Apollo Studio or Hive for utilization tracking to facilitate consumer migration."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b57c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

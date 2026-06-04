@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b501",
+  "id": "shared-type-packages",
+  "slug": "shared-type-packages",
+  "version": "1.0.0",
+  "title": "Shared Type Packages",
+  "description": "Architect shared type packages to manage versioned type contracts across multiple projects. Ensure synchronization of API and event schemas between frontend and backend services within a monorepo.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect shared type packages to manage versioned type contracts across multiple projects.",
+    "Ensure synchronization of API and event schemas between frontend and backend services within a monorepo."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4fe",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

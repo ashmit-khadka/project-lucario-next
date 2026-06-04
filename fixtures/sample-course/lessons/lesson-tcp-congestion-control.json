@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4af",
+  "id": "tcp-congestion-control",
+  "slug": "tcp-congestion-control",
+  "version": "1.0.0",
+  "title": "TCP Congestion Control",
+  "description": "Analyze the mechanisms of TCP congestion control algorithms like BBR and CUBIC. Evaluate the \"Slow Start\" algorithm's impact on initial connection throughput. Implement strategies to optimize TCP throughput and mitigate packet loss in high-latency network environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the mechanisms of TCP congestion control algorithms like BBR and CUBIC.",
+    "Evaluate the \"Slow Start\" algorithm's impact on initial connection throughput.",
+    "Implement strategies to optimize TCP throughput and mitigate packet loss in high-latency network environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4ae",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

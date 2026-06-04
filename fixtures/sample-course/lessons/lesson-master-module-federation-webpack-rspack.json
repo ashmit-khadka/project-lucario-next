@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b53a",
+  "id": "master-module-federation-webpack-rspack",
+  "slug": "master-module-federation-webpack-rspack",
+  "version": "1.0.0",
+  "title": "Master Module Federation (Webpack/Rspack)",
+  "description": "Architect a Host/Remote relationship using Module Federation to enable independent MFE deployments. Implement shared singleton dependencies (e.g., React, Vue) to prevent runtime bloat in federated applications. Design build configurations for Webpack or Rspack to leverage Module Federation effectively.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a Host/Remote relationship using Module Federation to enable independent MFE deployments.",
+    "Implement shared singleton dependencies (e.g., React, Vue) to prevent runtime bloat in federated applications.",
+    "Design build configurations for Webpack or Rspack to leverage Module Federation effectively."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b539",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

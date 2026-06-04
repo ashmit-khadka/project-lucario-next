@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b704",
+  "id": "spiffe-spire-for-workload-identity",
+  "slug": "spiffe-spire-for-workload-identity",
+  "version": "1.0.0",
+  "title": "SPIFFE/SPIRE for Workload Identity",
+  "description": "Architect SPIFFE/SPIRE solutions to establish cryptographic workload identity for services. Implement mTLS (mutual TLS) to remove reliance on IP-based security for inter-service communication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect SPIFFE/SPIRE solutions to establish cryptographic workload identity for services.",
+    "Implement mTLS (mutual TLS) to remove reliance on IP-based security for inter-service communication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b701",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5d3",
+  "id": "transactional-outbox-pattern",
+  "slug": "transactional-outbox-pattern",
+  "version": "1.0.0",
+  "title": "Transactional Outbox Pattern",
+  "description": "Master the Transactional Outbox Pattern to guarantee atomic consistency between database updates and message emissions. Ensure the avoidance of \"Ghost Messages\" or \"Lost Events\" in event-driven architectures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the Transactional Outbox Pattern to guarantee atomic consistency between database updates and message emissions.",
+    "Ensure the avoidance of \"Ghost Messages\" or \"Lost Events\" in event-driven architectures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5d2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b507",
+  "id": "stage-3-decorators",
+  "slug": "stage-3-decorators",
+  "version": "1.0.0",
+  "title": "Stage 3 Decorators",
+  "description": "Master Stage 3 Decorators to inject cross-cutting concerns (e.g., logging, validation, authorization) into classes and methods. Implement decorators to extend functionality without polluting core business logic.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master Stage 3 Decorators to inject cross-cutting concerns (e.g., logging, validation, authorization) into classes and methods.",
+    "Implement decorators to extend functionality without polluting core business logic."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b506",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4d8",
+  "id": "sse-server-sent-events",
+  "slug": "sse-server-sent-events",
+  "version": "1.0.0",
+  "title": "SSE (Server-Sent Events)",
+  "description": "Implement Server-Sent Events (SSE) for unidirectional real-time updates. Evaluate SSE as an HTTP-native streaming alternative to WebSockets for specific use cases. Compare the complexity and capabilities of SSE versus WebSocket implementations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Server-Sent Events (SSE) for unidirectional real-time updates.",
+    "Evaluate SSE as an HTTP-native streaming alternative to WebSockets for specific use cases.",
+    "Compare the complexity and capabilities of SSE versus WebSocket implementations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4d6",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

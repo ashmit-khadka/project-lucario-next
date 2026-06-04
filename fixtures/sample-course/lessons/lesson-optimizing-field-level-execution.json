@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b56e",
+  "id": "optimizing-field-level-execution",
+  "slug": "optimizing-field-level-execution",
+  "version": "1.0.0",
+  "title": "Optimizing Field-Level Execution",
+  "description": "Optimize GraphQL field-level execution using deferred responses (@defer) for non-critical data. Implement streamed responses (@stream) to deliver lists incrementally and improve perceived performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Optimize GraphQL field-level execution using deferred responses (@defer) for non-critical data.",
+    "Implement streamed responses (@stream) to deliver lists incrementally and improve perceived performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b56b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

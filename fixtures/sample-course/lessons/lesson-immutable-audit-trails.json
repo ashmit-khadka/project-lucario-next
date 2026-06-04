@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6a0",
+  "id": "immutable-audit-trails",
+  "slug": "immutable-audit-trails",
+  "version": "1.0.0",
+  "title": "Immutable Audit Trails",
+  "description": "Implement append-only, tamper-proof audit logs using cryptographic hashing or private ledgers. Architect systems providing a verifiable Chain of Custody for PII access and modifications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement append-only, tamper-proof audit logs using cryptographic hashing or private ledgers.",
+    "Architect systems providing a verifiable Chain of Custody for PII access and modifications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b69f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

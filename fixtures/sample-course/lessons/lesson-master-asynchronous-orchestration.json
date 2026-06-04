@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b543",
+  "id": "master-asynchronous-orchestration",
+  "slug": "master-asynchronous-orchestration",
+  "version": "1.0.0",
+  "title": "Master Asynchronous Orchestration",
+  "description": "Implement the Outbox Pattern to ensure atomic database updates and message emissions. Prevent the 'Ghost Message' problem in event-driven architectures through robust transaction management. Design resilient asynchronous workflows for distributed systems using reliable messaging patterns.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement the Outbox Pattern to ensure atomic database updates and message emissions.",
+    "Prevent the 'Ghost Message' problem in event-driven architectures through robust transaction management.",
+    "Design resilient asynchronous workflows for distributed systems using reliable messaging patterns."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b542",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

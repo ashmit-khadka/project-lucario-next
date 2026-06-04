@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b73a",
+  "id": "modernization-vs-rebuild-analysis",
+  "slug": "modernization-vs-rebuild-analysis",
+  "version": "1.0.0",
+  "title": "Modernization vs. Rebuild Analysis",
+  "description": "Execute a data-driven analysis to determine whether to modernize an existing legacy system or perform a complete rebuild. Implement strategies such as the Strangler Fig pattern or parallel run approaches for system evolution or replacement.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Execute a data-driven analysis to determine whether to modernize an existing legacy system or perform a complete rebuild.",
+    "Implement strategies such as the Strangler Fig pattern or parallel run approaches for system evolution or replacement."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b737",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

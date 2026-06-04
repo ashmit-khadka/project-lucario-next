@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b60a",
+  "id": "appsync-managed-graphql",
+  "slug": "appsync-managed-graphql",
+  "version": "1.0.0",
+  "title": "AppSync (Managed GraphQL)",
+  "description": "Implement AppSync (Managed GraphQL) for building robust APIs. Architect real-time subscriptions and offline data synchronization using AppSync resolvers integrated with backends like DynamoDB or Lambda.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement AppSync (Managed GraphQL) for building robust APIs.",
+    "Architect real-time subscriptions and offline data synchronization using AppSync resolvers integrated with backends like DynamoDB or Lambda."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b606",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

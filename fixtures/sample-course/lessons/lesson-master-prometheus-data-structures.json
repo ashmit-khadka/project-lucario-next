@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b65d",
+  "id": "master-prometheus-data-structures",
+  "slug": "master-prometheus-data-structures",
+  "version": "1.0.0",
+  "title": "Master Prometheus Data Structures",
+  "description": "Design optimal Prometheus histograms for accurate latency distribution tracking. Utilize Prometheus summaries effectively for different metric use cases. Avoid cardinality explosions in time-series databases by designing efficient metric labels and structures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design optimal Prometheus histograms for accurate latency distribution tracking.",
+    "Utilize Prometheus summaries effectively for different metric use cases.",
+    "Avoid cardinality explosions in time-series databases by designing efficient metric labels and structures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b65c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

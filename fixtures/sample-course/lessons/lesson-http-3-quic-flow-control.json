@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c1",
+  "id": "http-3-quic-flow-control",
+  "slug": "http-3-quic-flow-control",
+  "version": "1.0.0",
+  "title": "HTTP/3 (QUIC) Flow Control",
+  "description": "Analyze the flow control mechanisms in HTTP/3, including per-stream and per-connection limits. Implement strategies to prevent slow consumers from exhausting server resources using HTTP/3 flow control. Compare HTTP/3 flow control with TCP windowing mechanisms.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the flow control mechanisms in HTTP/3, including per-stream and per-connection limits.",
+    "Implement strategies to prevent slow consumers from exhausting server resources using HTTP/3 flow control.",
+    "Compare HTTP/3 flow control with TCP windowing mechanisms."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4bd",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

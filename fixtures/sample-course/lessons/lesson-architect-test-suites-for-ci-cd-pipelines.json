@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b639",
+  "id": "architect-test-suites-for-ci-cd-pipelines",
+  "slug": "architect-test-suites-for-ci-cd-pipelines",
+  "version": "1.0.0",
+  "title": "Architect Test Suites for CI/CD Pipelines",
+  "description": "Architect efficient test suites optimized for CI/CD pipelines, utilizing parallelization techniques. Implement strategies for detecting and managing flaky tests to ensure pipeline stability. Apply \"affected\" test logic to reduce test execution time and improve developer velocity.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect efficient test suites optimized for CI/CD pipelines, utilizing parallelization techniques.",
+    "Implement strategies for detecting and managing flaky tests to ensure pipeline stability.",
+    "Apply \"affected\" test logic to reduce test execution time and improve developer velocity."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b635",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

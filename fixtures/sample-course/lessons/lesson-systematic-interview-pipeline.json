@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b741",
+  "id": "systematic-interview-pipeline",
+  "slug": "systematic-interview-pipeline",
+  "version": "1.0.0",
+  "title": "Systematic Interview Pipeline",
+  "description": "Architect a systematic interview pipeline using objective, rubric-based technical assessments. Prioritize architectural reasoning and problem-solving skills in the hiring process over rote algorithmic knowledge.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a systematic interview pipeline using objective, rubric-based technical assessments.",
+    "Prioritize architectural reasoning and problem-solving skills in the hiring process over rote algorithmic knowledge."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b740",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

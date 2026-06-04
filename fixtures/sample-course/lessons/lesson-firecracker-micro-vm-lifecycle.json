@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5e9",
+  "id": "firecracker-micro-vm-lifecycle",
+  "slug": "firecracker-micro-vm-lifecycle",
+  "version": "1.0.0",
+  "title": "Firecracker Micro-VM Lifecycle",
+  "description": "Deconstruct the Firecracker micro-VM lifecycle, differentiating between the Init and Invoke phases. Analyze the impact of each lifecycle phase on serverless function cold-start performance and resource utilization.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the Firecracker micro-VM lifecycle, differentiating between the Init and Invoke phases.",
+    "Analyze the impact of each lifecycle phase on serverless function cold-start performance and resource utilization."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5e8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b72c",
+  "id": "functional-vs-cross-functional-scaling",
+  "slug": "functional-vs-cross-functional-scaling",
+  "version": "1.0.0",
+  "title": "Functional vs. Cross-Functional Scaling",
+  "description": "Architect organizational scaling strategies by evaluating the trade-offs between functional and cross-functional teams. Compare the effectiveness of centralized \"Core\" teams versus decentralized \"Embedded\" specialists for specific technical domains.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect organizational scaling strategies by evaluating the trade-offs between functional and cross-functional teams.",
+    "Compare the effectiveness of centralized \"Core\" teams versus decentralized \"Embedded\" specialists for specific technical domains."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b729",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

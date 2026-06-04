@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b627",
+  "id": "module-federation-rspack-webpack",
+  "slug": "module-federation-rspack-webpack",
+  "version": "1.0.0",
+  "title": "Module Federation (Rspack/Webpack)",
+  "description": "Implement Module Federation to enable independent deployments of remote modules in a micro-frontend setup. Orchestrate shared dependencies across federated modules to prevent runtime bloat.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Module Federation to enable independent deployments of remote modules in a micro-frontend setup.",
+    "Orchestrate shared dependencies across federated modules to prevent runtime bloat."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b625",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5a9",
+  "id": "implement-token-based-auth-for-sockets",
+  "slug": "implement-token-based-auth-for-sockets",
+  "version": "1.0.0",
+  "title": "Implement Token-Based Auth for Sockets",
+  "description": "Implement secure re-authentication handshakes for long-lived socket connections without disconnects. Solve the 'Token Expiry' problem in stateful connections using token-based authentication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement secure re-authentication handshakes for long-lived socket connections without disconnects.",
+    "Solve the 'Token Expiry' problem in stateful connections using token-based authentication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

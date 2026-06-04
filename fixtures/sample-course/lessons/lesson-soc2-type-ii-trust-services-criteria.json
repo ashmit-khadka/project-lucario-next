@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6a6",
+  "id": "soc2-type-ii-trust-services-criteria",
+  "slug": "soc2-type-ii-trust-services-criteria",
+  "version": "1.0.0",
+  "title": "SOC2 Type II & Trust Services Criteria",
+  "description": "Architect and document automated controls for Security, Availability, and Processing Integrity. Implement controls for Confidentiality and Privacy to satisfy rigorous recurring SOC2 Type II audits.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect and document automated controls for Security, Availability, and Processing Integrity.",
+    "Implement controls for Confidentiality and Privacy to satisfy rigorous recurring SOC2 Type II audits."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b6a3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

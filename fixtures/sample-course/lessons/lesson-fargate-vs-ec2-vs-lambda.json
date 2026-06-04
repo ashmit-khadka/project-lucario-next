@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ee",
+  "id": "fargate-vs-ec2-vs-lambda",
+  "slug": "fargate-vs-ec2-vs-lambda",
+  "version": "1.0.0",
+  "title": "Fargate vs. EC2 vs. Lambda",
+  "description": "Evaluate the trade-offs between Fargate, EC2, and Lambda for different workload profiles. Analyze the impact of each service on management overhead, scaling granularity, and cost-efficiency.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the trade-offs between Fargate, EC2, and Lambda for different workload profiles.",
+    "Analyze the impact of each service on management overhead, scaling granularity, and cost-efficiency."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5ed",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

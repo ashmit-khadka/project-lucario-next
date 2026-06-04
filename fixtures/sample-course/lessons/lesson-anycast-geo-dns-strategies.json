@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4b5",
+  "id": "anycast-geo-dns-strategies",
+  "slug": "anycast-geo-dns-strategies",
+  "version": "1.0.0",
+  "title": "Anycast & Geo-DNS Strategies",
+  "description": "Implement Anycast routing principles for distributing global traffic. Architect Geo-DNS strategies to route users to the nearest edge locations. Evaluate the efficacy of BGP Anycast and latency-based steering in global load balancing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Anycast routing principles for distributing global traffic.",
+    "Architect Geo-DNS strategies to route users to the nearest edge locations.",
+    "Evaluate the efficacy of BGP Anycast and latency-based steering in global load balancing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4b3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

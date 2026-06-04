@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b661",
+  "id": "implement-bulkhead-isolation-patterns",
+  "slug": "implement-bulkhead-isolation-patterns",
+  "version": "1.0.0",
+  "title": "Implement Bulkhead & Isolation Patterns",
+  "description": "Partition connection pools and thread allocations to isolate failures within a system. Implement bulkhead patterns to prevent non-critical components from starving primary services. Ensure the resilience of the user-facing API layer against failures in background workers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Partition connection pools and thread allocations to isolate failures within a system.",
+    "Implement bulkhead patterns to prevent non-critical components from starving primary services.",
+    "Ensure the resilience of the user-facing API layer against failures in background workers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b660",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

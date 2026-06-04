@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b674",
+  "id": "policy-as-code-open-policy-agent",
+  "slug": "policy-as-code-open-policy-agent",
+  "version": "1.0.0",
+  "title": "Policy-as-Code (Open Policy Agent)",
+  "description": "Implement authorization logic decoupling from the application layer using Open Policy Agent (OPA). Write Rego policies to enforce centralized, version-controlled access governance. Design auditable access control systems leveraging Policy-as-Code principles.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement authorization logic decoupling from the application layer using Open Policy Agent (OPA).",
+    "Write Rego policies to enforce centralized, version-controlled access governance.",
+    "Design auditable access control systems leveraging Policy-as-Code principles."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b672",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4e8",
+  "id": "boundary-mapping",
+  "slug": "boundary-mapping",
+  "version": "1.0.0",
+  "title": "Boundary Mapping",
+  "description": "Design Data Transfer Objects (DTOs) to represent external API structures. Implement transformation layers to decouple external data formats from internal domain logic.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design Data Transfer Objects (DTOs) to represent external API structures.",
+    "Implement transformation layers to decouple external data formats from internal domain logic."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4e4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

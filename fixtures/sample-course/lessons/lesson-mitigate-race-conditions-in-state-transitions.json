@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b524",
+  "id": "mitigate-race-conditions-in-state-transitions",
+  "slug": "mitigate-race-conditions-in-state-transitions",
+  "version": "1.0.0",
+  "title": "Mitigate Race Conditions in State Transitions",
+  "description": "Mitigate race conditions in state transitions by implementing \"First-Write-Wins\" and \"Last-Write-Wins\" strategies. Utilize versioned state containers to manage concurrent updates and maintain data integrity.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Mitigate race conditions in state transitions by implementing \"First-Write-Wins\" and \"Last-Write-Wins\" strategies.",
+    "Utilize versioned state containers to manage concurrent updates and maintain data integrity."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b523",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b546",
+  "id": "analyze-protocol-buffers-wire-format",
+  "slug": "analyze-protocol-buffers-wire-format",
+  "version": "1.0.0",
+  "title": "Analyze Protocol Buffers Wire-Format",
+  "description": "Deconstruct the wire-format of Protocol Buffers to understand its serialization mechanism. Analyze how Protobuf's field numbering system supports schema evolution. Explain how optionality and default values in Protobuf ensure backward and forward compatibility.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the wire-format of Protocol Buffers to understand its serialization mechanism.",
+    "Analyze how Protobuf's field numbering system supports schema evolution.",
+    "Explain how optionality and default values in Protobuf ensure backward and forward compatibility."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b542",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b55f",
+  "id": "design-service-catalogs-discovery",
+  "slug": "design-service-catalogs-discovery",
+  "version": "1.0.0",
+  "title": "Design Service Catalogs & Discovery",
+  "description": "Design a centralized service catalog as a single source of truth for service discovery. Architect mechanisms for documenting service ownership, APIs, and operational details. Reduce discovery friction in large organizations by implementing effective service catalog and search capabilities.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design a centralized service catalog as a single source of truth for service discovery.",
+    "Architect mechanisms for documenting service ownership, APIs, and operational details.",
+    "Reduce discovery friction in large organizations by implementing effective service catalog and search capabilities."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b55c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

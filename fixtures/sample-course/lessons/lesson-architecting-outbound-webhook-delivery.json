@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b581",
+  "id": "architecting-outbound-webhook-delivery",
+  "slug": "architecting-outbound-webhook-delivery",
+  "version": "1.0.0",
+  "title": "Architecting Outbound Webhook Delivery",
+  "description": "Architect reliable outbound webhook delivery systems incorporating exponential backoff and circuit breakers. Implement HMAC payload signing to ensure secure and verified event notification to third parties.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect reliable outbound webhook delivery systems incorporating exponential backoff and circuit breakers.",
+    "Implement HMAC payload signing to ensure secure and verified event notification to third parties."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b580",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

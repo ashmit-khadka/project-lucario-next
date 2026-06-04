@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b730",
+  "id": "blameless-post-mortem-culture",
+  "slug": "blameless-post-mortem-culture",
+  "version": "1.0.0",
+  "title": "Blameless Post-Mortem Culture",
+  "description": "Implement a blameless post-mortem process to identify structural and systemic failures following incidents. Design post-mortem workflows that foster continuous learning and drive long-term system resilience.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a blameless post-mortem process to identify structural and systemic failures following incidents.",
+    "Design post-mortem workflows that foster continuous learning and drive long-term system resilience."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b72e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

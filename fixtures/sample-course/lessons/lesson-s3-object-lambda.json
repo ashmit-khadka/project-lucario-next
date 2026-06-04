@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f6",
+  "id": "s3-object-lambda",
+  "slug": "s3-object-lambda",
+  "version": "1.0.0",
+  "title": "S3 Object Lambda",
+  "description": "Architect real-time data transformation solutions using S3 Object Lambda. Implement on-the-fly modifications to S3 objects, such as PII masking or image resizing, during the GetObject request.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect real-time data transformation solutions using S3 Object Lambda.",
+    "Implement on-the-fly modifications to S3 objects, such as PII masking or image resizing, during the GetObject request."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

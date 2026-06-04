@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b515",
+  "id": "implement-history-states",
+  "slug": "implement-history-states",
+  "version": "1.0.0",
+  "title": "Implement History States",
+  "description": "Implement shallow history states to recall the last active direct substate. Utilize deep history markers to restore a machine to its precise last active substate, including nested substates, upon reentry.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement shallow history states to recall the last active direct substate.",
+    "Utilize deep history markers to restore a machine to its precise last active substate, including nested substates, upon reentry."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b512",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

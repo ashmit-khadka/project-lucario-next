@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b708",
+  "id": "statefulsets-data-locality",
+  "slug": "statefulsets-data-locality",
+  "version": "1.0.0",
+  "title": "StatefulSets & Data Locality",
+  "description": "Architect StatefulSets to manage stable network identities and persistent disk attachments for distributed databases. Design data locality strategies for stateful applications like Cassandra, Postgres, or ElasticSearch.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect StatefulSets to manage stable network identities and persistent disk attachments for distributed databases.",
+    "Design data locality strategies for stateful applications like Cassandra, Postgres, or ElasticSearch."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b706",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

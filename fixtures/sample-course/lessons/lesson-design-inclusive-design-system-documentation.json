@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6c1",
+  "id": "design-inclusive-design-system-documentation",
+  "slug": "design-inclusive-design-system-documentation",
+  "version": "1.0.0",
+  "title": "Design Inclusive Design System Documentation",
+  "description": "Architect a living style guide that documents keyboard interaction models for components. Document ARIA requirements for every component within a design system.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a living style guide that documents keyboard interaction models for components.",
+    "Document ARIA requirements for every component within a design system."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6be",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

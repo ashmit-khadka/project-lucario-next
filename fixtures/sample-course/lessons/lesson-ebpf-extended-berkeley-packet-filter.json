@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b718",
+  "id": "ebpf-extended-berkeley-packet-filter",
+  "slug": "ebpf-extended-berkeley-packet-filter",
+  "version": "1.0.0",
+  "title": "eBPF (Extended Berkeley Packet Filter)",
+  "description": "Master the capabilities of eBPF for deep system-level observability in cloud-native environments. Utilize eBPF-based tools (e.g., Cilium/Hubble) to gain visibility into network flows and system calls without code modification.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the capabilities of eBPF for deep system-level observability in cloud-native environments.",
+    "Utilize eBPF-based tools (e.g., Cilium/Hubble) to gain visibility into network flows and system calls without code modification."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b717",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

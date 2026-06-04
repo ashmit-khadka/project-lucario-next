@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4b7",
+  "id": "cname-flattening-alias-records",
+  "slug": "cname-flattening-alias-records",
+  "version": "1.0.0",
+  "title": "CNAME Flattening & ALIAS Records",
+  "description": "Analyze the \"Zone Apex\" problem in DNS and its implications for root domains. Explain how CNAME Flattening and ALIAS records address the Zone Apex problem. Implement solutions to point root domains to CDN endpoints while maintaining RFC compliance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the \"Zone Apex\" problem in DNS and its implications for root domains.",
+    "Explain how CNAME Flattening and ALIAS records address the Zone Apex problem.",
+    "Implement solutions to point root domains to CDN endpoints while maintaining RFC compliance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4b3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

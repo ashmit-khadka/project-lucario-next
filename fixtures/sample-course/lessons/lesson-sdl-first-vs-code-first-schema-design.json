@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b567",
+  "id": "sdl-first-vs-code-first-schema-design",
+  "slug": "sdl-first-vs-code-first-schema-design",
+  "version": "1.0.0",
+  "title": "SDL-First vs. Code-First Schema Design",
+  "description": "Evaluate the strengths and weaknesses of SDL-First and Code-First GraphQL architectures. Implement demand-driven GraphQL schemas that prioritize consumer requirements over internal data models.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the strengths and weaknesses of SDL-First and Code-First GraphQL architectures.",
+    "Implement demand-driven GraphQL schemas that prioritize consumer requirements over internal data models."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b566",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b488",
+  "id": "evaluate-v8-code-caching-strategies",
+  "slug": "evaluate-v8-code-caching-strategies",
+  "version": "1.0.0",
+  "title": "Evaluate V8 Code Caching Strategies",
+  "description": "Explain the purpose and mechanisms of V8 code caching. Evaluate different V8 code caching strategies for optimizing cold-start performance in serverless environments. Apply code caching techniques to improve the performance of long-lived Node.js processes.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the purpose and mechanisms of V8 code caching.",
+    "Evaluate different V8 code caching strategies for optimizing cold-start performance in serverless environments.",
+    "Apply code caching techniques to improve the performance of long-lived Node.js processes."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b485",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

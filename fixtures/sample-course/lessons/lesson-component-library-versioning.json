@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b633",
+  "id": "component-library-versioning",
+  "slug": "component-library-versioning",
+  "version": "1.0.0",
+  "title": "Component Library Versioning",
+  "description": "Implement a robust versioning strategy for component libraries. Apply \"breaking change\" governance and automated visual regression testing to ensure stability across product teams.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement a robust versioning strategy for component libraries.",
+    "Apply \"breaking change\" governance and automated visual regression testing to ensure stability across product teams."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b631",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

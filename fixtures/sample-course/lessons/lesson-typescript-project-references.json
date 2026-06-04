@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ff",
+  "id": "typescript-project-references",
+  "slug": "typescript-project-references",
+  "version": "1.0.0",
+  "title": "TypeScript Project References",
+  "description": "Master TypeScript Project References to optimize build performance in monorepos. Implement `composite: true` and incremental compilation across package boundaries for faster feedback loops.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master TypeScript Project References to optimize build performance in monorepos.",
+    "Implement `composite: true` and incremental compilation across package boundaries for faster feedback loops."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4fe",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

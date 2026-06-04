@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b503",
+  "id": "profile-the-compiler-using-generatetrace",
+  "slug": "profile-the-compiler-using-generatetrace",
+  "version": "1.0.0",
+  "title": "Profile the compiler using `-generateTrace`",
+  "description": "Profile TypeScript compiler performance using the `-generateTrace` flag. Identify \"Hot Types\" and expensive union comparisons that contribute to slow CI pipelines and IDE lag.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Profile TypeScript compiler performance using the `-generateTrace` flag.",
+    "Identify \"Hot Types\" and expensive union comparisons that contribute to slow CI pipelines and IDE lag."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b502",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

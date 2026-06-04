@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b518",
+  "id": "architect-durable-state-machines",
+  "slug": "architect-durable-state-machines",
+  "version": "1.0.0",
+  "title": "Architect Durable State Machines",
+  "description": "Architect persistence layers for state machines that enable rehydration of workflows after server restarts or migrations. Design durable state machines to ensure continuous operation and data integrity in resilient backend services.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect persistence layers for state machines that enable rehydration of workflows after server restarts or migrations.",
+    "Design durable state machines to ensure continuous operation and data integrity in resilient backend services."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b517",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

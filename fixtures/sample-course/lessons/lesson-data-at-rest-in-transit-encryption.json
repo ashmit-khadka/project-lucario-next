@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b67e",
+  "id": "data-at-rest-in-transit-encryption",
+  "slug": "data-at-rest-in-transit-encryption",
+  "version": "1.0.0",
+  "title": "Data-at-Rest & In-Transit Encryption",
+  "description": "Implement Envelope Encryption with KMS-backed key rotation to protect PII at rest. Implement Mutual TLS (mTLS) for secure, zero-trust service-to-service communication. Distinguish between and apply appropriate encryption strategies for data at rest and in transit.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Envelope Encryption with KMS-backed key rotation to protect PII at rest.",
+    "Implement Mutual TLS (mTLS) for secure, zero-trust service-to-service communication.",
+    "Distinguish between and apply appropriate encryption strategies for data at rest and in transit."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b67b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

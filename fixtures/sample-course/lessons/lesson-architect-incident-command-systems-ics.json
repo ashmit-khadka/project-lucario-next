@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b666",
+  "id": "architect-incident-command-systems-ics",
+  "slug": "architect-incident-command-systems-ics",
+  "version": "1.0.0",
+  "title": "Architect Incident Command Systems (ICS)",
+  "description": "Define clear roles and responsibilities within an Incident Command System (ICS) during critical outages. Establish operational discipline to prevent the \"Bystander Effect\" during Sev-1 incidents. Design an organizational structure for effective incident management and coordination.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Define clear roles and responsibilities within an Incident Command System (ICS) during critical outages.",
+    "Establish operational discipline to prevent the \"Bystander Effect\" during Sev-1 incidents.",
+    "Design an organizational structure for effective incident management and coordination."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b665",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

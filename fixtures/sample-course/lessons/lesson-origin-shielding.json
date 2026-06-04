@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c6",
+  "id": "origin-shielding",
+  "slug": "origin-shielding",
+  "version": "1.0.0",
+  "title": "Origin Shielding",
+  "description": "Architect origin shielding solutions to protect backend servers from excessive requests. Implement a secondary caching layer to absorb \"Thundering Herd\" events during cache expirations. Evaluate the benefits of origin shielding for origin server stability and performance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect origin shielding solutions to protect backend servers from excessive requests.",
+    "Implement a secondary caching layer to absorb \"Thundering Herd\" events during cache expirations.",
+    "Evaluate the benefits of origin shielding for origin server stability and performance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

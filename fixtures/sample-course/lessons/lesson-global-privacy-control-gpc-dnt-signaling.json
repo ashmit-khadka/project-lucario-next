@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b69d",
+  "id": "global-privacy-control-gpc-dnt-signaling",
+  "slug": "global-privacy-control-gpc-dnt-signaling",
+  "version": "1.0.0",
+  "title": "Global Privacy Control (GPC) & DNT Signaling",
+  "description": "Architect technical support for browser-level privacy signals (GPC, DNT). Automate compliance with user privacy preferences signaled by browsers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect technical support for browser-level privacy signals (GPC, DNT).",
+    "Automate compliance with user privacy preferences signaled by browsers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b69b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

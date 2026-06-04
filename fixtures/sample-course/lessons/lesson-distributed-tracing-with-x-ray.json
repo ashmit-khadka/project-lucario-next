@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b60d",
+  "id": "distributed-tracing-with-x-ray",
+  "slug": "distributed-tracing-with-x-ray",
+  "version": "1.0.0",
+  "title": "Distributed Tracing with X-Ray",
+  "description": "Implement distributed tracing using AWS X-Ray for end-to-end request visibility. Architect solutions to identify performance bottlenecks across multiple cloud services and microservices.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement distributed tracing using AWS X-Ray for end-to-end request visibility.",
+    "Architect solutions to identify performance bottlenecks across multiple cloud services and microservices."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b60b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

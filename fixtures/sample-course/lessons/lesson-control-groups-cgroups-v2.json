@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6f4",
+  "id": "control-groups-cgroups-v2",
+  "slug": "control-groups-cgroups-v2",
+  "version": "1.0.0",
+  "title": "Control Groups (cgroups v2)",
+  "description": "Architect resource constraints using cgroups v2 to manage CPU, memory, and I/O for container workloads. Evaluate cgroups v2 mechanisms to prevent resource exhaustion and 'Noisy Neighbor' issues in shared environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect resource constraints using cgroups v2 to manage CPU, memory, and I/O for container workloads.",
+    "Evaluate cgroups v2 mechanisms to prevent resource exhaustion and 'Noisy Neighbor' issues in shared environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b6f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

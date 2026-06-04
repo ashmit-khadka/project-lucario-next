@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b599",
+  "id": "implement-webrtc-datachannels",
+  "slug": "implement-webrtc-datachannels",
+  "version": "1.0.0",
+  "title": "Implement WebRTC DataChannels",
+  "description": "Architect low-latency, non-media data transfer pipelines using WebRTC DataChannels. Implement WebRTC DataChannels with configurable reliability (SCTP) for applications like gaming and real-time collaboration.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect low-latency, non-media data transfer pipelines using WebRTC DataChannels.",
+    "Implement WebRTC DataChannels with configurable reliability (SCTP) for applications like gaming and real-time collaboration."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b597",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

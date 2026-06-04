@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ac",
+  "id": "implement-self-healing-introspection",
+  "slug": "implement-self-healing-introspection",
+  "version": "1.0.0",
+  "title": "Implement Self-Healing Introspection",
+  "description": "Utilize `v8.getHeapStatistics()` and `process.resourceUsage()` for runtime introspection of Node.js processes. Architect self-healing systems that can detect impending Out-Of-Memory (OOM) events. Implement graceful restart mechanisms triggered by resource usage thresholds to prevent catastrophic failures.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize `v8.getHeapStatistics()` and `process.resourceUsage()` for runtime introspection of Node.js processes.",
+    "Architect self-healing systems that can detect impending Out-Of-Memory (OOM) events.",
+    "Implement graceful restart mechanisms triggered by resource usage thresholds to prevent catastrophic failures."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b4a9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

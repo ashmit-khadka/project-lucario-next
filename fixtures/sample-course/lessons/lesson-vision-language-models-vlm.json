@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6e8",
+  "id": "vision-language-models-vlm",
+  "slug": "vision-language-models-vlm",
+  "version": "1.0.0",
+  "title": "Vision-Language Models (VLM)",
+  "description": "Master Vision-Language Models (VLM) for processing interleaved image and text inputs. Architect systems leveraging models like LLaVA or GPT-4o for visual reasoning and OCR tasks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master Vision-Language Models (VLM) for processing interleaved image and text inputs.",
+    "Architect systems leveraging models like LLaVA or GPT-4o for visual reasoning and OCR tasks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6e7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

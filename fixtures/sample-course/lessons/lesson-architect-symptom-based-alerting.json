@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b65f",
+  "id": "architect-symptom-based-alerting",
+  "slug": "architect-symptom-based-alerting",
+  "version": "1.0.0",
+  "title": "Architect Symptom-Based Alerting",
+  "description": "Design alerting rules based on Multi-Window Burn Rates of SLOs to prioritize user-facing impact. Eliminate alert fatigue by focusing on symptom-based alerts rather than low-level resource utilization. Configure paging systems to respond to critical, user-impacting reliability issues.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design alerting rules based on Multi-Window Burn Rates of SLOs to prioritize user-facing impact.",
+    "Eliminate alert fatigue by focusing on symptom-based alerts rather than low-level resource utilization.",
+    "Configure paging systems to respond to critical, user-impacting reliability issues."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b65c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6d4",
+  "id": "structured-output-enforcement",
+  "slug": "structured-output-enforcement",
+  "version": "1.0.0",
+  "title": "Structured Output Enforcement",
+  "description": "Utilize Pydantic and JSON Schema to enforce structured outputs from LLMs. Master the use of libraries like `instructor` or `outlines` to ensure LLM responses strictly adhere to valid application data models.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize Pydantic and JSON Schema to enforce structured outputs from LLMs.",
+    "Master the use of libraries like `instructor` or `outlines` to ensure LLM responses strictly adhere to valid application data models."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6d1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

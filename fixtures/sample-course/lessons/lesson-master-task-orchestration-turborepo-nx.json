@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b53f",
+  "id": "master-task-orchestration-turborepo-nx",
+  "slug": "master-task-orchestration-turborepo-nx",
+  "version": "1.0.0",
+  "title": "Master Task Orchestration (Turborepo/Nx)",
+  "description": "Implement remote caching in monorepos using tools like Turborepo or Nx to optimize CI/CD pipelines. Apply 'Affected' build logic to ensure only modified sub-graphs trigger tests and builds. Optimize CI pipeline efficiency in large repositories through advanced task orchestration techniques.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement remote caching in monorepos using tools like Turborepo or Nx to optimize CI/CD pipelines.",
+    "Apply 'Affected' build logic to ensure only modified sub-graphs trigger tests and builds.",
+    "Optimize CI pipeline efficiency in large repositories through advanced task orchestration techniques."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b53e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

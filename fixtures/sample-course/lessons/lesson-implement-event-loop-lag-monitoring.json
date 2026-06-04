@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b48d",
+  "id": "implement-event-loop-lag-monitoring",
+  "slug": "implement-event-loop-lag-monitoring",
+  "version": "1.0.0",
+  "title": "Implement Event Loop Lag Monitoring",
+  "description": "Implement Event Loop lag monitoring using `perf_hooks` to detect 'Main Thread Jank'. Analyze Event Loop lag data to identify performance bottlenecks in high-throughput APIs. Architect automated load shedding mechanisms triggered by excessive Event Loop lag.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Event Loop lag monitoring using `perf_hooks` to detect 'Main Thread Jank'.",
+    "Analyze Event Loop lag data to identify performance bottlenecks in high-throughput APIs.",
+    "Architect automated load shedding mechanisms triggered by excessive Event Loop lag."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b48a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

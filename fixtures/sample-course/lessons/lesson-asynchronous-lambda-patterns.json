@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5eb",
+  "id": "asynchronous-lambda-patterns",
+  "slug": "asynchronous-lambda-patterns",
+  "version": "1.0.0",
+  "title": "Asynchronous Lambda Patterns",
+  "description": "Architect asynchronous Lambda patterns for robust event-driven workflows. Manage event-source mappings, retry behaviors, and Dead Letter Queues to ensure eventual consistency and error handling.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect asynchronous Lambda patterns for robust event-driven workflows.",
+    "Manage event-source mappings, retry behaviors, and Dead Letter Queues to ensure eventual consistency and error handling."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5e8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

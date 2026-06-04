@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b559",
+  "id": "master-the-strangler-fig-pattern",
+  "slug": "master-the-strangler-fig-pattern",
+  "version": "1.0.0",
+  "title": "Master the Strangler Fig Pattern",
+  "description": "Architect the incremental replacement of legacy monoliths using the Strangler Fig Pattern. Design traffic routing strategies via load balancers to gradually shift load to new microservices. Implement a phased migration approach to minimize risk during architectural transitions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect the incremental replacement of legacy monoliths using the Strangler Fig Pattern.",
+    "Design traffic routing strategies via load balancers to gradually shift load to new microservices.",
+    "Implement a phased migration approach to minimize risk during architectural transitions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b558",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

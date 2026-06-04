@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4e5",
+  "id": "the-parse-don-t-validate-paradigm",
+  "slug": "the-parse-don-t-validate-paradigm",
+  "version": "1.0.0",
+  "title": "The \"Parse, Don't Validate\" Paradigm",
+  "description": "Master the \"Parse, Don't Validate\" paradigm to transform external unknown inputs into trusted, typed domain models. Utilize schema-first libraries (e.g., Zod, Valibot) to enforce data contracts at the system edge.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the \"Parse, Don't Validate\" paradigm to transform external unknown inputs into trusted, typed domain models.",
+    "Utilize schema-first libraries (e.g., Zod, Valibot) to enforce data contracts at the system edge."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4e4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

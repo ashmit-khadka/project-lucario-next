@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b61e",
+  "id": "react-server-components-rsc",
+  "slug": "react-server-components-rsc",
+  "version": "1.0.0",
+  "title": "React Server Components (RSC)",
+  "description": "Architect solutions using React Server Components to define clear boundaries between server-side and client-side logic. Minimize JavaScript bundle delivery and client-side overhead by leveraging server-only compute.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect solutions using React Server Components to define clear boundaries between server-side and client-side logic.",
+    "Minimize JavaScript bundle delivery and client-side overhead by leveraging server-only compute."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b615",
+  "chapterId": "6a115062bfafb1ab7ac3b61b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b53d",
+  "id": "architect-mfe-communication",
+  "slug": "architect-mfe-communication",
+  "version": "1.0.0",
+  "title": "Architect MFE Communication",
+  "description": "Implement low-coupling communication patterns, such as Custom Events, for inter-MFE interaction. Architect a 'Global Bus' or similar actor model to facilitate communication between independently deployed MFEs. Design MFE communication strategies that prevent direct memory sharing and maintain autonomy.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement low-coupling communication patterns, such as Custom Events, for inter-MFE interaction.",
+    "Architect a 'Global Bus' or similar actor model to facilitate communication between independently deployed MFEs.",
+    "Design MFE communication strategies that prevent direct memory sharing and maintain autonomy."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b539",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b532",
+  "id": "master-multi-agent-orchestration",
+  "slug": "master-multi-agent-orchestration",
+  "version": "1.0.0",
+  "title": "Master Multi-Agent Orchestration",
+  "description": "Master the orchestration of multi-agent systems using coordinator state machines. Implement state hand-offs and communication protocols between specialized AI agents within complex workflows.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the orchestration of multi-agent systems using coordinator state machines.",
+    "Implement state hand-offs and communication protocols between specialized AI agents within complex workflows."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b52f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

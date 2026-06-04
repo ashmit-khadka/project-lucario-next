@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5e1",
+  "id": "event-sourcing",
+  "slug": "event-sourcing",
+  "version": "1.0.0",
+  "title": "Event Sourcing",
+  "description": "Implement event sourcing as an architectural pattern for managing application state. Architect systems where the current state is derived from an immutable event log, facilitating audit trails and \"time-travel\" capabilities.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement event sourcing as an architectural pattern for managing application state.",
+    "Architect systems where the current state is derived from an immutable event log, facilitating audit trails and \"time-travel\" capabilities."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5df",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

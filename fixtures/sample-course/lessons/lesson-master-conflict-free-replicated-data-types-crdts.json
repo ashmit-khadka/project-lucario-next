@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5a1",
+  "id": "master-conflict-free-replicated-data-types-crdts",
+  "slug": "master-conflict-free-replicated-data-types-crdts",
+  "version": "1.0.0",
+  "title": "Master Conflict-free Replicated Data Types (CRDTs)",
+  "description": "Architect 'Local-First' collaborative applications using CRDTs. Master the use of LWW-Registers, G-Counters, and Sequence types for eventual consistency in real-time systems.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect 'Local-First' collaborative applications using CRDTs.",
+    "Master the use of LWW-Registers, G-Counters, and Sequence types for eventual consistency in real-time systems."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a0",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

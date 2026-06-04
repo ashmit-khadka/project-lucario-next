@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b565",
+  "id": "sub-resource-vs-root-resource-architecture",
+  "slug": "sub-resource-vs-root-resource-architecture",
+  "version": "1.0.0",
+  "title": "Sub-resource vs. Root-resource Architecture",
+  "description": "Evaluate the trade-offs between deep nesting and flat resource structures in API design. Architect resource structures that optimize for cacheability and clear URL design. Distinguish between sub-resource and root-resource architectural approaches.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the trade-offs between deep nesting and flat resource structures in API design.",
+    "Architect resource structures that optimize for cacheability and clear URL design.",
+    "Distinguish between sub-resource and root-resource architectural approaches."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b560",
+  "chapterId": "6a115062bfafb1ab7ac3b561",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

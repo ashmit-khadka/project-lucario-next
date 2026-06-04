@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b545",
+  "id": "implement-grpc-for-internal-communication",
+  "slug": "implement-grpc-for-internal-communication",
+  "version": "1.0.0",
+  "title": "Implement gRPC for Internal Communication",
+  "description": "Implement gRPC for high-frequency internal service-to-service communication. Utilize Protobuf's binary serialization for efficient data exchange. Design APIs with strict schema evolution to ensure compatibility across service versions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement gRPC for high-frequency internal service-to-service communication.",
+    "Utilize Protobuf's binary serialization for efficient data exchange.",
+    "Design APIs with strict schema evolution to ensure compatibility across service versions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b542",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b59d",
+  "id": "implement-server-sent-events-sse",
+  "slug": "implement-server-sent-events-sse",
+  "version": "1.0.0",
+  "title": "Implement Server-Sent Events (SSE)",
+  "description": "Evaluate Server-Sent Events (SSE) as a unidirectional, HTTP-native alternative for live updates. Implement 'Last-Event-ID' recovery logic for robust SSE connections.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate Server-Sent Events (SSE) as a unidirectional, HTTP-native alternative for live updates.",
+    "Implement 'Last-Event-ID' recovery logic for robust SSE connections."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b59c",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

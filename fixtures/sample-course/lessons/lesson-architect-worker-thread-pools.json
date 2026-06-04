@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4a3",
+  "id": "architect-worker-thread-pools",
+  "slug": "architect-worker-thread-pools",
+  "version": "1.0.0",
+  "title": "Architect Worker Thread Pools",
+  "description": "Architect Worker Thread Pools to offload CPU-bound tasks from the primary Event Loop. Manage message passing and Transferable objects for efficient inter-thread communication. Implement thread orchestration patterns to coordinate tasks across multiple worker threads.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect Worker Thread Pools to offload CPU-bound tasks from the primary Event Loop.",
+    "Manage message passing and Transferable objects for efficient inter-thread communication.",
+    "Implement thread orchestration patterns to coordinate tasks across multiple worker threads."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b4a2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

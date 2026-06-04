@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4a5",
+  "id": "implement-communication-patterns",
+  "slug": "implement-communication-patterns",
+  "version": "1.0.0",
+  "title": "Implement Communication Patterns",
+  "description": "Implement advanced communication patterns between worker threads using `MessageChannel`. Utilize `BroadcastChannel` for efficient many-to-many communication across multiple contexts. Design robust inter-thread coordination strategies for complex multi-threaded Node.js applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement advanced communication patterns between worker threads using `MessageChannel`.",
+    "Utilize `BroadcastChannel` for efficient many-to-many communication across multiple contexts.",
+    "Design robust inter-thread coordination strategies for complex multi-threaded Node.js applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b4a2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

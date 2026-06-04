@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b63d",
+  "id": "evaluate-mocking-boundaries",
+  "slug": "evaluate-mocking-boundaries",
+  "version": "1.0.0",
+  "title": "Evaluate Mocking Boundaries",
+  "description": "Evaluate appropriate mocking boundaries for various testing scenarios. Implement the \"Don't Mock What You Don't Own\" principle using real dependencies or high-fidelity stubs for third-party APIs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate appropriate mocking boundaries for various testing scenarios.",
+    "Implement the \"Don't Mock What You Don't Own\" principle using real dependencies or high-fidelity stubs for third-party APIs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63a",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

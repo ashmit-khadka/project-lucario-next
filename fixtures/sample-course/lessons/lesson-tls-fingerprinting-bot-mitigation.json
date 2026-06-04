@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b683",
+  "id": "tls-fingerprinting-bot-mitigation",
+  "slug": "tls-fingerprinting-bot-mitigation",
+  "version": "1.0.0",
+  "title": "TLS Fingerprinting & Bot Mitigation",
+  "description": "Utilize JA3/JA4 fingerprinting to identify and distinguish bot traffic from legitimate user agents. Implement bot mitigation strategies at the load balancer or edge layer. Analyze TLS fingerprints to detect malicious automated agents and prevent API abuse.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize JA3/JA4 fingerprinting to identify and distinguish bot traffic from legitimate user agents.",
+    "Implement bot mitigation strategies at the load balancer or edge layer.",
+    "Analyze TLS fingerprints to detect malicious automated agents and prevent API abuse."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b680",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

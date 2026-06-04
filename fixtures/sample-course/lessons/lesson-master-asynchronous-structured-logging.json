@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b658",
+  "id": "master-asynchronous-structured-logging",
+  "slug": "master-asynchronous-structured-logging",
+  "version": "1.0.0",
+  "title": "Master Asynchronous Structured Logging",
+  "description": "Utilize libraries like Pino for high-performance, asynchronous structured logging in Node.js applications. Implement dedicated worker threads to offload log streaming to stdout without impacting the V8 main thread. Design structured JSON log formats for improved parseability and analytical capabilities.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize libraries like Pino for high-performance, asynchronous structured logging in Node.js applications.",
+    "Implement dedicated worker threads to offload log streaming to stdout without impacting the V8 main thread.",
+    "Design structured JSON log formats for improved parseability and analytical capabilities."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b657",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b64e",
+  "id": "design-test-to-trace-mapping",
+  "slug": "design-test-to-trace-mapping",
+  "version": "1.0.0",
+  "title": "Design Test-to-Trace Mapping",
+  "description": "Architect a system that maps test failures to deep-link traces in backend code. Enable rapid identification of the root cause of test failures using integrated observability.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a system that maps test failures to deep-link traces in backend code.",
+    "Enable rapid identification of the root cause of test failures using integrated observability."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b64d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

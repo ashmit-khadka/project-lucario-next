@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6f3",
+  "id": "linux-namespaces-pid-net-mount-user",
+  "slug": "linux-namespaces-pid-net-mount-user",
+  "version": "1.0.0",
+  "title": "Linux Namespaces (PID, Net, Mount, User)",
+  "description": "Master Linux Namespaces to explain how they provide process and network isolation for containers. Implement specific Namespace types (PID, Net, Mount, User) to achieve desired levels of container isolation.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master Linux Namespaces to explain how they provide process and network isolation for containers.",
+    "Implement specific Namespace types (PID, Net, Mount, User) to achieve desired levels of container isolation."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6f1",
+  "chapterId": "6a115062bfafb1ab7ac3b6f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4e7",
+  "id": "type-casting-vs-narrowing",
+  "slug": "type-casting-vs-narrowing",
+  "version": "1.0.0",
+  "title": "Type Casting vs. Narrowing",
+  "description": "Evaluate the architectural risks associated with `as` assertions (type casting) in complex systems. Implement user-defined Type Guards to safely narrow types and maintain a sound type-system.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the architectural risks associated with `as` assertions (type casting) in complex systems.",
+    "Implement user-defined Type Guards to safely narrow types and maintain a sound type-system."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4e4",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

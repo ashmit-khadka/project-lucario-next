@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4b6",
+  "id": "dns-security-doh-dot-dnssec",
+  "slug": "dns-security-doh-dot-dnssec",
+  "version": "1.0.0",
+  "title": "DNS Security (DoH/DoT & DNSSEC)",
+  "description": "Deconstruct the mechanisms and benefits of DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT). Evaluate the privacy trade-offs associated with encrypted DNS protocols. Analyze the architectural costs and security benefits of deploying DNSSEC.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the mechanisms and benefits of DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT).",
+    "Evaluate the privacy trade-offs associated with encrypted DNS protocols.",
+    "Analyze the architectural costs and security benefits of deploying DNSSEC."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4b3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

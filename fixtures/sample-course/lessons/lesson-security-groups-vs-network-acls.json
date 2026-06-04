@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b605",
+  "id": "security-groups-vs-network-acls",
+  "slug": "security-groups-vs-network-acls",
+  "version": "1.0.0",
+  "title": "Security Groups vs. Network ACLs",
+  "description": "Architect defense-in-depth network security using Security Groups and Network ACLs. Implement stateful instance-level firewalls and stateless subnet-level traffic filters effectively.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect defense-in-depth network security using Security Groups and Network ACLs.",
+    "Implement stateful instance-level firewalls and stateless subnet-level traffic filters effectively."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b601",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b687",
+  "id": "security-headers-cookie-hardening",
+  "slug": "security-headers-cookie-hardening",
+  "version": "1.0.0",
+  "title": "Security Headers & Cookie Hardening",
+  "description": "Design 'Default-Secure' configurations for HTTP security headers like Strict-Transport-Security and X-Content-Type-Options. Implement cookie hardening techniques using `__Host-` prefixes and other attributes. Harden the client-side security boundary against common web vulnerabilities using security headers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design 'Default-Secure' configurations for HTTP security headers like Strict-Transport-Security and X-Content-Type-Options.",
+    "Implement cookie hardening techniques using `__Host-` prefixes and other attributes.",
+    "Harden the client-side security boundary against common web vulnerabilities using security headers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b684",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

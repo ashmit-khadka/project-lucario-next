@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ab",
+  "id": "master-mutual-tls-mtls-for-grpc",
+  "slug": "master-mutual-tls-mtls-for-grpc",
+  "version": "1.0.0",
+  "title": "Master Mutual TLS (mTLS) for gRPC",
+  "description": "Implement zero-trust service-to-service communication using Mutual TLS (mTLS) for gRPC. Master client-certificate verification at the network layer to secure gRPC communication.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement zero-trust service-to-service communication using Mutual TLS (mTLS) for gRPC.",
+    "Master client-certificate verification at the network layer to secure gRPC communication."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5a8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

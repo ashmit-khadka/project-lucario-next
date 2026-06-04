@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6cd",
+  "id": "high-fidelity-rag-pipelines",
+  "slug": "high-fidelity-rag-pipelines",
+  "version": "1.0.0",
+  "title": "High-Fidelity RAG Pipelines",
+  "description": "Architect high-fidelity RAG pipelines by integrating Hybrid Search, Query Expansion, and Re-ranking. Implement strategies using Cross-Encoders to solve the 'Lost in the Middle' retrieval problem in RAG systems.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect high-fidelity RAG pipelines by integrating Hybrid Search, Query Expansion, and Re-ranking.",
+    "Implement strategies using Cross-Encoders to solve the 'Lost in the Middle' retrieval problem in RAG systems."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6cc",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

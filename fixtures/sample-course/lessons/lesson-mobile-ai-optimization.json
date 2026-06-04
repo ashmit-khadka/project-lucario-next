@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6f0",
+  "id": "mobile-ai-optimization",
+  "slug": "mobile-ai-optimization",
+  "version": "1.0.0",
+  "title": "Mobile AI Optimization",
+  "description": "Master mobile AI optimization techniques for deploying Small Language Models (SLMs) to mobile hardware. Evaluate CoreML and TensorFlow Lite for managing limited thermal and battery constraints on mobile devices.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master mobile AI optimization techniques for deploying Small Language Models (SLMs) to mobile hardware.",
+    "Evaluate CoreML and TensorFlow Lite for managing limited thermal and battery constraints on mobile devices."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6ee",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

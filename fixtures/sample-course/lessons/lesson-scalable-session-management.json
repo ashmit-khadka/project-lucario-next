@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b670",
+  "id": "scalable-session-management",
+  "slug": "scalable-session-management",
+  "version": "1.0.0",
+  "title": "Scalable Session Management",
+  "description": "Evaluate the architectural trade-offs between stateless JWTs and stateful Redis-backed sessions. Implement high-speed token revocation strategies for active user sessions. Design 'Logout Everywhere' functionality and prevent token bloat in session management.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Evaluate the architectural trade-offs between stateless JWTs and stateful Redis-backed sessions.",
+    "Implement high-speed token revocation strategies for active user sessions.",
+    "Design 'Logout Everywhere' functionality and prevent token bloat in session management."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b66d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

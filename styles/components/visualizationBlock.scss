@@ -1,0 +1,25 @@
+@import '../base/colours';
+
+.visualization-block {
+    background-color: $color-font-primary-darker;
+    color: $color-font-primary-lighter;
+    overflow: hidden;
+
+    h4 {
+        color: $color-font-primary-lighter !important;
+    }
+
+    /* Target specific dark mode overrides if needed */
+    .recharts-text {
+        fill: $color-font-primary-lighter !important;
+    }
+
+    &.flowchart-block {
+        background-color: transparent !important;
+        color: $color-font-primary !important;
+
+        h4 {
+            color: $color-font-primary !important;
+        }
+    }
+}

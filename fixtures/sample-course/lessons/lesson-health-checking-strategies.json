@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4ca",
+  "id": "health-checking-strategies",
+  "slug": "health-checking-strategies",
+  "version": "1.0.0",
+  "title": "Health Checking Strategies",
+  "description": "Design robust active and passive health checking strategies for backend services. Implement \"Zombie\" detection mechanisms to identify and remove failing nodes promptly. Evaluate the impact of health check configuration on P99 latency and overall system reliability.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design robust active and passive health checking strategies for backend services.",
+    "Implement \"Zombie\" detection mechanisms to identify and remove failing nodes promptly.",
+    "Evaluate the impact of health check configuration on P99 latency and overall system reliability."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

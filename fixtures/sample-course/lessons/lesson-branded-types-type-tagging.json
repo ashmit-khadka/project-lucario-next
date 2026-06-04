@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4e0",
+  "id": "branded-types-type-tagging",
+  "slug": "branded-types-type-tagging",
+  "version": "1.0.0",
+  "title": "Branded Types (Type Tagging)",
+  "description": "Master branded types to enforce nominal typing, preventing accidental misuse of primitive-based identifiers. Implement type tagging to create distinct types from primitives, improving type safety in domain models.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master branded types to enforce nominal typing, preventing accidental misuse of primitive-based identifiers.",
+    "Implement type tagging to create distinct types from primitives, improving type safety in domain models."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4df",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

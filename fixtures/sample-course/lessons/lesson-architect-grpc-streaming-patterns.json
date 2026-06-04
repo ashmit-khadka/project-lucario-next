@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b58f",
+  "id": "architect-grpc-streaming-patterns",
+  "slug": "architect-grpc-streaming-patterns",
+  "version": "1.0.0",
+  "title": "Architect gRPC Streaming Patterns",
+  "description": "Implement Unary, Server-Streaming, Client-Streaming, and Bidirectional-Streaming patterns in gRPC. Architect high-throughput inter-service communication solutions using various gRPC streaming patterns.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Unary, Server-Streaming, Client-Streaming, and Bidirectional-Streaming patterns in gRPC.",
+    "Architect high-throughput inter-service communication solutions using various gRPC streaming patterns."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b58d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

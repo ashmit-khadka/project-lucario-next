@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5e0",
+  "id": "cdc-via-wal-streaming-debezium",
+  "slug": "cdc-via-wal-streaming-debezium",
+  "version": "1.0.0",
+  "title": "CDC via WAL Streaming (Debezium)",
+  "description": "Master the principles of Change Data Capture (CDC) via Write-Ahead Log (WAL) streaming using tools like Debezium. Architect low-latency data synchronization solutions between primary databases and downstream search or analytics engines, eliminating the need for double-writes.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the principles of Change Data Capture (CDC) via Write-Ahead Log (WAL) streaming using tools like Debezium.",
+    "Architect low-latency data synchronization solutions between primary databases and downstream search or analytics engines, eliminating the need for double-writes."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5df",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

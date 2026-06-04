@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4fb",
+  "id": "const-type-parameters",
+  "slug": "const-type-parameters",
+  "version": "1.0.0",
+  "title": "`const` Type Parameters",
+  "description": "Master `const` type parameters to capture the narrowest possible literal types from function arguments. Build highly precise API clients and configuration engines using literal type inference.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master `const` type parameters to capture the narrowest possible literal types from function arguments.",
+    "Build highly precise API clients and configuration engines using literal type inference."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4fa",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

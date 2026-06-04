@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b525",
+  "id": "master-optimistic-ui-reconciliation",
+  "slug": "master-optimistic-ui-reconciliation",
+  "version": "1.0.0",
+  "title": "Master Optimistic UI Reconciliation",
+  "description": "Architect state logic that supports optimistic UI updates and manages subsequent reconciliation. Master the implementation of \"rollbacks\" when client-side speculative state conflicts with the authoritative backend state.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect state logic that supports optimistic UI updates and manages subsequent reconciliation.",
+    "Master the implementation of \"rollbacks\" when client-side speculative state conflicts with the authoritative backend state."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b523",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ea",
+  "id": "cold-start-mitigation-strategies",
+  "slug": "cold-start-mitigation-strategies",
+  "version": "1.0.0",
+  "title": "Cold Start Mitigation Strategies",
+  "description": "Implement various cold start mitigation strategies, including provisioned concurrency and architectural warmers. Optimize serverless function bundle sizes to improve cold-start performance and meet P99 latency requirements.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement various cold start mitigation strategies, including provisioned concurrency and architectural warmers.",
+    "Optimize serverless function bundle sizes to improve cold-start performance and meet P99 latency requirements."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5e8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

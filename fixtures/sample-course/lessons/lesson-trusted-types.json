@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b67a",
+  "id": "trusted-types",
+  "slug": "trusted-types",
+  "version": "1.0.0",
+  "title": "Trusted Types",
+  "description": "Architect strict DOM policies using Trusted Types to eliminate DOM-based XSS vulnerabilities. Enforce type-safety on dangerous 'Sink' functions like `innerHTML` and `eval'. Implement Trusted Types to enhance the security posture of web applications against client-side injection attacks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect strict DOM policies using Trusted Types to eliminate DOM-based XSS vulnerabilities.",
+    "Enforce type-safety on dangerous 'Sink' functions like `innerHTML` and `eval'.",
+    "Implement Trusted Types to enhance the security posture of web applications against client-side injection attacks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b676",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

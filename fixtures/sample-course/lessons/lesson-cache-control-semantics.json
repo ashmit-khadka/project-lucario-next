@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c3",
+  "id": "cache-control-semantics",
+  "slug": "cache-control-semantics",
+  "version": "1.0.0",
+  "title": "Cache-Control Semantics",
+  "description": "Design sophisticated caching hierarchies using Cache-Control directives. Explain the behavior and use cases of stale-while-revalidate, immutable, and must-revalidate. Evaluate the performance and freshness trade-offs of different caching strategies.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design sophisticated caching hierarchies using Cache-Control directives.",
+    "Explain the behavior and use cases of stale-while-revalidate, immutable, and must-revalidate.",
+    "Evaluate the performance and freshness trade-offs of different caching strategies."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

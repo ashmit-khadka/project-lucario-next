@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4c4",
+  "id": "surrogate-keys-tagged-invalidation",
+  "slug": "surrogate-keys-tagged-invalidation",
+  "version": "1.0.0",
+  "title": "Surrogate Keys & Tagged Invalidation",
+  "description": "Implement surrogate keys for fine-grained content invalidation in CDN environments. Architect global cache purging systems using tagged invalidation to achieve instantaneous updates. Design strategies for managing cache freshness and consistency across distributed CDN nodes.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement surrogate keys for fine-grained content invalidation in CDN environments.",
+    "Architect global cache purging systems using tagged invalidation to achieve instantaneous updates.",
+    "Design strategies for managing cache freshness and consistency across distributed CDN nodes."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4c2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

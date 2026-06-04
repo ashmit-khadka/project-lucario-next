@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b514",
+  "id": "master-parallel-states-orthogonal-regions",
+  "slug": "master-parallel-states-orthogonal-regions",
+  "version": "1.0.0",
+  "title": "Master Parallel States (Orthogonal Regions)",
+  "description": "Master the orchestration of independent concurrent logic using orthogonal regions within a single state machine. Design statecharts to manage multiple parallel activities, such as UI status and background synchronization.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the orchestration of independent concurrent logic using orthogonal regions within a single state machine.",
+    "Design statecharts to manage multiple parallel activities, such as UI status and background synchronization."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b512",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

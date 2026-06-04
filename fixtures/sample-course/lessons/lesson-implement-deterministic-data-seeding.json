@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b641",
+  "id": "implement-deterministic-data-seeding",
+  "slug": "implement-deterministic-data-seeding",
+  "version": "1.0.0",
+  "title": "Implement Deterministic Data Seeding",
+  "description": "Design deterministic data seeding strategies, including \"State Injection\" via direct DB writes or API calls. Bypass slow UI-driven setup processes to accelerate integration test execution.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design deterministic data seeding strategies, including \"State Injection\" via direct DB writes or API calls.",
+    "Bypass slow UI-driven setup processes to accelerate integration test execution."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

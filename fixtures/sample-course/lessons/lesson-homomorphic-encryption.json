@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b68c",
+  "id": "homomorphic-encryption",
+  "slug": "homomorphic-encryption",
+  "version": "1.0.0",
+  "title": "Homomorphic Encryption",
+  "description": "Analyze the performance trade-offs of computing directly on encrypted data for highly sensitive cloud processing. Implement Partial and Full homomorphic encryption schemes for specific mathematical operations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the performance trade-offs of computing directly on encrypted data for highly sensitive cloud processing.",
+    "Implement Partial and Full homomorphic encryption schemes for specific mathematical operations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b689",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,355 +1,552 @@
 {
-  "id": "why-most-ai-demos-fail-in-production",
-  "slug": "why-most-ai-demos-fail-in-production",
+  "id": "mock-lesson",
+  "slug": "mock-lesson",
   "version": "1.0.0",
-  "title": "Why Most AI Demos Fail in Production",
-  "description": "An analysis of the critical gap between impressive AI demonstrations and the robust, reliable systems required for production use.",
+  "title": "Mock Lesson: Efficient State Management and Data Flow in UI",
+  "description": "Explore prop drilling, state colocation, and component composition to optimise data flow and prevent unnecessary re-renders in advanced UI architectures.",
   "meta": {
     "difficulty": "intermediate",
-    "duration": 25,
-    "prerequisites": [],
+    "duration": 45,
+    "prerequisites": [
+      "Understanding of React basics (components, props, state, hooks)",
+      "Familiarity with functional programming concepts"
+    ],
     "tags": [
-      "AI Systems",
-      "Production Readiness",
-      "System Design",
-      "LLM Operations"
+      "React",
+      "State Management",
+      "Prop Drilling",
+      "State Colocation",
+      "Component Composition",
+      "Performance",
+      "Re-renders"
     ],
     "author": "AI Generated",
-    "lastUpdated": "2026-05-08"
+    "lastUpdated": "2026-06-04"
   },
   "keyTerms": [
-    "Demo",
-    "Prototype",
-    "Pilot",
-    "Production System",
-    "Happy Path",
-    "Adversarial Usage",
-    "Prompt Injection",
-    "Long Tail",
-    "Observability",
-    "RAG",
-    "Guardrails",
-    "Fallback Behaviour",
-    "Latency",
-    "p99 Latency",
-    "Hallucination",
-    "Evaluation Harness",
-    "Red Teaming",
-    "SLO"
+    "prop drilling",
+    "state colocation",
+    "component composition",
+    "monolithic components",
+    "re-renders",
+    "render tree",
+    "virtual DOM",
+    "reconciliation",
+    "memoization",
+    "React Context",
+    "render props",
+    "compound components",
+    "React.memo",
+    "useCallback",
+    "useMemo",
+    "atomic design",
+    "single responsibility principle"
   ],
   "content": [
     {
       "id": "section-1",
       "type": "section",
-      "title": "1. The Production Readiness Spectrum"
+      "title": "1. The Challenge of Data Flow in Complex UIs"
     },
     {
       "id": "text-1",
       "type": "text",
-      "text": "The journey from an idea to a production AI system involves distinct stages, each with a different purpose and success criteria. A common failure pattern is mistaking success at one stage for readiness at another. The most dangerous leap is from a compelling **demo** directly to what is believed to be a production-ready feature, skipping the crucial intermediate steps."
+      "text": "As UI applications grow, managing data flow between deeply nested components becomes a **critical architecture challenge**. Without careful design, state and props can become disorganised, leading to code that is difficult to understand, debug, and maintain. The core tension lies between creating flexible, reusable components and ensuring a clear, efficient data pipeline."
     },
     {
       "id": "text-2",
       "type": "text",
-      "text": "This mistake stems from a fundamental misunderstanding of what each stage proves. A {{Demo}} proves a concept is **possible**. A {{Prototype}} proves it is **buildable**. A {{Pilot}} proves it has **value** for a limited audience. A {{Production System}} must prove it is **reliable**, **scalable**, and **safe** for everyone, all the time."
-    },
-    {
-      "id": "table-1",
-      "type": "table",
-      "headers": [
-        "Stage",
-        "Primary Goal",
-        "Key Question",
-        "Typical User"
-      ],
-      "rows": [
-        [
-          "Demo",
-          "Demonstrate possibility",
-          "Can this even work?",
-          "The developer"
-        ],
-        [
-          "Prototype",
-          "Explore feasibility",
-          "Can we build a basic version?",
-          "Internal team"
-        ],
-        [
-          "Pilot",
-          "Validate value and usability",
-          "Does this solve a real problem?",
-          "A small, trusted user group"
-        ],
-        [
-          "Production",
-          "Deliver reliable service at scale",
-          "Does it always work correctly and safely?",
-          "All target users"
-        ]
-      ]
-    },
-    {
-      "id": "text-3",
-      "type": "text",
-      "text": "The engineering discipline, cost, and rigour increase exponentially at each step. Demos are cheap and fast, designed to generate excitement. ==Production systems are expensive and slow to build because they are designed to earn and maintain user trust== through predictable behaviour, not novelty."
-    },
-    {
-      "id": "section-2",
-      "type": "section",
-      "title": "2. The Demo Illusion: The Tyranny of the Happy Path"
-    },
-    {
-      "id": "text-4",
-      "type": "text",
-      "text": "AI demos are almost always successful for one simple reason: they operate exclusively on the **{{Happy Path}}**. The developer, knowing exactly how the system works, provides a perfect, unambiguous prompt with clean, supportive context data. This curated interaction is designed to showcase the model's best-case performance, creating a powerful illusion of competence."
-    },
-    {
-      "id": "text-5",
-      "type": "text",
-      "text": "Real users, however, live off the happy path. They submit queries with typos, ambiguous phrasing, and faulty assumptions. They provide messy, unstructured data and often do not know what a 'good' prompt looks like. ==A system that only works with pristine, developer-crafted inputs is functionally useless in the real world==."
+      "text": "Early patterns often lead to **unintended coupling** and **performance bottlenecks**. Two common pitfalls that senior engineers frequently encounter are excessive {{prop drilling}} and the creation of {{monolithic components}}. Recognising these anti-patterns is the first step towards building more robust and scalable user interfaces. ==Efficient UI architecture hinges on mastering how data moves and where state resides==."
     },
     {
       "id": "image-1",
       "type": "image",
-      "src": "/images/lessons/why-most-ai-demos-fail-in-production/happy-path-vs-reality.png",
-      "alt": "A smooth, paved garden path contrasted with a dense, chaotic jungle.",
-      "caption": "Demo environments are like manicured garden paths. Production is a chaotic jungle of unexpected inputs and user behaviours."
+      "src": "/images/lessons/mock-lesson/data-flow-tangle.png",
+      "alt": "A tangled ball of yarn representing complex, unmanaged data flow in a UI application.",
+      "caption": "Without clear patterns, data flow can become a tangled mess, making components tightly coupled and hard to follow."
+    },
+    {
+      "id": "section-2",
+      "type": "section",
+      "title": "2. Understanding Prop Drilling and Its Consequences"
+    },
+    {
+      "id": "text-3",
+      "type": "text",
+      "text": "{{Prop drilling}} refers to the practice of passing data from a higher-level component down to a deeply nested child component, **through several intermediate components** that do not actually need the data themselves. This creates a verbose and opaque data flow, obscuring the true consumers of the data."
+    },
+    {
+      "id": "text-4",
+      "type": "text",
+      "text": "While simple at first, prop drilling quickly becomes a **maintenance nightmare** in larger applications. Changes to the data structure or the need for a new prop often require modifying multiple files in the component tree, even those unrelated to the data's origin or destination. ==This tight coupling makes refactoring risky and slows down development velocity==."
+    },
+    {
+      "id": "visualisation-1",
+      "type": "visualisation",
+      "title": "Prop Drilling: A Cascading Dependency",
+      "visType": "flowchart",
+      "data": {
+        "nodes": [
+          {
+            "id": "A",
+            "position": {
+              "x": 100,
+              "y": 50
+            },
+            "data": {
+              "label": "App (has 'theme')"
+            }
+          },
+          {
+            "id": "B",
+            "position": {
+              "x": 100,
+              "y": 150
+            },
+            "data": {
+              "label": "Layout (receives 'theme')"
+            }
+          },
+          {
+            "id": "C",
+            "position": {
+              "x": 100,
+              "y": 250
+            },
+            "data": {
+              "label": "Header (receives 'theme')"
+            }
+          },
+          {
+            "id": "D",
+            "position": {
+              "x": 100,
+              "y": 350
+            },
+            "data": {
+              "label": "ThemeButton (uses 'theme')"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "eA-B",
+            "source": "A",
+            "target": "B",
+            "label": "passes 'theme'",
+            "animated": true
+          },
+          {
+            "id": "eB-C",
+            "source": "B",
+            "target": "C",
+            "label": "passes 'theme'",
+            "animated": true
+          },
+          {
+            "id": "eC-D",
+            "source": "C",
+            "target": "D",
+            "label": "passes 'theme'",
+            "animated": true
+          }
+        ]
+      }
     },
     {
       "id": "list-1",
       "type": "list",
       "items": [
-        "**Demo Input:** \"Summarise the Q3 2026 financial report provided in the attached PDF, focusing on revenue growth in the EMEA region.\"",
-        "**Real User Input:** \"how did we do last quarter in europe\"",
-        "**Demo Input:** \"Write a Python function to calculate the factorial of a number.\"",
-        "**Real User Input:** \"code for factorial\""
+        "**Increased Verbosity**: Many components receive props they don't use, cluttering their interfaces.",
+        "**Reduced Reusability**: Components become less generic due to their specific prop requirements.",
+        "**Tight Coupling**: Changes to a prop's source or destination force modifications across the entire chain.",
+        "**Debugging Complexity**: Tracing the origin of a prop value becomes cumbersome across many layers."
       ]
-    },
-    {
-      "id": "text-6",
-      "type": "text",
-      "text": "The gap between these two styles of interaction is enormous. The demo input is specific, context-rich, and complete. The real user input is vague, lacks context, and uses colloquial language. A production system must be engineered to bridge this gap, often through sophisticated prompt engineering, clarification dialogues, or robust input validation."
-    },
-    {
-      "id": "section-3",
-      "type": "section",
-      "title": "3. The Hostile World of Production"
-    },
-    {
-      "id": "text-7",
-      "type": "text",
-      "text": "Beyond unintentional messiness, production systems face inputs that are actively malicious. **{{Adversarial Usage}}** is a certainty. Users will try to bypass safety filters, trick the model into revealing sensitive information, or use {{Prompt Injection}} to hijack the system's instructions. Demos never account for this; they assume a cooperative user."
-    },
-    {
-      "id": "text-8",
-      "type": "text",
-      "text": "Furthermore, production means operating at scale, which exposes the system to the brutal reality of the **{{Long Tail}}**. A failure mode that occurs only 0.01% of the time is irrelevant in a demo of 10 requests. In production with 1 million requests per day, that same failure happens 100 times, eroding user trust and creating a stream of support tickets."
     },
     {
       "id": "callout-1",
       "type": "callout",
-      "variant": "warning",
-      "text": "==The core mistake is assuming users will behave as you did during the demo==. You must assume they will do the opposite: provide the worst possible input, misunderstand the feature, and actively try to break it."
+      "text": "Prop drilling is often a symptom of insufficient thought given to component responsibilities. Components should ideally only receive props directly relevant to their immediate purpose, adhering to the {{single responsibility principle}}.",
+      "variant": "warning"
     },
     {
-      "id": "question-mc-1",
-      "type": "question",
-      "variant": "multiple-choice",
-      "question": "What is the primary reason that a failure rate of 0.1% is acceptable in a demo but dangerous in production?",
-      "options": [
-        "The model is less accurate in production.",
-        "The cost per failure is higher in a demo.",
-        "Production scale turns rare failures into frequent events.",
-        "Demos are not monitored for failures."
-      ],
-      "correctAnswer": "Production scale turns rare failures into frequent events.",
-      "explanation": "At production scale, even very low-probability failure modes (the 'long tail') will occur frequently, impacting many users and requiring significant engineering effort to mitigate."
-    },
-    {
-      "id": "section-4",
+      "id": "section-3",
       "type": "section",
-      "title": "4. The Invisible Machinery"
+      "title": "3. Mitigating Prop Drilling with State Colocation"
     },
     {
-      "id": "text-9",
+      "id": "text-5",
       "type": "text",
-      "text": "A demo is typically just a single API call to a language model. A production system is a complex assembly of surrounding infrastructure that makes that call safe and reliable. This 'invisible machinery' is where the majority of the engineering effort lies, and it is completely absent from a demo."
+      "text": "The primary antidote to prop drilling is {{state colocation}}, also known as \"lifting state down.\" This principle dictates that **state should be owned by the highest common ancestor** of all components that need to use it. If only one component needs a piece of state, that component should own it."
     },
     {
-      "id": "image-2",
-      "type": "image",
-      "src": "/images/lessons/why-most-ai-demos-fail-in-production/production-iceberg.png",
-      "alt": "An iceberg where the tip is the LLM call and the massive submerged part is production infrastructure.",
-      "caption": "The demo is just the tip of the iceberg. The real work is in the vast, submerged machinery of production infrastructure."
-    },
-    {
-      "id": "text-10",
+      "id": "text-6",
       "type": "text",
-      "text": "This machinery handles all the ugly realities that demos ignore. It ensures the system is observable, performs within latency budgets, and behaves gracefully when components fail. Without this, the system is a black box that is impossible to debug, intolerably slow, or brittle."
-    },
-    {
-      "id": "heading-1",
-      "type": "heading",
-      "text": "Critical Production Components Absent in Demos"
+      "text": "Colocating state significantly **reduces the scope of state management**, making it easier to reason about data flow and preventing unnecessary re-renders in unrelated parts of the component tree. When state is closer to its consumers, the number of components affected by state changes is naturally minimised. ==This practice promotes modularity and isolates complexity to relevant subtrees==."
     },
     {
       "id": "list-2",
       "type": "list",
       "items": [
-        "**{{Observability}}:** Structured logs, traces, and metrics to understand what the system is doing, especially when it fails. How do you debug a bad response without knowing the exact prompt and retrieved context?",
-        "**{{RAG}} Pipeline:** For retrieval-augmented generation, the quality and freshness of the retrieved context is everything. Demos often use a perfect, hand-picked document; production requires a robust, scalable retrieval and ranking system.",
-        "**{{Guardrails}} and Validation:** Input/output filters to prevent {{Prompt Injection}}, block harmful content, and ensure responses are on-topic and correctly formatted.",
-        "**{{Fallback Behaviour}}:** What happens if the LLM API times out, returns an error, or produces a {{Hallucination}}? A production system must have a safe default, like \"I'm unable to answer right now,\" instead of crashing or showing a nonsensical reply.",
-        "**{{Latency}} Management:** A demo that takes 15 seconds is impressive. A product that takes 15 seconds is broken. Production systems require aggressive caching, model optimisations, and strict {{p99 Latency}} targets.",
-        "**Permissions and Data Access:** The system must respect user permissions. The {{RAG}} pipeline cannot retrieve documents that the user is not authorised to see. This is a critical security concern ignored by demos."
+        "**Improved Readability**: Components' prop interfaces become leaner and more focused.",
+        "**Easier Debugging**: State changes are localised, simplifying fault isolation.",
+        "**Enhanced Performance**: Fewer components re-render when state changes, as only the affected subtree updates.",
+        "**Greater Reusability**: Components become more generic without irrelevant prop dependencies."
       ]
     },
     {
-      "id": "text-11",
+      "id": "image-2",
+      "type": "image",
+      "src": "/images/lessons/mock-lesson/state-colocation-garden.png",
+      "alt": "A well-organised garden with small, self-contained planting beds, illustrating state colocation.",
+      "caption": "State colocation is like a self-contained garden: each plant (component) gets exactly what it needs from its immediate soil (local state), without sprawling irrigation systems (prop drilling)."
+    },
+    {
+      "id": "question-mc-1",
+      "type": "question",
+      "variant": "multiple-choice",
+      "question": "Which of the following is a primary benefit of **state colocation**?",
+      "options": [
+        "It eliminates the need for any props in child components.",
+        "It allows state to be accessed globally without explicit passing.",
+        "It keeps state closer to where it's consumed, reducing data flow complexity.",
+        "It automatically memoizes all component re-renders."
+      ],
+      "correctAnswer": "It keeps state closer to where it's consumed, reducing data flow complexity.",
+      "explanation": "State colocation minimises the distance state travels down the component tree, making data flow clearer and reducing the 'noise' of irrelevant props in intermediate components."
+    },
+    {
+      "id": "section-4",
+      "type": "section",
+      "title": "4. Component Composition to Avoid Monolithic Structures"
+    },
+    {
+      "id": "text-7",
       "type": "text",
-      "text": "Each of these components requires significant design, implementation, and maintenance. They represent the difference between a clever script and a trustworthy product. ==The 'AI' part of the system is often the easiest; the production engineering around it is the hard part==."
+      "text": "Beyond state colocation, {{component composition}} is a powerful React pattern that actively prevents {{monolithic components}} from emerging. Instead of components managing all their own children and logic, composition involves **passing components or rendering functions as props**, allowing parent components to dictate structure without intermediate components needing to know too much about their content."
+    },
+    {
+      "id": "text-8",
+      "type": "text",
+      "text": "This approach enables you to build complex UIs from smaller, more focused, and truly reusable pieces. Techniques like the `children` prop, {{render props}}, and {{compound components}} are common compositional patterns. ==Composition allows for highly flexible and maintainable component APIs, disentangling concerns effectively==."
+    },
+    {
+      "id": "visualisation-2",
+      "type": "visualisation",
+      "title": "Composition vs. Prop Drilling",
+      "visType": "flowchart",
+      "data": {
+        "nodes": [
+          {
+            "id": "A1",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "data": {
+              "label": "App (Prop Drilling)"
+            }
+          },
+          {
+            "id": "B1",
+            "position": {
+              "x": 50,
+              "y": 150
+            },
+            "data": {
+              "label": "Layout"
+            }
+          },
+          {
+            "id": "C1",
+            "position": {
+              "x": 50,
+              "y": 250
+            },
+            "data": {
+              "label": "Header"
+            }
+          },
+          {
+            "id": "D1",
+            "position": {
+              "x": 50,
+              "y": 350
+            },
+            "data": {
+              "label": "ThemeButton"
+            }
+          },
+          {
+            "id": "A2",
+            "position": {
+              "x": 300,
+              "y": 50
+            },
+            "data": {
+              "label": "App (Composition)"
+            }
+          },
+          {
+            "id": "B2",
+            "position": {
+              "x": 300,
+              "y": 150
+            },
+            "data": {
+              "label": "Layout"
+            }
+          },
+          {
+            "id": "E2",
+            "position": {
+              "x": 300,
+              "y": 250
+            },
+            "data": {
+              "label": "ThemeToggleContainer"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "eA1-B1",
+            "source": "A1",
+            "target": "B1",
+            "label": "props",
+            "animated": true
+          },
+          {
+            "id": "eB1-C1",
+            "source": "B1",
+            "target": "C1",
+            "label": "props",
+            "animated": true
+          },
+          {
+            "id": "eC1-D1",
+            "source": "C1",
+            "target": "D1",
+            "label": "props",
+            "animated": true
+          },
+          {
+            "id": "eA2-B2",
+            "source": "A2",
+            "target": "B2",
+            "label": "children",
+            "animated": true
+          },
+          {
+            "id": "eB2-E2",
+            "source": "B2",
+            "target": "E2",
+            "label": "render props",
+            "animated": true
+          },
+          {
+            "id": "eA2-E2",
+            "source": "A2",
+            "target": "E2",
+            "label": "uses 'ThemeToggleContainer'",
+            "animated": false,
+            "type": "straight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "table-1",
+      "type": "table",
+      "caption": "Comparing Traditional Prop Drilling vs. Composition",
+      "headers": [
+        "Feature",
+        "Prop Drilling Approach",
+        "Compositional Approach"
+      ],
+      "rows": [
+        [
+          "Data Flow",
+          "Explicit, linear, deeply nested prop passing",
+          "Implicit (children), or explicit via render props/context"
+        ],
+        [
+          "Component Coupling",
+          "High: intermediate components depend on specific props",
+          "Low: intermediate components are generic containers"
+        ],
+        [
+          "Reusability",
+          "Limited; components tightly coupled to specific data paths",
+          "High; components act as generic slots or wrappers"
+        ],
+        [
+          "Refactoring",
+          "Fragile; changes cascade through many layers",
+          "Robust; logic isolated, structural changes less impactful"
+        ],
+        [
+          "Readability",
+          "Verbose and difficult to trace data origin",
+          "Clearer: logic and rendering concerns are separated"
+        ]
+      ]
+    },
+    {
+      "id": "question-fill-1",
+      "type": "question",
+      "variant": "fill-blank",
+      "question": "Using the `children` prop and {{render props}} are examples of {{component ___}} in React, which helps avoid {{monolithic components}}.",
+      "correctAnswer": "composition",
+      "acceptableAnswers": [
+        "composition"
+      ],
+      "placeholder": "e.g., hierarchy",
+      "explanation": "Component composition allows you to build complex UIs by composing simpler components together, often by passing components or rendering functions as props, thereby creating highly reusable and flexible structures."
     },
     {
       "id": "section-5",
       "type": "section",
-      "title": "5. The Fragility of User Trust"
+      "title": "5. Performance Implications: Identifying Unnecessary Re-renders"
     },
     {
-      "id": "text-12",
+      "id": "text-9",
       "type": "text",
-      "text": "A single, stunningly correct answer in a demo creates a powerful impression of intelligence. However, user trust is not built on peak performance. It is built on **predictability** and **consistency**. An AI that is brilliant one moment and unhelpfully wrong the next is not seen as a flawed genius; it is seen as an unreliable tool and will be abandoned."
+      "text": "Performance in UI applications is often dominated by the cost of {{re-renders}}. A re-render occurs when React re-evaluates a component's output to determine if the actual {{DOM}} needs updating. While React's efficient {{virtual DOM}} and {{reconciliation}} algorithm minimise actual DOM manipulations, the re-rendering process itself can be computationally expensive if triggered excessively."
     },
     {
-      "id": "text-13",
+      "id": "text-10",
       "type": "text",
-      "text": "Inconsistent behaviour is toxic to trust. This can manifest as fluctuating response quality, changing tone, or failing to perform the same task twice in a row. A production system must be repeatable. This is why techniques like {{Evaluation Harness}} testing and continuous {{Red Teaming}} are essential to lock in a baseline of quality and safety."
-    },
-    {
-      "id": "text-14",
-      "type": "text",
-      "text": "The goal is not to create a system that is always perfect, as that is impossible. ==The goal is to create a system whose failure modes are predictable, bounded, and safe==. When the system fails, it should fail gracefully and inform the user, preserving the trust that has been earned during successful interactions. A demo's singular success says nothing about its behaviour under failure."
-    },
-    {
-      "id": "question-reveal-1",
-      "type": "question",
-      "variant": "reveal-answer",
-      "prompt": "An AI-powered trip planner sometimes generates amazing, detailed itineraries. Other times, for similar requests, it produces a single, unhelpful sentence. What is the most likely impact on users?",
-      "answer": "Users will quickly stop trusting and using the feature. The inconsistency makes it unreliable, regardless of its occasional brilliance.",
-      "explanation": "Predictability is more important than peak performance for building user trust. An unreliable tool, even one that is sometimes amazing, will not be integrated into a user's workflow.",
-      "buttonLabel": "Reveal Impact"
-    },
-    {
-      "id": "section-6",
-      "type": "section",
-      "title": "6. Bridging the Gap: From Demo to Production"
-    },
-    {
-      "id": "text-15",
-      "type": "text",
-      "text": "Moving from a successful demo to a production-ready system requires a deliberate shift in mindset from 'making it work once' to 'making it not fail'. This involves a significant amount of engineering work that is often underestimated. Organisational pressure to ship quickly after a successful demo can lead teams to launch what is effectively a public prototype."
-    },
-    {
-      "id": "text-16",
-      "type": "text",
-      "text": "This pressure often arises because stakeholders, impressed by the demo, do not see the massive, invisible iceberg of work remaining. It is the engineering team's responsibility to articulate this gap and advocate for the time and resources needed to build the necessary production infrastructure. Shipping a demo is not a shortcut; it is a direct path to technical debt and user abandonment."
-    },
-    {
-      "id": "heading-2",
-      "type": "heading",
-      "variant": "do",
-      "text": "Production-Ready Evaluation Checklist"
+      "text": "Every time a parent component re-renders, all its child components by default will also re-render, regardless of whether their props have actually changed. This cascading effect, especially in deep component trees, is a **common source of UI jank** and slow user experiences. ==Unnecessary re-renders are often the silent killer of perceived performance in complex UIs==."
     },
     {
       "id": "list-3",
       "type": "list",
       "items": [
-        "**Define an {{SLO}}:** What is the target for availability and latency? How will you measure it?",
-        "**Implement Observability:** Do you have detailed logs and traces for every request, especially failures?",
-        "**Build an {{Evaluation Harness}}:** Do you have a suite of test cases to prevent quality regressions?",
-        "**Design Fallback Logic:** What happens when the model, a data source, or a guardrail fails?",
-        "**Conduct {{Red Teaming}}:** Have you actively tried to break the system with adversarial prompts?",
-        "**Secure Data Access:** Are you certain the system cannot leak data a user is not meant to see?"
+        "**New Object References**: Passing new object or array literals as props on every render (e.g., `style={{}}` or `onClick={() => {}}`).",
+        "**Context Changes**: A change in {{React Context}} can re-render all consumers below it, even if they only use a subset of the context's values.",
+        "**Unoptimized Children**: A parent component re-rendering forces its unoptimized children to re-render, irrespective of their own prop changes.",
+        "**Global State Changes**: Updates to global state management solutions can trigger widespread re-renders if not carefully subscribed to."
       ]
     },
     {
-      "id": "text-17",
+      "id": "text-11",
       "type": "text",
-      "text": "Answering these questions moves the conversation from the demo's 'what if' to production's 'what always'. A system is only ready for production when it has robust, tested answers for all these points. ==Ultimately, a production AI system is judged not by its best day, but by its graceful handling of its worst day==."
+      "text": "{{Memoization}} techniques are key for optimising re-renders. `React.memo` (for functional components), `useCallback` (for memoizing functions), and `useMemo` (for memoizing values) allow React to **skip re-rendering a component** if its props or dependencies have not changed since the last render. These tools effectively create a performance budget for components."
+    },
+    {
+      "id": "callout-2",
+      "type": "callout",
+      "text": "While memoization is powerful, it introduces its own overhead. Apply it strategically after profiling and identifying actual performance bottlenecks. Premature optimisation can lead to more complex code with negligible performance gains.",
+      "variant": "tip"
+    },
+    {
+      "id": "image-3",
+      "type": "image",
+      "src": "/images/lessons/mock-lesson/unnecessary-re-renders.png",
+      "alt": "A stage curtain repeatedly opening and closing for minor set changes, illustrating unnecessary re-renders.",
+      "caption": "Unnecessary re-renders are like a stage curtain opening and closing for every minor adjustment, wasting effort and making the overall show feel sluggish."
+    },
+    {
+      "id": "question-reveal-1",
+      "type": "question",
+      "variant": "reveal-answer",
+      "prompt": "A component's `onClick` prop is defined as `onClick={() => handleSave(item.id)}` directly in the JSX. What is a likely performance implication if this component re-renders frequently?",
+      "answer": "This will cause the `onClick` function to be recreated on **every re-render**, leading to an {{unnecessary re-render}} of any child components that receive `onClick` as a prop, even if other props are unchanged.",
+      "buttonLabel": "Show Answer",
+      "explanation": "Arrow functions defined inline create a new function reference on every render. If this function is passed as a prop, child components receiving it will always see a 'new' prop, potentially triggering their own re-renders, unless they are specifically memoized with a deep equality check or `useCallback` is used on the parent."
+    },
+    {
+      "id": "section-6",
+      "type": "section",
+      "title": "6. Advanced Data Flow and Trade-offs"
+    },
+    {
+      "id": "text-12",
+      "type": "text",
+      "text": "While {{state colocation}} and {{component composition}} address many data flow issues, some state genuinely needs to be accessible across distant parts of the application without manual prop passing. This is where solutions like {{React Context}} or dedicated state management libraries become relevant. However, these tools introduce their own **trade-offs in terms of complexity** and potential for widespread re-renders."
+    },
+    {
+      "id": "text-13",
+      "type": "text",
+      "text": "The judicious use of these advanced techniques is crucial. Context is best for **infrequently updated global concerns** like themes, authenticated user data, or preferred language settings. Overusing it for rapidly changing state can negate performance gains and reintroduce implicit dependencies. ==Always default to local state and composition, escalating to global state solutions only when necessary and with clear justification==."
+    },
+    {
+      "id": "list-4",
+      "type": "list",
+      "items": [
+        "**Context**: Ideal for global, static-like data (themes, user settings) or data needed by many components, but can trigger widespread re-renders on updates.",
+        "**Render Props**: Offers extreme flexibility in composing behaviour, allowing consumers to fully control rendering logic without prop drilling.",
+        "**Compound Components**: Allows for building powerful, semantic components where internal state and logic are shared implicitly between related sub-components (e.g., `Select.Option`).",
+        "**Custom Hooks**: Encapsulate reusable stateful logic, promoting separation of concerns and reducing boilerplate."
+      ]
+    },
+    {
+      "id": "text-14",
+      "type": "text",
+      "text": "Ultimately, efficient UI architecture is about making informed decisions about where state lives, how data flows, and when to optimise. By embracing principles like **state colocation**, **component composition**, and judicious **memoization**, developers can build high-performance, maintainable, and scalable user interfaces that stand the test of time and evolving requirements."
     }
   ],
   "quiz": [
     {
       "id": "quiz-1",
-      "question": "What is the primary goal of the 'Pilot' stage in the AI production readiness spectrum?",
+      "question": "Which scenario best describes **prop drilling**?",
       "options": [
-        "To demonstrate that a concept is possible.",
-        "To explore the technical feasibility of building a feature.",
-        "To validate that the system provides real value to a small group of trusted users.",
-        "To ensure the system can operate reliably at full scale."
+        "A parent component passing state directly to its immediate child.",
+        "A component receiving data from a global state management library.",
+        "A prop being passed through three intermediate components that don't use it, to reach a fourth.",
+        "A component fetching its own data from an API."
       ],
-      "correctAnswer": "To validate that the system provides real value to a small group of trusted users.",
-      "explanation": "The Pilot stage focuses on moving from a technical prototype to validating real-world usefulness and usability with a limited, controlled user base."
+      "correctAnswer": "A prop being passed through three intermediate components that don't use it, to reach a fourth.",
+      "explanation": "Prop drilling occurs when data is passed down through multiple layers of components that don't directly use the data themselves, solely to reach a deeply nested consumer."
     },
     {
       "id": "quiz-2",
-      "question": "The term 'Happy Path' refers to:",
+      "question": "What is a key benefit of **state colocation**?",
       "options": [
-        "The most efficient cloud infrastructure routing for an API call.",
-        "A user interface that is easy and enjoyable to use.",
-        "An ideal, curated scenario where inputs are perfect and the system performs optimally.",
-        "A code path that has been fully optimised for performance."
+        "It makes all state globally accessible without passing props.",
+        "It moves state to the lowest common ancestor of its consumers, simplifying data flow.",
+        "It guarantees that no component will ever re-render unnecessarily.",
+        "It replaces the need for component composition patterns."
       ],
-      "correctAnswer": "An ideal, curated scenario where inputs are perfect and the system performs optimally.",
-      "explanation": "The 'Happy Path' describes the perfect conditions used in demos, which do not reflect the messy, varied inputs from real users."
+      "correctAnswer": "It moves state to the lowest common ancestor of its consumers, simplifying data flow.",
+      "explanation": "State colocation aims to keep state as close as possible to where it is needed, typically at the highest common ancestor of its consumers, reducing complexity and potential for prop drilling."
     },
     {
       "id": "quiz-3",
-      "question": "Which of the following is an example of the 'invisible machinery' required for production AI but absent in a demo?",
+      "question": "How does **component composition** help avoid monolithic components?",
       "options": [
-        "The choice of a specific large language model.",
-        "The algorithm used for text summarisation.",
-        "The user interface for displaying the AI's output.",
-        "Robust logging and tracing for debugging failed requests."
+        "By enforcing strict TypeScript types on all props.",
+        "By allowing parent components to pass other components or rendering functions as props.",
+        "By automatically splitting large components into smaller files during compilation.",
+        "By preventing components from having any local state."
       ],
-      "correctAnswer": "Robust logging and tracing for debugging failed requests.",
-      "explanation": "Observability (logging, tracing, metrics) is a critical piece of production infrastructure that is unnecessary for a simple demo but essential for operating a real system."
+      "correctAnswer": "By allowing parent components to pass other components or rendering functions as props.",
+      "explanation": "Component composition, using patterns like the `children` prop or render props, enables building flexible UIs by combining smaller, focused components, preventing single, overly complex 'monolithic' components."
     },
     {
       "id": "quiz-4",
-      "question": "Why is consistency more important than peak performance for building user trust in an AI system?",
+      "question": "Which of the following commonly leads to **unnecessary re-renders** in React?",
       "options": [
-        "Consistent systems are cheaper to run.",
-        "Users rely on predictable behaviour to integrate a tool into their workflow.",
-        "Peak performance often leads to higher latency.",
-        "Consistent outputs are easier to cache."
+        "Using `React.memo` on every functional component.",
+        "Defining a new object or array literal in JSX props on every render.",
+        "Fetching data from an API inside `useEffect` with an empty dependency array.",
+        "Separating concerns using multiple custom hooks."
       ],
-      "correctAnswer": "Users rely on predictable behaviour to integrate a tool into their workflow.",
-      "explanation": "A tool that is unreliable, even if occasionally brilliant, cannot be trusted and will be abandoned. Predictability is the foundation of user trust."
+      "correctAnswer": "Defining a new object or array literal in JSX props on every render.",
+      "explanation": "When new object or array literals (like `style={{}}` or `onClick={() => {}}`) are created on every render, React sees a 'new' prop reference, which can trigger a re-render in child components even if the underlying values are effectively the same."
     },
     {
       "id": "quiz-5",
-      "question": "What is 'Prompt Injection'?",
+      "question": "When is {{React Context}} generally considered an appropriate solution for state management?",
       "options": [
-        "A technique for optimising prompts to get better responses.",
-        "An automated system for generating test prompts.",
-        "An adversarial attack where a user's input tries to overwrite or bypass the system's original instructions.",
-        "A method for caching prompts to reduce latency."
+        "For rapidly changing, component-specific form input state.",
+        "As a direct replacement for all props passing in an application.",
+        "For global, infrequently updated data like theme preferences or user authentication status.",
+        "To enforce strict one-way data flow from parent to child."
       ],
-      "correctAnswer": "An adversarial attack where a user's input tries to overwrite or bypass the system's original instructions.",
-      "explanation": "Prompt injection is a security vulnerability where malicious input manipulates the LLM's behaviour, which production systems must defend against using guardrails."
-    },
-    {
-      "id": "quiz-6",
-      "question": "What does a 'Fallback Behaviour' in a production AI system handle?",
-      "options": [
-        "Re-routing traffic to a different data centre during an outage.",
-        "Providing a safe, default response when the primary AI model fails or returns an unsafe answer.",
-        "Using a less powerful model for non-critical user requests.",
-        "Rolling back to a previous version of the software after a bad deploy."
-      ],
-      "correctAnswer": "Providing a safe, default response when the primary AI model fails or returns an unsafe answer.",
-      "explanation": "Fallback behaviour ensures the system fails gracefully (e.g., with a message like 'I cannot answer that') instead of crashing or showing a nonsensical output, which preserves user trust."
+      "correctAnswer": "For global, infrequently updated data like theme preferences or user authentication status.",
+      "explanation": "React Context is well-suited for 'global' data that rarely changes (like themes or user info) and is needed by many components, avoiding prop drilling for such concerns. It's less ideal for frequently updating state due to potential re-render issues."
     }
   ]
 }

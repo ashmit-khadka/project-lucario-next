@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b54a",
+  "id": "architect-cross-cutting-concern-offloading",
+  "slug": "architect-cross-cutting-concern-offloading",
+  "version": "1.0.0",
+  "title": "Architect Cross-Cutting Concern Offloading",
+  "description": "Architect API gateways to offload cross-cutting concerns like authentication and authorization. Implement rate limiting and SSL termination at the gateway layer for consistent security. Design a robust gateway strategy for centralized management of non-functional requirements.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect API gateways to offload cross-cutting concerns like authentication and authorization.",
+    "Implement rate limiting and SSL termination at the gateway layer for consistent security.",
+    "Design a robust gateway strategy for centralized management of non-functional requirements."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b547",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

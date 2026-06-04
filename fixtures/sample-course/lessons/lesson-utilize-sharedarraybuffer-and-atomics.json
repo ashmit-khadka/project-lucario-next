@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4a0",
+  "id": "utilize-sharedarraybuffer-and-atomics",
+  "slug": "utilize-sharedarraybuffer-and-atomics",
+  "version": "1.0.0",
+  "title": "Utilize SharedArrayBuffer and Atomics",
+  "description": "Utilize `SharedArrayBuffer` for creating shared memory regions between execution contexts. Implement lock-free state synchronization using `Atomics` operations. Design high-performance data access patterns for shared binary data in multi-threaded Node.js applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize `SharedArrayBuffer` for creating shared memory regions between execution contexts.",
+    "Implement lock-free state synchronization using `Atomics` operations.",
+    "Design high-performance data access patterns for shared binary data in multi-threaded Node.js applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b49e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

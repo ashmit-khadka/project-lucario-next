@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b679",
+  "id": "cors-governance",
+  "slug": "cors-governance",
+  "version": "1.0.0",
+  "title": "CORS Governance",
+  "description": "Design dynamic, whitelist-based CORS policies for complex multi-domain ecosystems. Optimize CORS configurations to minimize preflight `OPTIONS` request latency. Implement robust CORS governance to prevent cross-origin access vulnerabilities.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design dynamic, whitelist-based CORS policies for complex multi-domain ecosystems.",
+    "Optimize CORS configurations to minimize preflight `OPTIONS` request latency.",
+    "Implement robust CORS governance to prevent cross-origin access vulnerabilities."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b676",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

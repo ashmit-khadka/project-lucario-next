@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4d2",
+  "id": "cors-state-machine-preflights",
+  "slug": "cors-state-machine-preflights",
+  "version": "1.0.0",
+  "title": "CORS State Machine & Preflights",
+  "description": "Deconstruct the CORS state machine and the role of OPTIONS preflight requests. Optimize CORS performance using the Access-Control-Max-Age header. Design secure Cross-Origin Resource Sharing policies for web applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Deconstruct the CORS state machine and the role of OPTIONS preflight requests.",
+    "Optimize CORS performance using the Access-Control-Max-Age header.",
+    "Design secure Cross-Origin Resource Sharing policies for web applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4d1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

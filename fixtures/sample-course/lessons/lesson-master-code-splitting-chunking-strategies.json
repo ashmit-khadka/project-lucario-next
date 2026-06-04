@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b556",
+  "id": "master-code-splitting-chunking-strategies",
+  "slug": "master-code-splitting-chunking-strategies",
+  "version": "1.0.0",
+  "title": "Master Code Splitting & Chunking Strategies",
+  "description": "Implement code splitting and chunking strategies to optimize application loading performance. Utilize predictive preloading and dynamic imports to enhance the Critical Rendering Path of SPAs. Design optimal chunking configurations for large-scale single-page applications.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement code splitting and chunking strategies to optimize application loading performance.",
+    "Utilize predictive preloading and dynamic imports to enhance the Critical Rendering Path of SPAs.",
+    "Design optimal chunking configurations for large-scale single-page applications."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b554",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

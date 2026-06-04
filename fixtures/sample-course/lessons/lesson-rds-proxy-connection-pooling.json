@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f9",
+  "id": "rds-proxy-connection-pooling",
+  "slug": "rds-proxy-connection-pooling",
+  "version": "1.0.0",
+  "title": "RDS Proxy & Connection Pooling",
+  "description": "Architect solutions using RDS Proxy for efficient connection pooling with relational databases. Implement managed proxy layers to mitigate the \"Lambda Connection Storm\" and enable fast database failover.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect solutions using RDS Proxy for efficient connection pooling with relational databases.",
+    "Implement managed proxy layers to mitigate the \"Lambda Connection Storm\" and enable fast database failover."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5f7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4aa",
+  "id": "profile-production-performance-using-flame-graphs-and-perf",
+  "slug": "profile-production-performance-using-flame-graphs-and-perf",
+  "version": "1.0.0",
+  "title": "Profile production performance using Flame Graphs and perf",
+  "description": "Profile production Node.js applications using tools like Flame Graphs and `perf`. Identify 'Hot Functions' and CPU-bound bottlenecks within the V8 optimization pipeline. Analyze profiling data to pinpoint performance regressions and areas for optimization.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Profile production Node.js applications using tools like Flame Graphs and `perf`.",
+    "Identify 'Hot Functions' and CPU-bound bottlenecks within the V8 optimization pipeline.",
+    "Analyze profiling data to pinpoint performance regressions and areas for optimization."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b4a9",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

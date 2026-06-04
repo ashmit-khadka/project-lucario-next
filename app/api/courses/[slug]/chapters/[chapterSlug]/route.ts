@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getDb } from '@/lib/mongodb';
+import { fixtures } from '@/lib/fixtures';
 
 export async function GET(
     _request: Request,
@@ -7,6 +8,21 @@ export async function GET(
 ) {
     try {
         const { slug, chapterSlug } = await params;
+        
+        if (process.env.USE_LOCAL_FIXTURES === 'true') {
+            const course = fixtures.getCourseBySlug(slug);
+            if (!course) return NextResponse.json({ error: 'Course not found' }, { status: 404 });
+            
+            const chapter = fixtures.getChapterBySlugAndCourseId(chapterSlug, course._id);
+            if (!chapter) return NextResponse.json({ error: 'Chapter not found' }, { status: 404 });
+            
+            const lessons = fixtures.getLessonsByIds(chapter.lessonIds || []).map((l: any) => ({
+                _id: l._id, slug: l.slug, title: l.title, description: l.description, meta: l.meta
+            }));
+            
+            return NextResponse.json({ course, chapter, lessons });
+        }
+
         const db = await getDb();
 
         const course = await db.collection('courses').findOne({ slug });

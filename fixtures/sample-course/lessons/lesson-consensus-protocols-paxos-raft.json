@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5ca",
+  "id": "consensus-protocols-paxos-raft",
+  "slug": "consensus-protocols-paxos-raft",
+  "version": "1.0.0",
+  "title": "Consensus Protocols (Paxos/Raft)",
+  "description": "Master the core principles of consensus protocols like Paxos and Raft. Explain how distributed leaders are elected and logs are replicated across a majority of nodes to achieve a single consistent state.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the core principles of consensus protocols like Paxos and Raft.",
+    "Explain how distributed leaders are elected and logs are replicated across a majority of nodes to achieve a single consistent state."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5c8",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

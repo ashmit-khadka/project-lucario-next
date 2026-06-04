@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b643",
+  "id": "manage-global-state-contamination",
+  "slug": "manage-global-state-contamination",
+  "version": "1.0.0",
+  "title": "Manage Global State Contamination",
+  "description": "Implement teardown and isolation patterns to prevent global state contamination in test environments. Ensure deterministic test execution by avoiding \"Leaky Tests\" during parallel runs.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement teardown and isolation patterns to prevent global state contamination in test environments.",
+    "Ensure deterministic test execution by avoiding \"Leaky Tests\" during parallel runs."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b63f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

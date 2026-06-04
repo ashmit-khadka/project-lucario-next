@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b504",
+  "id": "optimize-union-complexity",
+  "slug": "optimize-union-complexity",
+  "version": "1.0.0",
+  "title": "Optimize Union Complexity",
+  "description": "Implement strategies to reduce the computational surface area of large discriminated unions. Optimize deeply nested conditional types to improve compiler performance and type checking speed.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement strategies to reduce the computational surface area of large discriminated unions.",
+    "Optimize deeply nested conditional types to improve compiler performance and type checking speed."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b502",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5dd",
+  "id": "postgres-row-level-security-rls",
+  "slug": "postgres-row-level-security-rls",
+  "version": "1.0.0",
+  "title": "Postgres Row-Level Security (RLS)",
+  "description": "Master the configuration and application of PostgreSQL Row-Level Security (RLS). Implement database-enforced tenant boundaries to prevent data leakage across different organizations with a single SQL query.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the configuration and application of PostgreSQL Row-Level Security (RLS).",
+    "Implement database-enforced tenant boundaries to prevent data leakage across different organizations with a single SQL query."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5db",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

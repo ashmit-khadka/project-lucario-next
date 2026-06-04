@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6d7",
+  "id": "multi-agent-orchestration",
+  "slug": "multi-agent-orchestration",
+  "version": "1.0.0",
+  "title": "Multi-Agent Orchestration",
+  "description": "Implement multi-agent orchestration systems where specialized agents collaborate to solve complex goals. Architect collaboration mechanisms for agents via shared state or message passing.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement multi-agent orchestration systems where specialized agents collaborate to solve complex goals.",
+    "Architect collaboration mechanisms for agents via shared state or message passing."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6c6",
+  "chapterId": "6a115062bfafb1ab7ac3b6d5",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

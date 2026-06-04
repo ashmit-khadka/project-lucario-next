@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5c7",
+  "id": "deadlock-detection-resolution",
+  "slug": "deadlock-detection-resolution",
+  "version": "1.0.0",
+  "title": "Deadlock Detection & Resolution",
+  "description": "Master techniques for detecting and resolving database deadlocks. Architect application-level retry logic to gracefully handle database-level lock contention and circular waits.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master techniques for detecting and resolving database deadlocks.",
+    "Architect application-level retry logic to gracefully handle database-level lock contention and circular waits."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5c3",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

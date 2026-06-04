@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b732",
+  "id": "gameday-simulations",
+  "slug": "gameday-simulations",
+  "version": "1.0.0",
+  "title": "GameDay Simulations",
+  "description": "Execute GameDay simulations and chaos engineering exercises to test system resilience and team response. Architect recurring simulation frameworks to identify architectural weaknesses in a controlled environment.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Execute GameDay simulations and chaos engineering exercises to test system resilience and team response.",
+    "Architect recurring simulation frameworks to identify architectural weaknesses in a controlled environment."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b72e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

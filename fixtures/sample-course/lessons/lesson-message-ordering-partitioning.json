@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5d6",
+  "id": "message-ordering-partitioning",
+  "slug": "message-ordering-partitioning",
+  "version": "1.0.0",
+  "title": "Message Ordering & Partitioning",
+  "description": "Analyze the challenges and requirements for maintaining message order in distributed messaging systems. Utilize shard-keys in platforms like Kafka or Kinesis to ensure strict ordering of events for a specific entity's lifecycle.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the challenges and requirements for maintaining message order in distributed messaging systems.",
+    "Utilize shard-keys in platforms like Kafka or Kinesis to ensure strict ordering of events for a specific entity's lifecycle."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5d2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

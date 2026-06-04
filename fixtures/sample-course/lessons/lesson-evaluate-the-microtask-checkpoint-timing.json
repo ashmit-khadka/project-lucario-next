@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b496",
+  "id": "evaluate-the-microtask-checkpoint-timing",
+  "slug": "evaluate-the-microtask-checkpoint-timing",
+  "version": "1.0.0",
+  "title": "Evaluate the Microtask Checkpoint Timing",
+  "description": "Explain the concept of microtask checkpoints and their timing within the Event Loop. Distinguish the execution priority of `process.nextTick` versus `Promise.resolve`. Evaluate microtask scheduling to ensure deterministic execution and prevent starvation of other operations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Explain the concept of microtask checkpoints and their timing within the Event Loop.",
+    "Distinguish the execution priority of `process.nextTick` versus `Promise.resolve`.",
+    "Evaluate microtask scheduling to ensure deterministic execution and prevent starvation of other operations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b494",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b654",
+  "id": "master-w3c-trace-context-propagation",
+  "slug": "master-w3c-trace-context-propagation",
+  "version": "1.0.0",
+  "title": "Master W3C Trace Context Propagation",
+  "description": "Ensure strict trace continuity across diverse communication mechanisms like Kafka, gRPC streams, and asynchronous Node.js execution. Implement W3C Trace Context propagation effectively in various distributed system scenarios. Utilize AsyncLocalStorage in Node.js to maintain trace context across asynchronous operations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Ensure strict trace continuity across diverse communication mechanisms like Kafka, gRPC streams, and asynchronous Node.js execution.",
+    "Implement W3C Trace Context propagation effectively in various distributed system scenarios.",
+    "Utilize AsyncLocalStorage in Node.js to maintain trace context across asynchronous operations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b651",
+  "chapterId": "6a115062bfafb1ab7ac3b652",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

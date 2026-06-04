@@ -1,0 +1,2252 @@
+[
+  {
+    "_id": "6a115062bfafb1ab7ac3b485",
+    "slug": "the-v8-engine-optimization-pipeline",
+    "title": "The V8 Engine & Optimization Pipeline",
+    "description": "This chapter delves into the V8 JavaScript engine's internal workings, focusing on its optimization techniques for high-performance code execution.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b486",
+      "6a115062bfafb1ab7ac3b487",
+      "6a115062bfafb1ab7ac3b488",
+      "6a115062bfafb1ab7ac3b489"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b48a",
+    "slug": "libuv-the-event-loop-internals",
+    "title": "Libuv & The Event Loop Internals",
+    "description": "This chapter focuses on the Libuv library and the Node.js Event Loop, exploring their roles in managing asynchronous I/O and concurrency.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b48b",
+      "6a115062bfafb1ab7ac3b48c",
+      "6a115062bfafb1ab7ac3b48d",
+      "6a115062bfafb1ab7ac3b48e"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b48f",
+    "slug": "memory-management-gc-internals",
+    "title": "Memory Management & GC Internals",
+    "description": "This chapter explores V8's garbage collection mechanisms and memory management strategies, crucial for preventing leaks and optimizing resource usage.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b490",
+      "6a115062bfafb1ab7ac3b491",
+      "6a115062bfafb1ab7ac3b492",
+      "6a115062bfafb1ab7ac3b493"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b494",
+    "slug": "async-programming-scheduling",
+    "title": "Async Programming & Scheduling",
+    "description": "This chapter focuses on advanced asynchronous programming patterns and scheduling mechanisms within Node.js, essential for complex application logic.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b495",
+      "6a115062bfafb1ab7ac3b496",
+      "6a115062bfafb1ab7ac3b497",
+      "6a115062bfafb1ab7ac3b498"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b499",
+    "slug": "the-stream-api-backpressure-mechanics",
+    "title": "The Stream API & Backpressure Mechanics",
+    "description": "This chapter explores the Node.js Stream API, focusing on its internal mechanics and backpressure handling for efficient data processing.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b49a",
+      "6a115062bfafb1ab7ac3b49b",
+      "6a115062bfafb1ab7ac3b49c",
+      "6a115062bfafb1ab7ac3b49d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b49e",
+    "slug": "binary-data-buffer-engineering",
+    "title": "Binary Data & Buffer Engineering",
+    "description": "This chapter covers advanced techniques for working with binary data and Node.js Buffers, including memory management and wire protocol design.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b49f",
+      "6a115062bfafb1ab7ac3b4a0",
+      "6a115062bfafb1ab7ac3b4a1"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4a2",
+    "slug": "concurrency-parallelism",
+    "title": "Concurrency & Parallelism",
+    "description": "This chapter explores advanced strategies for achieving concurrency and parallelism in Node.js using Worker Threads and the Cluster Module.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4a3",
+      "6a115062bfafb1ab7ac3b4a4",
+      "6a115062bfafb1ab7ac3b4a5"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4a6",
+    "slug": "the-module-system-loading-mechanics",
+    "title": "The Module System & Loading Mechanics",
+    "description": "This chapter provides a deep dive into Node.js's module loading mechanisms, including the interoperability of ESM and CJS.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4a7",
+      "6a115062bfafb1ab7ac3b4a8"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4a9",
+    "slug": "advanced-diagnostics-post-mortem-analysis",
+    "title": "Advanced Diagnostics & Post-Mortem Analysis",
+    "description": "This chapter focuses on advanced techniques for diagnosing performance issues and conducting post-mortem analysis in production Node.js environments.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b484",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4aa",
+      "6a115062bfafb1ab7ac3b4ab",
+      "6a115062bfafb1ab7ac3b4ac"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4ae",
+    "slug": "transport-layer-foundations",
+    "title": "Transport Layer Foundations",
+    "description": "This chapter focuses on the core principles and advanced optimizations of transport layer protocols like TCP and QUIC, crucial for network performance and reliability.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4af",
+      "6a115062bfafb1ab7ac3b4b0",
+      "6a115062bfafb1ab7ac3b4b1",
+      "6a115062bfafb1ab7ac3b4b2"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4b3",
+    "slug": "dns-global-traffic-engineering",
+    "title": "DNS & Global Traffic Engineering",
+    "description": "This chapter explores the Domain Name System's role in global traffic management, including advanced resolution strategies, security considerations, and performance optimizations.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4b4",
+      "6a115062bfafb1ab7ac3b4b5",
+      "6a115062bfafb1ab7ac3b4b6",
+      "6a115062bfafb1ab7ac3b4b7"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4b8",
+    "slug": "tls-1-3-secure-transport",
+    "title": "TLS 1.3 & Secure Transport",
+    "description": "This chapter delves into the advanced features and security enhancements of TLS 1.3, covering handshake optimizations, certificate management, and secure transport configurations.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4b9",
+      "6a115062bfafb1ab7ac3b4ba",
+      "6a115062bfafb1ab7ac3b4bb",
+      "6a115062bfafb1ab7ac3b4bc"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4bd",
+    "slug": "http-2-http-3-performance",
+    "title": "HTTP/2 & HTTP/3 Performance",
+    "description": "This chapter provides a deep dive into the performance enhancements and architectural differences of HTTP/2 and HTTP/3, essential for modern web application optimization.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4be",
+      "6a115062bfafb1ab7ac3b4bf",
+      "6a115062bfafb1ab7ac3b4c0",
+      "6a115062bfafb1ab7ac3b4c1"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4c2",
+    "slug": "advanced-caching-content-delivery",
+    "title": "Advanced Caching & Content Delivery",
+    "description": "This chapter explores sophisticated caching strategies and content delivery network (CDN) optimizations to improve web performance, scalability, and resilience.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4c3",
+      "6a115062bfafb1ab7ac3b4c4",
+      "6a115062bfafb1ab7ac3b4c5",
+      "6a115062bfafb1ab7ac3b4c6"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4c7",
+    "slug": "load-balancing-reverse-proxying",
+    "title": "Load Balancing & Reverse Proxying",
+    "description": "This chapter covers the critical role of load balancers and reverse proxies in distributing traffic, ensuring high availability, and managing backend services efficiently.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4c8",
+      "6a115062bfafb1ab7ac3b4c9",
+      "6a115062bfafb1ab7ac3b4ca",
+      "6a115062bfafb1ab7ac3b4cb"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4cc",
+    "slug": "reliability-resiliency-patterns",
+    "title": "Reliability & Resiliency Patterns",
+    "description": "This chapter focuses on architectural patterns and techniques for building highly reliable and resilient distributed systems that can withstand failures and recover gracefully.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4cd",
+      "6a115062bfafb1ab7ac3b4ce",
+      "6a115062bfafb1ab7ac3b4cf",
+      "6a115062bfafb1ab7ac3b4d0"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4d1",
+    "slug": "web-security-hardening-protocols",
+    "title": "Web Security & Hardening Protocols",
+    "description": "This chapter covers essential web security protocols and best practices for hardening applications against common attacks, protecting user data, and maintaining system integrity.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4d2",
+      "6a115062bfafb1ab7ac3b4d3",
+      "6a115062bfafb1ab7ac3b4d4",
+      "6a115062bfafb1ab7ac3b4d5"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4d6",
+    "slug": "real-time-communication-sockets-sse",
+    "title": "Real-time Communication (Sockets & SSE)",
+    "description": "This chapter explores technologies for real-time communication on the web, including WebSockets for bidirectional interaction and Server-Sent Events for efficient unidirectional updates.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4d7",
+      "6a115062bfafb1ab7ac3b4d8",
+      "6a115062bfafb1ab7ac3b4d9"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4da",
+    "slug": "api-communication-patterns-grpc-protobuf",
+    "title": "API Communication Patterns (gRPC/Protobuf)",
+    "description": "This chapter focuses on advanced API communication patterns using gRPC and Protocol Buffers, providing efficient, strongly typed, and high-performance alternatives to traditional REST APIs.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4ad",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4db",
+      "6a115062bfafb1ab7ac3b4dc",
+      "6a115062bfafb1ab7ac3b4dd"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4df",
+    "slug": "type-level-foundations-nominalism",
+    "title": "Type-Level Foundations & Nominalism",
+    "description": "This chapter explores advanced type system features that enable strict nominal typing and information hiding in TypeScript applications.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4e0",
+      "6a115062bfafb1ab7ac3b4e1",
+      "6a115062bfafb1ab7ac3b4e2",
+      "6a115062bfafb1ab7ac3b4e3"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4e4",
+    "slug": "the-runtime-type-boundary",
+    "title": "The Runtime-Type Boundary",
+    "description": "This chapter focuses on strategies for safely bridging the gap between untyped runtime data and strictly typed TypeScript domain models.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4e5",
+      "6a115062bfafb1ab7ac3b4e6",
+      "6a115062bfafb1ab7ac3b4e7",
+      "6a115062bfafb1ab7ac3b4e8"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4e9",
+    "slug": "advanced-type-algebra-logic",
+    "title": "Advanced Type Algebra & Logic",
+    "description": "This chapter explores complex type manipulation techniques, enabling highly dynamic and reactive type definitions.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4ea",
+      "6a115062bfafb1ab7ac3b4eb",
+      "6a115062bfafb1ab7ac3b4ec",
+      "6a115062bfafb1ab7ac3b4ed"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4ee",
+    "slug": "tactical-ddd-domain-modeling",
+    "title": "Tactical DDD & Domain Modeling",
+    "description": "This chapter applies Domain-Driven Design principles using TypeScript to create expressive and robust domain models.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4ef",
+      "6a115062bfafb1ab7ac3b4f0",
+      "6a115062bfafb1ab7ac3b4f1"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4f2",
+    "slug": "functional-error-handling-result-types",
+    "title": "Functional Error Handling & Result Types",
+    "description": "This chapter explores functional patterns for error handling, making error propagation and recovery explicit and type-safe.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4f3",
+      "6a115062bfafb1ab7ac3b4f4",
+      "6a115062bfafb1ab7ac3b4f5"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4f6",
+    "slug": "architectural-decoupling-hexagonal-di",
+    "title": "Architectural Decoupling (Hexagonal/DI)",
+    "description": "This chapter covers architectural patterns like Hexagonal Architecture and Dependency Inversion to achieve high levels of modularity and testability.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4f7",
+      "6a115062bfafb1ab7ac3b4f8",
+      "6a115062bfafb1ab7ac3b4f9"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4fa",
+    "slug": "generic-engineering-library-design",
+    "title": "Generic Engineering & Library Design",
+    "description": "This chapter focuses on advanced generic programming techniques for designing flexible, reusable, and type-safe libraries.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4fb",
+      "6a115062bfafb1ab7ac3b4fc",
+      "6a115062bfafb1ab7ac3b4fd"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b4fe",
+    "slug": "monorepos-scale-governance",
+    "title": "Monorepos & Scale Governance",
+    "description": "This chapter explores strategies for managing large-scale TypeScript monorepos, focusing on build optimization and type consistency.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b4ff",
+      "6a115062bfafb1ab7ac3b500",
+      "6a115062bfafb1ab7ac3b501"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b502",
+    "slug": "compiler-performance-diagnostics",
+    "title": "Compiler Performance & Diagnostics",
+    "description": "This chapter provides techniques for diagnosing and optimizing TypeScript compiler performance in large projects.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b503",
+      "6a115062bfafb1ab7ac3b504",
+      "6a115062bfafb1ab7ac3b505"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b506",
+    "slug": "metadata-reflective-architecture",
+    "title": "Metadata & Reflective Architecture",
+    "description": "This chapter covers the use of decorators and metadata reflection to build declarative and extensible architectures in TypeScript.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b4de",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b507",
+      "6a115062bfafb1ab7ac3b508"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b50a",
+    "slug": "foundations-of-determinism-state-space",
+    "title": "Foundations of Determinism & State Space",
+    "description": "This chapter establishes the core concepts of deterministic systems and state space management to prevent errors and ensure predictable behavior.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b50b",
+      "6a115062bfafb1ab7ac3b50c",
+      "6a115062bfafb1ab7ac3b50d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b50e",
+    "slug": "finite-state-machines-fsm",
+    "title": "Finite State Machines (FSM)",
+    "description": "This chapter introduces the formal modeling of system behavior using Finite State Machines to create precise and unambiguous logic.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b50f",
+      "6a115062bfafb1ab7ac3b510",
+      "6a115062bfafb1ab7ac3b511"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b512",
+    "slug": "statecharts-hierarchical-complexity",
+    "title": "Statecharts & Hierarchical Complexity",
+    "description": "This chapter extends FSM concepts with Statecharts to manage and simplify the complexity of real-world system behaviors through hierarchy and parallelism.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b513",
+      "6a115062bfafb1ab7ac3b514",
+      "6a115062bfafb1ab7ac3b515",
+      "6a115062bfafb1ab7ac3b516"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b517",
+    "slug": "backend-workflow-orchestration",
+    "title": "Backend Workflow Orchestration",
+    "description": "This chapter applies state modeling to design and manage robust backend workflows, ensuring durability and predictable execution in distributed systems.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b518",
+      "6a115062bfafb1ab7ac3b519",
+      "6a115062bfafb1ab7ac3b51a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b51b",
+    "slug": "rules-policy-engines",
+    "title": "Rules & Policy Engines",
+    "description": "This chapter covers the design and implementation of rules and policy engines to externalize complex business logic, making systems more flexible and adaptable.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b51c",
+      "6a115062bfafb1ab7ac3b51d",
+      "6a115062bfafb1ab7ac3b51e"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b51f",
+    "slug": "event-sourcing-state-reconstruction",
+    "title": "Event Sourcing & State Reconstruction",
+    "description": "This chapter explores event sourcing, a powerful pattern for maintaining an immutable log of events to reconstruct system state and enable advanced auditing and debugging.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b520",
+      "6a115062bfafb1ab7ac3b521",
+      "6a115062bfafb1ab7ac3b522"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b523",
+    "slug": "concurrency-state-anomalies",
+    "title": "Concurrency & State Anomalies",
+    "description": "This chapter addresses the challenges of managing state in concurrent environments, focusing on strategies to prevent race conditions and ensure data consistency.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b524",
+      "6a115062bfafb1ab7ac3b525",
+      "6a115062bfafb1ab7ac3b526"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b527",
+    "slug": "the-actor-model-distributed-logic",
+    "title": "The Actor Model & Distributed Logic",
+    "description": "This chapter introduces the Actor Model as a paradigm for building robust, scalable, and fault-tolerant distributed systems through message passing and isolated state.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b528",
+      "6a115062bfafb1ab7ac3b529",
+      "6a115062bfafb1ab7ac3b52a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b52b",
+    "slug": "resilience-fail-safe-state",
+    "title": "Resilience & Fail-Safe State",
+    "description": "This chapter focuses on designing resilient systems by incorporating fail-safe states and idempotent operations to gracefully handle failures and ensure reliable behavior.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b52c",
+      "6a115062bfafb1ab7ac3b52d",
+      "6a115062bfafb1ab7ac3b52e"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b52f",
+    "slug": "state-modeling-for-ai-agentic-systems",
+    "title": "State Modeling for AI & Agentic Systems",
+    "description": "This chapter applies deterministic state modeling to the unique challenges of AI and agentic systems, focusing on controlling probabilistic outputs and managing complex agent interactions.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b509",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b530",
+      "6a115062bfafb1ab7ac3b531",
+      "6a115062bfafb1ab7ac3b532"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b534",
+    "slug": "the-monolith-microservice-spectrum",
+    "title": "The Monolith-Microservice Spectrum",
+    "description": "This chapter examines the continuum from monolithic to microservice architectures, focusing on the trade-offs, decomposition strategies, and deployment considerations for distributed systems.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b535",
+      "6a115062bfafb1ab7ac3b536",
+      "6a115062bfafb1ab7ac3b537",
+      "6a115062bfafb1ab7ac3b538"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b539",
+    "slug": "micro-frontend-mfe-orchestration-federation",
+    "title": "Micro-Frontend (MFE) Orchestration & Federation",
+    "description": "This chapter explores the architecture and implementation of Micro-Frontends, focusing on module federation, dependency governance, and various composition strategies for building scalable web applications.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b53a",
+      "6a115062bfafb1ab7ac3b53b",
+      "6a115062bfafb1ab7ac3b53c",
+      "6a115062bfafb1ab7ac3b53d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b53e",
+    "slug": "monorepo-strategy-task-orchestration",
+    "title": "Monorepo Strategy & Task Orchestration",
+    "description": "This chapter delves into monorepo management, focusing on task orchestration, workspace boundary enforcement, and versioning strategies to optimize development workflows for large codebases.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b53f",
+      "6a115062bfafb1ab7ac3b540",
+      "6a115062bfafb1ab7ac3b541"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b542",
+    "slug": "service-communication-traffic-control",
+    "title": "Service Communication & Traffic Control",
+    "description": "This chapter covers advanced patterns for inter-service communication and traffic management, including asynchronous orchestration, service meshes, and optimized protocols like gRPC, to build resilient distributed systems.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b543",
+      "6a115062bfafb1ab7ac3b544",
+      "6a115062bfafb1ab7ac3b545",
+      "6a115062bfafb1ab7ac3b546"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b547",
+    "slug": "api-gateways-request-aggregation",
+    "title": "API Gateways & Request Aggregation",
+    "description": "This chapter focuses on the design and implementation of API gateways, covering patterns like Backend for Frontend, request aggregation, and offloading cross-cutting concerns, along with performance evaluation.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b548",
+      "6a115062bfafb1ab7ac3b549",
+      "6a115062bfafb1ab7ac3b54a",
+      "6a115062bfafb1ab7ac3b54b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b54c",
+    "slug": "cloud-native-serverless-patterns",
+    "title": "Cloud-Native & Serverless Patterns",
+    "description": "This chapter explores cloud-native and serverless architectural patterns, focusing on optimizing serverless function lifecycles, implementing event-driven scaling, and evaluating serverless database solutions.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b54d",
+      "6a115062bfafb1ab7ac3b54e",
+      "6a115062bfafb1ab7ac3b54f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b550",
+    "slug": "edge-computing-global-delivery",
+    "title": "Edge Computing & Global Delivery",
+    "description": "This chapter examines edge computing and global delivery strategies, covering compute@edge, global data locality, and edge streaming to optimize performance and responsiveness for distributed applications.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b551",
+      "6a115062bfafb1ab7ac3b552",
+      "6a115062bfafb1ab7ac3b553"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b554",
+    "slug": "bundler-internals-code-distribution",
+    "title": "Bundler Internals & Code Distribution",
+    "description": "This chapter explores the inner workings of modern bundlers, focusing on dependency graph analysis, code splitting techniques, and dead code elimination to optimize web application performance and delivery.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b555",
+      "6a115062bfafb1ab7ac3b556",
+      "6a115062bfafb1ab7ac3b557"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b558",
+    "slug": "architectural-evolution-migration-strategies",
+    "title": "Architectural Evolution & Migration Strategies",
+    "description": "This chapter covers robust strategies for evolving existing architectures and migrating legacy systems, including the Strangler Fig pattern, dual writes, and designing effective rollback mechanisms.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b559",
+      "6a115062bfafb1ab7ac3b55a",
+      "6a115062bfafb1ab7ac3b55b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b55c",
+    "slug": "governance-documentation-c4",
+    "title": "Governance, Documentation & C4",
+    "description": "This chapter focuses on architectural governance and documentation best practices, covering the C4 model, Architecture Decision Records, and service catalogs to foster clear communication and discovery within engineering organizations.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b533",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b55d",
+      "6a115062bfafb1ab7ac3b55e",
+      "6a115062bfafb1ab7ac3b55f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b561",
+    "slug": "rest-resource-modeling-semantics",
+    "title": "REST Resource Modeling & Semantics",
+    "description": "This chapter focuses on advanced principles for designing RESTful APIs, emphasizing semantic correctness, discoverability, and robust error handling.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b562",
+      "6a115062bfafb1ab7ac3b563",
+      "6a115062bfafb1ab7ac3b564",
+      "6a115062bfafb1ab7ac3b565"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b566",
+    "slug": "graphql-schema-design-type-governance",
+    "title": "GraphQL Schema Design & Type Governance",
+    "description": "This chapter covers best practices for designing robust and evolvable GraphQL schemas, focusing on type governance, nullability, and advanced schema features.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b567",
+      "6a115062bfafb1ab7ac3b568",
+      "6a115062bfafb1ab7ac3b569",
+      "6a115062bfafb1ab7ac3b56a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b56b",
+    "slug": "graphql-performance-execution-engine",
+    "title": "GraphQL Performance & Execution Engine",
+    "description": "This chapter explores advanced techniques for optimizing GraphQL API performance, focusing on data fetching, query execution, and caching strategies.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b56c",
+      "6a115062bfafb1ab7ac3b56d",
+      "6a115062bfafb1ab7ac3b56e",
+      "6a115062bfafb1ab7ac3b56f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b570",
+    "slug": "request-pipeline-middleware-context",
+    "title": "Request Pipeline, Middleware & Context",
+    "description": "This chapter covers designing and implementing efficient request pipelines and middleware, emphasizing context propagation, error handling, and input sanitization.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b571",
+      "6a115062bfafb1ab7ac3b572",
+      "6a115062bfafb1ab7ac3b573"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b574",
+    "slug": "advanced-pagination-filtering-search",
+    "title": "Advanced Pagination, Filtering & Search",
+    "description": "This chapter details sophisticated techniques for implementing pagination, filtering, and search functionalities to handle large datasets efficiently and provide flexible client queries.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b575",
+      "6a115062bfafb1ab7ac3b576",
+      "6a115062bfafb1ab7ac3b577"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b578",
+    "slug": "idempotency-write-safety-concurrency",
+    "title": "Idempotency, Write Safety & Concurrency",
+    "description": "This chapter focuses on designing APIs for data integrity, ensuring write safety, managing concurrency, and implementing idempotency for reliable transaction processing.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b579",
+      "6a115062bfafb1ab7ac3b57a",
+      "6a115062bfafb1ab7ac3b57b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b57c",
+    "slug": "api-versioning-evolution-sunsetting",
+    "title": "API Versioning, Evolution & Sunsetting",
+    "description": "This chapter covers strategies for managing API evolution, versioning, deprecation, and eventual sunsetting to minimize disruption for consumers and maintain long-term stability.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b57d",
+      "6a115062bfafb1ab7ac3b57e",
+      "6a115062bfafb1ab7ac3b57f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b580",
+    "slug": "webhooks-asynchronous-integration-reliability",
+    "title": "Webhooks, Asynchronous Integration & Reliability",
+    "description": "This chapter explores designing and implementing robust webhook systems, focusing on secure outbound delivery, reliable ingestion, and ensuring eventual consistency.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b581",
+      "6a115062bfafb1ab7ac3b582",
+      "6a115062bfafb1ab7ac3b583"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b584",
+    "slug": "rate-limiting-quotas-abuse-prevention",
+    "title": "Rate Limiting, Quotas & Abuse Prevention",
+    "description": "This chapter details strategies for protecting API resources through effective rate limiting, quota management, and advanced techniques to prevent abuse and ensure service availability.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b585",
+      "6a115062bfafb1ab7ac3b586",
+      "6a115062bfafb1ab7ac3b587"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b588",
+    "slug": "contract-first-development-testing-tooling",
+    "title": "Contract-First Development, Testing & Tooling",
+    "description": "This chapter focuses on establishing robust development workflows using contract-first design, comprehensive testing strategies, and advanced observability tooling for APIs.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b560",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b589",
+      "6a115062bfafb1ab7ac3b58a",
+      "6a115062bfafb1ab7ac3b58b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b58d",
+    "slug": "grpc-high-performance-rpc",
+    "title": "gRPC & High-Performance RPC",
+    "description": "This chapter explores gRPC, a modern RPC framework, focusing on its high-performance characteristics and advanced patterns for inter-service communication.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b58e",
+      "6a115062bfafb1ab7ac3b58f",
+      "6a115062bfafb1ab7ac3b590",
+      "6a115062bfafb1ab7ac3b591"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b592",
+    "slug": "websockets-stateful-connection-engineering",
+    "title": "WebSockets & Stateful Connection Engineering",
+    "description": "This chapter delves into WebSockets, covering their low-level mechanics, scaling strategies, and methods for managing stateful, long-lived connections.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b593",
+      "6a115062bfafb1ab7ac3b594",
+      "6a115062bfafb1ab7ac3b595",
+      "6a115062bfafb1ab7ac3b596"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b597",
+    "slug": "webrtc-peer-to-peer-p2p-systems",
+    "title": "WebRTC & Peer-to-Peer (P2P) Systems",
+    "description": "This chapter focuses on WebRTC, exploring how to establish peer-to-peer connections, transfer data, and design architectures for real-time collaboration.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b598",
+      "6a115062bfafb1ab7ac3b599",
+      "6a115062bfafb1ab7ac3b59a",
+      "6a115062bfafb1ab7ac3b59b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b59c",
+    "slug": "unidirectional-streaming-sse",
+    "title": "Unidirectional Streaming & SSE",
+    "description": "This chapter covers unidirectional streaming methods, including Server-Sent Events, HTTP/2, HTTP/3, and resilient fallbacks for live data updates.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b59d",
+      "6a115062bfafb1ab7ac3b59e",
+      "6a115062bfafb1ab7ac3b59f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5a0",
+    "slug": "real-time-state-synchronization-crdts-ot",
+    "title": "Real-Time State Synchronization (CRDTs & OT)",
+    "description": "This chapter explores advanced techniques for real-time state synchronization, focusing on Conflict-free Replicated Data Types (CRDTs) and Operational Transformation (OT).",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5a1",
+      "6a115062bfafb1ab7ac3b5a2",
+      "6a115062bfafb1ab7ac3b5a3"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5a4",
+    "slug": "reliability-flow-control-in-streams",
+    "title": "Reliability & Flow Control in Streams",
+    "description": "This chapter focuses on ensuring reliability and managing flow control in real-time streams, addressing backpressure, reconnection strategies, and message durability.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5a5",
+      "6a115062bfafb1ab7ac3b5a6",
+      "6a115062bfafb1ab7ac3b5a7"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5a8",
+    "slug": "security-in-stateful-connections",
+    "title": "Security in Stateful Connections",
+    "description": "This chapter covers critical security aspects for stateful connections, including token-based authentication, origin validation, and mutual TLS for gRPC.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5a9",
+      "6a115062bfafb1ab7ac3b5aa",
+      "6a115062bfafb1ab7ac3b5ab"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5ac",
+    "slug": "observability-for-real-time-systems",
+    "title": "Observability for Real-Time Systems",
+    "description": "This chapter addresses the observability of real-time systems, focusing on distributed tracing, health metrics, and log aggregation for effective monitoring and debugging.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5ad",
+      "6a115062bfafb1ab7ac3b5ae",
+      "6a115062bfafb1ab7ac3b5af"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5b0",
+    "slug": "event-driven-pub-sub-messaging",
+    "title": "Event-Driven Pub/Sub & Messaging",
+    "description": "This chapter explores event-driven Pub/Sub and messaging patterns, comparing various messaging backbones and designing resilient consumer architectures.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5b1",
+      "6a115062bfafb1ab7ac3b5b2",
+      "6a115062bfafb1ab7ac3b5b3"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5b4",
+    "slug": "cross-protocol-gateways-bridging",
+    "title": "Cross-Protocol Gateways & Bridging",
+    "description": "This chapter focuses on designing and implementing cross-protocol gateways and bridging solutions to enable seamless communication between diverse real-time protocols.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b58c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5b5",
+      "6a115062bfafb1ab7ac3b5b6",
+      "6a115062bfafb1ab7ac3b5b7"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5b9",
+    "slug": "storage-engine-internals-physical-layout",
+    "title": "Storage Engine Internals & Physical Layout",
+    "description": "This chapter explores the underlying mechanisms of database storage engines and their physical data organization on disk.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5ba",
+      "6a115062bfafb1ab7ac3b5bb",
+      "6a115062bfafb1ab7ac3b5bc",
+      "6a115062bfafb1ab7ac3b5bd"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5be",
+    "slug": "relational-indexing-query-optimization",
+    "title": "Relational Indexing & Query Optimization",
+    "description": "This chapter focuses on advanced relational indexing techniques and strategies for optimizing database query performance.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5bf",
+      "6a115062bfafb1ab7ac3b5c0",
+      "6a115062bfafb1ab7ac3b5c1",
+      "6a115062bfafb1ab7ac3b5c2"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5c3",
+    "slug": "concurrency-control-isolation-levels",
+    "title": "Concurrency Control & Isolation Levels",
+    "description": "This chapter covers the essential mechanisms for managing concurrent database access and ensuring data consistency through various isolation levels.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5c4",
+      "6a115062bfafb1ab7ac3b5c5",
+      "6a115062bfafb1ab7ac3b5c6",
+      "6a115062bfafb1ab7ac3b5c7"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5c8",
+    "slug": "distributed-fundamentals-consensus",
+    "title": "Distributed Fundamentals & Consensus",
+    "description": "This chapter lays the groundwork for understanding distributed systems, covering fundamental theorems and core consensus protocols.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5c9",
+      "6a115062bfafb1ab7ac3b5ca",
+      "6a115062bfafb1ab7ac3b5cb",
+      "6a115062bfafb1ab7ac3b5cc"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5cd",
+    "slug": "scaling-replication-high-availability",
+    "title": "Scaling, Replication & High Availability",
+    "description": "This chapter focuses on strategies and patterns for scaling data systems, ensuring high availability, and managing data replication.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5ce",
+      "6a115062bfafb1ab7ac3b5cf",
+      "6a115062bfafb1ab7ac3b5d0",
+      "6a115062bfafb1ab7ac3b5d1"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5d2",
+    "slug": "messaging-event-driven-integrity",
+    "title": "Messaging & Event-Driven Integrity",
+    "description": "This chapter explores patterns and techniques for building robust, consistent event-driven systems using messaging queues and ensuring data integrity.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5d3",
+      "6a115062bfafb1ab7ac3b5d4",
+      "6a115062bfafb1ab7ac3b5d5",
+      "6a115062bfafb1ab7ac3b5d6"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5d7",
+    "slug": "distributed-transactions-sagas",
+    "title": "Distributed Transactions & Sagas",
+    "description": "This chapter explores techniques for managing transactions and achieving consistency across multiple independent services in a distributed environment.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5d8",
+      "6a115062bfafb1ab7ac3b5d9",
+      "6a115062bfafb1ab7ac3b5da"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5db",
+    "slug": "multi-tenant-data-architectures",
+    "title": "Multi-Tenant Data Architectures",
+    "description": "This chapter focuses on designing and implementing data architectures that efficiently and securely support multiple independent tenants within a single system.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5dc",
+      "6a115062bfafb1ab7ac3b5dd",
+      "6a115062bfafb1ab7ac3b5de"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5df",
+    "slug": "change-data-capture-cdc-event-sourcing",
+    "title": "Change Data Capture (CDC) & Event Sourcing",
+    "description": "This chapter covers advanced data integration patterns like Change Data Capture and Event Sourcing for building reactive and auditable systems.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5e0",
+      "6a115062bfafb1ab7ac3b5e1",
+      "6a115062bfafb1ab7ac3b5e2"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5e3",
+    "slug": "operational-resilience-disaster-recovery",
+    "title": "Operational Resilience & Disaster Recovery",
+    "description": "This chapter details strategies for building operationally resilient data systems and implementing robust disaster recovery plans.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5b8",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5e4",
+      "6a115062bfafb1ab7ac3b5e5",
+      "6a115062bfafb1ab7ac3b5e6"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5e8",
+    "slug": "serverless-compute-faas-internals",
+    "title": "Serverless Compute & FaaS Internals",
+    "description": "This chapter delves into the underlying mechanisms of Function-as-a-Service (FaaS) and advanced strategies for optimizing serverless compute performance and reliability.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5e9",
+      "6a115062bfafb1ab7ac3b5ea",
+      "6a115062bfafb1ab7ac3b5eb",
+      "6a115062bfafb1ab7ac3b5ec"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5ed",
+    "slug": "managed-containers-orchestration",
+    "title": "Managed Containers & Orchestration",
+    "description": "This chapter explores the nuances of managed container services and orchestration platforms, focusing on resource governance, deployment strategies, and service-to-service communication.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5ee",
+      "6a115062bfafb1ab7ac3b5ef",
+      "6a115062bfafb1ab7ac3b5f0",
+      "6a115062bfafb1ab7ac3b5f1"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5f2",
+    "slug": "distributed-cloud-storage",
+    "title": "Distributed Cloud Storage",
+    "description": "This chapter covers various distributed cloud storage solutions, focusing on consistency, performance optimization, cost-efficiency, and real-time data transformation.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5f3",
+      "6a115062bfafb1ab7ac3b5f4",
+      "6a115062bfafb1ab7ac3b5f5",
+      "6a115062bfafb1ab7ac3b5f6"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5f7",
+    "slug": "managed-data-cache-layers",
+    "title": "Managed Data & Cache Layers",
+    "description": "This chapter covers strategies for designing and optimizing managed database and caching services to achieve high performance and scalability in cloud applications.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5f8",
+      "6a115062bfafb1ab7ac3b5f9",
+      "6a115062bfafb1ab7ac3b5fa",
+      "6a115062bfafb1ab7ac3b5fb"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b5fc",
+    "slug": "event-driven-infrastructure",
+    "title": "Event-Driven Infrastructure",
+    "description": "This chapter focuses on designing and implementing robust event-driven architectures using messaging queues, publish/subscribe systems, and event buses for decoupled microservices.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b5fd",
+      "6a115062bfafb1ab7ac3b5fe",
+      "6a115062bfafb1ab7ac3b5ff",
+      "6a115062bfafb1ab7ac3b600"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b601",
+    "slug": "virtual-private-clouds-vpc-networking",
+    "title": "Virtual Private Clouds (VPC) & Networking",
+    "description": "This chapter provides an in-depth understanding of VPC architecture and advanced networking concepts crucial for designing secure, isolated, and highly connected cloud environments.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b602",
+      "6a115062bfafb1ab7ac3b603",
+      "6a115062bfafb1ab7ac3b604",
+      "6a115062bfafb1ab7ac3b605"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b606",
+    "slug": "serverless-integration-patterns",
+    "title": "Serverless Integration Patterns",
+    "description": "This chapter explores advanced serverless integration patterns, focusing on workflow orchestration, API gateway transformations, real-time communication, and GraphQL APIs.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b607",
+      "6a115062bfafb1ab7ac3b608",
+      "6a115062bfafb1ab7ac3b609",
+      "6a115062bfafb1ab7ac3b60a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b60b",
+    "slug": "cloud-observability-reliability",
+    "title": "Cloud Observability & Reliability",
+    "description": "This chapter covers advanced strategies for monitoring, logging, tracing, and architecting highly available and disaster-resilient cloud systems.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b60c",
+      "6a115062bfafb1ab7ac3b60d",
+      "6a115062bfafb1ab7ac3b60e",
+      "6a115062bfafb1ab7ac3b60f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b610",
+    "slug": "finops-governance-iac",
+    "title": "FinOps, Governance & IaC",
+    "description": "This chapter focuses on integrating financial management, governance, and Infrastructure as Code (IaC) principles to build well-managed, cost-effective, and compliant cloud environments.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b5e7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b611",
+      "6a115062bfafb1ab7ac3b612",
+      "6a115062bfafb1ab7ac3b613",
+      "6a115062bfafb1ab7ac3b614"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b616",
+    "slug": "the-browser-runtime-rendering-pipeline",
+    "title": "The Browser Runtime & Rendering Pipeline",
+    "description": "This chapter deep dives into how web browsers process and render web pages, focusing on performance optimization techniques for a smooth user experience.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b615",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b617",
+      "6a115062bfafb1ab7ac3b618",
+      "6a115062bfafb1ab7ac3b619",
+      "6a115062bfafb1ab7ac3b61a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b61b",
+    "slug": "delivery-paradigms-the-hydration-paradox",
+    "title": "Delivery Paradigms & The Hydration Paradox",
+    "description": "This chapter explores various frontend delivery strategies and tackles the challenges of client-side hydration for optimal performance.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b615",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b61c",
+      "6a115062bfafb1ab7ac3b61d",
+      "6a115062bfafb1ab7ac3b61e",
+      "6a115062bfafb1ab7ac3b61f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b620",
+    "slug": "state-data-flow-orchestration",
+    "title": "State & Data Flow Orchestration",
+    "description": "This chapter focuses on advanced patterns for managing application state, distinguishing between server and UI state, and handling data flow efficiently.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b615",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b621",
+      "6a115062bfafb1ab7ac3b622",
+      "6a115062bfafb1ab7ac3b623",
+      "6a115062bfafb1ab7ac3b624"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b625",
+    "slug": "frontend-infrastructure-pattern-ownership",
+    "title": "Frontend Infrastructure & Pattern Ownership",
+    "description": "This chapter covers architectural patterns and infrastructure considerations for building scalable and maintainable frontend systems.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b615",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b626",
+      "6a115062bfafb1ab7ac3b627",
+      "6a115062bfafb1ab7ac3b628"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b629",
+    "slug": "runtime-security-boundary-hardening",
+    "title": "Runtime Security & Boundary Hardening",
+    "description": "This chapter focuses on securing client-side applications by implementing robust policies and best practices against common web vulnerabilities.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b615",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b62a",
+      "6a115062bfafb1ab7ac3b62b",
+      "6a115062bfafb1ab7ac3b62c"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b62d",
+    "slug": "advanced-performance-off-main-thread",
+    "title": "Advanced Performance & Off-Main-Thread",
+    "description": "This chapter explores cutting-edge performance techniques, including offloading work from the main thread and leveraging WebAssembly for compute-intensive tasks.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b615",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b62e",
+      "6a115062bfafb1ab7ac3b62f",
+      "6a115062bfafb1ab7ac3b630"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b631",
+    "slug": "design-system-engineering-governance",
+    "title": "Design System Engineering & Governance",
+    "description": "This chapter covers the principles and practices for building and maintaining robust design systems, including tokenization and versioning strategies.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b615",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b632",
+      "6a115062bfafb1ab7ac3b633"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b635",
+    "slug": "strategic-quality-orchestration",
+    "title": "Strategic Quality Orchestration",
+    "description": "This chapter focuses on designing and implementing a comprehensive testing strategy that aligns with business objectives and technical realities.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b634",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b636",
+      "6a115062bfafb1ab7ac3b637",
+      "6a115062bfafb1ab7ac3b638",
+      "6a115062bfafb1ab7ac3b639"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b63a",
+    "slug": "integration-consumer-driven-contracts",
+    "title": "Integration & Consumer-Driven Contracts",
+    "description": "This chapter explores advanced techniques for testing interactions between services, emphasizing contract-based testing and robust integration strategies.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b634",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b63b",
+      "6a115062bfafb1ab7ac3b63c",
+      "6a115062bfafb1ab7ac3b63d",
+      "6a115062bfafb1ab7ac3b63e"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b63f",
+    "slug": "deterministic-data-environment-management",
+    "title": "Deterministic Data & Environment Management",
+    "description": "This chapter focuses on establishing reliable and reproducible test environments and data management strategies for consistent testing outcomes.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b634",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b640",
+      "6a115062bfafb1ab7ac3b641",
+      "6a115062bfafb1ab7ac3b642",
+      "6a115062bfafb1ab7ac3b643"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b644",
+    "slug": "modern-e2e-browser-orchestration",
+    "title": "Modern E2E & Browser Orchestration",
+    "description": "This chapter covers advanced End-to-End testing techniques, focusing on robust browser automation and visual validation for complex web applications.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b634",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b645",
+      "6a115062bfafb1ab7ac3b646",
+      "6a115062bfafb1ab7ac3b647"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b648",
+    "slug": "non-functional-resilience-gating",
+    "title": "Non-Functional & Resilience Gating",
+    "description": "This chapter focuses on integrating non-functional requirements such as performance, accessibility, and resilience into the testing and deployment pipeline.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b634",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b649",
+      "6a115062bfafb1ab7ac3b64a",
+      "6a115062bfafb1ab7ac3b64b",
+      "6a115062bfafb1ab7ac3b64c"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b64d",
+    "slug": "observability-driven-development-odd",
+    "title": "Observability-Driven Development (ODD)",
+    "description": "This chapter explores how to integrate observability practices with testing to gain deeper insights into system behavior and validate assumptions in production.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b634",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b64e",
+      "6a115062bfafb1ab7ac3b64f",
+      "6a115062bfafb1ab7ac3b650"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b652",
+    "slug": "opentelemetry-otel-distributed-tracing",
+    "title": "OpenTelemetry (OTel) & Distributed Tracing",
+    "description": "This chapter focuses on designing and implementing advanced distributed tracing solutions using OpenTelemetry to gain deep insights into system behavior across complex architectures.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b651",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b653",
+      "6a115062bfafb1ab7ac3b654",
+      "6a115062bfafb1ab7ac3b655",
+      "6a115062bfafb1ab7ac3b656"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b657",
+    "slug": "high-performance-logging-log-analytics",
+    "title": "High-Performance Logging & Log Analytics",
+    "description": "This chapter covers advanced techniques for implementing efficient logging, structuring log data, and designing robust log aggregation systems for deep analysis and compliance.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b651",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b658",
+      "6a115062bfafb1ab7ac3b659",
+      "6a115062bfafb1ab7ac3b65a",
+      "6a115062bfafb1ab7ac3b65b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b65c",
+    "slug": "metrics-slos-alerting",
+    "title": "Metrics, SLOs & Alerting",
+    "description": "This chapter focuses on designing effective metrics, defining service level objectives (SLOs), and architecting symptom-based alerting to maintain service reliability and prevent alert fatigue.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b651",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b65d",
+      "6a115062bfafb1ab7ac3b65e",
+      "6a115062bfafb1ab7ac3b65f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b660",
+    "slug": "resilience-engineering-overload-management",
+    "title": "Resilience Engineering & Overload Management",
+    "description": "This chapter explores advanced resilience patterns and overload management strategies to build highly available and fault-tolerant distributed systems capable of gracefully handling failures and high loads.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b651",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b661",
+      "6a115062bfafb1ab7ac3b662",
+      "6a115062bfafb1ab7ac3b663",
+      "6a115062bfafb1ab7ac3b664"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b665",
+    "slug": "incident-response-post-mortem-culture",
+    "title": "Incident Response & Post-Mortem Culture",
+    "description": "This chapter provides engineers with the knowledge to establish effective incident response protocols, conduct blameless post-mortems, and leverage automation to reduce incident resolution times.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b651",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b666",
+      "6a115062bfafb1ab7ac3b667",
+      "6a115062bfafb1ab7ac3b668"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b669",
+    "slug": "continuous-profiling-advanced-debugging",
+    "title": "Continuous Profiling & Advanced Debugging",
+    "description": "This chapter focuses on advanced techniques for continuous profiling in production environments and deep-diving into memory forensics to identify and resolve elusive performance and stability issues.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b651",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b66a",
+      "6a115062bfafb1ab7ac3b66b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b66d",
+    "slug": "modern-identity-authentication",
+    "title": "Modern Identity & Authentication",
+    "description": "This chapter focuses on designing and implementing secure, scalable identity and authentication systems for modern applications, emphasizing phishing resistance and advanced protocol use.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b66c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b66e",
+      "6a115062bfafb1ab7ac3b66f",
+      "6a115062bfafb1ab7ac3b670",
+      "6a115062bfafb1ab7ac3b671"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b672",
+    "slug": "advanced-authorization-authz-access-control",
+    "title": "Advanced Authorization (AuthZ) & Access Control",
+    "description": "This chapter explores sophisticated authorization models and access control mechanisms, including fine-grained permissioning and policy-as-code solutions.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b66c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b673",
+      "6a115062bfafb1ab7ac3b674",
+      "6a115062bfafb1ab7ac3b675"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b676",
+    "slug": "web-security-runtime-hardening",
+    "title": "Web Security & Runtime Hardening",
+    "description": "This chapter covers advanced web security techniques, focusing on client-side protections, runtime hardening, and mitigating common web vulnerabilities.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b66c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b677",
+      "6a115062bfafb1ab7ac3b678",
+      "6a115062bfafb1ab7ac3b679",
+      "6a115062bfafb1ab7ac3b67a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b67b",
+    "slug": "supply-chain-cryptographic-engineering",
+    "title": "Supply Chain & Cryptographic Engineering",
+    "description": "This chapter delves into securing the software supply chain and applying cryptographic engineering principles to protect data and communications.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b66c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b67c",
+      "6a115062bfafb1ab7ac3b67d",
+      "6a115062bfafb1ab7ac3b67e",
+      "6a115062bfafb1ab7ac3b67f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b680",
+    "slug": "api-security-abuse-prevention",
+    "title": "API Security & Abuse Prevention",
+    "description": "This chapter focuses on protecting APIs from various attacks, including abuse, unauthorized access, and maintaining a strong API security posture.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b66c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b681",
+      "6a115062bfafb1ab7ac3b682",
+      "6a115062bfafb1ab7ac3b683"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b684",
+    "slug": "threat-modeling-defensive-design",
+    "title": "Threat Modeling & Defensive Design",
+    "description": "This chapter covers systematic approaches to identifying threats, designing secure systems, and implementing robust logging and hardening measures.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b66c",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b685",
+      "6a115062bfafb1ab7ac3b686",
+      "6a115062bfafb1ab7ac3b687"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b689",
+    "slug": "privacy-enhancing-technologies-pets",
+    "title": "Privacy-Enhancing Technologies (PETs)",
+    "description": "This chapter explores cutting-edge technologies that embed privacy protection directly into system design, enabling data utility without compromising individual confidentiality.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b688",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b68a",
+      "6a115062bfafb1ab7ac3b68b",
+      "6a115062bfafb1ab7ac3b68c",
+      "6a115062bfafb1ab7ac3b68d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b68e",
+    "slug": "data-residency-sovereignty-architecture",
+    "title": "Data Residency & Sovereignty Architecture",
+    "description": "This chapter focuses on designing technical solutions to ensure data is stored and processed within specific geographical boundaries, adhering to national and regional legal requirements.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b688",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b68f",
+      "6a115062bfafb1ab7ac3b690",
+      "6a115062bfafb1ab7ac3b691"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b692",
+    "slug": "engineering-for-gdpr-ccpa-compliance",
+    "title": "Engineering for GDPR/CCPA Compliance",
+    "description": "This chapter details the technical engineering strategies and systems required to meet the stringent demands of modern data protection regulations like GDPR and CCPA.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b688",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b693",
+      "6a115062bfafb1ab7ac3b694",
+      "6a115062bfafb1ab7ac3b695",
+      "6a115062bfafb1ab7ac3b696"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b697",
+    "slug": "data-anonymization-de-identification",
+    "title": "Data Anonymization & De-identification",
+    "description": "This chapter covers advanced techniques and statistical models for rendering sensitive data anonymous or de-identified, preventing re-identification while preserving data utility.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b688",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b698",
+      "6a115062bfafb1ab7ac3b699",
+      "6a115062bfafb1ab7ac3b69a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b69b",
+    "slug": "consent-management-preference-orchestration",
+    "title": "Consent Management & Preference Orchestration",
+    "description": "This chapter focuses on engineering robust systems for capturing, managing, and enforcing user consent and privacy preferences across diverse platforms.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b688",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b69c",
+      "6a115062bfafb1ab7ac3b69d",
+      "6a115062bfafb1ab7ac3b69e"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b69f",
+    "slug": "audit-forensics-compliance-automation",
+    "title": "Audit, Forensics & Compliance Automation",
+    "description": "This chapter provides engineers with the tools and techniques to create verifiable audit trails, automate compliance checks, and perform data discovery for regulatory adherence.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b688",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6a0",
+      "6a115062bfafb1ab7ac3b6a1",
+      "6a115062bfafb1ab7ac3b6a2"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6a3",
+    "slug": "regulatory-sector-specific-engineering",
+    "title": "Regulatory Sector-Specific Engineering",
+    "description": "This chapter dives into the specialized engineering requirements for compliance within highly regulated sectors such as healthcare and finance.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b688",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6a4",
+      "6a115062bfafb1ab7ac3b6a5",
+      "6a115062bfafb1ab7ac3b6a6"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6a8",
+    "slug": "the-accessibility-tree-assistive-tech-internals",
+    "title": "The Accessibility Tree & Assistive Tech Internals",
+    "description": "This chapter explores the internal mechanisms of how browsers and assistive technologies work together to provide an accessible user experience.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6a7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6a9",
+      "6a115062bfafb1ab7ac3b6aa",
+      "6a115062bfafb1ab7ac3b6ab",
+      "6a115062bfafb1ab7ac3b6ac"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6ad",
+    "slug": "wai-aria-semantic-architecture",
+    "title": "WAI-ARIA & Semantic Architecture",
+    "description": "This chapter focuses on leveraging WAI-ARIA attributes and semantic HTML to create robust and accessible user interfaces.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6a7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6ae",
+      "6a115062bfafb1ab7ac3b6af",
+      "6a115062bfafb1ab7ac3b6b0"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6b1",
+    "slug": "performance-as-a-feature-of-inclusion",
+    "title": "Performance as a Feature of Inclusion",
+    "description": "This chapter examines how web performance directly impacts inclusivity and teaches strategies for optimizing applications for diverse user environments.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6a7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6b2",
+      "6a115062bfafb1ab7ac3b6b3",
+      "6a115062bfafb1ab7ac3b6b4"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6b5",
+    "slug": "global-internationalization-i18n-localization-l10n",
+    "title": "Global Internationalization (i18n) & Localization (l10n)",
+    "description": "This chapter covers the essential techniques for building web applications that support multiple languages and cultural conventions globally.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6a7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6b6",
+      "6a115062bfafb1ab7ac3b6b7",
+      "6a115062bfafb1ab7ac3b6b8",
+      "6a115062bfafb1ab7ac3b6b9"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6ba",
+    "slug": "cognitive-inclusion-neurodiverse-engineering",
+    "title": "Cognitive Inclusion & Neurodiverse Engineering",
+    "description": "This chapter explores design and engineering patterns that enhance usability for individuals with cognitive differences and neurodiverse conditions.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6a7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6bb",
+      "6a115062bfafb1ab7ac3b6bc",
+      "6a115062bfafb1ab7ac3b6bd"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6be",
+    "slug": "automated-inclusive-gating-governance",
+    "title": "Automated Inclusive Gating & Governance",
+    "description": "This chapter focuses on integrating automated accessibility checks and governance into the development lifecycle to ensure continuous compliance.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6a7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6bf",
+      "6a115062bfafb1ab7ac3b6c0",
+      "6a115062bfafb1ab7ac3b6c1"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6c2",
+    "slug": "advanced-ux-patterns-for-data-heavy-apps",
+    "title": "Advanced UX Patterns for Data-Heavy Apps",
+    "description": "This chapter explores advanced user experience patterns specifically tailored for data-intensive applications, emphasizing accessibility considerations.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6a7",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6c3",
+      "6a115062bfafb1ab7ac3b6c4",
+      "6a115062bfafb1ab7ac3b6c5"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6c7",
+    "slug": "transformer-architecture-llm-internals",
+    "title": "Transformer Architecture & LLM Internals",
+    "description": "This chapter deep dives into the foundational components and mechanisms of Large Language Models based on the transformer architecture.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6c8",
+      "6a115062bfafb1ab7ac3b6c9",
+      "6a115062bfafb1ab7ac3b6ca",
+      "6a115062bfafb1ab7ac3b6cb"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6cc",
+    "slug": "vector-databases-retrieval-augmented-generation-rag",
+    "title": "Vector Databases & Retrieval Augmented Generation (RAG)",
+    "description": "This chapter explores advanced techniques for building robust Retrieval Augmented Generation systems using vector databases to enhance LLM knowledge.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6cd",
+      "6a115062bfafb1ab7ac3b6ce",
+      "6a115062bfafb1ab7ac3b6cf",
+      "6a115062bfafb1ab7ac3b6d0"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6d1",
+    "slug": "advanced-prompt-engineering-reasoning-patterns",
+    "title": "Advanced Prompt Engineering & Reasoning Patterns",
+    "description": "This chapter focuses on sophisticated prompt engineering techniques to enhance LLM reasoning, control output formats, and improve response quality.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6d2",
+      "6a115062bfafb1ab7ac3b6d3",
+      "6a115062bfafb1ab7ac3b6d4"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6d5",
+    "slug": "agentic-design-patterns-task-orchestration",
+    "title": "Agentic Design Patterns & Task Orchestration",
+    "description": "This chapter focuses on designing and orchestrating autonomous AI agents capable of complex task execution through reasoning and interaction.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6d6",
+      "6a115062bfafb1ab7ac3b6d7",
+      "6a115062bfafb1ab7ac3b6d8",
+      "6a115062bfafb1ab7ac3b6d9"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6da",
+    "slug": "fine-tuning-peft-model-optimization",
+    "title": "Fine-tuning, PEFT & Model Optimization",
+    "description": "This chapter covers advanced techniques for adapting, fine-tuning, and optimizing Large Language Models for specific tasks and efficient deployment.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6db",
+      "6a115062bfafb1ab7ac3b6dc",
+      "6a115062bfafb1ab7ac3b6dd"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6de",
+    "slug": "ai-infrastructure-inference-engineering",
+    "title": "AI Infrastructure & Inference Engineering",
+    "description": "This chapter explores the infrastructure and engineering challenges involved in deploying and scaling AI models for efficient and reliable inference.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6df",
+      "6a115062bfafb1ab7ac3b6e0",
+      "6a115062bfafb1ab7ac3b6e1"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6e2",
+    "slug": "evaluation-observability-red-teaming",
+    "title": "Evaluation, Observability & Red Teaming",
+    "description": "This chapter covers critical aspects of evaluating AI model performance, ensuring observability in production, and mitigating security risks through red teaming.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6e3",
+      "6a115062bfafb1ab7ac3b6e4",
+      "6a115062bfafb1ab7ac3b6e5",
+      "6a115062bfafb1ab7ac3b6e6"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6e7",
+    "slug": "multi-modal-specialized-ai-systems",
+    "title": "Multi-Modal & Specialized AI Systems",
+    "description": "This chapter explores the design and implementation of AI systems capable of processing and generating multi-modal data, as well as integrating with external tools.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6e8",
+      "6a115062bfafb1ab7ac3b6e9",
+      "6a115062bfafb1ab7ac3b6ea"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6eb",
+    "slug": "the-data-engine-for-ai",
+    "title": "The Data Engine for AI",
+    "description": "This chapter focuses on strategies and techniques for creating, managing, and ensuring the quality of data essential for training and enhancing AI models.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6ec",
+      "6a115062bfafb1ab7ac3b6ed"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6ee",
+    "slug": "local-ai-edge-intelligence",
+    "title": "Local AI & Edge Intelligence",
+    "description": "This chapter addresses the deployment and optimization of AI models for local and edge computing environments, focusing on privacy and efficiency.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6c6",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6ef",
+      "6a115062bfafb1ab7ac3b6f0"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6f2",
+    "slug": "container-internals-linux-primitives",
+    "title": "Container Internals & Linux Primitives",
+    "description": "This chapter dissects the core Linux kernel features that underpin container isolation and resource management.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6f3",
+      "6a115062bfafb1ab7ac3b6f4",
+      "6a115062bfafb1ab7ac3b6f5",
+      "6a115062bfafb1ab7ac3b6f6"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6f7",
+    "slug": "kubernetes-architectural-mastery",
+    "title": "Kubernetes Architectural Mastery",
+    "description": "This chapter delves into the core components and design patterns of Kubernetes for managing distributed applications.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6f8",
+      "6a115062bfafb1ab7ac3b6f9",
+      "6a115062bfafb1ab7ac3b6fa",
+      "6a115062bfafb1ab7ac3b6fb"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b6fc",
+    "slug": "cloud-native-networking-the-cni",
+    "title": "Cloud-Native Networking & The CNI",
+    "description": "This chapter explores the intricate networking models and components vital for inter-container communication and external access in Kubernetes.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b6fd",
+      "6a115062bfafb1ab7ac3b6fe",
+      "6a115062bfafb1ab7ac3b6ff",
+      "6a115062bfafb1ab7ac3b700"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b701",
+    "slug": "service-mesh-connectivity-patterns",
+    "title": "Service Mesh & Connectivity Patterns",
+    "description": "This chapter covers advanced service-to-service communication, traffic management, and security facilitated by service mesh technologies.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b702",
+      "6a115062bfafb1ab7ac3b703",
+      "6a115062bfafb1ab7ac3b704",
+      "6a115062bfafb1ab7ac3b705"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b706",
+    "slug": "persistent-storage-the-csi",
+    "title": "Persistent Storage & The CSI",
+    "description": "This chapter focuses on managing stateful applications in Kubernetes through various storage solutions and the Container Storage Interface.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b707",
+      "6a115062bfafb1ab7ac3b708",
+      "6a115062bfafb1ab7ac3b709"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b70a",
+    "slug": "gitops-declarative-delivery",
+    "title": "GitOps & Declarative Delivery",
+    "description": "This chapter covers the principles and tools for managing infrastructure and applications declaratively using Git as the single source of truth.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b70b",
+      "6a115062bfafb1ab7ac3b70c",
+      "6a115062bfafb1ab7ac3b70d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b70e",
+    "slug": "cluster-security-hardening",
+    "title": "Cluster Security & Hardening",
+    "description": "This chapter focuses on securing Kubernetes clusters and workloads through access control, image security, and secrets management.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b70f",
+      "6a115062bfafb1ab7ac3b710",
+      "6a115062bfafb1ab7ac3b711",
+      "6a115062bfafb1ab7ac3b712"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b713",
+    "slug": "auto-scaling-resource-efficiency",
+    "title": "Auto-scaling & Resource Efficiency",
+    "description": "This chapter explores strategies and tools for automatically scaling Kubernetes workloads and optimizing resource utilization to control costs and performance.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b714",
+      "6a115062bfafb1ab7ac3b715",
+      "6a115062bfafb1ab7ac3b716"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b717",
+    "slug": "observability-ebpf",
+    "title": "Observability & eBPF",
+    "description": "This chapter covers advanced techniques for monitoring, logging, and tracing cloud-native applications, particularly leveraging eBPF for deep insights.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b718",
+      "6a115062bfafb1ab7ac3b719",
+      "6a115062bfafb1ab7ac3b71a"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b71b",
+    "slug": "edge-computing-hybrid-cloud",
+    "title": "Edge Computing & Hybrid Cloud",
+    "description": "This chapter explores the deployment of Kubernetes in resource-constrained edge environments and managing clusters across hybrid cloud infrastructures.",
+    "order": 10,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b6f1",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b71c",
+      "6a115062bfafb1ab7ac3b71d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b71f",
+    "slug": "architecture-governance-rfc-processes",
+    "title": "Architecture Governance & RFC Processes",
+    "description": "This chapter explores establishing robust processes and governance models to manage architectural evolution and ensure consistency across engineering teams.",
+    "order": 1,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b720",
+      "6a115062bfafb1ab7ac3b721",
+      "6a115062bfafb1ab7ac3b722",
+      "6a115062bfafb1ab7ac3b723"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b724",
+    "slug": "engineering-velocity-sdlc-engineering",
+    "title": "Engineering Velocity & SDLC Engineering",
+    "description": "This chapter focuses on optimizing the Software Development Life Cycle (SDLC) to maximize engineering velocity, improve developer experience, and ensure robust continuous deployment.",
+    "order": 2,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b725",
+      "6a115062bfafb1ab7ac3b726",
+      "6a115062bfafb1ab7ac3b727",
+      "6a115062bfafb1ab7ac3b728"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b729",
+    "slug": "team-topologies-organizational-architecture",
+    "title": "Team Topologies & Organizational Architecture",
+    "description": "This chapter covers structuring engineering teams based on best practices like Team Topologies to optimize communication, minimize cognitive load, and align with desired software architectures.",
+    "order": 3,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b72a",
+      "6a115062bfafb1ab7ac3b72b",
+      "6a115062bfafb1ab7ac3b72c",
+      "6a115062bfafb1ab7ac3b72d"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b72e",
+    "slug": "incident-command-crisis-leadership",
+    "title": "Incident Command & Crisis Leadership",
+    "description": "This chapter focuses on establishing and executing formal frameworks for incident response, crisis communication, and learning from failures to build more resilient systems.",
+    "order": 4,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b72f",
+      "6a115062bfafb1ab7ac3b730",
+      "6a115062bfafb1ab7ac3b731",
+      "6a115062bfafb1ab7ac3b732"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b733",
+    "slug": "staff-level-mentorship-technical-influence",
+    "title": "Staff-Level Mentorship & Technical Influence",
+    "description": "This chapter explores how staff-level engineers develop their technical influence and multiply their impact through mentorship, sponsorship, and knowledge-sharing initiatives.",
+    "order": 5,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b734",
+      "6a115062bfafb1ab7ac3b735",
+      "6a115062bfafb1ab7ac3b736"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b737",
+    "slug": "technical-debt-risk-management",
+    "title": "Technical Debt & Risk Management",
+    "description": "This chapter focuses on effectively classifying, managing, and mitigating technical debt and other associated risks within complex engineering systems.",
+    "order": 6,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b738",
+      "6a115062bfafb1ab7ac3b739",
+      "6a115062bfafb1ab7ac3b73a",
+      "6a115062bfafb1ab7ac3b73b"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b73c",
+    "slug": "financial-engineering-finops",
+    "title": "Financial Engineering & FinOps",
+    "description": "This chapter covers the principles and practices of FinOps, enabling engineering leaders to manage cloud costs, attribute spending, and integrate financial considerations into technical decisions.",
+    "order": 7,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b73d",
+      "6a115062bfafb1ab7ac3b73e",
+      "6a115062bfafb1ab7ac3b73f"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b740",
+    "slug": "hiring-systems-talent-density",
+    "title": "Hiring Systems & Talent Density",
+    "description": "This chapter focuses on designing effective hiring processes, robust onboarding, and performance management systems to build and maintain a high-talent-density engineering organization.",
+    "order": 8,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b741",
+      "6a115062bfafb1ab7ac3b742",
+      "6a115062bfafb1ab7ac3b743"
+    ]
+  },
+  {
+    "_id": "6a115062bfafb1ab7ac3b744",
+    "slug": "the-business-of-engineering",
+    "title": "The Business of Engineering",
+    "description": "This chapter emphasizes the intersection of engineering with business strategy, focusing on executive communication, product-engineering collaboration, and data-driven experimentation for business growth.",
+    "order": 9,
+    "courseId": "6a115062bfafb1ab7ac3b483",
+    "moduleId": "6a115062bfafb1ab7ac3b71e",
+    "lessonIds": [
+      "6a115062bfafb1ab7ac3b745",
+      "6a115062bfafb1ab7ac3b746",
+      "6a115062bfafb1ab7ac3b747"
+    ]
+  }
+]

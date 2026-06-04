@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b52d",
+  "id": "master-idempotent-transitions",
+  "slug": "master-idempotent-transitions",
+  "version": "1.0.0",
+  "title": "Master Idempotent Transitions",
+  "description": "Master the design of idempotent state transitions to handle repeated event processing without altering the system's outcome. Ensure deterministic state outcomes even when events are replayed due to network retries or transient errors.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master the design of idempotent state transitions to handle repeated event processing without altering the system's outcome.",
+    "Ensure deterministic state outcomes even when events are replayed due to network retries or transient errors."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b52b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

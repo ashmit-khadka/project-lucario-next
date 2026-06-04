@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b72d",
+  "id": "micro-frontends-services-ownership",
+  "slug": "micro-frontends-services-ownership",
+  "version": "1.0.0",
+  "title": "Micro-Frontends/Services Ownership",
+  "description": "Manage ownership for micro-frontends and microservices by designing a clear RACI (Responsible, Accountable, Consulted, Informed) matrix. Ensure continuous ownership and maintenance of shared components and legacy systems within a distributed architecture.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Manage ownership for micro-frontends and microservices by designing a clear RACI (Responsible, Accountable, Consulted, Informed) matrix.",
+    "Ensure continuous ownership and maintenance of shared components and legacy systems within a distributed architecture."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b729",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

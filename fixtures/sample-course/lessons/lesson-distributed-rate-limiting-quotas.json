@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b681",
+  "id": "distributed-rate-limiting-quotas",
+  "slug": "distributed-rate-limiting-quotas",
+  "version": "1.0.0",
+  "title": "Distributed Rate Limiting & Quotas",
+  "description": "Architect distributed rate limiting and quota systems for APIs. Implement 'Token Bucket' algorithms using Redis to control request rates. Mitigate automated credential stuffing, scraping, and L7 DoS attacks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect distributed rate limiting and quota systems for APIs.",
+    "Implement 'Token Bucket' algorithms using Redis to control request rates.",
+    "Mitigate automated credential stuffing, scraping, and L7 DoS attacks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b680",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

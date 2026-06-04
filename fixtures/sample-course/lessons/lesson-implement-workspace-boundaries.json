@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b540",
+  "id": "implement-workspace-boundaries",
+  "slug": "implement-workspace-boundaries",
+  "version": "1.0.0",
+  "title": "Implement Workspace Boundaries",
+  "description": "Utilize tools like `eslint-plugin-import` to enforce architectural boundaries within a monorepo workspace. Prevent circular dependencies and unauthorized layer-crossing (e.g., UI to backend) using build-time checks. Configure module boundary rules to maintain code hygiene and prevent anti-patterns in large monorepos.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize tools like `eslint-plugin-import` to enforce architectural boundaries within a monorepo workspace.",
+    "Prevent circular dependencies and unauthorized layer-crossing (e.g., UI to backend) using build-time checks.",
+    "Configure module boundary rules to maintain code hygiene and prevent anti-patterns in large monorepos."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b533",
+  "chapterId": "6a115062bfafb1ab7ac3b53e",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

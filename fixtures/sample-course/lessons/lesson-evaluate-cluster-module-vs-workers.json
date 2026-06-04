@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4a4",
+  "id": "evaluate-cluster-module-vs-workers",
+  "slug": "evaluate-cluster-module-vs-workers",
+  "version": "1.0.0",
+  "title": "Evaluate Cluster Module vs. Workers",
+  "description": "Compare the Node.js Cluster Module and Worker Threads for achieving concurrency and parallelism. Determine the appropriate use cases for OS-level process forking versus V8-level threading. Evaluate architectural decisions based on isolation, memory requirements, and fault tolerance.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Compare the Node.js Cluster Module and Worker Threads for achieving concurrency and parallelism.",
+    "Determine the appropriate use cases for OS-level process forking versus V8-level threading.",
+    "Evaluate architectural decisions based on isolation, memory requirements, and fault tolerance."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b4a2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,195 @@
+@import '../base/colours';
+@import '../base/mixins';
+
+.lesson-card {
+    background-color: rgba($color-font-primary-lighter, 0.03);
+    border: 1px solid rgba($color-font-primary-lighter, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $color-font-primary;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    &__content {
+        color: $color-font-primary-lighter;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background-color: rgba($color-font-primary, 0.1);
+        color: $color-font-primary;
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    &--image {
+        padding: 0;
+        
+        .lesson-card__image-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+        }
+        
+        .lesson-card__body {
+            padding: 24px;
+        }
+
+        &:hover .lesson-card__image-container img {
+            transform: scale(1.05);
+        }
+    }
+
+    &--metric {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        @include screen-sm {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .lesson-card__metric-value {
+            font-size: 4rem;
+            font-weight: 800;
+            color: $color-font-primary;
+            line-height: 1;
+            letter-spacing: -0.05em;
+        }
+    }
+
+    &--flashcard {
+        perspective: 1000px;
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        min-height: 250px;
+
+        .lesson-card__flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            transform-style: preserve-3d;
+        }
+
+        .lesson-card__flashcard-front,
+        .lesson-card__flashcard-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 12px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba($color-font-primary-lighter, 0.05);
+            border: 1px solid rgba($color-font-primary-lighter, 0.15);
+        }
+
+        .lesson-card__flashcard-front {
+            align-items: center;
+            text-align: center;
+            
+            .lesson-card__title {
+                margin-bottom: 8px;
+                font-size: 1.5rem;
+            }
+            
+            .lesson-card__hint {
+                color: $color-font-primary-lighter;
+                font-size: 0.9rem;
+            }
+
+            .lesson-card__flip-hint {
+                position: absolute;
+                bottom: 24px;
+                font-size: 0.8rem;
+                color: rgba($color-font-primary-lighter, 0.5);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+
+        .lesson-card__flashcard-back {
+            transform: rotateY(180deg);
+            background-color: rgba($color-font-primary, 0.05);
+            border-color: rgba($color-font-primary, 0.2);
+            
+            .lesson-card__content {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &--quote {
+        background-color: rgba($color-font-primary-dark, 0.05);
+        border-left: 4px solid $color-font-primary-dark;
+        border-radius: 0 12px 12px 0;
+        padding: 32px 32px 32px 48px;
+
+        .lesson-card__quote-mark {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            font-size: 4rem;
+            line-height: 1;
+            color: rgba($color-font-primary-dark, 0.2);
+            font-family: Georgia, serif;
+        }
+
+        .lesson-card__content {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: $color-font-primary;
+            margin-bottom: 24px;
+        }
+
+        .lesson-card__author {
+            display: flex;
+            flex-direction: column;
+            
+            &-name {
+                font-weight: 600;
+                color: $color-font-primary;
+            }
+            
+            &-title {
+                font-size: 0.85rem;
+                color: $color-font-primary-lighter;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 4px;
+            }
+        }
+    }
+}

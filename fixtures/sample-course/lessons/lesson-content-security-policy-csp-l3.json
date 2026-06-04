@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b677",
+  "id": "content-security-policy-csp-l3",
+  "slug": "content-security-policy-csp-l3",
+  "version": "1.0.0",
+  "title": "Content Security Policy (CSP) L3",
+  "description": "Design strict, nonce-based Content Security Policies (CSP L3) to prevent XSS. Implement CSP to mitigate data exfiltration risks in modern web applications. Manage the operational complexity of integrating CSP with modern frontend asset pipelines.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design strict, nonce-based Content Security Policies (CSP L3) to prevent XSS.",
+    "Implement CSP to mitigate data exfiltration risks in modern web applications.",
+    "Manage the operational complexity of integrating CSP with modern frontend asset pipelines."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b676",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

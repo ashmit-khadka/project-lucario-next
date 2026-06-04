@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6b3",
+  "id": "master-device-agnostic-interaction-engineering",
+  "slug": "master-device-agnostic-interaction-engineering",
+  "version": "1.0.0",
+  "title": "Master Device-Agnostic Interaction Engineering",
+  "description": "Architect event listeners to handle touch, mouse, pen, and keyboard inputs polyvalently. Ensure application usability across low-end hardware and alternative input devices.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect event listeners to handle touch, mouse, pen, and keyboard inputs polyvalently.",
+    "Ensure application usability across low-end hardware and alternative input devices."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b6a7",
+  "chapterId": "6a115062bfafb1ab7ac3b6b1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

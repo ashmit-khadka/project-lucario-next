@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5d8",
+  "id": "saga-patterns-choreography-vs-orchestration",
+  "slug": "saga-patterns-choreography-vs-orchestration",
+  "version": "1.0.0",
+  "title": "Saga Patterns (Choreography vs. Orchestration)",
+  "description": "Architect distributed workflows using both choreography and orchestration Saga patterns. Manage long-running distributed transactions through event-driven state transitions across independent microservices.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect distributed workflows using both choreography and orchestration Saga patterns.",
+    "Manage long-running distributed transactions through event-driven state transitions across independent microservices."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5b8",
+  "chapterId": "6a115062bfafb1ab7ac3b5d7",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b607",
+  "id": "aws-step-functions-orchestration",
+  "slug": "aws-step-functions-orchestration",
+  "version": "1.0.0",
+  "title": "AWS Step Functions (Orchestration)",
+  "description": "Master AWS Step Functions for orchestrating complex, long-running serverless workflows. Architect robust workflows with built-in retry logic, error handling, and state management to avoid \"Lambda Spaghetti.\"",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Master AWS Step Functions for orchestrating complex, long-running serverless workflows.",
+    "Architect robust workflows with built-in retry logic, error handling, and state management to avoid \"Lambda Spaghetti.\""
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b606",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

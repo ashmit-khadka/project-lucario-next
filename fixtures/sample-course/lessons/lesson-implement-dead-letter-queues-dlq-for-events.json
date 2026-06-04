@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5b3",
+  "id": "implement-dead-letter-queues-dlq-for-events",
+  "slug": "implement-dead-letter-queues-dlq-for-events",
+  "version": "1.0.0",
+  "title": "Implement Dead Letter Queues (DLQ) for Events",
+  "description": "Implement Dead Letter Queues (DLQ) to isolate and retry failed event processing. Ensure system reliability by preventing failed events from blocking the real-time stream.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement Dead Letter Queues (DLQ) to isolate and retry failed event processing.",
+    "Ensure system reliability by preventing failed events from blocking the real-time stream."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b58c",
+  "chapterId": "6a115062bfafb1ab7ac3b5b0",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

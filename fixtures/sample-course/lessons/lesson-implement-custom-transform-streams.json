@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b49b",
+  "id": "implement-custom-transform-streams",
+  "slug": "implement-custom-transform-streams",
+  "version": "1.0.0",
+  "title": "Implement Custom Transform Streams",
+  "description": "Implement custom Transform streams using `_read`, `_write`, and `_transform` methods. Manage internal buffer states to maintain proper backpressure signaling in custom streams. Design flexible data transformation pipelines using custom stream implementations.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement custom Transform streams using `_read`, `_write`, and `_transform` methods.",
+    "Manage internal buffer states to maintain proper backpressure signaling in custom streams.",
+    "Design flexible data transformation pipelines using custom stream implementations."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b484",
+  "chapterId": "6a115062bfafb1ab7ac3b499",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

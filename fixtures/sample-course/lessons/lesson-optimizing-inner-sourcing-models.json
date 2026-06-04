@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b728",
+  "id": "optimizing-inner-sourcing-models",
+  "slug": "optimizing-inner-sourcing-models",
+  "version": "1.0.0",
+  "title": "Optimizing Inner-Sourcing Models",
+  "description": "Optimize inner-sourcing models to facilitate cross-team codebase contributions. Design workflows that maintain clear ownership and quality standards, reducing cross-team dependencies and blocking.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Optimize inner-sourcing models to facilitate cross-team codebase contributions.",
+    "Design workflows that maintain clear ownership and quality standards, reducing cross-team dependencies and blocking."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b71e",
+  "chapterId": "6a115062bfafb1ab7ac3b724",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

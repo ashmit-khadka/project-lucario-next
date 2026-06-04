@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4e2",
+  "id": "phantom-types",
+  "slug": "phantom-types",
+  "version": "1.0.0",
+  "title": "Phantom Types",
+  "description": "Utilize phantom types to embed compile-time state information into generic parameters without runtime overhead. Enable compile-time validation of stateful workflows by leveraging phantom type distinctions.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize phantom types to embed compile-time state information into generic parameters without runtime overhead.",
+    "Enable compile-time validation of stateful workflows by leveraging phantom type distinctions."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4de",
+  "chapterId": "6a115062bfafb1ab7ac3b4df",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

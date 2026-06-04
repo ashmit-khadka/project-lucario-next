@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b4d3",
+  "id": "hsts-secure-cookies",
+  "slug": "hsts-secure-cookies",
+  "version": "1.0.0",
+  "title": "HSTS & Secure Cookies",
+  "description": "Implement HTTP Strict Transport Security (HSTS) and its preload directive to enforce HTTPS. Configure secure cookie attributes (SameSite, HttpOnly, __Host-) to prevent session hijacking. Evaluate the effectiveness of HSTS and secure cookies in mitigating SSL stripping and XSS attacks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Implement HTTP Strict Transport Security (HSTS) and its preload directive to enforce HTTPS.",
+    "Configure secure cookie attributes (SameSite, HttpOnly, __Host-) to prevent session hijacking.",
+    "Evaluate the effectiveness of HSTS and secure cookies in mitigating SSL stripping and XSS attacks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b4ad",
+  "chapterId": "6a115062bfafb1ab7ac3b4d1",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

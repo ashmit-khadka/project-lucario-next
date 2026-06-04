@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b51c",
+  "id": "architect-declarative-rules-engines",
+  "slug": "architect-declarative-rules-engines",
+  "version": "1.0.0",
+  "title": "Architect Declarative Rules Engines",
+  "description": "Architect declarative rules engines using JSON-based configurations to externalize business logic. Implement solutions like `json-rules-engine` to decouple volatile business rules from the core codebase.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect declarative rules engines using JSON-based configurations to externalize business logic.",
+    "Implement solutions like `json-rules-engine` to decouple volatile business rules from the core codebase."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b51b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

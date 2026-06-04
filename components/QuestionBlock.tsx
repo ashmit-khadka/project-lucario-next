@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import formatText from '../utils/formatText';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { synthwave84 } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -72,35 +73,56 @@ const MultipleChoice = ({ data }: { data: MultipleChoiceQuestion }) => {
                         else if (option === selected) stateClass = 'incorrect';
                     }
                     return (
-                        <li
+                        <motion.li
                             key={i}
                             className={`question-block-option ${selected === option ? 'selected' : ''} ${stateClass}`}
                             onClick={() => { if (!submitted) setSelected(option); }}
+                            whileHover={!submitted ? { scale: 1.01, x: 2 } : {}}
+                            whileTap={!submitted ? { scale: 0.99 } : {}}
+                            transition={{ duration: 0.2 }}
                         >
                             <span className="question-block-option-marker">{String.fromCharCode(65 + i)}</span>
                             <span>{formatText(option)}</span>
-                        </li>
+                        </motion.li>
                     );
                 })}
             </ul>
 
-            {!submitted ? (
-                <button
+            {!submitted && (
+                <motion.button
                     className="question-block-btn"
                     disabled={selected === null}
                     onClick={handleSubmit}
+                    whileHover={selected !== null ? { scale: 1.03 } : {}}
+                    whileTap={selected !== null ? { scale: 0.97 } : {}}
                 >
                     Check Answer
-                </button>
-            ) : (
-                <div className={`question-block-feedback ${isCorrect ? 'correct' : 'incorrect'}`}>
-                    <span>{isCorrect ? '✅ Correct!' : '❌ Not quite.'}</span>
-                    <p className="question-block-explanation">{formatText(data.explanation)}</p>
-                    <button className="question-block-btn question-block-btn--ghost" onClick={handleReset}>
-                        Try Again
-                    </button>
-                </div>
+                </motion.button>
             )}
+
+            <AnimatePresence>
+                {submitted && (
+                    <motion.div 
+                        className={`question-block-feedback ${isCorrect ? 'correct' : 'incorrect'}`}
+                        initial={{ height: 0, opacity: 0, marginTop: 0 }}
+                        animate={{ height: 'auto', opacity: 1, marginTop: '1rem' }}
+                        exit={{ height: 0, opacity: 0, marginTop: 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        style={{ overflow: 'hidden' }}
+                    >
+                        <span>{isCorrect ? '✅ Correct!' : '❌ Not quite.'}</span>
+                        <p className="question-block-explanation">{formatText(data.explanation)}</p>
+                        <motion.button 
+                            className="question-block-btn question-block-btn--ghost" 
+                            onClick={handleReset}
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.97 }}
+                        >
+                            Try Again
+                        </motion.button>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
@@ -123,16 +145,32 @@ const RevealAnswer = ({ data }: { data: RevealAnswerQuestion }) => {
                 </SyntaxHighlighter>
             )}
 
-            {!revealed ? (
-                <button className="question-block-btn" onClick={() => setRevealed(true)}>
+            {!revealed && (
+                <motion.button 
+                    className="question-block-btn" 
+                    onClick={() => setRevealed(true)}
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                >
                     {data.buttonLabel || 'Reveal Answer'}
-                </button>
-            ) : (
-                <div className="question-block-feedback correct">
-                    <p>{formatText(data.answer)}</p>
-                    <p className="question-block-explanation">{formatText(data.explanation)}</p>
-                </div>
+                </motion.button>
             )}
+
+            <AnimatePresence>
+                {revealed && (
+                    <motion.div 
+                        className="question-block-feedback correct"
+                        initial={{ height: 0, opacity: 0, marginTop: 0 }}
+                        animate={{ height: 'auto', opacity: 1, marginTop: '1rem' }}
+                        exit={{ height: 0, opacity: 0, marginTop: 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        style={{ overflow: 'hidden' }}
+                    >
+                        <p>{formatText(data.answer)}</p>
+                        <p className="question-block-explanation">{formatText(data.explanation)}</p>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
@@ -173,25 +211,41 @@ const FillBlank = ({ data }: { data: FillBlankQuestion }) => {
                     onKeyDown={e => { if (e.key === 'Enter') handleSubmit(); }}
                 />
                 {!submitted && (
-                    <button
+                    <motion.button
                         className="question-block-btn"
                         disabled={!value.trim()}
                         onClick={handleSubmit}
+                        whileHover={value.trim() ? { scale: 1.03 } : {}}
+                        whileTap={value.trim() ? { scale: 0.97 } : {}}
                     >
                         Check
-                    </button>
+                    </motion.button>
                 )}
             </div>
 
-            {submitted && (
-                <div className={`question-block-feedback ${isCorrect ? 'correct' : 'incorrect'}`}>
-                    <span>{isCorrect ? '✅ Correct!' : `❌ Expected: ${data.correctAnswer}`}</span>
-                    <p className="question-block-explanation">{formatText(data.explanation)}</p>
-                    <button className="question-block-btn question-block-btn--ghost" onClick={handleReset}>
-                        Try Again
-                    </button>
-                </div>
-            )}
+            <AnimatePresence>
+                {submitted && (
+                    <motion.div 
+                        className={`question-block-feedback ${isCorrect ? 'correct' : 'incorrect'}`}
+                        initial={{ height: 0, opacity: 0, marginTop: 0 }}
+                        animate={{ height: 'auto', opacity: 1, marginTop: '1rem' }}
+                        exit={{ height: 0, opacity: 0, marginTop: 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        style={{ overflow: 'hidden' }}
+                    >
+                        <span>{isCorrect ? '✅ Correct!' : `❌ Expected: ${data.correctAnswer}`}</span>
+                        <p className="question-block-explanation">{formatText(data.explanation)}</p>
+                        <motion.button 
+                            className="question-block-btn question-block-btn--ghost" 
+                            onClick={handleReset}
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.97 }}
+                        >
+                            Try Again
+                        </motion.button>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };

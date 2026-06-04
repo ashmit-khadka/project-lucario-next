@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b64b",
+  "id": "automate-accessibility-a11y-audits",
+  "slug": "automate-accessibility-a11y-audits",
+  "version": "1.0.0",
+  "title": "Automate Accessibility (A11y) Audits",
+  "description": "Automate accessibility audits by integrating `axe-core` into the component development lifecycle. Enforce WCAG compliance before code is deployed to production environments.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Automate accessibility audits by integrating `axe-core` into the component development lifecycle.",
+    "Enforce WCAG compliance before code is deployed to production environments."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b634",
+  "chapterId": "6a115062bfafb1ab7ac3b648",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

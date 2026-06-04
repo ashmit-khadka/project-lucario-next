@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b69e",
+  "id": "granular-preference-centers",
+  "slug": "granular-preference-centers",
+  "version": "1.0.0",
+  "title": "Granular Preference Centers",
+  "description": "Architect a centralized source of truth for user marketing and data-sharing preferences. Design synchronization mechanisms for preference centers across CRM, Email, and Product platforms.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect a centralized source of truth for user marketing and data-sharing preferences.",
+    "Design synchronization mechanisms for preference centers across CRM, Email, and Product platforms."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b69b",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

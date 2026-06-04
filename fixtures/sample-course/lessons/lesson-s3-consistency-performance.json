@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b5f3",
+  "id": "s3-consistency-performance",
+  "slug": "s3-consistency-performance",
+  "version": "1.0.0",
+  "title": "S3 Consistency & Performance",
+  "description": "Analyze the S3 Read-After-Write consistency model and its implications for data access patterns. Implement prefix-based scaling strategies to maximize request throughput for high-concurrency S3 object access.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Analyze the S3 Read-After-Write consistency model and its implications for data access patterns.",
+    "Implement prefix-based scaling strategies to maximize request throughput for high-concurrency S3 object access."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b5e7",
+  "chapterId": "6a115062bfafb1ab7ac3b5f2",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b671",
+  "id": "adaptive-mfa-risk-based-auth",
+  "slug": "adaptive-mfa-risk-based-auth",
+  "version": "1.0.0",
+  "title": "Adaptive MFA & Risk-Based Auth",
+  "description": "Design context-aware authentication challenges using adaptive MFA and risk-based authentication. Implement mechanisms to trigger authentication challenges based on IP reputation, device fingerprinting, or behavioral anomalies. Analyze user behavior patterns to identify and respond to potential authentication risks.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design context-aware authentication challenges using adaptive MFA and risk-based authentication.",
+    "Implement mechanisms to trigger authentication challenges based on IP reputation, device fingerprinting, or behavioral anomalies.",
+    "Analyze user behavior patterns to identify and respond to potential authentication risks."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b66d",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

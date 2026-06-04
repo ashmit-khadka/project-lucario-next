@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b6a2",
+  "id": "automated-data-discovery-classification",
+  "slug": "automated-data-discovery-classification",
+  "version": "1.0.0",
+  "title": "Automated Data Discovery & Classification",
+  "description": "Utilize machine learning classifiers to scan unstructured data stores for sensitive information. Implement automated tagging of PII, PHI, or PCI data for targeted compliance enforcement.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Utilize machine learning classifiers to scan unstructured data stores for sensitive information.",
+    "Implement automated tagging of PII, PHI, or PCI data for targeted compliance enforcement."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b688",
+  "chapterId": "6a115062bfafb1ab7ac3b69f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

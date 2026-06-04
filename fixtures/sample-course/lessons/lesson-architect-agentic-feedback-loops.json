@@ -1,0 +1,27 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b531",
+  "id": "architect-agentic-feedback-loops",
+  "slug": "architect-agentic-feedback-loops",
+  "version": "1.0.0",
+  "title": "Architect Agentic Feedback Loops",
+  "description": "Architect agentic feedback loops by modeling AI \"self-correction\" mechanisms. Design state transitions that are triggered by failed validation or negative evaluation signals to guide AI behavior.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Architect agentic feedback loops by modeling AI \"self-correction\" mechanisms.",
+    "Design state transitions that are triggered by failed validation or negative evaluation signals to guide AI behavior."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b509",
+  "chapterId": "6a115062bfafb1ab7ac3b52f",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}

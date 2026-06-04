@@ -1,0 +1,28 @@
+{
+  "_id": "6a115062bfafb1ab7ac3b675",
+  "id": "multi-tenant-authz-isolation",
+  "slug": "multi-tenant-authz-isolation",
+  "version": "1.0.0",
+  "title": "Multi-Tenant AuthZ Isolation",
+  "description": "Design permissioning frameworks that enforce strict tenant boundaries in multi-tenant architectures. Implement 'Contextual Identity' to ensure data and logic isolation between tenants. Prevent cross-tenant data leaks at both the application and data layers.",
+  "status": "pending",
+  "meta": {
+    "difficulty": "intermediate",
+    "duration": 15,
+    "prerequisites": [],
+    "tags": [],
+    "author": "AI Generated",
+    "lastUpdated": "2026-05-23"
+  },
+  "objectives": [
+    "Design permissioning frameworks that enforce strict tenant boundaries in multi-tenant architectures.",
+    "Implement 'Contextual Identity' to ensure data and logic isolation between tenants.",
+    "Prevent cross-tenant data leaks at both the application and data layers."
+  ],
+  "courseId": "6a115062bfafb1ab7ac3b483",
+  "moduleId": "6a115062bfafb1ab7ac3b66c",
+  "chapterId": "6a115062bfafb1ab7ac3b672",
+  "keyTerms": [],
+  "content": [],
+  "quiz": []
+}
