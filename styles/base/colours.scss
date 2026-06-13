@@ -1,10 +1,24 @@
-$colour-background: #FFF8EE;
+// Base Colors
+$base-off-white: #FFF8EE;
 
-$color-font-primary: #580081;
-$color-font-primary-light: #C1ABCC;
-$color-font-primary-lighter: #fef0ff;
-$color-font-primary-dark: #3C1F4A;
-$color-font-primary-darker: #250036;
+// Purples
+$base-purple-lighter: #fef0ff;
+$base-purple-light: #C1ABCC;
+$base-purple: #580081;
+$base-purple-dark: #3C1F4A;
+$base-purple-darker: #250036;
 
+// Pinks
+$base-pink: #ffc4e7;
+$base-pink-transparent: #ffc4e781;
 
-$color-underline: #ffc4e781;
+// Semantic Variables
+$colour-background: $base-off-white;
+
+$color-font-primary: $base-purple;
+$color-font-primary-light: $base-purple-light;
+$color-font-primary-lighter: $base-purple-lighter;
+$color-font-primary-dark: $base-purple-dark;
+$color-font-primary-darker: $base-purple-darker;
+
+$color-underline: $base-pink;

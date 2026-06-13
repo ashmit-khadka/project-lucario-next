@@ -40,11 +40,12 @@ const VisualizationBlock: React.FC<VisualizationBlockProps> = ({ data }) => {
     });
 
     const contractedWidth = Math.min(800, windowWidth - 48);
-    const expandedWidth = windowWidth;
+    const expandedWidth = Math.min(1600, windowWidth - 48);
     const contractedRadius = windowWidth >= 800 ? 48 : 0;
+    const expandedRadius = windowWidth >= 800 ? 24 : 0;
 
     const width = useTransform(scrollYProgress, [0, 1], [contractedWidth, expandedWidth]);
-    const borderRadius = useTransform(scrollYProgress, [0, 1], [contractedRadius, 0]);
+    const borderRadius = useTransform(scrollYProgress, [0, 1], [contractedRadius, expandedRadius]);
 
     // Dark Mode Colors
     const colorLine = "#C1ABCC"; // Lighter purple for primary data lines
@@ -55,11 +56,11 @@ const VisualizationBlock: React.FC<VisualizationBlockProps> = ({ data }) => {
 
     const isFlowchart = visType === 'flowchart' || visType === 'tree-diagram';
 
-    // Flowchart Colors (Light Theme)
-    const flowchartColorLine = "#580081"; // default dark purple font color
-    const flowchartColorGrid = "rgba(88, 0, 129, 0.15)"; // subtle grid dots
-    const flowchartColorText = "#580081";
-    const flowchartColorTooltipBg = "#FFFFFF";
+    // Flowchart Colors (Light Theme content on Dark Background #250036f2)
+    const flowchartColorLine = "#C1ABCC"; // Lighter purple for primary lines on dark background
+    const flowchartColorGrid = "rgba(193, 171, 204, 0.15)"; // subtle grid dots
+    const flowchartColorText = "#580081"; // default dark purple font color (for text inside nodes/labels)
+    const flowchartColorTooltipBg = "#FFFFFF"; // white tooltip/label bg
     const flowchartColorBg = "transparent";
 
     const renderChart = () => {
@@ -105,30 +106,31 @@ const VisualizationBlock: React.FC<VisualizationBlockProps> = ({ data }) => {
                     },
                     labelBgPadding: [8, 4],
                     labelBgBorderRadius: 4,
-                    labelBgStyle: { fill: flowchartColorTooltipBg, color: flowchartColorText, stroke: flowchartColorGrid, strokeWidth: 2 },
+                    labelBgStyle: { fill: flowchartColorTooltipBg, color: flowchartColorText, stroke: colorGrid, strokeWidth: 2 },
                     labelStyle: { fill: flowchartColorText, fontWeight: 700, fontSize: 12, fontFamily: '"DM Mono", monospace' },
                 }));
 
                 const nodeTypes = { custom: CustomNode };
 
                 return (
-                    <div style={{ width: '100%', height: height, border: `1px solid #C1ABCC`, borderRadius: '8px', overflow: 'hidden', backgroundColor: flowchartColorBg, position: 'relative' }}>
+                    <div style={{ width: '100%', height: height * 1.5, border: 'none', borderRadius: '8px', overflow: 'hidden', backgroundColor: flowchartColorBg, position: 'relative' }}>
                         <ReactFlow
                             nodes={displayNodes}
                             edges={displayEdges}
                             nodeTypes={nodeTypes}
+                            style={{ backgroundColor: '#580081' }}
                             fitView
                             colorMode="light"
                         >
                             <Background color={flowchartColorGrid} gap={16} />
-                            <Controls style={{ fill: flowchartColorText, backgroundColor: flowchartColorTooltipBg }} />
+                            <Controls style={{ fill: colorText, backgroundColor: colorTooltipBg }} />
                             <MiniMap 
-                                nodeColor={flowchartColorLine}
+                                nodeColor="#580081"
                                 nodeStrokeWidth={3}
                                 zoomable
                                 pannable
-                                style={{ border: `2px solid #C1ABCC`, borderRadius: '8px', backgroundColor: flowchartColorTooltipBg }}
-                                maskColor="rgba(255, 248, 238, 0.7)"
+                                style={{ border: `2px solid #ffc4e781`, borderRadius: '8px', backgroundColor: '#FFF8EE' }}
+                                maskColor="rgba(0, 0, 0, 0.2)"
                             />
                         </ReactFlow>
                     </div>
@@ -377,17 +379,18 @@ const VisualizationBlock: React.FC<VisualizationBlockProps> = ({ data }) => {
                 const nodeTypes = { custom: CustomNode };
 
                 return (
-                    <div style={{ width: '100%', height: height, border: `1px solid #C1ABCC`, borderRadius: '8px', overflow: 'hidden', backgroundColor: flowchartColorBg, position: 'relative' }}>
+                    <div style={{ width: '100%', height: height * 1.5, border: 'none', borderRadius: '8px', overflow: 'hidden', backgroundColor: flowchartColorBg, position: 'relative' }}>
                         <ReactFlow
                             nodes={displayNodes}
                             edges={displayEdges}
                             nodeTypes={nodeTypes}
+                            style={{ backgroundColor: '#580081' }}
                             fitView
                             colorMode="light"
                             nodesDraggable={false}
                         >
                             <Background color={flowchartColorGrid} gap={16} />
-                            <Controls style={{ fill: flowchartColorText, backgroundColor: flowchartColorTooltipBg }} />
+                            <Controls style={{ fill: colorText, backgroundColor: colorTooltipBg }} />
                         </ReactFlow>
                     </div>
                 );
@@ -409,11 +412,11 @@ const VisualizationBlock: React.FC<VisualizationBlockProps> = ({ data }) => {
                 x: "-50%",
                 borderRadius: borderRadius,
                 overflow: 'hidden',
-                backgroundColor: isFlowchart ? 'transparent' : '#250036',
-                color: isFlowchart ? '#580081' : '#fef0ff',
-                padding: isFlowchart ? '2rem 0' : '2rem'
+                backgroundColor: isFlowchart ? '#580081' : '#250036',
+                color: '#fef0ff',
+                padding: '2rem'
             }}>
-            {title && <h4 style={{ marginBottom: '1.5rem', textAlign: 'center', color: isFlowchart ? '#580081' : '#fef0ff' }}>{formatText(title)}</h4>}
+            {title && <h4 style={{ marginBottom: '1.5rem', textAlign: 'center', color: '#fef0ff' }}>{formatText(title)}</h4>}
             {renderChart()}
         </motion.div>
     );

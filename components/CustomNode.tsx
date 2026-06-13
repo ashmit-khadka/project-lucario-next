@@ -6,7 +6,7 @@ export default function CustomNode({ data }: { data: any }) {
     <div
       style={{
         padding: '10px 20px',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#ffc4e7',
         border: '2px solid #580081',
         borderRadius: '8px',
         color: '#580081',

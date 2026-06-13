@@ -2,11 +2,11 @@
 
 .visualization-block {
     background-color: $color-font-primary-darker;
-    color: $color-font-primary-lighter;
+    color: $base-pink;
     overflow: hidden;
 
     h4 {
-        color: $color-font-primary-lighter !important;
+        color: $base-pink !important;
     }
 
     /* Target specific dark mode overrides if needed */
@@ -15,11 +15,11 @@
     }
 
     &.flowchart-block {
-        background-color: transparent !important;
-        color: $color-font-primary !important;
+        background-color: $base-purple-darker !important;
 
-        h4 {
-            color: $color-font-primary !important;
+        .react-flow,
+        .xy-flow {
+            background-color: transparent !important;
         }
     }
 }
